@@ -2,9 +2,9 @@
 author: "Marc Etherington"
 title: "Research"
 date: "2023-02-06"
-tags = []
-type = "post"
-categories = []
+tags: []
+type: "post"
+categories: []
 ---
 
 {{< collapsible "First" >}}
