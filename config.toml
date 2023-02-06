@@ -1,4 +1,0 @@
-baseURL = 'https://marc-k-etherington.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'papercss-hugo-theme'
