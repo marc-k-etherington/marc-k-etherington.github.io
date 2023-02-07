@@ -9,10 +9,10 @@ author = "Marc Etherington"
 {{< collapsible "2022" >}}
 {{< alert "primary" >}}
 {{< collapsible "Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways" >}}
-<img src="https://onlinelibrary.wiley.com/cms/asset/8a5ed550-412d-4a69-b36e-45f154904bdb/ange202202193-fig-0001-m.jpg" alt="TOC" width="250" height="auto" style="float:right">
+<img src="https://onlinelibrary.wiley.com/cms/asset/6a036eef-242f-4d99-aed0-893e2a1c1730/anie202202193-toc-0001-m.jpg" alt="TOC" width="250" height="auto" style="float:right">
 
 
-[Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways](https://onlinelibrary.wiley.com/doi/full/10.1002/ange.202202193)
+[Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways](https://onlinelibrary.wiley.com/doi/10.1002/anie.202202193)
 
 Andrew T. Turley, Promeet K. Saha, Andrew Danos, Aisha N. Bismillah, Andrew P. Monkman, Dmitry S. Yufit, Basile F. E. Curchod, **Marc K. Etherington** & Paul R. McGonigal
 
@@ -20,7 +20,7 @@ Andrew T. Turley, Promeet K. Saha, Andrew Danos, Aisha N. Bismillah, Andrew P. M
 Angewandte Chemie, 134, 24, 2022
 {{< /color >}}
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ange.202202193" style="float:right"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/anie.202202193" style="float:right"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
@@ -45,5 +45,27 @@ Journal of Materials Chemistry C, 10, 9484-9491, 2022
 
 {{< /collapsible >}}
 {{< /alert >}}
+
+
+
+{{< alert "primary" >}}
+{{< collapsible "Dominant dimer emission provides colour stability for red thermally activated delayed fluorescence emitter" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D1TC04913E&imageInfo.ImageIdentifier.Year=2022" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Dominant dimer emission provides colour stability for red thermally activated delayed fluorescence emitter](https://pubs.rsc.org/en/content/articlelanding/2022/TC/D1TC04913E)
+
+Tom Cardeynaels, **Marc K. Etherington**, Simon Paredis, Andrei S. Batsanov, Jasper Deckers, Kleitos Stavrou, Drik Vanderzande, Andrew P. Monkman, Benoit Champagne & Wouter Maes
+
+{{< color "secondary" >}}
+Journal of Materials Chemistry C, 10, 5840-5848, 2022
+{{< /color >}}
+  
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d1tc04913e" style="float:right"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
 {{< /collapsible >}}
 
