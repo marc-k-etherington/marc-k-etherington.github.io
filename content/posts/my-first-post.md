@@ -1,11 +1,14 @@
 ---
 author: "Marc Etherington"
-title: "My First Post"
+title: "New Website"
 date: 2023-02-06
 ---
 
 ## Introduction
 
-This is **bold** text, and this is *emphasized* text.
+Welcome to the new website of the Etherington Group. Please feel free to explore and have a look around!
 
-Visit the [Hugo](https://gohugo.io) website!
+Marc Etherington
+*Assistant Professor*
+Department of Mathematics, Physics and Electrical Engineering
+Northumbria University
