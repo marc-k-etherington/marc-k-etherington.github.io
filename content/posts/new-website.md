@@ -2,7 +2,7 @@
 author: Marc Etherington
 date: 2014-09-28
 linktitle: New Website
-title: Creating a New Theme
+title: New Website
 weight: 10
 ---
 
