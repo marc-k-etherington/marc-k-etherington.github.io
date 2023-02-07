@@ -9,7 +9,12 @@ show_summary: false
 
 Welcome to the new website of the Etherington Group. Please feel free to explore and have a look around!
 
+{{< alert "primary" >}}
 Marc Etherington
+
 *Assistant Professor*
+
 Department of Mathematics, Physics and Electrical Engineering
+
 Northumbria University
+{{< /alert >}}
