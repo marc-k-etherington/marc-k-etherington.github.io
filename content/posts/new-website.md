@@ -1,6 +1,6 @@
 ---
 author: Marc Etherington
-date = '2023-02-06'
+PublishDate: 2023-02-06
 linktitle: New Website
 title: New Website
 weight: 10
