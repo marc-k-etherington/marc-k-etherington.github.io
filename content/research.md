@@ -1,4 +1,8 @@
-+++ title = "Research" date = "2023-02-07"  author = "Marc Etherington" +++
++++
+title = "Research"
+date = "2023-02-07"
+author = "Marc Etherington"
++++
 
 
 {{< collapsible "First" >}}
