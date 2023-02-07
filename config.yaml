@@ -28,18 +28,21 @@ params:
 
 menu:
   nav:
+    - name: Meet The Team
+      url: /meet-the-team
+      weight: 1
     - name: Research
       url: /research
-      weight: 1
-    - name: Tags
-      url: /tags/
       weight: 2
-    - name: About
-      url: /about/
+    - name: Teaching
+      url: /teaching
       weight: 3
-    - name: RSS
-      url: /index.xml
+    - name: Publications
+      url: /publications
       weight: 4
+    - name: Seminars
+      url: /seminars
+      weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark
