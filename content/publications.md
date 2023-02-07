@@ -5,6 +5,13 @@ author = "Marc Etherington"
 +++
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 {{< border "dashed thick" >}}
 2022
@@ -22,7 +29,7 @@ Andrew T. Turley, Promeet K. Saha, Andrew Danos, Aisha N. Bismillah, Andrew P. M
 Angewandte Chemie, 134, 24, 2022
 {{< /color >}}
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/anie.202202193" style="float:right"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/anie.202202193" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
@@ -43,7 +50,7 @@ Journal of Materials Chemistry C, 10, 9484-9491, 2022
 {{< /color >}}
   
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d2tc01737g" style="float:right"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d2tc01737g" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
@@ -64,7 +71,7 @@ Journal of Materials Chemistry C, 10, 5840-5848, 2022
 {{< /color >}}
   
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d1tc04913e" style="float:right"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d1tc04913e" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
