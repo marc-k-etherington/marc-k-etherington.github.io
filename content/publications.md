@@ -3,7 +3,7 @@ title = "Publications"
 date = "2023-02-07"
 author = "Marc Etherington"
 +++
-{{<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js">}}{{</script>}}
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 
 
 {{< collapsible "2023" >}}
@@ -19,7 +19,7 @@ author = "Marc Etherington"
 #### Angewandte Chemie, 134, 24, 2022
 {{< /color >}}
 
-{{<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ange.202202193" style="float:right">}}{{</div>}}
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ange.202202193"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
