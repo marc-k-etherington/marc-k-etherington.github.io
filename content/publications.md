@@ -20,7 +20,7 @@ Andrew T. Turley, Promeet K. Saha, Andrew Danos, Aisha N. Bismillah, Andrew P. M
 Angewandte Chemie, 134, 24, 2022
 {{< /color >}}
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ange.202202193" style="float:center"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ange.202202193" style="float:right"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
@@ -41,7 +41,7 @@ Journal of Materials Chemistry C, 10, 9484-9491, 2022
 {{< /color >}}
   
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d2tc01737g" style="float:center"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d2tc01737g" style="float:right"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
