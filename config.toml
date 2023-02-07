@@ -6,8 +6,8 @@ theme = 'papercss-hugo-theme'
 
 menu:
   nav:
-    - name: Blog
-      url: /
+    - name: Research
+      url: /research
       weight: 1
     - name: Tags
       url: /tags/
