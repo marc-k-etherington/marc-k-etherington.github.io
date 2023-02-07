@@ -13,7 +13,7 @@ author = "Marc Etherington"
 
 [Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways](https://onlinelibrary.wiley.com/doi/10.1002/anie.202202193)
 
-Andrew T. Turley, Promeet K. Saha, Andrew Danos, Aisha N. Bismillah, Andrew P. Monkman, Dmitry S. Yufit, Basile F. E. Curchod, **Marc K. Etherington** & Paul R. McGonigal
+Andrew T. Turley, Promeet K. Saha, Andrew Danos, Aisha N. Bismillah, Andrew P. Monkman, Dmitry S. Yufit, Basile F. E. Curchod, **Marc K. Etherington** & Paul R. McGonigal*
 
 {{< color "secondary" >}}
 Angewandte Chemie, 134, 24, 2022
@@ -78,6 +78,26 @@ Journal of Materials Chemistry C, 10, 6306-6313, 2022
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="	10.1039/d2tc00460g" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+<h3>{{< badge >}}2021{{< /badge >}}</h3>
+  
+{{< alert "primary" >}}
+{{< collapsible "Suppressing dimer formation by increasing conformational freedom in multi-carbazole thermally activated delayed fluorescence emitters" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D0TC04222F&imageInfo.ImageIdentifier.Year=2021" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Suppressing dimer formation by increasing conformational freedom in multi-carbazole thermally activated delayed fluorescence emitters](https://pubs.rsc.org/en/content/articlelanding/2021/TC/D0TC04222F)
+
+Lubna Salah, **Marc K. Etherington***, Ali Shuaib, Andrew Danos, Ahmed A. Nazeer, Basma Ghazal, Antonio Prlj, Andrew T. Turley, Abhijit Mallick, Paul R. McGonigal, Basile F. E. Curchod, Andrew P. Monkman & Saad Makhseed*
+
+{{< color "secondary" >}}
+Journal of Materials Chemistry C, 9, 189-198, 2021
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d0tc04222f" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
