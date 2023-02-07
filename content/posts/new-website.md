@@ -9,4 +9,4 @@ show_summary: false
 Welcome to the new website of the Etherington Group. Please feel free to explore and have a look around!
 <br>
 
-<img src="/content/posts/girl-car.gif" width="250" height="auto">
+<img src="[/content/posts/girl-car.gif](https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/posts/girl-car.gif?raw=true)" width="250" height="auto">
