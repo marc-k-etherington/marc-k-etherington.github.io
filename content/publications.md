@@ -5,15 +5,7 @@ author = "Marc Etherington"
 +++
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-
-<h3>Example badge {{< badge >}}2022{{< /badge >}}</h3>
+<h3>{{< badge >}}2022{{< /badge >}}</h3>
 {{< alert "primary" >}}
 {{< collapsible "Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways" >}}
 <img src="https://onlinelibrary.wiley.com/cms/asset/6a036eef-242f-4d99-aed0-893e2a1c1730/anie202202193-toc-0001-m.jpg" alt="TOC" width="250" height="auto" style="float:right">
