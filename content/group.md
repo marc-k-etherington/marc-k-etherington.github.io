@@ -1,5 +1,5 @@
 +++
-title = "Meet the Team"
+title = "Group"
 date = "2023-02-07"
 author = "Marc Etherington"
 +++
