@@ -1,11 +1,5 @@
----
-author: "Marc Etherington"
-title: "Research"
-date: "2023-02-06"
-tags: []
-type: "page"
-categories: []
----
++++ title = "Research" date = "2023-02-07"  author = "Marc Etherington" +++
+
 
 {{< collapsible "First" >}}
 Bacon ipsum dolor sit amet beef venison beef ribs kielbasa.
