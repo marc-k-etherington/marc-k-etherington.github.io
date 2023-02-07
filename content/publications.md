@@ -4,8 +4,8 @@ date = "2023-02-07"
 author = "Marc Etherington"
 +++
 
-{{< border "dashed thick" >}}
 {{< collapsible "2023" >}}
+{{< border "dashed thick" >}}
 Bacon ipsum dolor sit amet beef venison beef ribs kielbasa.
-{{< /collapsible >}}
 {{< /border >}}
+{{< /collapsible >}}
