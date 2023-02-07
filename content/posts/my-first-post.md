@@ -2,7 +2,6 @@
 author: "Marc Etherington"
 title: "My First Post"
 date: 2023-02-06
-draft: true
 ---
 
 ## Introduction
