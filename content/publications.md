@@ -23,7 +23,7 @@ Angewandte Chemie, 134, 24, 2022
 
 {{< /collapsible >}}
 {{< /alert >}}
-{{< /collapsible >}}
+
 
 
 {{< alert "primary" >}}
