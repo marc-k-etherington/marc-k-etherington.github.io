@@ -14,7 +14,7 @@ options="900x"
 title="A. T. Turley et al."
 subtitle="Angewandte Chemie, "
 text="Test [Credits](https://images.nasa.gov/details-GSFC_20171208_Archive_e000393.html)." >}}
-{{< /alert >}}{{< /collapsible >}}{{< /collapsible >}}
+{{< /collapsible >}}{{< /alert >}}{{< /collapsible >}}
 
 
 
