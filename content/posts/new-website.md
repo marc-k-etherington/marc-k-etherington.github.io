@@ -1,9 +1,9 @@
 ---
-author: "Marc Etherington"
-title: "New Website"
-date: 2023-02-06
-show_summary: false 
-PublishDate: true
+author: Marc Etherington
+date: 2014-09-28
+linktitle: New Website
+title: Creating a New Theme
+weight: 10
 ---
 
 ## Introduction
