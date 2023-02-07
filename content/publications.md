@@ -13,5 +13,13 @@ text="The Sun is the star at the center of the Solar System. It is a nearly perf
 {{< /alert >}}
 {{< /collapsible >}}
 
+{{< card
+img="sun.jpg"
+command="Resize"
+options="900x"
+title="The Sun"
+subtitle="It's the Sun, dude"
+text="The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. [Credits](https://images.nasa.gov/details-GSFC_20171208_Archive_e000393.html)." >}}
+
 
 
