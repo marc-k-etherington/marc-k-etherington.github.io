@@ -15,7 +15,7 @@ text="The Sun is the star at the center of the Solar System. It is a nearly perf
 
 {{< card
 img="sun.jpg"
-command="Original"
+command="Fit"
 options="900x"
 title="The Sun"
 subtitle="It's the Sun, dude"
