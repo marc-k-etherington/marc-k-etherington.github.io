@@ -11,10 +11,7 @@ Welcome to the new website of the Etherington Group. Please feel free to explore
 
 {{< alert "primary" >}}
 Marc Etherington
-
 *Assistant Professor*
-
 Department of Mathematics, Physics and Electrical Engineering
-
 Northumbria University
 {{< /alert >}}
