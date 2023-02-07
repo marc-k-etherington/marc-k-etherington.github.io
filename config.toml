@@ -4,15 +4,15 @@ title = 'The Etherington Group'
 theme = 'papercss-hugo-theme'
 
 
-menu:
-  nav:
-    - name: Research
-      url: /research
-      weight: 1
-    - name: Tags
-      url: /tags/
-      weight: 2
-    - name: About
-      url: /about/
-      weight: 3
+menu =
+  nav =
+    - name = Research
+      url = /research
+      weight = 1
+    - name = Tags
+      url = /tags/
+      weight = 2
+    - name = About
+      url = /about/
+      weight = 3
     
