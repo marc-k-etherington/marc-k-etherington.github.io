@@ -2,6 +2,7 @@
 author: "Marc Etherington"
 title: "New Website"
 date: 2023-02-06
+show_summary: false 
 ---
 
 ## Introduction
