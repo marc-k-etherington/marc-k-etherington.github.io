@@ -28,8 +28,8 @@ params:
 
 menu:
   nav:
-    - name: Meet The Team
-      url: /meet-the-team
+    - name: Group
+      url: /group
       weight: 1
     - name: Research
       url: /research
