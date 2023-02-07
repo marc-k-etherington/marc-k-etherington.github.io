@@ -3,7 +3,7 @@ author: "Marc Etherington"
 title: "Research"
 date: "2023-02-06"
 tags: []
-type: "post"
+type: "page"
 categories: []
 ---
 
