@@ -101,3 +101,43 @@ Journal of Materials Chemistry C, 9, 189-198, 2021
 
 {{< /collapsible >}}
 {{< /alert >}}
+ 
+  
+<h3>{{< badge >}}2020{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+{{< collapsible "Thermally Activated Delayed Fluorescence: Beyond the Single Molecule" >}}
+<img src="https://www.frontiersin.org/files/Articles/558615/fchem-08-00716-HTML-r1/image_m/fchem-08-00716-g001.jpg" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Thermally Activated Delayed Fluorescence: Beyond the Single Molecule](https://www.frontiersin.org/articles/10.3389/fchem.2020.00716/full)
+
+**Marc K. Etherington***
+
+{{< color "secondary" >}}
+Frontiers in Chemistry, 8, 2020
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.3389/fchem.2020.00716" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+  
+{{< alert "primary" >}}
+{{< collapsible "Modulation of charge transfer by N-alkylation to control photoluminescence energy and quantum yield" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D0SC02460K&imageInfo.ImageIdentifier.Year=2020" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Modulation of charge transfer by N-alkylation to control photoluminescence energy and quantum yield](https://pubs.rsc.org/en/content/articlelanding/2020/SC/D0SC02460K)
+
+Andrew T. Turley, Andrew Danos, Antnio Prlj, Andrew P. Monkman, Basile F. E. Curchod, Paul R. McGonigal* & **Marc K. Etherington***
+
+{{< color "secondary" >}}
+Chemical Science, 11, 6990-6995, 2020
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d0sc02460k" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
