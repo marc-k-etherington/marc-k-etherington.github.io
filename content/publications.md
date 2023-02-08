@@ -169,7 +169,7 @@ The Journal of Physical Chemistry A, 124, 8, 1535-1553, 2020
 <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C9TC03255J&imageInfo.ImageIdentifier.Year=2019" alt="TOC" width="250" height="auto" style="float:right">
 
 
-[Homoconjugation enhances the photophysical and electrochemical properties of a new 3D intramolecular charge transfer iptycene displaying deep blue emission](https://pubs.rsc.org/en/content/articlelanding/2019/tc/c9tc03255j/unauth)
+[Homoconjugation enhances the photophysical and electrochemical properties of a new 3D intramolecular charge transfer iptycene displaying deep blue emission](https://pubs.rsc.org/en/content/articlelanding/2019/tc/c9tc03255j)
 
 Stephanie Montanaro, Daniel G. Congrave, **Marc K. Etherington** & Iain A. Wright*
 
@@ -178,6 +178,25 @@ Journal of Materials Chemistry C, 7, 12886-12890, 2019
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="	10.1039/c9tc03255j" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+  
+{{< alert "primary" >}}
+{{< collapsible "Revealing resonance effects and intramolecular dipole interactions in the positional isomers of benzonitrile-core thermally activated delayed fluorescence materials" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C9TC02742D&imageInfo.ImageIdentifier.Year=2019" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Revealing resonance effects and intramolecular dipole interactions in the positional isomers of benzonitrile-core thermally activated delayed fluorescence materials](https://pubs.rsc.org/en/content/articlelanding/2019/TC/C9TC02742D)
+
+Nadzeya, TBC
+
+{{< color "secondary" >}}
+Journal of Materials Chemistry C, 7, 9184-9194, 2019
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="	10.1039/c9tc02742d" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
