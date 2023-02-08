@@ -131,13 +131,53 @@ Frontiers in Chemistry, 8, 2020
 
 [Modulation of charge transfer by N-alkylation to control photoluminescence energy and quantum yield](https://pubs.rsc.org/en/content/articlelanding/2020/SC/D0SC02460K)
 
-Andrew T. Turley, Andrew Danos, Antnio Prlj, Andrew P. Monkman, Basile F. E. Curchod, Paul R. McGonigal* & **Marc K. Etherington***
+Andrew T. Turley, Andrew Danos, Antonio Prlj, Andrew P. Monkman, Basile F. E. Curchod, Paul R. McGonigal* & **Marc K. Etherington***
 
 {{< color "secondary" >}}
 Chemical Science, 11, 6990-6995, 2020
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/d0sc02460k" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+  
+{{< alert "primary" >}}
+{{< collapsible "Investigation of Thermally Activated Delayed Fluorescence from a Donor–Acceptor Compound with Time-Resolved Fluorescence and Density Functional Theory Applying an Optimally Tuned Range-Separated Hybrid Functional" >}}
+<img src="https://pubs.acs.org/cms/10.1021/acs.jpca.9b11083/asset/images/medium/jp9b11083_0016.gif" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Investigation of Thermally Activated Delayed Fluorescence from a Donor–Acceptor Compound with Time-Resolved Fluorescence and Density Functional Theory Applying an Optimally Tuned Range-Separated Hybrid Functional](https://pubs.acs.org/doi/abs/10.1021/acs.jpca.9b11083)
+
+Reinhard Scholz, Paul Kleine, Ramunas Lygaitas, Ludwig Popp, Simone Lenk, **Marc K. Etherington**, Andrew P. Monkman & Sebastian Reineke
+
+{{< color "secondary" >}}
+The Journal of Physical Chemistry A, 124, 8, 1535-1553, 2020
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/acs.jpca.9b11083" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+  
+<h3>{{< badge >}}2019{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+{{< collapsible "Homoconjugation enhances the photophysical and electrochemical properties of a new 3D intramolecular charge transfer iptycene displaying deep blue emission" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C9TC03255J&imageInfo.ImageIdentifier.Year=2019" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Homoconjugation enhances the photophysical and electrochemical properties of a new 3D intramolecular charge transfer iptycene displaying deep blue emission](https://pubs.rsc.org/en/content/articlelanding/2019/tc/c9tc03255j/unauth)
+
+Stephanie Montanaro, Daniel G. Congrave, **Marc K. Etherington** & Iain A. Wright*
+
+{{< color "secondary" >}}
+Journal of Materials Chemistry C, 7, 12886-12890, 2019
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="	10.1039/c9tc03255j" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
