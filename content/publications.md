@@ -279,3 +279,159 @@ Journal of Materials Chemistry C, 6, 8219-8225, 2018
 
 {{< /collapsible >}}
 {{< /alert >}}
+  
+  
+{{< alert "primary" >}}
+{{< collapsible "Chemical and conformational control of the energy gaps involved in the thermally activated delayed fluorescence mechanism" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C8TC00991K&imageInfo.ImageIdentifier.Year=2018" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Chemical and conformational control of the energy gaps involved in the thermally activated delayed fluorescence mechanism](https://pubs.rsc.org/en/content/articlelanding/2018/tc/c8tc00991k/)
+
+Paloma L. dos Santos*, **Marc K. Etherington** & Andrew P. Monkman
+
+{{< color "secondary" >}}
+Journal of Materials Chemistry C, 6, 4842-4853, 2018
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/c8tc00991k" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+<h3>{{< badge >}}2017{{< /badge >}}</h3>
+  
+{{< alert "primary" >}}
+{{< collapsible "Excited-State Aromatic Interactions in the Aggregation-Induced Emission of Molecular Rotors" >}}
+<img src="https://pubs.acs.org/cms/10.1021/jacs.7b08570/asset/images/medium/ja-2017-08570t_0009.gif" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Excited-State Aromatic Interactions in the Aggregation-Induced Emission of Molecular Rotors](https://pubs.acs.org/doi/full/10.1021/jacs.7b08570)
+
+Jiri Sturala, **Marc K. Etherington**, Aisha N. Bismillah, Heather F. Higginbotham, William Trewby, Juan A. Aguilar, Elizabeth H. C. Bromley, Alyssa-Jennifer Avestro*, Andrew P. Monkman* & Paul R. McGonigal*
+
+{{< color "secondary" >}}
+Journal of the American Chemical Society, 139, 49, 17882-17889, 2017
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/jacs.7b08570" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+{{< alert "primary" >}}
+{{< collapsible "Fluorescence and Phosphorescence Anisotropy from Oriented Films of Thermally Activated Delayed Fluorescence Emitters" >}}
+<img src="https://pubs.acs.org/cms/10.1021/acs.jpclett.7b00729/asset/images/medium/jz-2017-00729u_0006.gif" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Fluorescence and Phosphorescence Anisotropy from Oriented Films of Thermally Activated Delayed Fluorescence Emitters](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.7b00729)
+
+ Heather F. Higginbotham, **Marc K. Etherington** & Andrew P. Monkman*
+
+{{< color "secondary" >}}
+Journal of Physical Chemistry Letters, 8, 13, 2930-2935, 2017
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/acs.jpclett.7b00729" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+{{< alert "primary" >}}
+{{< collapsible "The contributions of molecular vibrations and higher triplet levels to the intersystem crossing mechanism in metal-free organic emitters" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C7TC01958K&imageInfo.ImageIdentifier.Year=2017" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[The contributions of molecular vibrations and higher triplet levels to the intersystem crossing mechanism in metal-free organic emitters](https://pubs.rsc.org/en/content/articlelanding/2017/TC/C7TC01958K)
+
+Rongjuan Huang, João Avó, Thomas Northey, Emma Chaning-Pearce, Paloma L. dos Santos, Jonathan S. Ward, Przemyslaw Data, **Marc K Etherington**, Mark A. Fox, Thomas J. Penfold, Mário N. Berberan-Santos, João C. Lima, Martin R. Bryce & Fernando B. Dias*
+
+{{< color "secondary" >}}
+Journal of Materials Chemistry C, 5, 6269-6280, 2017
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/c7tc01958k" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+  
+{{< alert "primary" >}}
+{{< collapsible "Regio- and conformational isomerization critical to design of efficient thermally-activated delayed fluorescence emitters" >}}
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms14987/MediaObjects/41467_2017_Article_BFncomms14987_Fig1_HTML.jpg?as=webp" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Regio- and conformational isomerization critical to design of efficient thermally-activated delayed fluorescence emitters](https://www.nature.com/articles/ncomms14987)
+
+**Marc K. Etherington**, Flavio Franchello, Jamie Gibson, Thomas Northey, Jose Santos, Jonathan S. Ward, Heather F. Higginbotham, Przemyslaw Data, Aleksandra Kurowska, Paloma L. dos Santos, David R. Graves, Andrei S. Batsanov, Fernando B. Dias, Martin R. Bryce, Thomas J. Penfold & Andrew P. Monkman*
+
+{{< color "secondary" >}}
+Nature Communications, 8, 14987, 2017
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/ncomms14987" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+  
+<h3>{{< badge >}}2016{{< /badge >}}</h3>
+  
+{{< alert "primary" >}}
+{{< collapsible "Revealing the spin–vibronic coupling mechanism of thermally activated delayed fluorescence" >}}
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms13680/MediaObjects/41467_2016_Article_BFncomms13680_Fig1_HTML.jpg?as=webp" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Revealing the spin–vibronic coupling mechanism of thermally activated delayed fluorescence](https://www.nature.com/articles/ncomms13680)
+
+**Marc K. Etherington**, Jamie Gibson, Heather F. Higginbotham, Thomas J. Penfold & Andrew P. Monkman*
+
+{{< color "secondary" >}}
+Nature Communications, 7, 13680, 2016
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/ncomms13680" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+  
+<h3>{{< badge >}}2014{{< /badge >}}</h3>
+  
+{{< alert "primary" >}}
+{{< collapsible "Recombination pathways in polymer:fullerene photovoltaics observed through spin polarization measurements" >}}
+<img src="https://aip-scitation-org.ezphost.dur.ac.uk/na101/home/literatum/publisher/aip/journals/content/apl/2014/apl.2014.104.issue-6/1.4865203/production/images/large/1.4865203.figures.f1.jpeg" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Recombination pathways in polymer:fullerene photovoltaics observed through spin polarization measurements](https://aip.scitation.org/doi/abs/10.1063/1.4865203)
+
+**Marc K. Etherington**, Jianpu Wang, Philip C. Y. Chow & Neil C. Greenham*
+
+{{< color "secondary" >}}
+Applied Physics Letters, 104, 063304, 2014
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1063/1.4865203" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+<h3>{{< badge >}}2013{{< /badge >}}</h3>
+  
+{{< alert "primary" >}}
+{{< collapsible "Ultrahigh Efficiency Fluorescent Single and Bi-Layer Organic Light Emitting Diodes: The Key Role of Triplet Fusion" >}}
+<img src="https://onlinelibrary-wiley-com.ezphost.dur.ac.uk/cms/asset/370a595e-07db-4e0c-b55a-39ce98342971/mfig010.jpg" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Ultrahigh Efficiency Fluorescent Single and Bi-Layer Organic Light Emitting Diodes: The Key Role of Triplet Fusion](https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201201750)
+
+Chien-Jung Chiang, Alpay Kimyonok, **Marc K. Etherington**, Gareth C. Griffiths, Vygintas Jankus, Figen Turksoy* & Andrew P. Monkman*
+
+{{< color "secondary" >}}
+Advanced Functional Materials, 23, 6, 739-746, 2013
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/adfm.201201750" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
