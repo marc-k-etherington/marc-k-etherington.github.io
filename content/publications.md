@@ -221,3 +221,61 @@ The Journal of Physical Chemistry C, 123, 19, 12400-12410, 2019
 
 {{< /collapsible >}}
 {{< /alert >}}
+  
+{{< alert "primary" >}}
+{{< collapsible "Persistent Dimer Emission in Thermally Activated Delayed Fluorescence Materials" >}}
+<img src="https://pubs.acs.org/cms/10.1021/acs.jpcc.9b01458/asset/images/medium/jp-2019-01458c_0008.gif" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Persistent Dimer Emission in Thermally Activated Delayed Fluorescence Materials](https://pubs.acs.org/doi/full/10.1021/acs.jpcc.9b01458)
+
+
+**Marc K. Etherington***, Nadzeya A. Kukhta, Heather F. Higginbotham, Andrew Danos, Aisha N. Bismillah, David R. Graves, Paul R. McGonigal, Nils Haase, Antonia Morherr, Andrei S. Batsanov, Christof Pflumm, Vandana Bhalla, Martin R. Bryce & Andrew P. Monkman.
+
+{{< color "secondary" >}}
+The Journal of Physical Chemistry C, 123, 17, 11109-11117, 2019
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/acs.jpcc.9b01458" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+  
+<h3>{{< badge >}}2018{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+{{< collapsible "Thermally Activated Delayed Fluorescence Mediated through the Upper Triplet State Manifold in Non-Charge-Transfer Star-Shaped Triphenylamine–Carbazole Molecules" >}}
+<img src="https://pubs.acs.org/cms/10.1021/acs.jpcc.8b07610/asset/images/medium/jp-2018-07610u_0006.gif" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Thermally Activated Delayed Fluorescence Mediated through the Upper Triplet State Manifold in Non-Charge-Transfer Star-Shaped Triphenylamine–Carbazole Molecules](https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.8b07610)
+
+Piotr Pander, Radoslaw Motyka, Pawel Zassowski, **Marc K. Etherington**, Daniele Varsano, Tales J. da Silva, Marilia J. Caldas, Przemyslaw Data* & Andrew P. Monkman
+
+{{< color "secondary" >}}
+The Journal of Physical Chemistry C, 122, 42, 23934-23942, 2018
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/acs.jpcc.8b07610" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+  
+{{< alert "primary" >}}
+{{< collapsible "Triphenylamine disubstituted naphthalene diimide: elucidation of excited states involved in TADF and application in near-infrared organic light emitting diodes" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C8TC02936A&imageInfo.ImageIdentifier.Year=2018" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Triphenylamine disubstituted naphthalene diimide: elucidation of excited states involved in TADF and application in near-infrared organic light emitting diodes](https://pubs.rsc.org/en/content/articlelanding/2018/tc/c8tc02936a/)
+
+Heather F. Higginbotham, Piotr Pander, Renata Rybakiewicz, **Marc K. Etherington**, Subshani Maniam, Malgorzata Zagorska, Adam Pron, Andrew P. Monkman & Przemyslaw Data*
+
+{{< color "secondary" >}}
+Journal of Materials Chemistry C, 6, 8219-8225, 2018
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="	10.1039/c8tc02936a" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
