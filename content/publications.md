@@ -190,13 +190,34 @@ Journal of Materials Chemistry C, 7, 12886-12890, 2019
 
 [Revealing resonance effects and intramolecular dipole interactions in the positional isomers of benzonitrile-core thermally activated delayed fluorescence materials](https://pubs.rsc.org/en/content/articlelanding/2019/TC/C9TC02742D)
 
-Nadzeya, TBC
+
+Nadzeya A. Kukhta, Heather F. Higginbotham, Tomas Matulaitis, Andrew Danos*, Aisha N. Bismillah, Nils Haase, **Marc K. Etherington**, Dmitry S. Yufit, Paul R. McGonigal, Juozas V. Gražulevičius & Andrew P. Monkman*
 
 {{< color "secondary" >}}
 Journal of Materials Chemistry C, 7, 9184-9194, 2019
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="	10.1039/c9tc02742d" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+  
+{{< alert "primary" >}}
+{{< collapsible "Intramolecular Dimerization Quenching of Delayed Emission in Asymmetric D–D′–A TADF Emitters" >}}
+<img src="https://pubs.acs.org/cms/10.1021/acs.jpcc.9b01900/asset/images/medium/jp-2019-01900p_0012.gif" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Intramolecular Dimerization Quenching of Delayed Emission in Asymmetric D–D′–A TADF Emitters](https://pubs.acs.org/doi/full/10.1021/acs.jpcc.9b01900)
+
+
+Kai-Lin Woon*, Chih-Lun Yi, Kuan-Chung Pan, **Marc K. Etherington**, Chung-Chih Wu*, Ken-Tsung Wong* & Andrew P. Monkman*
+
+{{< color "secondary" >}}
+The Journal of Physical Chemistry C, 123, 19, 12400-12410, 2019
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/acs.jpcc.9b01900" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
