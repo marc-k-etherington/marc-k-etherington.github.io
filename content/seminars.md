@@ -19,7 +19,7 @@ Poster Presentation
 <h3>{{< badge >}}2022{{< /badge >}}</h3>
 
 {{< alert "primary" >}}
-From phosphorescence to delayed fluorescence in one step - 13th International Conference of Electroluminescence and Optoelectronic Devices, _Chelsea Football Club_ (UK)
+**From phosphorescence to delayed fluorescence in one step** - 13th International Conference of Electroluminescence and Optoelectronic Devices, _Chelsea Football Club_ (UK)
 {{< /alert >}}
   
   
