@@ -11,9 +11,6 @@ Invited Talk
 {{< alert "primary" >}}
 Contributed Talk
 {{< /alert >}}
-{{< alert "secondary" >}}
-Poster Presentation
-{{< /alert >}}
 
 
 <h3>{{< badge >}}2022{{< /badge >}}</h3>
@@ -22,4 +19,82 @@ Poster Presentation
 **From phosphorescence to delayed fluorescence in one step** - 13th International Conference of Electroluminescence and Optoelectronic Devices, _Chelsea Football Club_ (UK)
 {{< /alert >}}
   
+{{< alert "danger" >}}
+**Intermolecular interactions in thermally activated delayed fluorescence emitters** - SPIE, _San Diego Convention Center_ (USA)
+{{< /alert >}}  
   
+{{< alert "primary" >}}
+**Modulation of charge transfer by _N_-alkylation to control photoluminescence energy and quantum yield** - International Conference on the Science and Technology of Synthetic Metals, _University of Glasgow_ (UK)
+{{< /alert >}}
+  
+<h3>{{< badge >}}2021{{< /badge >}}</h3>
+  
+{{< alert "danger" >}}
+**Thermally activated delayed fluorescnece: Beyond the single molecule** - 6th International TADF Workshop, _Kyushu University_ (Japan) - WEBINAR
+{{< /alert >}}  
+  
+{{< alert "danger" >}}
+**Thermally activated delayed fluorescnece: Beyond the single molecule** - NECEM Photophysics for Energy Materials Conference, _Newcastle University_ (UK) - WEBINAR
+{{< /alert >}} 
+
+<h3>{{< badge >}}2020{{< /badge >}}</h3>
+  
+{{< alert "danger" >}}
+**Capturing tonic water's blue glow for photonic applications** - Natural Sciences Hour, _University of York_ (UK) - WEBINAR
+{{< /alert >}} 
+  
+{{< alert "danger" >}}
+**Capturing tonic water's blue glow for photonic applications** - North East Centre for Energy Materials (NECEM), _Newcastle University_ (UK) - WEBINAR
+{{< /alert >}} 
+  
+{{< alert "danger" >}}
+**Modulation of charge transfer by _N_-alkylation to control photoluminescence energy and quantum yield** - Durham Energy Institute, _Durham University_ (UK) - WEBINAR
+{{< /alert >}}
+  
+{{< alert "danger" >}}
+**Controlling charge transfer in tonic water and looking at thermally activated delayed fluorescence beyond the single molecule** - Department of Physics, _University of Sheffield_ (UK) - WEBINAR
+{{< /alert >}}
+  
+<h3>{{< badge >}}2019{{< /badge >}}</h3>
+
+{{< alert "danger" >}}
+**Persistent dimer emission in thermally activated delayed fluorescence materials** - Optical Probes, _Vilnius_ (Lithuania)
+{{< /alert >}}  
+  
+{{< alert "danger" >}}
+**Persistent dimer emission in thermally activated delayed fluorescence materials** - Department of Chemistry, _University of Edinburgh_ (UK)
+{{< /alert >}}
+  
+<h3>{{< badge >}}2018{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+**Excited-state aromatic interactions in the aggregation-induced emission of molecular rotors** - WOREN, _Wisla_ (Poland)
+{{< /alert >}}
+  
+<h3>{{< badge >}}2017{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+**Photoinduced absorption meets thermally activated delayed fluorescence: When slow and (quasi-)steady wins the race** - Optical Probes, _Quebec City_ (Canada)
+{{< /alert >}}
+  
+<h3>{{< badge >}}2016{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+**Spin-orbit charge transfer mechanism in a thermally activated delayed fluorescence molecule** - MQD Workshop, _University of York_ (UK)
+{{< /alert >}}
+  
+<h3>{{< badge >}}2015{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+**Hetero triplet fusion in acene-based organic light-emitting diodes** - Optical Probes, _Hong Kong University of Science and Technology_ (China)
+{{< /alert >}}
+  
+<h3>{{< badge >}}2014{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+**Magnetic field effects on the photocurrent of polymer:fullerene solar cells** - SpinOS, _Himeji_ (Japan)
+{{< /alert >}}  
+  
+{{< alert "primary" >}}
+**Recombination pathways in organic photovoltaics observed through spin polarization measurements** - Fall MRS, _Boston_ (USA)
+{{< /alert >}}  
