@@ -6,3 +6,12 @@ author = "Marc Etherington"
 
 
 This page will be populated soon. Check out the publications page as that is going to be populated first.
+
+#Principal Investigator
+
+###Marc Etherington
+
+
+#PhD Students
+
+###Ruth Pollard
