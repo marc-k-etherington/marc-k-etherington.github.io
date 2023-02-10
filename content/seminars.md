@@ -57,7 +57,7 @@ Contributed Talk
   
 <h3>{{< badge >}}2019{{< /badge >}}</h3>
 
-{{< alert "danger" >}}
+{{< alert "secondary" >}}
 **Persistent dimer emission in thermally activated delayed fluorescence materials** - Optical Probes, _Vilnius_ (Lithuania)
 {{< /alert >}}  
   
