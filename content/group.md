@@ -7,11 +7,11 @@ author = "Marc Etherington"
 
 This page will be populated soon. Check out the publications page as that is going to be populated first.
 
-#Principal Investigator
+# Principal Investigator
 
-###Marc Etherington
+### Marc Etherington
 
 
-#PhD Students
+# PhD Students
 
-###Ruth Pollard
+### Ruth Pollard
