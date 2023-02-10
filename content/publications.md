@@ -5,6 +5,8 @@ author = "Marc Etherington"
 +++
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 
+<h4>**Click on the name of the paper to expand**</h4>
+
 <h3>{{< badge >}}2022{{< /badge >}}</h3>
 {{< alert "primary" >}}
 {{< collapsible "Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways" >}}
