@@ -8,14 +8,14 @@ author = "Marc Etherington"
 {{< alert "danger" >}}
 Invited Talk
 {{< /alert >}}
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 Contributed Talk
 {{< /alert >}}
 
 
 <h3>{{< badge >}}2022{{< /badge >}}</h3>
 
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **From phosphorescence to delayed fluorescence in one step** - 13th International Conference of Electroluminescence and Optoelectronic Devices, _Chelsea Football Club_ (UK)
 {{< /alert >}}
   
@@ -23,7 +23,7 @@ Contributed Talk
 **Intermolecular interactions in thermally activated delayed fluorescence emitters** - SPIE, _San Diego Convention Center_ (USA)
 {{< /alert >}}  
   
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **Modulation of charge transfer by _N_-alkylation to control photoluminescence energy and quantum yield** - International Conference on the Science and Technology of Synthetic Metals, _University of Glasgow_ (UK)
 {{< /alert >}}
   
@@ -67,34 +67,34 @@ Contributed Talk
   
 <h3>{{< badge >}}2018{{< /badge >}}</h3>
 
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **Excited-state aromatic interactions in the aggregation-induced emission of molecular rotors** - WOREN, _Wisla_ (Poland)
 {{< /alert >}}
   
 <h3>{{< badge >}}2017{{< /badge >}}</h3>
 
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **Photoinduced absorption meets thermally activated delayed fluorescence: When slow and (quasi-)steady wins the race** - Optical Probes, _Quebec City_ (Canada)
 {{< /alert >}}
   
 <h3>{{< badge >}}2016{{< /badge >}}</h3>
 
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **Spin-orbit charge transfer mechanism in a thermally activated delayed fluorescence molecule** - MQD Workshop, _University of York_ (UK)
 {{< /alert >}}
   
 <h3>{{< badge >}}2015{{< /badge >}}</h3>
 
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **Hetero triplet fusion in acene-based organic light-emitting diodes** - Optical Probes, _Hong Kong University of Science and Technology_ (China)
 {{< /alert >}}
   
 <h3>{{< badge >}}2014{{< /badge >}}</h3>
 
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **Magnetic field effects on the photocurrent of polymer:fullerene solar cells** - SpinOS, _Himeji_ (Japan)
 {{< /alert >}}  
   
-{{< alert "primary" >}}
+{{< alert "secondary" >}}
 **Recombination pathways in organic photovoltaics observed through spin polarization measurements** - Fall MRS, _Boston_ (USA)
 {{< /alert >}}  
