@@ -28,7 +28,7 @@ params:
 
 menu:
   nav:
-      - name: News
+    - name: News
       url: /
       weight: 1
     - name: Group
