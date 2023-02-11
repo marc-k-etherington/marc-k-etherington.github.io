@@ -1,4 +1,6 @@
 ---
+aliases: ["posts","articles","blog","showcase"]
 title: News
-date: 2023-02-06
+author: Marc Etherington
+
 ---
