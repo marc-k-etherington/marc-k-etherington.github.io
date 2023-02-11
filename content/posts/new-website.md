@@ -1,12 +1,13 @@
 +++
 title = "New Website"
-linktitle = "(06/02/23) New Website"
+linktitle = "New Website"
 author = "Marc Etherington"
 date = "2023-02-06"
 show_summary = false 
 +++
 
 **Publish Date:** 6th February 2023
+<br>
 <br>
 Welcome to the new website of the Etherington Group. Please feel free to explore and have a look around!
 <br>
