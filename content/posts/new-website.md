@@ -1,19 +1,8 @@
 +++
-title = "Getting Started with Hugo"
-description = ""
-tags = [
-    "go",
-    "golang",
-    "hugo",
-    "development",
-]
-date = "2014-04-02"
-categories = [
-    "Development",
-    "golang",
-]
-series = ["Hugo 101"]
-author = "Hugo Authors"
+title = "New Website"
+linktitle = "New Website"
+author = "Marc Etherington"
+date = "2023-02-06"
 show_summary = false 
 +++
 
