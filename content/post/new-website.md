@@ -4,6 +4,7 @@ author: Marc Etherington
 date: 2023-02-06
 show_date: 2023-02-06
 tags: [website]
+summary: (06/02/23) Welcome to the new website of the Etherington Group.
 show_summary: true
 ---
 
