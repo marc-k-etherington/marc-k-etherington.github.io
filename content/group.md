@@ -13,8 +13,16 @@ This page will be populated soon. Check out the publications page as that is goi
 
 {{< border "dashed thick" >}}
 ## Marc Etherington
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/TOT_Marc.jpg?raw=true" alt="Marc" width="250" height="auto" style="float:right">
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/TOT_Marc.jpg?raw=true" alt="Marc" width="250" height="auto" style="float:left">
 Marc Etherington (b. 1988) started at Northumbria University in January 2020 as a Vice-Chancellor's Senior Fellow.
+
+
+
+
+
+
+
+
 {{< /border >}}
 
 
