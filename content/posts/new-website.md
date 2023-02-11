@@ -1,10 +1,9 @@
-+++
-title = "New Website"
-linktitle = "New Website"
-author = "Marc Etherington"
-date = "2023-02-06"
-show_summary = false 
-+++
+---
+title: New Website
+author: Marc Etherington
+date: 2023-02-06
+show_summary: true
+---
 
 **Publish Date:** 6th February 2023
 <br>
