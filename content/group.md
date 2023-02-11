@@ -9,26 +9,18 @@ This page will be populated soon. Check out the publications page as that is goi
 
 # Principal Investigator
 
-{{< alert "warning" >}}
 
-{{< collapsible "Marc Etherington" >}}
-Marc Etherington (b. 1988) started at Northumbria University in January 2020 as a Vice-Chancellor's Senior Fellow.
+
+{{< border "dashed thick" >}}
+## Marc Etherington
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/TOT_Marc.jpg?raw=true" alt="Marc" width="500" height="auto" style="float:right">
-{{< /collapsible >}}
-
-
-{{< /alert >}}
-
-     
+Marc Etherington (b. 1988) started at Northumbria University in January 2020 as a Vice-Chancellor's Senior Fellow.
+{{< /border >}}
 
 
 # PhD Students
 
-{{< alert "danger" >}}
+{{< border "dotted thick" >}}
+## Ruth Pollard
+{{< /border >}}
 
-{{< collapsible "Ruth Pollard" >}}
-Ruth Pollard
-{{< /collapsible >}}
-
-
-{{< /alert >}}
