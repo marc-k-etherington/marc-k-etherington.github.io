@@ -5,7 +5,7 @@ date: 2023-02-06
 show_summary: true
 ---
 
-**Publish Date:** 6th February 2023
+**(6th February 2023)**
 <br>
 <br>
 Welcome to the new website of the Etherington Group. Please feel free to explore and have a look around!
