@@ -9,8 +9,6 @@ This page will be populated soon. Check out the publications page as that is goi
 
 # Principal Investigator
 
-## Marc Etherington
-
 {{< alert "warning" >}}
 
 {{< collapsible "Marc Etherington" >}}
@@ -26,4 +24,11 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 # PhD Students
 
-## Ruth Pollard
+{{< alert "danger" >}}
+
+{{< collapsible "Ruth Pollard" >}}
+Ruth Pollard
+{{< /collapsible >}}
+
+
+{{< /alert >}}
