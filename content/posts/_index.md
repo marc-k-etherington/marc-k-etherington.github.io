@@ -1,5 +1,5 @@
 ---
-aliases: ["posts","articles","blog","showcase"]
+aliases: ["posts"]
 title: News
 author: Marc Etherington
 
