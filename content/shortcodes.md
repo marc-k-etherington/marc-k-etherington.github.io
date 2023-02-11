@@ -256,7 +256,7 @@ text="The Sun is the star at the center of the Solar System. It is a nearly perf
 
 
 {{< card
-img="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/TOT_Marc.jpg?raw=true"
+img="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/TOT_Marc.jpg?raw=true"
 command="Resize"
 options="900x"
 title="The Sun"
