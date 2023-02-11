@@ -7,7 +7,7 @@ author = "Marc Etherington"
 
 This page will be populated soon. Check out the publications page as that is going to be populated first.
 
-# Principal Investigator
+## Principal Investigator
 
 
 
@@ -19,7 +19,7 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 {{< /border >}}
 
 
-# PhD Students
+## PhD Students
 
 {{< border "dotted thick" >}}
 {{< collapsible "Ruth Pollard" >}}
