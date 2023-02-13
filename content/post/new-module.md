@@ -4,7 +4,7 @@ author: Marc Etherington
 date: 2023-02-11
 show_date: 2023-02-11
 tags: [teaching]
-summary: (11/02/23) We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students.
+summary: We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students.
 show_summary: true
 ---
 We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students. This is a research-led module and will give the students good opprtunity to learn about OLEDs.
