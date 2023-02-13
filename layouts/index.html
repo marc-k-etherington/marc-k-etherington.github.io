@@ -13,6 +13,7 @@
   {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
   <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
   <br>
+  <br>
   {{ if ne .Params.show_summary false }}
     {{ .Summary }}
   {{ end }}
