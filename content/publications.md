@@ -7,6 +7,25 @@ author = "Marc Etherington"
 
 <h4>**Click on the name of the paper to expand**</h4>
 
+<h3>{{< badge >}}2023{{< /badge >}}</h3>
+{{< alert "primary" >}}
+{{< collapsible "Oxidation State Tuning of Room Temperature Phosphorescence and Delayed Fluorescence in Phenothiazine and Phenothiazine-5,5-dioxide Dimers" >}}
+<img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/49fad74f-b220-4c1e-b6f2-0d2762b21379/chem202300428-toc-0001-m.png" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Oxidation State Tuning of Room Temperature Phosphorescence and Delayed Fluorescence in Phenothiazine and Phenothiazine-5,5-dioxide Dimers](https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/chem.202300428)
+
+Iain A. Wright*, **Marc K. Etherington**, Andrei S. Batsanov, Andrew P. Monkman* & Martin R. Bryce*
+
+{{< color "secondary" >}}
+Chemistry - A European Journal, e202300428, 2023
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/chem.202300428" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
 <h3>{{< badge >}}2022{{< /badge >}}</h3>
 {{< alert "primary" >}}
 {{< collapsible "Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways" >}}
