@@ -7,4 +7,4 @@ tags: [teaching]
 summary: We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students.
 show_summary: true
 ---
-We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students. This is a research-led module and will give the students good opprtunity to learn about OLEDs.
+We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students. This is a research-led module and will give the students a good opportunity to learn about OLEDs.
