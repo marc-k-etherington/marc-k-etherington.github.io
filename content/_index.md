@@ -3,4 +3,4 @@ title: News
 author: Marc Etherington
 
 ---
-<h2>[Twitter](https://twitter.com/m_k_etherington)</h2>
+[<h2>Twitter</h2>](https://twitter.com/m_k_etherington)
