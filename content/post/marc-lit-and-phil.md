@@ -3,7 +3,7 @@ title: Marc presents at the Lit&Phil
 author: Marc Etherington
 date: 2023-05-23
 show_date: 2023-05-23
-tags: [research]
+tags: [research, outreach]
 summary: Marc gives an outreach talk at the Lit&Phil
 show_summary: true
 ---
