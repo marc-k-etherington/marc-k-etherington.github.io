@@ -1,8 +1,8 @@
 ---
 title: Marc and Chris visit York
 author: Marc Etherington
-date: 2023-07-10
-show_date: 2023-07-10
+date: 2023-07-07
+show_date: 2023-07-07
 tags: [group]
 summary: Marc and Chris have a trip to York to chat science with the McGonigal Group
 show_summary: true
