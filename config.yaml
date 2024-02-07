@@ -48,6 +48,9 @@ menu:
     - name: Seminars
       url: /seminars
       weight: 6
+    - name: Twitter
+      url: https://twitter.com/m_k_etherington
+      weight: 7   
 
 markup:
   defaultMarkdownHandler: goldmark
