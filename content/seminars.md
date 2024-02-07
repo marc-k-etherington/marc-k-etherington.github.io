@@ -12,6 +12,15 @@ Invited Talk
 Contributed Talk
 {{< /alert >}}
 
+<h3>{{< badge >}}2023{{< /badge >}}</h3>
+
+{{< alert "secondary" >}}
+**A modular approach to tuning emissive N-aryl through-space charge transfer states** - Optical Probes 2023, _Como_ (Italy)
+{{< /alert >}}  
+  
+{{< alert "secondary" >}}
+**A modular approach to tuning emissive N-aryl through-space charge transfer states** - RSC Photophysics and Photochemistry Group Early Career Meeting 2023, _University of Strathclyde_ (UK)
+{{< /alert >}}
 
 <h3>{{< badge >}}2022{{< /badge >}}</h3>
 
