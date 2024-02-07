@@ -10,7 +10,7 @@ author = "Marc Etherington"
 <h3>{{< badge >}}2023{{< /badge >}}</h3>
 {{< alert "primary" >}}
 {{< collapsible "Oxidation State Tuning of Room Temperature Phosphorescence and Delayed Fluorescence in Phenothiazine and Phenothiazine-5,5-dioxide Dimers" >}}
-<img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/49fad74f-b220-4c1e-b6f2-0d2762b21379/chem202300428-toc-0001-m.png" alt="TOC" width="250" height="auto" style="float:right">
+<img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/882d9a52-8c0d-4b96-8bb5-4889265450da/chem202300428-toc-0001-m.jpg" alt="TOC" width="250" height="auto" style="float:right">
 
 
 [Oxidation State Tuning of Room Temperature Phosphorescence and Delayed Fluorescence in Phenothiazine and Phenothiazine-5,5-dioxide Dimers](https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/chem.202300428)
