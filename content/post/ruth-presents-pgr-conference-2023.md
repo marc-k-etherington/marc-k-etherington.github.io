@@ -9,4 +9,4 @@ show_summary: true
 ---
 Ruth presented her work at the 2023 PGR conference within the Faculty of Engineering and Environment. What a great two days of research discussions.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Ruth-Pollard-PGR-Conference-2023.jpg" width="250" height="auto">
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Ruth-Pollard-PGR-Conference-2023.jpg?raw=true" width="250" height="auto">
