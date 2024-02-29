@@ -1,8 +1,8 @@
 ---
 title: Marc gives a flash talk and poster presentation at Optical Probes 2023
 author: Marc Etherington
-date: 2023-09-01
-show_date: 2023-09-01
+date: 2023-09-12
+show_date: 2023-09-12
 tags: [group]
 summary: Marc presents some of the group's latest work at the Optical Probes 2023 in Como, Italy.
 show_summary: true
