@@ -19,10 +19,10 @@ author = "Marc Etherington"
 Lubna Salah, Saad Makhseed, Basma Ghazal, Ahmed Abdel Nazeer, **Marc K. Etherington**, Carlito Ponseca Jr., Chunyuong Li, Andrew P. Monkman, Andrew Danos* & Ali Shuaib*
 
 {{< color "secondary" >}}
-Chemistry - A European Journal, e202300428, 2023
+Physical Chemistry Chemical Physics, 25, 24878-24882, 2023
 {{< /color >}}
 <br>
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/chem.202300428" class="center"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/D3CP02586A" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
@@ -37,10 +37,10 @@ Chemistry - A European Journal, e202300428, 2023
 Iain A. Wright*, **Marc K. Etherington**, Andrei S. Batsanov, Andrew P. Monkman* & Martin R. Bryce*
 
 {{< color "secondary" >}}
-Physical Chemistry Chemical Physics, 25, 24878-24882, 2023
+Chemistry - A European Journal, e202300428, 2023
 {{< /color >}}
 <br>
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/D3CP02586A" class="center"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/chem.202300428" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
