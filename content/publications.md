@@ -8,6 +8,25 @@ author = "Marc Etherington"
 <h4>**Click on the name of the paper to expand**</h4>
 
 <h3>{{< badge >}}2023{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+{{< collapsible "Covalently linked pyrene antennas for optically dense yet aggregation-resistant light-harvesting systems" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D3CP02586A&imageInfo.ImageIdentifier.Year=2023" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Covalently linked pyrene antennas for optically dense yet aggregation-resistant light-harvesting systems](https://pubs.rsc.org/en/content/articlelanding/2023/cp/d3cp02586a)
+
+Lubna Salah, Saad Makhseed, Basma Ghazal, Ahmed Abdel Nazeer, **Marc K. Etherington**, Carlito Ponseca Jr., Chunyuong Li, Andrew P. Monkman, Andrew Danos* & Ali Shuaib*
+
+{{< color "secondary" >}}
+Chemistry - A European Journal, e202300428, 2023
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/chem.202300428" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
 {{< alert "primary" >}}
 {{< collapsible "Oxidation State Tuning of Room Temperature Phosphorescence and Delayed Fluorescence in Phenothiazine and Phenothiazine-5,5-dioxide Dimers" >}}
 <img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/882d9a52-8c0d-4b96-8bb5-4889265450da/chem202300428-toc-0001-m.jpg" alt="TOC" width="250" height="auto" style="float:right">
@@ -18,7 +37,7 @@ author = "Marc Etherington"
 Iain A. Wright*, **Marc K. Etherington**, Andrei S. Batsanov, Andrew P. Monkman* & Martin R. Bryce*
 
 {{< color "secondary" >}}
-Chemistry - A European Journal, e202300428, 2023
+Physical Chemistry Chemical Physics, 25, 24878-24882, 2023
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/chem.202300428" class="center"></div>
