@@ -7,6 +7,26 @@ author = "Marc Etherington"
 
 <h4>**Click on the name of the paper to expand**</h4>
 
+<h3>{{< badge >}}2024{{< /badge >}}</h3>
+
+{{< alert "primary" >}}
+{{< collapsible "Suppression of Dexter transfer by covalent encapsulation for efficient matrix-free narrowband deep blue hyperfluorescent OLEDs" >}}
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41563-024-01812-4/MediaObjects/41563_2024_1812_Fig1_HTML.png?as=webp" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Suppression of Dexter transfer by covalent encapsulation for efficient matrix-free narrowband deep blue hyperfluorescent OLEDs](https://www.nature.com/articles/s41563-024-01812-4)
+
+Hwan-Hee Cho, Daniel G. Congrave*, Alexander J. Gillet, Stephanie Montanaro, Haydn E. Francis, Victor Riesgo-Gonzalez, Junzhi Ye, Rituparno Chowdury, Weixuan Zeng, **Marc K. Etherington**, Jeroen Royakkers, Oliver Millington, Andrew D. Bond, Felix Plasser, Jarvist M. Frost, Clare P. Grey, Akshay Rao, Richard H. Friend, Neil C. Greenham* & Hugo Bronstein*
+
+{{< color "secondary" >}}
+Nature Materials, 2024
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s41563-024-01812-4" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
 <h3>{{< badge >}}2023{{< /badge >}}</h3>
 
 {{< alert "primary" >}}
@@ -23,6 +43,24 @@ Physical Chemistry Chemical Physics, 25, 24878-24882, 2023
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/D3CP02586A" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+{{< alert "primary" >}}
+{{< collapsible "A comparison of ZnO nanowires grown using hexamethylenetetramine and ammonium hydroxide on Al:ZnO nanoparticle seed layer" >}}
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs10854-023-10992-9/MediaObjects/10854_2023_10992_Fig1_HTML.png?as=webp" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[A comparison of ZnO nanowires grown using hexamethylenetetramine and ammonium hydroxide on Al:ZnO nanoparticle seed layer](https://link.springer.com/article/10.1007/s10854-023-10992-9)
+
+Ewan D. Matheson*, Yongtao Qu, Giray Kartopu, **Marc K. Etherington**, Guillaume Zoppi, Vincent Barrioz, & Neil S. Beattie
+
+{{< color "secondary" >}}
+Journal of Materials Science: Materials in Electronics, 34, 1591, 2023
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1007/s10854-023-10992-9" class="center"></div>
 
 {{< /collapsible >}}
 {{< /alert >}}
