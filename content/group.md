@@ -32,7 +32,21 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 
 {{< collapsible "Ruth Pollard" >}}
-Ruth Pollard joined the group in October 2021.
+<b>Name:</b> Ruth Pollard
+<br>
+<b>Job Title:</b> PhD student
+<br>
+<b>Department:</b> Mathematics, Physics and Electrical Engineering
+<br>
+<b>Office:</b> Ellison D-Block 111
+<br>
+<b>Email:</b> ruth.pollard 'at' northumbria.ac.uk
+<br>
+<br>
+
+<b>Bio:</b>
+<br>
+Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018. In 2019, she began an MPhil under Dr Cucinotta looking at inorganic light-emitting materials in plasmonic nanosystems. Ruth joined the group in 2021 studying organic materials for LEDs working as a joint student with Dr Jon Knowles. Ruth sings in multiple choirs in her spare time, and enjoys travelling and spending time with her friends. 
 {{< /collapsible >}}
 
 
