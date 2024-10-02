@@ -52,9 +52,40 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 
 
 {{< collapsible "Aidan Matthews" >}}
-Aidan joined the group in October 2023.
+<b>Name:</b> Aidan Matthews
+<br>
+<b>Job Title:</b> PhD student
+<br>
+<b>Department:</b> Mathematics, Physics and Electrical Engineering
+<br>
+<b>Office:</b> Ellison D-Block 111
+<br>
+<b>Email:</b> aidan3.matthews 'at' northumbria.ac.uk
+<br>
+<br>
+
+<b>Bio:</b>
+<be>
+Aidan completed his MChem at Northumbria University in 2022. He began working as a research assistant for Dr Valery Kozhevnikov of Northumbria University synthesising luminescent rhenium (i) complexes for biorthogonal click reactions. Aidan joined the group in 2023 designing caged-chromophore systems for potential OLED use. Outside of the laboratory, Aidan is an avid musician, with radio play on BBC Radio 1.
 {{< /collapsible >}}
 
+{{< collapsible "Aidan Matthews" >}}
+<b>Name:</b> Will Tetlow
+<br>
+<b>Job Title:</b> PhD student
+<br>
+<b>Department:</b> Mathematics, Physics and Electrical Engineering
+<br>
+<b>Office:</b> Ellison D-Block 111
+<br>
+<b>Email:</b> will.tetlow 'at' northumbria.ac.uk
+<br>
+<br>
+
+<b>Bio:</b>
+<be>
+Will joined the group in Summer 2024 transferring from the group of Dr Giulia Longo.
+{{< /collapsible >}}
 
 ## Past Members
 
