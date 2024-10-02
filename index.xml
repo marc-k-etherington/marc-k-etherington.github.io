@@ -7,8 +7,8 @@
 
 
 &lt;div class="collapsible">
- &lt;input id="collapsible_231861fd72dec4f563cddec447bb7694" type="checkbox" name="collapsible">
- &lt;label for="collapsible_231861fd72dec4f563cddec447bb7694">
+ &lt;input id="collapsible_d3e2e2d647471fb8c66c53f9cbd4d174" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_d3e2e2d647471fb8c66c53f9cbd4d174">
  Marc Etherington
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -33,8 +33,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 &lt;/span>&lt;/h3>
 &lt;div class="alert alert-primary">
  &lt;div class="collapsible">
- &lt;input id="collapsible_efe7257dc8c466736fcdbd34b914d421" type="checkbox" name="collapsible">
- &lt;label for="collapsible_efe7257dc8c466736fcdbd34b914d421">
+ &lt;input id="collapsible_74324b381bfdd462e91d66fcced747c5" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_74324b381bfdd462e91d66fcced747c5">
  Suppression of Dexter transfer by covalent encapsulation for efficient matrix-free narrowband deep blue hyperfluorescent OLEDs
  &lt;/label>
  &lt;div class="collapsible-body">
