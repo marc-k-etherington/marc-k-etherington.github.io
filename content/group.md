@@ -32,6 +32,9 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 
 {{< collapsible "Ruth Pollard" >}}
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/Ruth_Profile.jpg?raw=true" alt="Marc" width="250" height="auto" style="float:right">
+
+
 <b>Name:</b> Ruth Pollard
 <br>
 <b>Job Title:</b> PhD student
