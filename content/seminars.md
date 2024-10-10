@@ -21,7 +21,7 @@ Contributed Talk
 {{< /alert >}}
 
 {{< alert "secondary" >}}
-**From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence** - International Conference on the Science and Technology of Synthetic Metals, _TU Dresden_ (Germany)
+**From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence** - International Conference on the Science and Technology of Synthetic Electronic Materials, _TU Dresden_ (Germany)
 {{< /alert >}}
 
 <h3>{{< badge >}}2023{{< /badge >}}</h3>
