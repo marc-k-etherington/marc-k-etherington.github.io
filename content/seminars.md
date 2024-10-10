@@ -51,11 +51,11 @@ Contributed Talk
 <h3>{{< badge >}}2021{{< /badge >}}</h3>
   
 {{< alert "danger" >}}
-**Thermally activated delayed fluorescnece: Beyond the single molecule** - 6th International TADF Workshop, _Kyushu University_ (Japan) - WEBINAR
+**Thermally activated delayed fluorescence: Beyond the single molecule** - 6th International TADF Workshop, _Kyushu University_ (Japan) - WEBINAR
 {{< /alert >}}  
   
 {{< alert "danger" >}}
-**Thermally activated delayed fluorescnece: Beyond the single molecule** - NECEM Photophysics for Energy Materials Conference, _Newcastle University_ (UK) - WEBINAR
+**Thermally activated delayed fluorescence: Beyond the single molecule** - NECEM Photophysics for Energy Materials Conference, _Newcastle University_ (UK) - WEBINAR
 {{< /alert >}} 
 
 <h3>{{< badge >}}2020{{< /badge >}}</h3>
