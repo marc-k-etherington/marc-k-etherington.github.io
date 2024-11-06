@@ -9,6 +9,43 @@ author = "Marc Etherington"
 
 <h3>{{< badge >}}2024{{< /badge >}}</h3>
 
+
+{{< alert "primary" >}}
+{{< collapsible "A Modular Approach to Tuning Emissive *N*-Quinolyl Through-Space Charge Transfer States Using sp<sup>3</sup>-Scaffolds" >}}
+<img src="https://pubs.acs.org/cms/10.1021/acs.jpcb.4c05220/asset/images/medium/jp4c05220_0007.gif" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[A Modular Approach to Tuning Emissive <em>N</em>-Quinolyl Through-Space Charge Transfer States Using sp<sup>3</sup>-Scaffolds](https://pubs.acs.org/doi/10.1021/acs.jpcb.4c05220)
+
+Joseph O. Watson, **Ruth M. Pollard**, Mark T. Sims, **Marc K. Etherington*** & Jonathan P. Knowles*
+
+{{< color "secondary" >}}
+Journal of Physical Chemistry B, 2024
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/acs.jpcb.4c05220" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+{{< alert "primary" >}}
+{{< collapsible "Dinuclear platinum(ii) complexes featuring rigidly linked Pt(*NCN*)X units: the effect of X = SCN− in favouring low-energy, excimer-like luminescence" >}}
+<img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D4NJ03357D&imageInfo.ImageIdentifier.Year=2024" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Dinuclear platinum(ii) complexes featuring rigidly linked Pt(*NCN*)X units: the effect of X = SCN− in favouring low-energy, excimer-like luminescence](https://pubs.rsc.org/en/Content/ArticleLanding/2024/NJ/D4NJ03357D)
+
+Rebecca J. Salthouse*, Yana M. Dikova, **Marc K. Etherington**, & J. A. Gareth Williams*
+
+{{< color "secondary" >}}
+New Journal Of Chemistry, 2024
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/D4NJ03357D" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
 {{< alert "primary" >}}
 {{< collapsible "Suppression of Dexter transfer by covalent encapsulation for efficient matrix-free narrowband deep blue hyperfluorescent OLEDs" >}}
 <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41563-024-01812-4/MediaObjects/41563_2024_1812_Fig1_HTML.png?as=webp" alt="TOC" width="250" height="auto" style="float:right">
