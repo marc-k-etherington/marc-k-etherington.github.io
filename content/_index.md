@@ -1,4 +1,7 @@
+<head>
 
+<meta name="google-site-verification" content="GDpIBNwq9PcUmn867ZwmfzjKU2d4UiIfXH8RlpaW648" />
+</head>
 ---
 author: Marc Etherington
 
