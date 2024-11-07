@@ -87,7 +87,7 @@ Aidan completed his MChem at Northumbria University in 2022. He began working as
 
 <b>Bio:</b>
 <br>
-Will joined the group in Summer 2024 transferring from the group of Dr Giulia Longo.
+Will started his undergraduate in Physics in 2019 at Northumbria University obtaining a first-class BSc in Physics in 2022. Will started his PhD in the group of Dr Giulia Longo at Northumbria University in October 2022 on alternative synthetic routes to chalcogenide perovskites. Will then transferred to the group in Summer 2024, as Giulia returned to Spain. Will likes painting and graphic design in his spare time.  
 {{< /collapsible >}}
 
 ## Past Members
