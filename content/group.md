@@ -32,7 +32,7 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 
 {{< collapsible "Ruth Pollard" >}}
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Marc" width="250" height="auto" style="float:right">
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right">
 
 
 <b>Name:</b> Ruth Pollard
@@ -55,6 +55,9 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 
 
 {{< collapsible "Aidan Matthews" >}}
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Aidan_Matthews_Photo.png?raw=true" alt="Aidan Matthews" width="250" height="auto" style="float:right">
+
+
 <b>Name:</b> Aidan Matthews
 <br>
 <b>Job Title:</b> PhD student
@@ -73,6 +76,8 @@ Aidan completed his MChem at Northumbria University in 2022. He began working as
 {{< /collapsible >}}
 
 {{< collapsible "Will Tetlow" >}}
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/WILL HEADSHOT.jpg?raw=true" alt="Will Tetlow" width="250" height="auto" style="float:right">
+
 <b>Name:</b> Will Tetlow
 <br>
 <b>Job Title:</b> PhD student
