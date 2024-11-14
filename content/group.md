@@ -76,7 +76,7 @@ Aidan completed his MChem at Northumbria University in 2022. He began working as
 {{< /collapsible >}}
 
 {{< collapsible "Will Tetlow" >}}
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/will_headshot.jpg?raw=true" alt="Will Tetlow" width="250" height="auto" style="float:right">
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/will_photo.png?raw=true" alt="Will Tetlow" width="250" height="auto" style="float:right">
 
 <b>Name:</b> Will Tetlow
 <br>
