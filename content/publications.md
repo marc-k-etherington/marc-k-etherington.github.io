@@ -20,7 +20,7 @@ author = "Marc Etherington"
 Joseph O. Watson, **Ruth M. Pollard**, Mark T. Sims, **Marc K. Etherington*** & Jonathan P. Knowles*
 
 {{< color "secondary" >}}
-Journal of Physical Chemistry B, 2024
+Journal of Physical Chemistry B, 128, 11208–11215, 2024
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1021/acs.jpcb.4c05220" class="center"></div>
@@ -38,7 +38,7 @@ Journal of Physical Chemistry B, 2024
 Rebecca J. Salthouse*, Yana M. Dikova, **Marc K. Etherington**, & J. A. Gareth Williams*
 
 {{< color "secondary" >}}
-New Journal Of Chemistry, 2024
+New Journal Of Chemistry, 48, 18865-18872, 2024
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/D4NJ03357D" class="center"></div>
@@ -56,7 +56,7 @@ New Journal Of Chemistry, 2024
 Hwan-Hee Cho, Daniel G. Congrave*, Alexander J. Gillet, Stephanie Montanaro, Haydn E. Francis, Victor Riesgo-Gonzalez, Junzhi Ye, Rituparno Chowdury, Weixuan Zeng, **Marc K. Etherington**, Jeroen Royakkers, Oliver Millington, Andrew D. Bond, Felix Plasser, Jarvist M. Frost, Clare P. Grey, Akshay Rao, Richard H. Friend, Neil C. Greenham* & Hugo Bronstein*
 
 {{< color "secondary" >}}
-Nature Materials, 2024
+Nature Materials, 23, 519–526, 2024
 {{< /color >}}
 <br>
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s41563-024-01812-4" class="center"></div>
