@@ -7,8 +7,8 @@
 
 
 &lt;div class="collapsible">
- &lt;input id="collapsible_2d613d7bcc67ef4c547e3f41d49b8d62" type="checkbox" name="collapsible">
- &lt;label for="collapsible_2d613d7bcc67ef4c547e3f41d49b8d62">
+ &lt;input id="collapsible_9f73bdbdd648e414714e3567cf6cd22c" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_9f73bdbdd648e414714e3567cf6cd22c">
  Marc Etherington
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -33,8 +33,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 &lt;/span>&lt;/h3>
 &lt;div class="alert alert-primary">
  &lt;div class="collapsible">
- &lt;input id="collapsible_db7c348dfc935dbe7422f41de66461c7" type="checkbox" name="collapsible">
- &lt;label for="collapsible_db7c348dfc935dbe7422f41de66461c7">
+ &lt;input id="collapsible_d6752b29cced4d4e7cf34471d66f183b" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_d6752b29cced4d4e7cf34471d66f183b">
  A Modular Approach to Tuning Emissive &lt;em>N&lt;/em>-Quinolyl Through-Space Charge Transfer States Using sp&lt;sup>3&lt;/sup>-Scaffolds
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -53,8 +53,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 &lt;div class="alert alert-primary">
  &lt;div class="collapsible">
- &lt;input id="collapsible_dd544d7b668b96cd1c17f43e37f22c4e" type="checkbox" name="collapsible">
- &lt;label for="collapsible_dd544d7b668b96cd1c17f43e37f22c4e">
+ &lt;input id="collapsible_b8627df95243c36d7141d647e4bcdefc" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_b8627df95243c36d7141d647e4bcdefc">
  Dinuclear platinum(ii) complexes featuring rigidly linked Pt(&lt;em>NCN&lt;/em>)X units: the effect of X = SCN− in favouring low-energy, excimer-like luminescence
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -71,6 +71,10 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 &lt;h3>&lt;span class="badge ">
  2024
 &lt;/span>&lt;/h3>
+&lt;div class="alert alert-danger">
+ &lt;strong>Lone pair interactions, charge transfer and the pathways towards thermally activated delayed fluorescence (TADF)&lt;/strong> - &lt;em>Newcastle University&lt;/em> (UK)
+&lt;/div>
+
 &lt;div class="alert alert-secondary">
  &lt;strong>From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence&lt;/strong> - RSC Photophysics and Photochemistry Group Early Career Meeting 2024, &lt;em>University of Sheffield&lt;/em> (UK)
 &lt;/div>
