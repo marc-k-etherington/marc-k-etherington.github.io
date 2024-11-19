@@ -15,6 +15,9 @@ Contributed Talk
 
 <h3>{{< badge >}}2024{{< /badge >}}</h3>
 
+{{< alert "danger" >}}
+**Lone pair interactions, charge transfer and the pathways towards thermally activated delayed fluorescence (TADF)** - _Newcastle University_ (UK)
+{{< /alert >}}
 
 {{< alert "secondary" >}}
 **From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence** - RSC Photophysics and Photochemistry Group Early Career Meeting 2024, _University of Sheffield_ (UK)
