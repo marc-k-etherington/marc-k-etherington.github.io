@@ -1,5 +1,5 @@
 ---
-title: HORIBA: Science in Action Blog
+title: HORIBA - Science in Action Blog
 author: Marc Etherington
 date: 2023-11-03
 show_date: 2023-11-03
