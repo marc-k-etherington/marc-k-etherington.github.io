@@ -3,6 +3,7 @@ languageCode: en-us
 defaultContentLanguage: en
 title: The Etherington Group
 theme: papercss-hugo-theme
+enableRobotsTXT: true
 
 privacy:
   disqus:
