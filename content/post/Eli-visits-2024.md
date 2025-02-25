@@ -1,8 +1,8 @@
 ---
-title: Aidan joins the group!
+title: Eli visits Newcastle
 author: Marc Etherington
-date: 2023-10-10
-show_date: 2023-10-10
+date: 2024-01-16
+show_date: 2024-01-16
 tags: [group]
 summary: Aidan joins the Knowles-Etherington Group, our joint team bridging the interface of synthetic and physical chemistry.
 show_summary: true
