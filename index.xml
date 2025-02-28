@@ -7,8 +7,8 @@
 
 
 &lt;div class="collapsible">
- &lt;input id="collapsible_3bc1328d6df16f44c772d5e4c947d6eb" type="checkbox" name="collapsible">
- &lt;label for="collapsible_3bc1328d6df16f44c772d5e4c947d6eb">
+ &lt;input id="collapsible_851b712d7f6dfdc29c334446eecb746d" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_851b712d7f6dfdc29c334446eecb746d">
  Marc Etherington
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -33,8 +33,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 &lt;/span>&lt;/h3>
 &lt;div class="alert alert-primary">
  &lt;div class="collapsible">
- &lt;input id="collapsible_4e446d5c61dc7eb162f7db943cf823d7" type="checkbox" name="collapsible">
- &lt;label for="collapsible_4e446d5c61dc7eb162f7db943cf823d7">
+ &lt;input id="collapsible_e4ccc6834ddb257761f4b943e76dd2f1" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_e4ccc6834ddb257761f4b943e76dd2f1">
  A Modular Approach to Tuning Emissive &lt;em>N&lt;/em>-Quinolyl Through-Space Charge Transfer States Using sp&lt;sup>3&lt;/sup>-Scaffolds
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -53,8 +53,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 &lt;div class="alert alert-primary">
  &lt;div class="collapsible">
- &lt;input id="collapsible_747bc27ff4d86de5c64bd13e6dc42319" type="checkbox" name="collapsible">
- &lt;label for="collapsible_747bc27ff4d86de5c64bd13e6dc42319">
+ &lt;input id="collapsible_ddd8d3c21fc49642ec464b7b7fe51673" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_ddd8d3c21fc49642ec464b7b7fe51673">
  Dinuclear platinum(ii) complexes featuring rigidly linked Pt(&lt;em>NCN&lt;/em>)X units: the effect of X = SCN− in favouring low-energy, excimer-like luminescence
  &lt;/label>
  &lt;div class="collapsible-body">
