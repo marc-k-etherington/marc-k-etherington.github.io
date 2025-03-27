@@ -52,6 +52,9 @@ menu:
     - name: Seminars
       url: /seminars
       weight: 7
+    - name: Join Us
+      url: /join-us
+      weight: 8
   
 
 markup:
