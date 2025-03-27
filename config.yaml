@@ -34,21 +34,24 @@ menu:
     - name: News
       url: /
       weight: 1
+       - name: Marc Etherington
+      url: /marc-etherington
+      weight: 2
     - name: Group
       url: /group
-      weight: 2
+      weight: 3
     - name: Research
       url: /research
-      weight: 3
+      weight: 4
     - name: Teaching
       url: /teaching
-      weight: 4
+      weight: 5
     - name: Publications
       url: /publications
-      weight: 5
+      weight: 6
     - name: Seminars
       url: /seminars
-      weight: 6
+      weight: 7
   
 
 markup:
