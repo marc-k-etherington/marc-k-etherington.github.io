@@ -1,7 +1,7 @@
 baseURL: https://marc-k-etherington.github.io/
 languageCode: en-us
 defaultContentLanguage: en
-title: The Etherington Group
+title: Etherington Research Group
 theme: papercss-hugo-theme
 enableRobotsTXT: true
 
@@ -19,7 +19,7 @@ imaging:
   quality: 99
 
 # To disable, set to an extremely large value, such as 999999
-pagination.pagerSize: 5
+pagination.pagerSize: 999999
 
 params:
   homeMetaContent: A Hugo theme made with PaperCSS, the less formal CSS framework.
