@@ -3,10 +3,9 @@ title = "Group"
 date = "2023-02-07"
 author = "Marc Etherington"
 +++
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" alt="Lego" width="1000" height="auto" style="float:right">
 
 ## PhD Students
-
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" alt="Lego" width="1000" height="auto" style="float:right">
 
 {{< collapsible "Ruth Pollard" >}}
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right">
