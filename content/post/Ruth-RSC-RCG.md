@@ -3,7 +3,7 @@ title: Ruth is successful with an RSC Researcher Collaborations Grant
 author: Marc Etherington
 date: 2024-07-12
 show_date: 2024-07-12
-tags: [group][funding]
+tags: [group]
 summary: Ruth has been awarded some money from the Royal Society of Chemistry to visit the group of Dr Zac Hudson at the University of British Columbia
 show_summary: true
 ---
