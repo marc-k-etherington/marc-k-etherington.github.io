@@ -1,9 +1,11 @@
 
 +++
-title = "Seminars"
 date = "2023-02-07"
 author = "Marc Etherington"
 +++
+<h2>Seminars</h2>
+<br>
+<br>
 <h2> Key </h2>
 {{< alert "danger" >}}
 Invited Talk
