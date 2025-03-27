@@ -34,7 +34,7 @@ menu:
     - name: News
       url: /
       weight: 1
-       - name: Marc Etherington
+    - name: Marc Etherington
       url: /marc-etherington
       weight: 2
     - name: Group
