@@ -2,10 +2,10 @@
 date = "2023-02-07"
 author = "Marc Etherington"
 +++
-<h2>"Marc Etherington"</h2>
+<h2>Marc Etherington</h2>
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/TOT_Marc.jpg?raw=true" alt="Marc" width="250" height="auto" style="float:right">
-
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/TOT_Marc.jpg?raw=true" alt="Marc" width="500" height="auto" style="float:right">
+<br>
 <b>Job Title:</b> Assistant Professor
 <br>
 <b>Department:</b> Mathematics, Physics and Electrical Engineering
