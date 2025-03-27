@@ -1,8 +1,8 @@
 ---
 title: Rebecca Salthouse visits the group
 author: Marc Etherington
-date: 2024-09-2
-show_date: 2024-09-2
+date: 2024-09-02
+show_date: 2024-09-02
 tags: [group]
 summary: Dr Rebecca Salthouse from UPC in Barcelona visits the group to give a seminar and discuss a new collaboration
 show_summary: true
