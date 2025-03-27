@@ -1,8 +1,8 @@
 +++
-title = "Group"
 date = "2023-02-07"
 author = "Marc Etherington"
 +++
+<h2>Group</h2>
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" alt="Lego" width="1000" height="auto" style="float:right">
 
 ## PhD Students
