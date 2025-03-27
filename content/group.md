@@ -5,7 +5,7 @@ author = "Marc Etherington"
 <h2>Group</h2>
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" alt="Lego" width="1000" height="auto" style="float:right">
 
-## PhD Students
+<h3>PhD Students</h3>
 
 {{< collapsible "Ruth Pollard" >}}
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right">
@@ -71,7 +71,7 @@ Aidan completed his MChem at Northumbria University in 2022. He began working as
 Will started his undergraduate in Physics in 2019 at Northumbria University obtaining a first-class BSc in Physics in 2022. Will started his PhD in the group of Dr Giulia Longo at Northumbria University in October 2022 on alternative synthetic routes to chalcogenide perovskites. Will then transferred to the group in Summer 2024, as Giulia returned to Spain. Will likes painting and graphic design in his spare time.  
 {{< /collapsible >}}
 
-## Past Members
+<h3>Past Members</h3>
 
 
 {{< collapsible "Click to Expand" >}}
