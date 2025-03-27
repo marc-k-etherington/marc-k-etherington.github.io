@@ -14,7 +14,7 @@ author: Marc Etherington
 <br>
 <br>
 
-<h1>News</h1>
+<h2>News</h2>
 
 
 
