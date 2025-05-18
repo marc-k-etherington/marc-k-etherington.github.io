@@ -10,8 +10,8 @@
 
 
 &lt;div class="collapsible">
- &lt;input id="collapsible_f47cb8f6d12541db6d4d93ee6c477c32" type="checkbox" name="collapsible">
- &lt;label for="collapsible_f47cb8f6d12541db6d4d93ee6c477c32">
+ &lt;input id="collapsible_17c2644fbdc917d3fb5de38e67424dc6" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_17c2644fbdc917d3fb5de38e67424dc6">
  Oliver M. Rigby
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -53,8 +53,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 &lt;/span>&lt;/h3>
 &lt;div class="alert alert-primary">
  &lt;div class="collapsible">
- &lt;input id="collapsible_d48974ef7426d14bd2ce53d1667fb3cc" type="checkbox" name="collapsible">
- &lt;label for="collapsible_d48974ef7426d14bd2ce53d1667fb3cc">
+ &lt;input id="collapsible_4641e7b2df3c47cd916843f7ecd25d6b" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_4641e7b2df3c47cd916843f7ecd25d6b">
  A Modular Approach to Tuning Emissive &lt;em>N&lt;/em>-Quinolyl Through-Space Charge Transfer States Using sp&lt;sup>3&lt;/sup>-Scaffolds
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -73,8 +73,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 &lt;div class="alert alert-primary">
  &lt;div class="collapsible">
- &lt;input id="collapsible_f4d44c37511dcf64d7e28b7d9e3c662b" type="checkbox" name="collapsible">
- &lt;label for="collapsible_f4d44c37511dcf64d7e28b7d9e3c662b">
+ &lt;input id="collapsible_52b14ef6d8edd7cbf6942c6d4377134c" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_52b14ef6d8edd7cbf6942c6d4377134c">
  Dinuclear platinum(ii) complexes featuring rigidly linked Pt(&lt;em>NCN&lt;/em>)X units: the effect of X = SCN− in favouring low-energy, excimer-like luminescence
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -88,6 +88,13 @@ This page will be populated soon. Check out the publications page as that is goi
 
 &lt;div class="alert alert-secondary">
  Contributed Talk
+&lt;/div>
+
+&lt;h3>&lt;span class="badge ">
+ 2025
+&lt;/span>&lt;/h3>
+&lt;div class="alert alert-danger">
+ &lt;strong>Quinine: Is this the &lt;em>tonic&lt;/em> for a new class of thermally activated delayed fluorescence (TADF) emitters?&lt;/strong> - &lt;em>University of Edinburgh&lt;/em> (UK)
 &lt;/div>
 
 &lt;h3>&lt;span class="badge ">
