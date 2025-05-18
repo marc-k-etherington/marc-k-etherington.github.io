@@ -12,6 +12,11 @@ Invited Talk
 Contributed Talk
 {{< /alert >}}
 
+<h3>{{< badge >}}2025{{< /badge >}}</h3>
+
+{{< alert "danger" >}}
+**Quinine: Is this the _tonic_ for a new class of thermally activated delayed fluorescence (TADF) emitters?** - _University of Edinburgh_ (UK)
+{{< /alert >}}
 
 <h3>{{< badge >}}2024{{< /badge >}}</h3>
 
