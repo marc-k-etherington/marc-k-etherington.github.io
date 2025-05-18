@@ -6,6 +6,31 @@ author = "Marc Etherington"
 <h2>Group</h2>
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" alt="Lego" width="1000" height="auto" style="float:right">
 
+
+<h3>PDRAs</h3>
+
+{{< collapsible "Oliver M. Rigby" >}}
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Oliver_Profile.jpg?raw=true" alt="Oliver Rigby" width="250" height="auto" style="float:right">
+
+
+<b>Name:</b> Oliver M. Rigby
+<br>
+<b>Job Title:</b> Research Associate
+<br>
+<b>Department:</b> Mathematics, Physics and Electrical Engineering
+<br>
+<b>Office:</b> Ellison C-Block 101
+<br>
+<b>Email:</b> oliver.rigby 'at' northumbria.ac.uk
+<br>
+<br>
+
+<b>Bio:</b>
+<br>
+Oliver moved to the North-East for his PhD at Durham University which he completed in 2024. His PhD research focused on ferroelectric-inspired minerals for photovoltaics including bournonite, with specialisms in electron microscopy (scanning and transmission), optical characterisation, Raman spectroscopy and solution syntheses. Since joining Northumbria University in 2024 he has worked with Prof. Neil Beattie and Prof. Vincent Barrioz on Life Cycle Assessments of CZTSe and Si as well as the synthesis and characterisation of Sb2S3 nanorods. In his spare time he enjoys fell running and climbing. 
+{{< /collapsible >}}
+
+
 <h3>PhD Students</h3>
 
 {{< collapsible "Ruth Pollard" >}}
