@@ -7,6 +7,51 @@ author = "Marc Etherington"
 
 <h4>**Click on the name of the paper to expand**</h4>
 
+<h3>{{< badge >}}2025{{< /badge >}}</h3>
+  
+{{< alert "primary" >}}
+{{< collapsible "Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers" >}}
+<img src="https://onlinelibrary.wiley.com/cms/asset/58b409f8-6dd5-4ce2-a336-3f06035ef497/anie70198-gra-0001-m.png" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202516629)
+
+Rebecca J. Salthouse, Jacob L. Elholm, Irene Cortellazzi, Helen Hölzel, Pedro Ferreira, Lorette Fernandez, **Marc K. Etherington**, & Kasper Moth-Poulsen*
+
+{{< color "secondary" >}}
+Angewandte Chemie, e16629, 2025
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/anie.202516629" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+{{< alert "primary" >}}
+{{< collapsible "Counterion-Mediated Luminophore Dimerization" >}}
+<img src="https://onlinelibrary.wiley.com/cms/asset/6a79812f-7c31-4e1b-a62a-bec31ae33e27/anie202505433-gra-0001-m.png" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Counterion-Mediated Luminophore Dimerization](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202505433)
+
+Ash G. Carter, Promeet K. Saha, Antara Sikder, Juan A. Aguilar, Andrew P. Monkman, Alyssa-Jennifer Avestro, **Marc K. Etherington*** & Paul R. McGonigal*
+
+{{< color "secondary" >}}
+Angewandte Chemie, 64, e202505433, 2025
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/anie.202505433" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+
+
+
+
+
+
+
 <h3>{{< badge >}}2024{{< /badge >}}</h3>
 
 
