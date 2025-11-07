@@ -3,7 +3,7 @@ author: Marc Etherington
 ---
 <h3>Social Media</h3>
 
-[<h3><img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/Bluesky_Logo.png?raw=true" alt="Bluesky" width="50" height="auto" style="float:left"></h3>](https://bsky.app/profile/mketherington.bsky.social)
+[<h3><img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/BlueSky_Logo.png?raw=true" alt="Bluesky" width="50" height="auto" style="float:left"></h3>](https://bsky.app/profile/mketherington.bsky.social)
 
 [<h3><img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/LinkedIn.jpg?raw=true" alt="LinkedIn" width="50" height="auto" style="float:left"></h3>](https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/)
 
