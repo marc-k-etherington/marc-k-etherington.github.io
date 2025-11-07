@@ -1,7 +1,7 @@
 baseURL: https://marc-k-etherington.github.io/
 languageCode: en-us
 defaultContentLanguage: en
-title: Etherington Research Group
+title: The Etherington Lab
 theme: papercss-hugo-theme
 enableRobotsTXT: true
 
@@ -22,7 +22,7 @@ imaging:
 pagination.pagerSize: 999999
 
 params:
-  homeMetaContent: A Hugo theme made with PaperCSS, the less formal CSS framework.
+  homeMetaContent: The official website of The Etherington Lab based at Northumbria University
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: 2 January 2006
   ShowDatesOnPosts: true
