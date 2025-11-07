@@ -15,6 +15,22 @@ Contributed Talk
 <h3>{{< badge >}}2025{{< /badge >}}</h3>
 
 {{< alert "danger" >}}
+**A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission** - _Kyushu University_ (Japan)
+{{< /alert >}}
+
+{{< alert "danger" >}}
+**A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission** - _University of Osaka_ (Japan)
+{{< /alert >}}
+
+{{< alert "danger" >}}
+**A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission** - _Kitasato University_ (Japan)
+{{< /alert >}}
+
+{{< alert "secondary" >}}
+**Tuning the chromophore of an N-aryl scaffold for thermally activated delayed fluorescence** - Optical Probes 2025, _Fukuoka_ (Japan)
+{{< /alert >}}
+
+{{< alert "danger" >}}
 **Quinine: Is this the _tonic_ for a new class of thermally activated delayed fluorescence (TADF) emitters?** - _University of Edinburgh_ (UK)
 {{< /alert >}}
 
