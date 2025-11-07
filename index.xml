@@ -10,8 +10,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_475d16f6b92cde1ebc4727f3d44d3c68" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_475d16f6b92cde1ebc4727f3d44d3c68"&gt;
+ &lt;input id="collapsible_cd76f8d4d7bb456df91424c1c73e6e32" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_cd76f8d4d7bb456df91424c1c73e6e32"&gt;
  Oliver M. Rigby
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -53,8 +53,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary"&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_477c631d4d6fb238d6c2de4efb149c57" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_477c631d4d6fb238d6c2de4efb149c57"&gt;
+ &lt;input id="collapsible_9d3c427db1c5d64ebc36746ff74d8e12" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_9d3c427db1c5d64ebc36746ff74d8e12"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -73,8 +73,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 &lt;div class="alert alert-primary"&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_7341c62197e6bd384ff4e47c562dbcdd" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_7341c62197e6bd384ff4e47c562dbcdd"&gt;
+ &lt;input id="collapsible_cc9274b643d7641fb8df6de3e42c71d5" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_cc9274b643d7641fb8df6de3e42c71d5"&gt;
  Counterion-Mediated Luminophore Dimerization
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -93,6 +93,22 @@ This page will be populated soon. Check out the publications page as that is goi
 &lt;h3&gt;&lt;span class="badge "&gt;
  2025
 &lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-danger"&gt;
+ &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;Kyushu University&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger"&gt;
+ &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;University of Osaka&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger"&gt;
+ &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;Kitasato University&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-secondary"&gt;
+ &lt;strong&gt;Tuning the chromophore of an N-aryl scaffold for thermally activated delayed fluorescence&lt;/strong&gt; - Optical Probes 2025, &lt;em&gt;Fukuoka&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
 &lt;div class="alert alert-danger"&gt;
  &lt;strong&gt;Quinine: Is this the &lt;em&gt;tonic&lt;/em&gt; for a new class of thermally activated delayed fluorescence (TADF) emitters?&lt;/strong&gt; - &lt;em&gt;University of Edinburgh&lt;/em&gt; (UK)
 &lt;/div&gt;
