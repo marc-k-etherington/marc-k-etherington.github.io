@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  {{ if .IsHome }}
+  <meta name="description" content="{{ .Site.Params.homeMetaContent }}">
+  {{ else }}
+  <meta name="description" content="{{ .Description }}">
+  {{ end }}
+  
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  
+  <!-- PaperCSS Theme CSS -->
+  <link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/paper.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+  
+  {{ if .Site.Params.fontFamily }}
+  <link href="https://fonts.googleapis.com/css?family={{ .Site.Params.fontFamily }}" rel="stylesheet">
+  {{ end }}
+  
+  {{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+  {{ end }}
+  
+  {{ if .Site.GoogleAnalytics }}
+  {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
+</head>
