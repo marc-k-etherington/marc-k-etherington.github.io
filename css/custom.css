@@ -392,3 +392,33 @@ nav.split-nav {
     margin-bottom: 1rem;
   }
 }
+
+
+/* Join Us button - dark background normally */
+.hero-buttons .btn-highlight {
+  background-color: #41403e !important;
+  color: white !important;
+  border: 2px solid #41403e !important;
+}
+
+/* Join Us hover - vibrant green call-to-action */
+.hero-buttons .btn-highlight:hover {
+  background-color: #28a745 !important;  /* Vibrant green */
+  border-color: #28a745 !important;
+  color: white !important;
+  box-shadow: 5px 5px 0 #333 !important;
+}
+
+/* Join Us active state */
+.hero-buttons .btn-highlight.active {
+  background-color: #000 !important;
+  border-color: #000 !important;
+  color: white !important;
+}
+
+/* Active state for regular buttons */
+.hero-buttons .paper-btn.active {
+  background-color: #41403e !important;
+  color: white !important;
+  border-color: #41403e !important;
+}
