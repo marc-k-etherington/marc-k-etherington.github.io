@@ -1,0 +1,163 @@
+/* base */
+body {
+  background-image: url('{{ "img/geometry2.png" | relURL }}');
+}
+
+/* anchors */
+a,
+a:visited {
+  color: rgb(0, 0, 238);
+  background-image: none;
+  text-decoration: underline;
+}
+
+/* navbar */
+nav a,
+nav a:visited {
+  color: #41403e;
+  text-decoration: none;
+}
+
+/* News feed styling */
+.news-feed {
+  margin-top: 1rem;
+}
+
+.news-feed > h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.news-item {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.news-thumbnail-wrapper {
+  flex-shrink: 0;
+}
+
+.news-thumbnail {
+  width: 180px !important;
+  height: 130px !important;
+  max-width: 180px !important;
+  max-height: 130px !important;
+  object-fit: cover;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.news-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.news-text h2 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.news-text h2 a:hover {
+  color: #41403e;
+  text-decoration: underline;
+}
+
+.news-text time {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.news-text p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive design for tablets (screens between 769px and 992px) */
+@media (max-width: 992px) {
+  .news-content {
+    gap: 1.2rem;
+  }
+  
+  .news-thumbnail {
+    width: 150px !important;
+    height: 110px !important;
+    max-width: 150px !important;
+    max-height: 110px !important;
+  }
+  
+  .news-text h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsive design for mobile (screens 768px and below) */
+@media (max-width: 768px) {
+  .news-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .news-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .news-thumbnail-wrapper {
+    width: 100%;
+  }
+  
+  .news-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 300px !important;
+  }
+  
+  .news-text h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive design for very small mobile (screens 480px and below) */
+@media (max-width: 480px) {
+  .news-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .news-text h2 {
+    font-size: 1.1rem;
+  }
+  
+  .news-text p {
+    font-size: 0.95rem;
+  }
+}
+/* blockquote */
+blockquote {
+  font-style: italic;
+}
+
+
