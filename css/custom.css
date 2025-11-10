@@ -364,3 +364,8 @@ nav.split-nav {
     padding: 1.5rem 1rem;
   }
 }
+
+/* Hide navigation menu site-wide */
+nav.split-nav {
+  display: none !important;
+}
