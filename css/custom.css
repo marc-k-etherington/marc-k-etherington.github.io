@@ -332,3 +332,35 @@ nav.split-nav {
 .container > nav.split-nav:first-child {
   display: none;
 }
+
+/* Compact hero title for non-home pages */
+.hero-title-compact {
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Adjust hero padding for non-home pages */
+.welcome-hero:not(:has(.hero-subtitle)) {
+  padding: 2rem 2rem;
+}
+
+/* Active button state */
+.hero-buttons .paper-btn.active {
+  background-color: #41403e;
+  color: white;
+  border-color: #41403e;
+}
+
+/* Responsive compact hero */
+@media (max-width: 768px) {
+  .hero-title-compact {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-hero:not(:has(.hero-subtitle)) {
+    padding: 1.5rem 1rem;
+  }
+}
