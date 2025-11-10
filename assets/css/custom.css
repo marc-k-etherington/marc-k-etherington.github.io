@@ -364,3 +364,8 @@ html{{ define "main" }}
     width: 100%;
   }
 }
+
+/* Hide main nav header on homepage only */
+body.home nav.split-nav {
+  display: none !important;
+}
