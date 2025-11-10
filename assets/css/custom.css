@@ -365,7 +365,19 @@ html{{ define "main" }}
   }
 }
 
-/* Hide main nav header on homepage only */
-body.home nav.split-nav {
+/* Hide main nav header on homepage only - more specific selectors */
+.home nav.split-nav,
+body.home nav.split-nav,
+.page-home nav.split-nav {
   display: none !important;
+}
+
+/* Alternative: hide by checking if we're on the index page */
+nav.split-nav {
+  display: flex;
+}
+
+/* If none of the above work, we can hide it differently */
+.container > nav.split-nav:first-child {
+  display: none;
 }
