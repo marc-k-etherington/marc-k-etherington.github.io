@@ -1,24 +1,36 @@
-
-
 {{ define "main" }}
-
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-
 {{ range $paginator.Pages.ByPublishDate.Reverse }}
-  <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
-    </a>
-  </h2>
-  {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
-  <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
-  <br>
-  <br>
-  {{ if ne .Params.show_summary false }}
-    {{ .Summary }}
-  {{ end }}
+  <div class="news-item">
+    <div class="news-content">
+      {{ $content := .Content }}
+      {{ $imageRegex := `<img[^>]+src="([^"]+)"` }}
+      {{ if findRE $imageRegex $content 1 }}
+        {{ $imgTag := index (findRE $imageRegex $content 1) 0 }}
+        {{ $imgSrc := replaceRE `<img[^>]+src="([^"]+)".*` "$1" $imgTag }}
+        <div class="news-thumbnail-wrapper">
+          <img src="{{ $imgSrc }}" alt="{{ .Title }}" class="news-thumbnail" loading="lazy">
+        </div>
+      {{ end }}
+      
+      <div class="news-text">
+        <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </h2>
+        {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+        <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
+        <br>
+        <br>
+        {{ if ne .Params.show_summary false }}
+          {{ .Summary }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
 {{ end }}
 {{ template "partials/pagination.html" . }}
 {{ end }}
