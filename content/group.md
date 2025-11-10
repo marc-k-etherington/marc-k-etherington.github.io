@@ -1,8 +1,6 @@
 +++
 date = "2023-02-07"
 author = "Marc Etherington"
-Title = Group
-type = group
 +++
 <meta property="og:image" content="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" />
 <h2>Group</h2>
