@@ -1,86 +1,54 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-{{ partial "head.html" . }}
-<body>
-  <div class="container">
-    
-    <!-- Welcome/Hero Section with all navigation -->
-    <section class="welcome-hero">
-      <div class="hero-content">
-        <h1 class="hero-title">Welcome to The Etherington Lab!</h1>
-        <p class="hero-subtitle">Advancing organic photonics, TADF materials, and photophysical chemistry at Northumbria University</p>
-        <div class="hero-buttons">
-          <a href="/marc-etherington" class="paper-btn">Marc Etherington</a>
-          <a href="/group" class="paper-btn">Group</a>
-          <a href="/research" class="paper-btn">Research</a>
-          <a href="/teaching" class="paper-btn">Teaching</a>
-          <a href="/publications" class="paper-btn">Publications</a>
-          <a href="/seminars" class="paper-btn">Seminars</a>
-          <a href="/join-us" class="paper-btn btn-highlight">Join Us</a>
-        </div>
-      </div>
-    </section>
+{{ define "main" }}
 
-    <!-- Social Media Section -->
-    {{ if .Site.Params.social }}
-    <section class="social-media">
-      <h2>Social Media</h2>
-      {{ with .Site.Params.social }}
-        <div class="social-links">
-          {{ range . }}
-            <a href="{{ .url }}" class="paper-btn" target="_blank" rel="noopener">{{ .name }}</a>
-          {{ end }}
-        </div>
-      {{ end }}
-    </section>
-    {{ end }}
+<!-- Include hero banner -->
+{{ partial "hero-banner.html" . }}
 
-    <!-- News Section -->
-    <h2>News</h2>
-    {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-    {{ range $paginator.Pages.ByPublishDate.Reverse }}
-      <div class="news-item">
-        <div class="news-content">
-          {{ $content := .Content }}
-          {{ $imageRegex := `<img[^>]+src="([^"]+)"` }}
-          {{ if findRE $imageRegex $content 1 }}
-            {{ $imgTag := index (findRE $imageRegex $content 1) 0 }}
-            {{ $imgSrc := replaceRE `<img[^>]+src="([^"]+)".*` "$1" $imgTag }}
-            <div class="news-thumbnail-wrapper">
-              <img src="{{ $imgSrc }}" alt="{{ .Title }}" class="news-thumbnail" loading="lazy">
-            </div>
-          {{ end }}
-          
-          <div class="news-text">
-            <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
-              <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-              </a>
-            </h2>
-            {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
-            <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
-            <br>
-            <br>
-            {{ if ne .Params.show_summary false }}
-              {{ .Summary }}
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    {{ end }}
-    
-    {{ if gt $paginator.TotalPages 1 }}
-    <div class="pagination">
-      {{ if $paginator.HasPrev }}
-        <a href="{{ $paginator.Prev.URL }}" class="paper-btn">← Previous</a>
-      {{ end }}
-      {{ if $paginator.HasNext }}
-        <a href="{{ $paginator.Next.URL }}" class="paper-btn">Next →</a>
+<!-- Social Media Section -->
+{{ if .Site.Params.social }}
+<section class="social-media">
+  <h2>Social Media</h2>
+  {{ with .Site.Params.social }}
+    <div class="social-links">
+      {{ range . }}
+        <a href="{{ .url }}" class="paper-btn" target="_blank" rel="noopener">{{ .name }}</a>
       {{ end }}
     </div>
-    {{ end }}
-    
+  {{ end }}
+</section>
+{{ end }}
+
+<!-- News Section -->
+<h2>News</h2>
+{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+{{ range $paginator.Pages.ByPublishDate.Reverse }}
+  <div class="news-item">
+    <div class="news-content">
+      {{ $content := .Content }}
+      {{ $imageRegex := `<img[^>]+src="([^"]+)"` }}
+      {{ if findRE $imageRegex $content 1 }}
+        {{ $imgTag := index (findRE $imageRegex $content 1) 0 }}
+        {{ $imgSrc := replaceRE `<img[^>]+src="([^"]+)".*` "$1" $imgTag }}
+        <div class="news-thumbnail-wrapper">
+          <img src="{{ $imgSrc }}" alt="{{ .Title }}" class="news-thumbnail" loading="lazy">
+        </div>
+      {{ end }}
+      
+      <div class="news-text">
+        <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </h2>
+        {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+        <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
+        <br>
+        <br>
+        {{ if ne .Params.show_summary false }}
+          {{ .Summary }}
+        {{ end }}
+      </div>
+    </div>
   </div>
-  {{ partial "footer.html" . }}
-</body>
-</html>
+{{ end }}
+{{ template "partials/pagination.html" . }}
+{{ end }}
