@@ -446,18 +446,19 @@ nav.split-nav {
   transform: translateY(-2px);
 }
 
-/* Style the logo images - black/white by default */
+/* Style the logo images - no filter needed since they're already B&W */
 .social-icon {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0); /* Makes logos black */
   transition: filter 0.2s ease;
+  opacity: 0.8; /* Slightly faded when not hovering */
 }
 
 /* Green tint on hover */
 .social-float-compact a:hover .social-icon {
-  filter: grayscale(100%) brightness(0.3) sepia(1) hue-rotate(80deg) saturate(4);
+  filter: sepia(1) hue-rotate(80deg) saturate(5) brightness(0.7);
+  opacity: 1;
 }
 
 /* Slightly smaller on mobile */
