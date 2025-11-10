@@ -160,49 +160,46 @@ blockquote {
   font-style: italic;
 }
 
-/* Fix mobile header - hamburger overlapping site title */
+/* Fix mobile header - stack hamburger below title */
 @media (max-width: 768px) {
-  /* Make the nav container use flexbox to properly space elements */
+  /* Stack the nav elements vertically */
   nav.split-nav {
     display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
-    justify-content: space-between !important;
     padding: 1rem !important;
+    gap: 0.5rem !important;
   }
   
-  /* Constrain the title area so it doesn't overlap hamburger */
+  /* Center the title and remove any constraints */
   nav.split-nav .collapsible-body,
   nav.split-nav > div:first-child {
-    max-width: calc(100% - 60px) !important;
-    flex: 1 1 auto !important;
-    overflow: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    order: 1 !important;
   }
   
-  /* Keep the hamburger label fixed to the right */
+  /* Put hamburger below the title */
   nav.split-nav > label,
   nav.split-nav > input[type="checkbox"] + label {
-    flex: 0 0 auto !important;
-    margin-left: auto !important;
+    order: 2 !important;
     position: relative !important;
-    right: 0 !important;
+    margin: 0 auto !important;
   }
   
-  /* Reduce title font size slightly on small screens */
+  /* Ensure title displays fully */
   nav.split-nav h1,
   nav.split-nav a > h1 {
-    font-size: 1.3rem !important;
     margin: 0 !important;
-    padding-right: 10px !important;
-    line-height: 1.3 !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    padding: 0 !important;
+    width: 100% !important;
+    white-space: normal !important;
+    overflow: visible !important;
   }
-}
-
-/* Extra small phones */
-@media (max-width: 480px) {
-  nav.split-nav h1,
-  nav.split-nav a > h1 {
-    font-size: 1.1rem !important;
+  
+  /* Ensure the checkbox input follows the same order */
+  nav.split-nav > input[type="checkbox"] {
+    order: 2 !important;
   }
 }
