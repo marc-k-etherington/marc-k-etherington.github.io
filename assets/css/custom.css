@@ -135,3 +135,48 @@
     font-size: 0.95rem;
   }
 }
+
+/* Fix mobile header overlap - hamburger covering site title */
+@media (max-width: 768px) {
+  /* Push the site title to the left and add right padding */
+  nav.split-nav .collapsible-body h1 {
+    padding-right: 70px !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Ensure hamburger button stays positioned correctly */
+  nav.split-nav label {
+    position: absolute !important;
+    right: 1rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10 !important;
+  }
+  
+  /* Alternative: make the header title container flex to prevent overlap */
+  nav.split-nav .collapsible-body {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-right: 60px !important;
+  }
+}
+
+/* More aggressive fix for mobile header */
+@media (max-width: 768px) {
+  /* Reduce title font size on very small screens */
+  nav.split-nav h1 {
+    font-size: 1.3rem !important;
+    line-height: 1.2 !important;
+    max-width: calc(100% - 70px) !important;
+    word-break: break-word !important;
+  }
+  
+  /* Position hamburger absolutely in top right */
+  nav.split-nav > label {
+    position: absolute !important;
+    right: 15px !important;
+    top: 15px !important;
+    z-index: 100 !important;
+  }
+}
