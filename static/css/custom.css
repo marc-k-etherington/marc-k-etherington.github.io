@@ -29,8 +29,10 @@
 }
 
 .news-thumbnail {
-  width: 180px;
-  height: 130px;
+  width: 180px !important;
+  height: 130px !important;
+  max-width: 180px !important;
+  max-height: 130px !important;
   object-fit: cover;
   border: 2px solid #333;
   box-shadow: 3px 3px 0 #333;
@@ -79,8 +81,10 @@
   }
   
   .news-thumbnail {
-    width: 150px;
-    height: 110px;
+    width: 150px !important;
+    height: 110px !important;
+    max-width: 150px !important;
+    max-height: 110px !important;
   }
   
   .news-text h2 {
@@ -105,9 +109,10 @@
   }
   
   .news-thumbnail {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 300px !important;
   }
   
   .news-text h2 {
