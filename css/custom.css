@@ -254,3 +254,64 @@ blockquote {
 }
 And your layouts/index.html already has the HTML structure from earlier:
 html
+
+/* Highlight the Join Us button */
+.hero-buttons .btn-highlight {
+  background-color: #41403e !important;
+  color: white !important;
+  border: 2px solid #41403e !important;
+}
+
+.hero-buttons .btn-highlight:hover {
+  background-color: #333 !important;
+  border-color: #333 !important;
+}
+
+/* Social Media Section */
+.social-media {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background-color: #fafafa;
+  border: 2px solid #333;
+}
+
+.social-media h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links .paper-btn {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.social-links .paper-btn:hover {
+  box-shadow: 3px 3px 0 #333;
+  transform: translate(-1px, -1px);
+}
+
+/* Responsive social media */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+  }
+  
+  .social-links .paper-btn {
+    width: 100%;
+  }
+}
