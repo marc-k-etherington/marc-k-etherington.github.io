@@ -418,3 +418,26 @@ nav.split-nav {
 nav.split-nav {
   display: none !important;
 }
+
+/* Compact hero for non-home pages */
+.welcome-hero-compact {
+  padding: 2rem !important;
+}
+
+.hero-title-compact {
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .welcome-hero-compact {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .hero-title-compact {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
