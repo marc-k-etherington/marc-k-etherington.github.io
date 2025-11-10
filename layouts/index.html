@@ -1,20 +1,35 @@
 {{ define "main" }}
 
-<!-- Welcome/Hero Section -->
+<!-- Welcome/Hero Section with all navigation -->
 <section class="welcome-hero">
   <div class="hero-content">
     <h1 class="hero-title">Welcome to The Etherington Lab!</h1>
     <p class="hero-subtitle">Advancing organic photonics, TADF materials, and photophysical chemistry at Northumbria University</p>
     <div class="hero-buttons">
-      <a href="/research" class="paper-btn">Our Research</a>
-      <a href="/group" class="paper-btn">Meet the Team</a>
-      <a href="/join-us" class="paper-btn">Join Us</a>
+      <a href="/marc-etherington" class="paper-btn">Marc Etherington</a>
+      <a href="/group" class="paper-btn">Group</a>
+      <a href="/research" class="paper-btn">Research</a>
+      <a href="/teaching" class="paper-btn">Teaching</a>
+      <a href="/publications" class="paper-btn">Publications</a>
+      <a href="/seminars" class="paper-btn">Seminars</a>
+      <a href="/join-us" class="paper-btn btn-highlight">Join Us</a>
     </div>
   </div>
 </section>
 
-<!-- Social Media heading (if needed) -->
-<h2>Social Media</h2>
+<!-- Social Media Section -->
+{{ if .Site.Params.social }}
+<section class="social-media">
+  <h2>Social Media</h2>
+  {{ with .Site.Params.social }}
+    <div class="social-links">
+      {{ range . }}
+        <a href="{{ .url }}" class="paper-btn" target="_blank" rel="noopener">{{ .name }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
+{{ end }}
 
 <!-- News Section -->
 <h2>News</h2>
