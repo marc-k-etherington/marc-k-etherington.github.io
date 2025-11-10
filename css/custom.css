@@ -413,3 +413,65 @@ nav.split-nav {
     font-size: 0.95rem;
   }
 }
+/* ===== FLOATING SOCIAL MEDIA (COMPACT STYLE WITH LOGOS) ===== */
+.social-float-compact {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.5rem;
+  background-color: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+  transition: all 0.2s ease;
+}
+
+.social-float-compact a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.3rem;
+  transition: all 0.2s ease;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.social-float-compact a:hover {
+  background-color: #f4f4f4;
+  transform: translateY(-2px);
+}
+
+/* Style the logo images - black/white by default */
+.social-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0); /* Makes logos black */
+  transition: filter 0.2s ease;
+}
+
+/* Green tint on hover */
+.social-float-compact a:hover .social-icon {
+  filter: grayscale(100%) brightness(0.3) sepia(1) hue-rotate(80deg) saturate(4);
+}
+
+/* Slightly smaller on mobile */
+@media (max-width: 768px) {
+  .social-float-compact {
+    right: 0.5rem;
+    bottom: 1rem;
+    padding: 0.4rem;
+    gap: 0.4rem;
+  }
+  
+  .social-float-compact a {
+    width: 35px;
+    height: 35px;
+    padding: 0.25rem;
+  }
+}

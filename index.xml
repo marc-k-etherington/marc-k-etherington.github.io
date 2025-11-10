@@ -10,8 +10,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_41c9476d514ce32f7dd8bf374ebc62d6" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_41c9476d514ce32f7dd8bf374ebc62d6"&gt;
+ &lt;input id="collapsible_f48f716bc2e4b9d4d35dc37c76642ed1" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_f48f716bc2e4b9d4d35dc37c76642ed1"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -53,8 +53,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary"&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_d5b7216eec48d6c64f7cb294371ddf34" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_d5b7216eec48d6c64f7cb294371ddf34"&gt;
+ &lt;input id="collapsible_6dd369364c7d45e274f47bbdcf21e1c8" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_6dd369364c7d45e274f47bbdcf21e1c8"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -73,8 +73,8 @@ Marc Etherington (b. 1988) started at Northumbria University in January 2020 as 
 
 &lt;div class="alert alert-primary"&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_92c4e41f53c7d67e6dbd834b2cdf6471" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_92c4e41f53c7d67e6dbd834b2cdf6471"&gt;
+ &lt;input id="collapsible_319b646f87e23651ddf4724cdcbed7c4" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_319b646f87e23651ddf4724cdcbed7c4"&gt;
  Counterion-Mediated Luminophore Dimerization
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
