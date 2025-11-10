@@ -1,6 +1,23 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }}
+
+<!-- Welcome/Hero Section -->
+<section class="welcome-hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Welcome to The Etherington Lab!</h1>
+    <p class="hero-subtitle">Advancing organic photonics, TADF materials, and photophysical chemistry at Northumbria University</p>
+    <div class="hero-buttons">
+      <a href="/research" class="paper-btn">Our Research</a>
+      <a href="/group" class="paper-btn">Meet the Team</a>
+      <a href="/join-us" class="paper-btn">Join Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media heading (if needed) -->
+<h2>Social Media</h2>
+
+<!-- News Section -->
+<h2>News</h2>
 {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 {{ range $paginator.Pages.ByPublishDate.Reverse }}
   <div class="news-item">
