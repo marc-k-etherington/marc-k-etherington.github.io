@@ -22,20 +22,6 @@
   </div>
 </section>
 
-<!-- Social Media Section -->
-{{ if .Site.Params.social }}
-<section class="social-media">
-  <h2>Social Media</h2>
-  {{ with .Site.Params.social }}
-    <div class="social-links">
-      {{ range . }}
-        <a href="{{ .url }}" class="paper-btn" target="_blank" rel="noopener">{{ .name }}</a>
-      {{ end }}
-    </div>
-  {{ end }}
-</section>
-{{ end }}
-
 <!-- News Section -->
 <h2>News</h2>
 {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
@@ -70,4 +56,21 @@
   </div>
 {{ end }}
 {{ template "partials/pagination.html" . }}
+
+<!-- Floating Social Media -->
+<div class="social-float-compact">
+  <a href="https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/?skipRedirect=true" target="_blank" rel="noopener" title="LinkedIn">
+    <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
+  </a>
+  <a href="https://bsky.app/profile/mketherington.bsky.social" target="_blank" rel="noopener" title="Bluesky">
+    <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
+  </a>
+  <a href="https://www.researchgate.net/profile/Marc-Etherington?ev=hdr_xprf" target="_blank" rel="noopener" title="ResearchGate">
+    <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
+  </a>
+  <a href="https://scholar.google.co.uk/citations?user=3dgABIQAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">
+    <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
+  </a>
+</div>
+
 {{ end }}
