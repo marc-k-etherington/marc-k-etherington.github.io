@@ -28,6 +28,14 @@ params:
   ShowDatesOnPosts: true
   navTitleLink: /
 
+  social:
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/?skipRedirect=true
+    - name: BlueSky
+      url: https://bsky.app/profile/mketherington.bsky.social
+    - name: Google Scholar
+      url: https://scholar.google.co.uk/citations?user=3dgABIQAAAAJ&hl=en
+
 
 menu:
   nav:
