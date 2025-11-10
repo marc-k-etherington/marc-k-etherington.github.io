@@ -1,9 +1,9 @@
-/* base */
+/* ===== BASE STYLES ===== */
 body {
   background-image: url('/img/geometry2.png');
 }
 
-/* anchors */
+/* Anchors */
 a,
 a:visited {
   color: rgb(0, 0, 238);
@@ -11,14 +11,173 @@ a:visited {
   text-decoration: underline;
 }
 
-/* navbar */
+/* Navbar */
 nav a,
 nav a:visited {
   color: #41403e;
   text-decoration: none;
 }
 
-/* News feed styling */
+/* Blockquote */
+blockquote {
+  font-style: italic;
+}
+
+/* ===== HIDE NAVIGATION MENU SITE-WIDE ===== */
+nav.split-nav {
+  display: none !important;
+}
+
+/* ===== HERO SECTION ===== */
+.welcome-hero {
+  background-color: #f4f4f4;
+  border: 3px solid #333;
+  box-shadow: 5px 5px 0 #333;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.welcome-hero-compact {
+  padding: 2rem !important;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Hero Titles */
+.hero-title {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero-title-compact {
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== HAMBURGER MENU (MOBILE/TABLET) ===== */
+/* Hide checkbox */
+.hero-menu-toggle {
+  display: none;
+}
+
+/* Hide hamburger button on desktop */
+.hero-hamburger {
+  display: none;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .paper-btn {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.1s ease;
+}
+
+.hero-buttons .paper-btn:hover {
+  box-shadow: 4px 4px 0 #333;
+  transform: translate(-1px, -1px);
+}
+
+.hero-buttons .paper-btn:active {
+  box-shadow: 1px 1px 0 #333;
+  transform: translate(2px, 2px);
+}
+
+/* Active button state */
+.hero-buttons .paper-btn.active {
+  background-color: #41403e !important;
+  color: white !important;
+  border-color: #41403e !important;
+}
+
+/* Join Us button - same as others but with green hover */
+.hero-buttons .btn-highlight {
+  background-color: white !important;
+  color: #333 !important;
+  border: 2px solid #333 !important;
+  box-shadow: 3px 3px 0 #333 !important;
+}
+
+.hero-buttons .btn-highlight:hover {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  color: white !important;
+  box-shadow: 4px 4px 0 #333 !important;
+  transform: translate(-1px, -1px) !important;
+}
+
+.hero-buttons .btn-highlight.active {
+  background-color: #41403e !important;
+  border-color: #41403e !important;
+  color: white !important;
+}
+
+/* ===== SOCIAL MEDIA SECTION ===== */
+.social-media {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background-color: #fafafa;
+  border: 2px solid #333;
+}
+
+.social-media h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links .paper-btn {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.social-links .paper-btn:hover {
+  box-shadow: 3px 3px 0 #333;
+  transform: translate(-1px, -1px);
+}
+
+/* ===== NEWS FEED ===== */
 .news-feed {
   margin-top: 1rem;
 }
@@ -94,8 +253,66 @@ nav a:visited {
   color: #333;
 }
 
-/* Responsive design for tablets (screens between 769px and 992px) */
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets and Mobile (992px and below) - Hamburger Menu */
 @media (max-width: 992px) {
+  /* Show hamburger button */
+  .hero-hamburger {
+    display: block !important;
+    width: 100%;
+    padding: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    box-shadow: 3px 3px 0 #333;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.1s ease;
+  }
+  
+  .hero-hamburger:hover {
+    box-shadow: 4px 4px 0 #333;
+    transform: translate(-1px, -1px);
+  }
+  
+  .hero-hamburger:active {
+    box-shadow: 1px 1px 0 #333;
+    transform: translate(2px, 2px);
+  }
+  
+  /* Display menu text */
+  .hero-hamburger::after {
+    content: "☰ Menu";
+  }
+  
+  /* Change to close icon when menu is open */
+  .hero-menu-toggle:checked ~ .hero-hamburger::after {
+    content: "✕ Close";
+  }
+  
+  /* Hide buttons by default */
+  .hero-buttons {
+    display: none;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  
+  /* Show buttons when checkbox is checked */
+  .hero-menu-toggle:checked ~ .hero-buttons {
+    display: flex !important;
+  }
+  
+  /* Full width buttons */
+  .hero-buttons .paper-btn {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  /* News thumbnails on tablets */
   .news-content {
     gap: 1.2rem;
   }
@@ -112,8 +329,41 @@ nav a:visited {
   }
 }
 
-/* Responsive design for mobile (screens 768px and below) */
+/* Mobile (768px and below) */
 @media (max-width: 768px) {
+  /* Hero responsive */
+  .welcome-hero {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-hero-compact {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-title-compact {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Social media responsive */
+  .social-links {
+    flex-direction: column;
+  }
+  
+  .social-links .paper-btn {
+    width: 100%;
+  }
+  
+  /* News responsive */
   .news-item {
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
@@ -140,8 +390,16 @@ nav a:visited {
   }
 }
 
-/* Responsive design for very small mobile (screens 480px and below) */
+/* Small mobile (480px and below) */
 @media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
   .news-item {
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
@@ -154,271 +412,4 @@ nav a:visited {
   .news-text p {
     font-size: 0.95rem;
   }
-}
-/* blockquote */
-blockquote {
-  font-style: italic;
-}
-
-/* Simple paper-style welcome section */
-.welcome-hero {
-  background-color: #f4f4f4;
-  border: 3px solid #333;
-  box-shadow: 5px 5px 0 #333;
-  padding: 3rem 2rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.hero-title {
-  font-size: 2.5rem;
-  margin: 0 0 1rem 0;
-  color: #333;
-  font-weight: bold;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin: 0 0 2rem 0;
-  color: #555;
-  line-height: 1.6;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-buttons .paper-btn {
-  background-color: white;
-  color: #333;
-  border: 2px solid #333;
-  box-shadow: 3px 3px 0 #333;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: all 0.1s ease;
-}
-
-.hero-buttons .paper-btn:hover {
-  box-shadow: 4px 4px 0 #333;
-  transform: translate(-1px, -1px);
-}
-
-.hero-buttons .paper-btn:active {
-  box-shadow: 1px 1px 0 #333;
-  transform: translate(2px, 2px);
-}
-
-/* Responsive hero section */
-@media (max-width: 768px) {
-  .welcome-hero {
-    padding: 2rem 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .hero-title {
-    font-size: 2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .hero-buttons .paper-btn {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 1.6rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 0.95rem;
-  }
-}
-And your layouts/index.html already has the HTML structure from earlier:
-html
-
-/* Highlight the Join Us button */
-.hero-buttons .btn-highlight {
-  background-color: #41403e !important;
-  color: white !important;
-  border: 2px solid #41403e !important;
-}
-
-.hero-buttons .btn-highlight:hover {
-  background-color: #333 !important;
-  border-color: #333 !important;
-}
-
-/* Social Media Section */
-.social-media {
-  text-align: center;
-  margin: 2rem 0 3rem 0;
-  padding: 2rem;
-  background-color: #fafafa;
-  border: 2px solid #333;
-}
-
-.social-media h2 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.social-links .paper-btn {
-  background-color: white;
-  color: #333;
-  border: 2px solid #333;
-  box-shadow: 2px 2px 0 #333;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.social-links .paper-btn:hover {
-  box-shadow: 3px 3px 0 #333;
-  transform: translate(-1px, -1px);
-}
-
-/* Responsive social media */
-@media (max-width: 768px) {
-  .social-links {
-    flex-direction: column;
-  }
-  
-  .social-links .paper-btn {
-    width: 100%;
-  }
-}
-
-/* Hide main nav header on homepage only - more specific selectors */
-.home nav.split-nav,
-body.home nav.split-nav,
-.page-home nav.split-nav {
-  display: none !important;
-}
-
-/* Alternative: hide by checking if we're on the index page */
-nav.split-nav {
-  display: flex;
-}
-
-/* If none of the above work, we can hide it differently */
-.container > nav.split-nav:first-child {
-  display: none;
-}
-
-/* Compact hero title for non-home pages */
-.hero-title-compact {
-  font-size: 1.8rem;
-  margin: 0 0 1.5rem 0;
-  color: #333;
-  font-weight: bold;
-}
-
-/* Adjust hero padding for non-home pages */
-.welcome-hero:not(:has(.hero-subtitle)) {
-  padding: 2rem 2rem;
-}
-
-/* Active button state */
-.hero-buttons .paper-btn.active {
-  background-color: #41403e;
-  color: white;
-  border-color: #41403e;
-}
-
-/* Responsive compact hero */
-@media (max-width: 768px) {
-  .hero-title-compact {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .welcome-hero:not(:has(.hero-subtitle)) {
-    padding: 1.5rem 1rem;
-  }
-}
-
-/* Hide navigation menu site-wide */
-nav.split-nav {
-  display: none !important;
-}
-
-/* Compact hero for non-home pages */
-.welcome-hero-compact {
-  padding: 2rem !important;
-}
-
-.hero-title-compact {
-  font-size: 1.8rem;
-  margin: 0 0 1.5rem 0;
-  color: #333;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .welcome-hero-compact {
-    padding: 1.5rem 1rem !important;
-  }
-  
-  .hero-title-compact {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
-}
-
-
-/* Join Us button - dark background normally */
-.hero-buttons .btn-highlight {
-  background-color: #41403e !important;
-  color: white !important;
-  border: 2px solid #41403e !important;
-}
-
-/* Join Us hover - vibrant green call-to-action */
-.hero-buttons .btn-highlight:hover {
-  background-color: #28a745 !important;  /* Vibrant green */
-  border-color: #28a745 !important;
-  color: white !important;
-  box-shadow: 5px 5px 0 #333 !important;
-}
-
-/* Join Us active state */
-.hero-buttons .btn-highlight.active {
-  background-color: #000 !important;
-  border-color: #000 !important;
-  color: white !important;
-}
-
-/* Active state for regular buttons */
-.hero-buttons .paper-btn.active {
-  background-color: #41403e !important;
-  color: white !important;
-  border-color: #41403e !important;
 }
