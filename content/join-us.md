@@ -4,6 +4,7 @@ title = "Join Us"
 type = "join-us"
 date = "2025-01-11"
 +++
+<h2>Join Us</h2>
 
 <!-- Recruiting Banner -->
 <div class="recruiting-banner">
