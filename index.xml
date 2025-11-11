@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Etherington Lab</title><link>https://marc-k-etherington.github.io/</link><description>Recent content on The Etherington Lab</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marc-k-etherington.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Group Meeting at Deep North</title><link>https://marc-k-etherington.github.io/dn-2025/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/dn-2025/</guid><description>Another group meeting at Deep North to ensure the team has the fuel for the science ahead.</description></item><item><title>IDRT Showcase 2025</title><link>https://marc-k-etherington.github.io/idrt-showcase-2025/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/idrt-showcase-2025/</guid><description>Marc helps out with the Energy Materials and Systems Peak of Excellence display at the IDRT Showcase 2025</description></item><item><title>Join Us</title><link>https://marc-k-etherington.github.io/join-us/</link><pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/join-us/</guid><description>&lt;!-- Recruiting Banner --&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Etherington Lab</title><link>https://marc-k-etherington.github.io/</link><description>Recent content on The Etherington Lab</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marc-k-etherington.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Group Meeting at Deep North</title><link>https://marc-k-etherington.github.io/dn-2025/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/dn-2025/</guid><description>Another group meeting at Deep North to ensure the team has the fuel for the science ahead.</description></item><item><title>IDRT Showcase 2025</title><link>https://marc-k-etherington.github.io/idrt-showcase-2025/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/idrt-showcase-2025/</guid><description>Marc helps out with the Energy Materials and Systems Peak of Excellence display at the IDRT Showcase 2025</description></item><item><title>Join Us</title><link>https://marc-k-etherington.github.io/join-us/</link><pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/join-us/</guid><description>&lt;h2&gt;Join Us&lt;/h2&gt;
+&lt;!-- Recruiting Banner --&gt;
 &lt;div class="recruiting-banner"&gt;
  &lt;h2&gt;🎓 Join The Etherington Lab&lt;/h2&gt;
  &lt;p&gt;Explore fundamental photophysics and develop next-generation light-emitting materials&lt;/p&gt;
@@ -77,8 +78,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_191b46d74c2f7442b637d5efd6cced38" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_191b46d74c2f7442b637d5efd6cced38"&gt;
+ &lt;input id="collapsible_5d1366f3d9d7dccb2648ebf44e177c42" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_5d1366f3d9d7dccb2648ebf44e177c42"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -141,8 +142,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_e4286d5b6c3744d1eb7fd23d6974fcc1" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_e4286d5b6c3744d1eb7fd23d6974fcc1"&gt;
+ &lt;input id="collapsible_df66377d19c24f14e4632b7eb4ddc85c" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_df66377d19c24f14e4632b7eb4ddc85c"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
