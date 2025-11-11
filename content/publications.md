@@ -558,7 +558,7 @@ Journal of Materials Chemistry C, 5, 6269-6280, 2017
 {{< /alert >}}
 
   
-{{< alert "primary" >}}
+{{< alert "primary" "nature">}}
 {{< collapsible "Regio- and conformational isomerization critical to design of efficient thermally-activated delayed fluorescence emitters" >}}
 <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms14987/MediaObjects/41467_2017_Article_BFncomms14987_Fig1_HTML.jpg?as=webp" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -579,7 +579,7 @@ Nature Communications, 8, 14987, 2017
   
 <h3>{{< badge >}}2016{{< /badge >}}</h3>
   
-{{< alert "primary" >}}
+{{< alert "primary" "nature">}}
 {{< collapsible "Revealing the spin–vibronic coupling mechanism of thermally activated delayed fluorescence" >}}
 <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms13680/MediaObjects/41467_2016_Article_BFncomms13680_Fig1_HTML.jpg?as=webp" alt="TOC" width="250" height="auto" style="float:right">
 
