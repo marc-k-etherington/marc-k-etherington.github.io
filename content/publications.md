@@ -10,15 +10,16 @@ type = "publications"
 <!-- Publication Stats -->
 <div class="pub-stats">
   <div class="pub-stat">
-    <span class="pub-stat-number">{{ len (findRE `(?s)<div class="alert alert-primary` .Content) }}</span>
+    <span class="pub-stat-number">30</span>
     <span class="pub-stat-label">Total Publications</span>
   </div>
   <div class="pub-stat">
-    <span class="pub-stat-number">2,500+</span>
+    <span class="pub-stat-number">2,700+</span>
     <span class="pub-stat-label">Citations</span>
+    <span class="pub-stat-updated">(Nov 2025)</span>
   </div>
   <div class="pub-stat">
-    <span class="pub-stat-number">{{ len (findRE `nature\.com|Nature Communications|Nature Materials` .Content) }}</span>
+    <span class="pub-stat-number">3</span>
     <span class="pub-stat-label">Nature Family</span>
   </div>
 </div>
