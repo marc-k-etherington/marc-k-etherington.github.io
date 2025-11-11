@@ -1287,3 +1287,10 @@ div.alert-primary {
   transform: translate(-2px, -2px) !important;
   box-shadow: 5px 5px 0 #333 !important;
   border-left-color: #FF8C42 !important;
+
+  /* Corresponding author highlighting via CSS class */
+.alert-primary.corresponding {
+  border-left-width: 8px !important;
+  border-left-color: #FF8C42 !important;
+  background: #fffbf5 !important;
+}
