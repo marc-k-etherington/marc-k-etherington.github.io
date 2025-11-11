@@ -1,6 +1,6 @@
 +++
 title = "Marc Etherington"
-type = "marc-etherington"
+type = "marc"
 job_title = "Assistant Professor"
 department = "Engineering, Physics and Mathematics"
 office = "Ellison D-Block 103"
