@@ -15,7 +15,7 @@ link = ""
 [[photos]]
 image = "/images/gallery/FUK_Coffee.jpeg"
 caption = "Some conference downtime ☕"
-category = ["conferences", "travel"]
+categories = ["conferences", "travel"]
 decoration = "taped"
 link = ""
 
