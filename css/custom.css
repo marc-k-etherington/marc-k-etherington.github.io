@@ -941,3 +941,60 @@ nav a:visited {
     padding: 1.5rem;
   }
 }
+
+/* ===== SEMINARS PAGE - COLOR PALETTE ===== */
+
+/* Year badges - teal */
+.badge,
+span.badge {
+  background: #008B8B !important;
+  color: white !important;
+  border: 2px solid #333 !important;
+  box-shadow: 3px 3px 0 #333 !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: bold !important;
+}
+
+/* Invited talks (danger alerts) - burnt orange */
+.alert-danger,
+div.alert-danger {
+  background: #fff5eb !important;
+  border: 3px solid #FF8C42 !important;
+  border-left: 8px solid #FF8C42 !important;
+  box-shadow: 3px 3px 0 #333 !important;
+  color: #333 !important;
+  padding: 1rem 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Contributed talks (secondary alerts) - light teal */
+.alert-secondary,
+div.alert-secondary {
+  background: #e0f7f7 !important;
+  border: 2px solid #008B8B !important;
+  border-left: 6px solid #008B8B !important;
+  box-shadow: 2px 2px 0 #333 !important;
+  color: #333 !important;
+  padding: 1rem 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Seminars page headers */
+.seminars-page h2,
+body h2 {
+  color: #333;
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 0.5rem;
+}
+
+/* Seminars page year headings (h3) */
+body h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Key section at top - style differently */
+.alert-danger:first-of-type,
+.alert-secondary:first-of-type {
+  margin-top: 1rem;
+}
