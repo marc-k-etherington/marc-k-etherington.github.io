@@ -78,8 +78,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_26d64eed47f74dc1cf7dbbc432531689" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_26d64eed47f74dc1cf7dbbc432531689"&gt;
+ &lt;input id="collapsible_367df1bcf18c45dc9467e2326b447edd" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_367df1bcf18c45dc9467e2326b447edd"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -142,8 +142,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_8ddc73b4de2e674fdf16c2596b7c3441" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_8ddc73b4de2e674fdf16c2596b7c3441"&gt;
+ &lt;input id="collapsible_7bd2e5f644cd4d13678c3e7d9c1b26f4" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_7bd2e5f644cd4d13678c3e7d9c1b26f4"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
