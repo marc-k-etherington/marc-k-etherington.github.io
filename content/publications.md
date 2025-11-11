@@ -29,7 +29,7 @@ Angewandte Chemie, e16629, 2025
 {{< /collapsible >}}
 {{< /alert >}}
 
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding" >}}
 {{< collapsible "Counterion-Mediated Luminophore Dimerization" >}}
 <img src="https://onlinelibrary.wiley.com/cms/asset/6a79812f-7c31-4e1b-a62a-bec31ae33e27/anie202505433-gra-0001-m.png" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -57,7 +57,7 @@ Angewandte Chemie, 64, e202505433, 2025
 <h3>{{< badge >}}2024{{< /badge >}}</h3>
 
 
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding" >}}
 {{< collapsible "A Modular Approach to Tuning Emissive *N*-Quinolyl Through-Space Charge Transfer States Using sp<sup>3</sup>-Scaffolds" >}}
 <img src="https://pubs.acs.org/cms/10.1021/acs.jpcb.4c05220/asset/images/medium/jp4c05220_0007.gif" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -93,7 +93,7 @@ New Journal Of Chemistry, 48, 18865-18872, 2024
 {{< /collapsible >}}
 {{< /alert >}}
 
-{{< alert "primary" >}}
+{{< alert "primary" "nature" >}}
 {{< collapsible "Suppression of Dexter transfer by covalent encapsulation for efficient matrix-free narrowband deep blue hyperfluorescent OLEDs" >}}
 <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41563-024-01812-4/MediaObjects/41563_2024_1812_Fig1_HTML.png?as=webp" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -188,7 +188,7 @@ Angewandte Chemie, 134, 24, 2022
 
 
 
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding" >}}
 {{< collapsible "From phosphorescence to delayed fluorescence in one step: tuning photophysical properties by quaternisation of an sp 2-hybridised nitrogen atom" >}}
 <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2TC01737G&imageInfo.ImageIdentifier.Year=2022" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -208,7 +208,7 @@ Journal of Materials Chemistry C, 10, 9484-9491, 2022
 
 
 
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding" >}}
 {{< collapsible "Dominant dimer emission provides colour stability for red thermally activated delayed fluorescence emitter" >}}
 <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D1TC04913E&imageInfo.ImageIdentifier.Year=2022" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -226,7 +226,7 @@ Journal of Materials Chemistry C, 10, 5840-5848, 2022
 {{< /collapsible >}}
 {{< /alert >}}
   
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding">}}
 {{< collapsible "Simultaneous enhancement of thermally activated delayed fluorescence and photoluminescence quantum yield via homoconjugation" >}}
 <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2TC00460G&imageInfo.ImageIdentifier.Year=2022" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -267,7 +267,7 @@ Journal of Materials Chemistry C, 9, 189-198, 2021
   
 <h3>{{< badge >}}2020{{< /badge >}}</h3>
 
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding" "review" >}}
 {{< collapsible "Thermally Activated Delayed Fluorescence: Beyond the Single Molecule" >}}
 <img src="https://www.frontiersin.org/files/Articles/558615/fchem-08-00716-HTML-r1/image_m/fchem-08-00716-g001.jpg" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -286,7 +286,7 @@ Frontiers in Chemistry, 8, 2020
 {{< /alert >}}
   
   
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding" >}}
 {{< collapsible "Modulation of charge transfer by N-alkylation to control photoluminescence energy and quantum yield" >}}
 <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D0SC02460K&imageInfo.ImageIdentifier.Year=2020" alt="TOC" width="250" height="auto" style="float:right">
 
