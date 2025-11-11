@@ -20,6 +20,13 @@ decoration = "pinned"
 link = ""
 
 [[photos]]
+image = "/images/gallery/Glico_Man.jpeg"
+caption = "The Running Man of Osaka"
+category = "travel"
+decoration = "taped"
+link = ""
+
+[[photos]]
 image = "/images/gallery/Nara_Deer.jpeg"
 caption = "To be a deer in Nara 🦌"
 category = "travel"
