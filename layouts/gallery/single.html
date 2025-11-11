@@ -25,6 +25,17 @@
   <button class="gallery-filter-btn" onclick="filterGallery('travel')">Travel</button>
 </div>
 
+<!-- Travel Filter Instagram Banner (Hidden by default) -->
+<div id="travel-instagram-banner" class="travel-banner" style="display: none; text-align: center; margin: 1.5rem auto; padding: 1.5rem; background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 12px; max-width: 700px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="color: white; font-size: 1.1rem; margin: 0 0 0.8rem 0; font-weight: 500;">
+    ✈️ Love travel photos from conferences and research visits?
+  </p>
+  <a href="https://www.instagram.com/mketherington" target="_blank" rel="noopener" 
+     style="display: inline-block; background: white; color: #E1306C; padding: 0.7rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">
+    Follow @mketherington on Instagram →
+  </a>
+</div>
+
 <!-- Corkboard Container -->
 <div class="scrapbook-container">
   <div class="scrapbook" id="scrapbook-grid">
@@ -101,6 +112,12 @@
   </div>
 </div>
 
+<!-- Instagram Link -->
+<p class="gallery-note" style="text-align: center; margin: 3rem auto 2rem; max-width: 600px; color: #666; font-size: 0.95rem;">
+  Looking for more travel photos from conferences and research visits? 
+  <a href="https://www.instagram.com/mketherington" target="_blank" rel="noopener" style="color: #E1306C; text-decoration: none; font-weight: 500;">Follow me on Instagram →</a>
+</p>
+
 <!-- Back to Top Button -->
 <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
 
@@ -125,6 +142,7 @@ function filterGallery(category) {
   const polaroids = document.querySelectorAll('.polaroid');
   const decoratives = document.querySelectorAll('.decorative-item');
   const buttons = document.querySelectorAll('.gallery-filter-btn');
+  const travelBanner = document.getElementById('travel-instagram-banner');
   
   // Update active button
   buttons.forEach(btn => btn.classList.remove('active'));
@@ -148,6 +166,11 @@ function filterGallery(category) {
   decoratives.forEach(item => {
     item.style.display = category === 'all' ? 'flex' : 'none';
   });
+  
+  // Show Instagram banner only when "travel" filter is active
+  if (travelBanner) {
+    travelBanner.style.display = category === 'travel' ? 'block' : 'none';
+  }
 }
 </script>
 
