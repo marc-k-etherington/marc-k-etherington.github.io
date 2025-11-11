@@ -24,16 +24,16 @@
 <!-- Profile Header -->
 <div class="profile-header-marc">
   <div class="profile-photo-marc">
-    <img src="/images/group/TOT_Marc.jpg" alt="Dr. Marc Etherington">
+    <img src="{{ .Params.photo }}" alt="Dr. {{ .Title }}">
   </div>
   <div class="profile-info-marc">
-    <h1 class="profile-name-marc">Dr. Marc Etherington</h1>
-    <p class="profile-title-marc">Assistant Professor | Photophysics & Organic Electronics<br>Northumbria University</p>
+    <h1 class="profile-name-marc">Dr. {{ .Title }}</h1>
+    <p class="profile-title-marc">{{ .Params.job_title }} | Photophysics & Organic Electronics<br>Northumbria University</p>
     <div class="profile-contact-marc">
-      <a href="mailto:marc.k.etherington@northumbria.ac.uk" class="contact-btn primary">✉️ Email</a>
-      <a href="https://scholar.google.co.uk/citations?user=3dgABIQAAAAJ" target="_blank" class="contact-btn">📚 Google Scholar</a>
-      <a href="YOUR_ORCID_URL" target="_blank" class="contact-btn">🔬 ORCID</a>
-      <a href="https://www.researchgate.net/profile/Marc-Etherington" target="_blank" class="contact-btn">📊 ResearchGate</a>
+      <a href="mailto:{{ .Params.email }}" class="contact-btn primary">✉️ Email</a>
+      <a href="{{ .Params.scholar_url }}" target="_blank" class="contact-btn">📚 Google Scholar</a>
+      <a href="{{ .Params.orcid_url }}" target="_blank" class="contact-btn">🔬 ORCID</a>
+      <a href="{{ .Params.researchgate_url }}" target="_blank" class="contact-btn">📊 ResearchGate</a>
     </div>
   </div>
 </div>
@@ -113,15 +113,7 @@
 <!-- Academic Journey -->
 <div class="bio-section-marc">
   <h2>Academic Journey</h2>
-  <p>
-    <strong>Originally from Stockton-on-Tees</strong>, I completed my MPhys at Durham University (2007-2011) before pursuing a PhD in Physics at Clare College, Cambridge under Prof. Neil Greenham (2011-2015). My doctoral research focused on spin polarization in organic photovoltaics.
-  </p>
-  <p>
-    I returned to Durham as a Research Associate (2015-2019), working with Prof. Andy Monkman on EU Horizon 2020 projects (PHEBE and HyperOLED). During this period, I made key discoveries about the spin-vibronic coupling mechanism in TADF and persistent dimer emission - work that has fundamentally shaped the field.
-  </p>
-  <p>
-    In 2020, I joined Northumbria University as a Vice-Chancellor's Senior Fellow, becoming Assistant Professor in 2022. I now lead the Etherington Lab and collaborate closely with Dr Jon Knowles in the Knowles-Etherington Group, combining synthetic and spectroscopic expertise to tackle fundamental challenges in organic light-emitting materials.
-  </p>
+  {{ .Content }}
 </div>
 
 <!-- Major Breakthroughs -->
@@ -168,18 +160,26 @@
 
 <!-- Floating Social Media -->
 <div class="social-float-compact">
-  <a href="https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/?skipRedirect=true" target="_blank" rel="noopener" title="LinkedIn">
+  {{ if .Params.linkedin_url }}
+  <a href="{{ .Params.linkedin_url }}" target="_blank" rel="noopener" title="LinkedIn">
     <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
   </a>
-  <a href="https://bsky.app/profile/mketherington.bsky.social" target="_blank" rel="noopener" title="Bluesky">
+  {{ end }}
+  {{ if .Params.bluesky_url }}
+  <a href="{{ .Params.bluesky_url }}" target="_blank" rel="noopener" title="Bluesky">
     <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
   </a>
-  <a href="https://www.researchgate.net/profile/Marc-Etherington?ev=hdr_xprf" target="_blank" rel="noopener" title="ResearchGate">
+  {{ end }}
+  {{ if .Params.researchgate_url }}
+  <a href="{{ .Params.researchgate_url }}" target="_blank" rel="noopener" title="ResearchGate">
     <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
   </a>
-  <a href="https://scholar.google.co.uk/citations?user=3dgABIQAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">
+  {{ end }}
+  {{ if .Params.scholar_url }}
+  <a href="{{ .Params.scholar_url }}" target="_blank" rel="noopener" title="Google Scholar">
     <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
   </a>
+  {{ end }}
 </div>
 
 {{ end }}
