@@ -10,8 +10,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_ef63cbd417281d4df4732b94c6ced765" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_ef63cbd417281d4df4732b94c6ced765"&gt;
+ &lt;input id="collapsible_7cf2efcd7cd6bbe3428136415467d9d4" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_7cf2efcd7cd6bbe3428136415467d9d4"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -35,7 +35,7 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;!-- Publication Stats --&gt;
 &lt;div class="pub-stats"&gt;
  &lt;div class="pub-stat"&gt;
- &lt;span class="pub-stat-number"&gt;30&lt;/span&gt;
+ &lt;span class="pub-stat-number"&gt;{{ len (findRE `(?s)&lt;div class="alert alert-primary` .Content) }}&lt;/span&gt;
  &lt;span class="pub-stat-label"&gt;Total Publications&lt;/span&gt;
  &lt;/div&gt;
  &lt;div class="pub-stat"&gt;
@@ -43,7 +43,7 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
  &lt;span class="pub-stat-label"&gt;Citations&lt;/span&gt;
  &lt;/div&gt;
  &lt;div class="pub-stat"&gt;
- &lt;span class="pub-stat-number"&gt;3&lt;/span&gt;
+ &lt;span class="pub-stat-number"&gt;{{ len (findRE `nature\.com|Nature Communications|Nature Materials` .Content) }}&lt;/span&gt;
  &lt;span class="pub-stat-label"&gt;Nature Family&lt;/span&gt;
  &lt;/div&gt;
 &lt;/div&gt;
@@ -74,8 +74,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_e16d784bcb67f4341427dfc23e59dc6d" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_e16d784bcb67f4341427dfc23e59dc6d"&gt;
+ &lt;input id="collapsible_bd2c14de721c434b6cf8f9ed63d67457" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_bd2c14de721c434b6cf8f9ed63d67457"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
