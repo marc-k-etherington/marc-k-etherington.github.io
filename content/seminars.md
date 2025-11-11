@@ -9,11 +9,11 @@ type = "seminars"
 <!-- Seminar Stats -->
 <div class="seminar-stats">
   <div class="seminar-stat">
-    <span class="seminar-stat-number">{{ len (findRE `(?s)<div class="alert alert-(?:danger|secondary)` .Content) }}</span>
+    <span class="seminar-stat-number">27</span>
     <span class="seminar-stat-label">Total Seminars</span>
   </div>
   <div class="seminar-stat">
-    <span class="seminar-stat-number">{{ len (findRE `(?s)<div class="alert alert-danger` .Content) }}</span>
+    <span class="seminar-stat-number">15</span>
     <span class="seminar-stat-label">Invited Talks</span>
   </div>
   <div class="seminar-stat">
