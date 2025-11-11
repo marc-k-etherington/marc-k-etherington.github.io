@@ -2,15 +2,48 @@
 +++
 date = "2023-02-07"
 author = "Marc Etherington"
+type = "seminars"
 +++
 <h2>Seminars</h2>
-<h2> Key </h2>
-{{< alert "danger" >}}
-Invited Talk
-{{< /alert >}}
-{{< alert "secondary" >}}
-Contributed Talk
-{{< /alert >}}
+
+<!-- Seminar Stats -->
+<div class="seminar-stats">
+  <div class="seminar-stat">
+    <span class="seminar-stat-number">35+</span>
+    <span class="seminar-stat-label">Total Seminars</span>
+  </div>
+  <div class="seminar-stat">
+    <span class="seminar-stat-number">15</span>
+    <span class="seminar-stat-label">Invited Talks</span>
+  </div>
+  <div class="seminar-stat">
+    <span class="seminar-stat-number">8</span>
+    <span class="seminar-stat-label">Countries</span>
+  </div>
+</div>
+
+<!-- Seminar Key -->
+<div class="seminar-key">
+  <h3>Seminar Key</h3>
+  <div class="key-items">
+    <div class="key-item">
+      <div class="key-box" style="border-left: 8px solid #FF8C42; background: #fff5eb;"></div>
+      <span>Invited Talk</span>
+    </div>
+    <div class="key-item">
+      <div class="key-box" style="border-left: 6px solid #008B8B; background: #e0f7f7;"></div>
+      <span>Contributed Talk</span>
+    </div>
+  </div>
+</div>
+
+<!-- Filter Buttons -->
+<div class="seminar-filters">
+  <button class="filter-btn active" onclick="filterSeminars('all', this)">All Seminars</button>
+  <button class="filter-btn" onclick="filterSeminars('invited', this)">Invited Talks</button>
+  <button class="filter-btn" onclick="filterSeminars('contributed', this)">Contributed Talks</button>
+  <button class="filter-btn" onclick="filterSeminars('international', this)">International</button>
+</div>
 
 <h3>{{< badge >}}2025{{< /badge >}}</h3>
 
