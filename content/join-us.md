@@ -189,23 +189,23 @@ date = "2025-01-11"
   
   <div class="funding-list">
     <div class="funding-item">
-      <strong>PhD Studentships</strong>
-      <span>UK Research Council funding via Northumbria (competitive)</span>
+    <strong>PhD Studentships</strong>
+    <span>UK Research Council funding via Northumbria (competitive)</span>
     </div>
 
     <div class="funding-item">
-      <strong>PDRA/Fellowship Funding</strong>
-      <span>CSC, Commonwealth, country-specific schemes</span>
+    <strong>PDRA/Fellowship Funding</strong>
+    <span>CSC, Commonwealth, country-specific schemes</span>
     </div>
 
     <div class="funding-item">
-      <strong>Visitor Exchange Grants</strong>
-      <span>RSC, Royal Society</span>
+    <strong>Visitor Exchange Grants</strong>
+    <span>RSC, Royal Society</span>
     </div>
 
     <div class="funding-item">
-      <strong>Self-Funded</strong>
-      <span>UK/EU/International students welcome</span>
+    <strong>Self-Funded</strong>
+    <span>UK/EU/International students welcome</span>
     </div>
   </div>
 
