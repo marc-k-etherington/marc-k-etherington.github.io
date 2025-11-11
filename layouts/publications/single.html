@@ -98,16 +98,16 @@ function filterPubs(category, button) {
   
   // Show/hide based on category
   pubs.forEach(pub => {
-    const text = pub.textContent;
+    const html = pub.innerHTML;
     
-    // Check for corresponding author - Marc's name followed by asterisk
-    const isCorresponding = /Marc\s+K\.?\s+Etherington[^a-zA-Z]*\*/i.test(text);
+    // Look for Marc K. Etherington followed by * in the HTML
+    const isCorresponding = html.includes('Marc K. Etherington*');
     
     // Check for Nature journals
-    const isNature = text.includes('Nature Communications') || text.includes('Nature Materials');
+    const isNature = html.includes('Nature Communications') || html.includes('Nature Materials');
     
     // Check for reviews
-    const isReview = text.includes('Beyond the Single Molecule');
+    const isReview = html.includes('Beyond the Single Molecule');
     
     let show = false;
     
@@ -141,20 +141,38 @@ function filterPubs(category, button) {
   });
 }
 
-// Highlight corresponding author papers on page load
-document.addEventListener('DOMContentLoaded', function() {
+// Highlight corresponding author papers - function version
+function highlightCorrespondingAuthor() {
   const pubs = document.querySelectorAll('.alert-primary');
+  let count = 0;
   
   pubs.forEach(pub => {
-    const text = pub.textContent;
-    // Check if Marc is corresponding author (asterisk after name)
-    if (/Marc\s+K\.?\s+Etherington[^a-zA-Z]*\*/i.test(text)) {
+    const html = pub.innerHTML;
+    
+    // Check if Marc is corresponding author
+    if (html.includes('Marc K. Etherington*')) {
       pub.style.borderLeftWidth = '8px';
       pub.style.borderLeftColor = '#FF8C42';
       pub.style.background = '#fffbf5';
+      count++;
     }
   });
+  
+  console.log('Highlighted', count, 'corresponding author papers');
+}
+
+// Try multiple times to ensure content is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Run immediately
+  highlightCorrespondingAuthor();
+  
+  // Run again after a short delay
+  setTimeout(highlightCorrespondingAuthor, 100);
+  setTimeout(highlightCorrespondingAuthor, 500);
 });
+
+// Also run on full page load
+window.addEventListener('load', highlightCorrespondingAuthor);
 </script>
 
 {{ end }}
