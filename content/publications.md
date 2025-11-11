@@ -41,7 +41,7 @@ type = "publications"
 
 <!-- Filter Buttons -->
 <div class="pub-filters">
-  <button class="filter-btn active" onclick="filterPubs('all', this)">All Papers (30)</button>
+  <button class="filter-btn active" onclick="filterPubs('all', this)">All Papers</button>
   <button class="filter-btn" onclick="filterPubs('corresponding', this)">As Corresponding Author</button>
   <button class="filter-btn" onclick="filterPubs('nature', this)">Nature Family</button>
   <button class="filter-btn" onclick="filterPubs('review', this)">Reviews</button>
