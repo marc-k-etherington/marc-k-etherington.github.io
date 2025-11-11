@@ -9,9 +9,15 @@ hero_caption = "Mount Fuji & Chureito Pagoda - Research visit to Japan 🗻"
 image = "/images/gallery/Marc_Izakaya.jpeg"
 caption = "Who ordered the French fries! 🍟"
 category = "social"
-decoration = "pinned"
+decoration = "taped"
 link = ""
 
+[[photos]]
+image = "/images/gallery/Nara_Deer.jpeg"
+caption = "To be a deer in Nara 🦌"
+category = "social"
+decoration = "pinned"
+link = ""
 
 [[photos]]
 image = "/post/images/DN_2025.jpg"
