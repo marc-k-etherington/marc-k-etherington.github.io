@@ -29,26 +29,7 @@
 }
 </style>
 
-<!-- Compact Hero for post pages -->
-<section class="welcome-hero welcome-hero-compact">
-  <div class="hero-content">
-    <h1 class="hero-title-compact">Welcome to The Etherington Lab!</h1>
-    <div class="hero-nav-wrapper">
-      <input type="checkbox" id="hero-menu-toggle" class="hero-menu-toggle">
-      <label for="hero-menu-toggle" class="hero-hamburger"></label>
-      <div class="hero-buttons">
-        <a href="/" class="paper-btn">News</a>
-        <a href="/marc-etherington" class="paper-btn">Marc Etherington</a>
-        <a href="/group" class="paper-btn">Group</a>
-        <a href="/research" class="paper-btn">Research</a>
-        <a href="/teaching" class="paper-btn">Teaching</a>
-        <a href="/publications" class="paper-btn">Publications</a>
-        <a href="/seminars" class="paper-btn">Seminars</a>
-        <a href="/join-us" class="paper-btn btn-highlight">Join Us</a>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "hero-banner.html" . }}
 
 <!-- Post Content -->
 <h1>{{ .Title }}</h1>
