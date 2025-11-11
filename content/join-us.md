@@ -80,22 +80,22 @@ date = "2025-01-11"
     <strong>💡 Funding Status:</strong> We don't currently have dedicated PhD funding, but we actively support strong candidates in applying for competitive scholarships. Contact us to discuss funding options!
   </div>
 
-  <div class="opportunities">
+  <!--div class="opportunities">
     <div class="opportunity-card unfunded">
       <h3>🔬 TADF for Bioimaging</h3>
       <p><strong>Project:</strong> Developing dual-emission TADF systems for cellular imaging using dibenzophenazine-based emitters</p>
       <p><strong>Duration:</strong> 3-4 years</p>
       <p><strong>Skills:</strong> Chemistry/Physics, interest in spectroscopy</p>
       <a href="#funding" class="opportunity-btn">View Funding Options →</a>
-    </div>
+    </div-->
 
-  <div class="opportunity-card unfunded">
+  <!--div class="opportunity-card unfunded">
       <h3>🧪 Through-Space Charge Transfer</h3>
       <p><strong>Project:</strong> Modular design of quinoline-based emitters inspired by quinine's glow</p>
       <p><strong>Duration:</strong> 3-4 years</p>
       <p><strong>Skills:</strong> Photophysics, molecular design</p>
       <a href="#funding" class="opportunity-btn">View Funding Options →</a>
-    </div>
+    </div-->
 
   <div class="opportunity-card unfunded">
       <h3>💡 Your Own Project</h3>
