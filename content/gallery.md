@@ -13,7 +13,7 @@ decoration = "taped"
 link = "/ap-hatch/"
 
 [[photos]]
-image = "/post/images/fluorofrog.jpg"
+image = "/post/images/Fluorofrog.jpg"
 caption = "Flint the Fluorofrog! 🐸"
 category = "lab"
 decoration = "pinned"
@@ -27,21 +27,21 @@ decoration = ""
 link = "/ruth-icel-2024/"
 
 [[photos]]
-image = "/images/gallery/deep-north.jpg"
+image = "/post/images/DN_2025.jpg"
 caption = "Deep North coffee fuel ☕"
 category = "social"
 decoration = "taped"
 link = "/dn-2025/"
 
 [[photos]]
-image = "/images/gallery/lego-group.jpg"
+image = "/images/group/Group_Lego.jpg"
 caption = "The team in Lego form! 😄"
 category = "lab"
 decoration = ""
 link = ""
 
 [[photos]]
-image = "/images/gallery/ruth-first-paper.jpg"
+image = "/post/images/Ruth_JPCB.png"
 caption = "Ruth's first paper! 📚"
 category = "social"
 decoration = "pinned"
