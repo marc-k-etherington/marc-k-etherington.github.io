@@ -48,14 +48,14 @@ decoration = "pinned"
 link = "/ruth-first-paper/"
 
 [[photos]]
-image = "/images/gallery/christmas-2024.jpg"
+image = "/post/images/Xmas_My_Delhi.jpg"
 caption = "Christmas at My Delhi 🎄"
 category = "social"
 decoration = "pinned"
 link = "/xmas-2024/"
 
 [[photos]]
-image = "/images/gallery/poster-prize.jpg"
+image = "/post/images/Ruth_Poster_2024.jpg"
 caption = "RSC poster prize! 🏆"
 category = "conferences"
 decoration = ""
