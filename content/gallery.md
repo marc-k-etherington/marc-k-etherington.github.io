@@ -20,6 +20,13 @@ decoration = "pinned"
 link = ""
 
 [[photos]]
+image = "/images/gallery/Kyoto_Spectroscopy.jpeg"
+caption = "Spectroscopy outside of the lab 📷"
+category = "travel"
+decoration = "taped"
+link = ""
+
+[[photos]]
 image = "/post/images/DN_2025.jpg"
 caption = "Deep North coffee fuel ☕"
 category = "social"
