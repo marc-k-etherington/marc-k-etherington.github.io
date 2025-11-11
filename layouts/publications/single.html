@@ -87,43 +87,47 @@
 </div>
 
 <script>
-// Highlight corresponding author papers
+// Highlight corresponding author papers on load
 window.addEventListener('load', function() {
-  const corPubs = document.querySelectorAll('.alert-primary.corresponding');
-  console.log('Found', corPubs.length, 'corresponding author papers');
-  
-  corPubs.forEach(pub => {
-    pub.style.borderLeftWidth = '8px';
-    pub.style.borderLeftColor = '#FF8C42';
-    pub.style.background = '#fffbf5';
-  });
+  setTimeout(function() {
+    const corPubs = document.querySelectorAll('.alert-primary.corresponding');
+    console.log('Found', corPubs.length, 'corresponding author papers');
+    
+    corPubs.forEach(pub => {
+      pub.style.borderLeftWidth = '8px';
+      pub.style.borderLeftColor = '#FF8C42';
+      pub.style.background = '#fffbf5';
+    });
+  }, 500);
 });
 
-// Filtering
+// Publication filtering
 function filterPubs(category, button) {
   const pubs = document.querySelectorAll('.alert-primary');
   const buttons = document.querySelectorAll('.filter-btn');
   
+  // Update active button
   buttons.forEach(btn => btn.classList.remove('active'));
   button.classList.add('active');
   
+  // Show/hide based on category
   pubs.forEach(pub => {
     let show = false;
     
     if (category === 'all') {
       show = true;
-    } else if (category === 'corresponding' && pub.classList.contains('corresponding')) {
-      show = true;
-    } else if (category === 'nature' && pub.classList.contains('nature')) {
-      show = true;
-    } else if (category === 'review' && pub.classList.contains('review')) {
-      show = true;
+    } else if (category === 'corresponding') {
+      show = pub.classList.contains('corresponding');
+    } else if (category === 'nature') {
+      show = pub.classList.contains('nature');
+    } else if (category === 'review') {
+      show = pub.classList.contains('review');
     }
     
     pub.style.display = show ? 'block' : 'none';
   });
   
-  // Hide/show years
+  // Hide/show year headers
   const years = document.querySelectorAll('h3');
   years.forEach(year => {
     let next = year.nextElementSibling;
