@@ -3,24 +3,31 @@ body {
   background-image: url('{{ "img/geometry2.png" | relURL }}');
 }
 
-/* Anchors */
+/* Blockquote */
+blockquote {
+  font-style: italic;
+}
+
+/* ===== SITE-WIDE COLOR PALETTE: TEAL/ORANGE/BLACK ===== */
+/* Deep Teal: #008B8B, Burnt Orange: #FF8C42, Black: #333 */
+
+/* Links */
 a,
 a:visited {
-  color: rgb(0, 0, 238);
+  color: #008B8B;
   background-image: none;
   text-decoration: underline;
 }
 
-/* Navbar */
+a:hover {
+  color: #FF8C42;
+}
+
+/* Keep nav links neutral */
 nav a,
 nav a:visited {
   color: #41403e;
   text-decoration: none;
-}
-
-/* Blockquote */
-blockquote {
-  font-style: italic;
 }
 
 /* ===== HIDE NAVIGATION MENU SITE-WIDE ===== */
@@ -40,6 +47,7 @@ nav.split-nav {
 
 .welcome-hero-compact {
   padding: 2rem !important;
+  border-top: 5px solid #008B8B;
 }
 
 .hero-content {
@@ -70,9 +78,16 @@ nav.split-nav {
 }
 
 /* ===== HAMBURGER MENU (MOBILE/TABLET) ===== */
-/* Hide checkbox */
-.hero-menu-toggle {
-  display: none;
+/* Hide checkbox - make this very specific and strong */
+.hero-menu-toggle,
+input.hero-menu-toggle,
+input[type="checkbox"].hero-menu-toggle {
+  display: none !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 
 /* Hide hamburger button on desktop */
@@ -110,14 +125,14 @@ nav.split-nav {
   transform: translate(2px, 2px);
 }
 
-/* Active button state */
+/* Active button state - teal */
 .hero-buttons .paper-btn.active {
-  background-color: #41403e !important;
+  background-color: #008B8B !important;
   color: white !important;
-  border-color: #41403e !important;
+  border-color: #008B8B !important;
 }
 
-/* Join Us button - same as others but with green hover */
+/* Join Us button - orange hover */
 .hero-buttons .btn-highlight {
   background-color: white !important;
   color: #333 !important;
@@ -126,8 +141,8 @@ nav.split-nav {
 }
 
 .hero-buttons .btn-highlight:hover {
-  background-color: #28a745 !important;
-  border-color: #28a745 !important;
+  background-color: #FF8C42 !important;
+  border-color: #FF8C42 !important;
   color: white !important;
   box-shadow: 4px 4px 0 #333 !important;
   transform: translate(-1px, -1px) !important;
@@ -139,42 +154,52 @@ nav.split-nav {
   color: white !important;
 }
 
-/* ===== SOCIAL MEDIA SECTION ===== */
-.social-media {
-  text-align: center;
-  margin: 2rem 0 3rem 0;
-  padding: 2rem;
-  background-color: #fafafa;
+/* ===== FLOATING SOCIAL MEDIA (COMPACT STYLE WITH LOGOS) ===== */
+.social-float-compact {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.5rem;
+  background-color: #ffffff !important;
   border: 2px solid #333;
-}
-
-.social-media h2 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.social-links .paper-btn {
-  background-color: white;
-  color: #333;
-  border: 2px solid #333;
-  box-shadow: 2px 2px 0 #333;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.social-links .paper-btn:hover {
   box-shadow: 3px 3px 0 #333;
-  transform: translate(-1px, -1px);
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+  transition: all 0.2s ease;
+}
+
+.social-float-compact a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.3rem;
+  transition: all 0.2s ease;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.social-float-compact a:hover {
+  background-color: #f4f4f4;
+  transform: translateY(-2px);
+}
+
+/* Style the logo images */
+.social-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: filter 0.2s ease;
+  opacity: 0.8;
+}
+
+/* Teal tint on hover */
+.social-float-compact a:hover .social-icon {
+  filter: sepia(1) saturate(5) hue-rotate(150deg) brightness(0.8);
+  opacity: 1;
 }
 
 /* ===== NEWS FEED ===== */
@@ -235,7 +260,7 @@ nav.split-nav {
 }
 
 .news-text h2 a:hover {
-  color: #41403e;
+  color: #008B8B;
   text-decoration: underline;
 }
 
@@ -253,310 +278,90 @@ nav.split-nav {
   color: #333;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-
-/* Tablets and Mobile (992px and below) - Hamburger Menu */
-@media (max-width: 992px) {
-  /* Show hamburger button */
-  .hero-hamburger {
-    display: block !important;
-    width: 100%;
-    padding: 0.75rem !important;
-    margin-bottom: 0.5rem !important;
-    background-color: white;
-    color: #333;
-    border: 2px solid #333;
-    box-shadow: 3px 3px 0 #333;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: all 0.1s ease;
-  }
-  
-  .hero-hamburger:hover {
-    box-shadow: 4px 4px 0 #333;
-    transform: translate(-1px, -1px);
-  }
-  
-  .hero-hamburger:active {
-    box-shadow: 1px 1px 0 #333;
-    transform: translate(2px, 2px);
-  }
-  
-  /* Display menu text */
-  .hero-hamburger::after {
-    content: "☰ Menu";
-  }
-  
-  /* Change to close icon when menu is open */
-  .hero-menu-toggle:checked ~ .hero-hamburger::after {
-    content: "✕ Close";
-  }
-  
-  /* Hide buttons by default */
-  .hero-buttons {
-    display: none;
-    flex-direction: column !important;
-    gap: 0.5rem !important;
-  }
-  
-  /* Show buttons when checkbox is checked */
-  .hero-menu-toggle:checked ~ .hero-buttons {
-    display: flex !important;
-  }
-  
-  /* Full width buttons */
-  .hero-buttons .paper-btn {
-    width: 100% !important;
-    text-align: center !important;
-  }
-  
-  /* News thumbnails on tablets */
-  .news-content {
-    gap: 1.2rem;
-  }
-  
-  .news-thumbnail {
-    width: 150px !important;
-    height: 110px !important;
-    max-width: 150px !important;
-    max-height: 110px !important;
-  }
-  
-  .news-text h2 {
-    font-size: 1.3rem;
-  }
-}
-
-/* Mobile (768px and below) */
-@media (max-width: 768px) {
-  /* Hero responsive */
-  .welcome-hero {
-    padding: 2rem 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .welcome-hero-compact {
-    padding: 1.5rem 1rem !important;
-  }
-  
-  .hero-title {
-    font-size: 2rem;
-  }
-  
-  .hero-title-compact {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  
-  /* Social media responsive */
-  .social-links {
-    flex-direction: column;
-  }
-  
-  .social-links .paper-btn {
-    width: 100%;
-  }
-  
-  /* News responsive */
-  .news-item {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-  }
-  
-  .news-content {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .news-thumbnail-wrapper {
-    width: 100%;
-  }
-  
-  .news-thumbnail {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100% !important;
-    max-height: 300px !important;
-  }
-  
-  .news-text h2 {
-    font-size: 1.2rem;
-  }
-}
-
-/* Small mobile (480px and below) */
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 1.6rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 0.95rem;
-  }
-  
-  .news-item {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-  }
-  
-  .news-text h2 {
-    font-size: 1.1rem;
-  }
-  
-  .news-text p {
-    font-size: 0.95rem;
-  }
-}
-/* ===== FLOATING SOCIAL MEDIA (COMPACT STYLE WITH LOGOS) ===== */
-.social-float-compact {
-  position: fixed;
-  right: 1rem;
-  bottom: 1.5rem;
-  background-color: #ffffff !important; /* Solid white background */
-  border: 2px solid #333;
-  box-shadow: 3px 3px 0 #333;
-  padding: 0.5rem;
-  display: flex;
-  gap: 0.5rem;
-  z-index: 1000;
-  transition: all 0.2s ease;
-}
-
-.social-float-compact a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0.3rem;
-  transition: all 0.2s ease;
-  background: transparent;
-  border-radius: 4px;
-}
-
-.social-float-compact a:hover {
-  background-color: #f4f4f4;
-  transform: translateY(-2px);
-}
-
-/* Style the logo images - no filter needed since they're already B&W */
-.social-icon {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: filter 0.2s ease;
-  opacity: 0.8; /* Slightly faded when not hovering */
-}
-
-/* Green tint on hover */
-.social-float-compact a:hover .social-icon {
-  filter: sepia(1) hue-rotate(80deg) saturate(5) brightness(0.7);
-  opacity: 1;
-}
-
-/* Slightly smaller on mobile */
-@media (max-width: 768px) {
-  .social-float-compact {
-    right: 0.5rem;
-    bottom: 1rem;
-    padding: 0.4rem;
-    gap: 0.4rem;
-  }
-  
-  .social-float-compact a {
-    width: 35px;
-    height: 35px;
-    padding: 0.25rem;
-  }
-}
-
-/* ===== SITE-WIDE COLOR PALETTE: TEAL/ORANGE/BLACK ===== */
-/* Deep Teal: #008B8B, Burnt Orange: #FF8C42, Black: #333 */
-
-/* ===== LINKS ===== */
-a,
-a:visited {
-  color: #008B8B;
-  background-image: none;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #FF8C42;
-}
-
-/* Keep nav links neutral */
-nav a,
-nav a:visited {
-  color: #41403e;
-  text-decoration: none;
-}
-
-/* ===== HERO BANNER ===== */
-
-/* Compact hero - teal top border accent */
-.welcome-hero-compact {
-  padding: 2rem !important;
-  border-top: 5px solid #008B8B;
-}
-
-/* Join Us button - orange hover */
-.hero-buttons .btn-highlight {
-  background-color: white !important;
-  color: #333 !important;
-  border: 2px solid #333 !important;
-  box-shadow: 3px 3px 0 #333 !important;
-}
-
-.hero-buttons .btn-highlight:hover {
-  background-color: #FF8C42 !important;
-  border-color: #FF8C42 !important;
-  color: white !important;
-  box-shadow: 4px 4px 0 #333 !important;
-  transform: translate(-1px, -1px) !important;
-}
-
-/* Active button state - teal */
-.hero-buttons .paper-btn.active {
-  background-color: #008B8B !important;
-  color: white !important;
-  border-color: #008B8B !important;
-}
-
-/* ===== SOCIAL MEDIA ===== */
-
-/* Social icon hover - teal tint */
-.social-float-compact a:hover .social-icon {
-  filter: sepia(1) saturate(5) hue-rotate(150deg) brightness(0.8);
-}
-
 /* ===== GROUP PAGE ===== */
 
-/* PI card - teal */
-.pi-card {
-  background: #e0f7f7 !important;
-  border: 3px solid #008B8B !important;
-  box-shadow: 5px 5px 0 #333 !important;
+/* Page title */
+.page-title {
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+  color: #333;
+  text-align: center;
 }
 
-/* Where Are They Now box - orange */
-.where-now {
-  margin-top: 1rem;
-  padding: 1rem;
-  background: #fff5eb;
-  border-left: 4px solid #FF8C42;
+/* Group photo styling */
+.group-photo {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  display: block;
+  border: 3px solid #333;
+  box-shadow: 5px 5px 0 #333;
+}
+
+/* Section headers - teal underline */
+.section-header {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1.5rem 0;
+  color: #333;
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 0.5rem;
+}
+
+/* Member card styling */
+.member-card {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.member-photo {
+  flex-shrink: 0;
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #333;
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.member-title {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0 0 1rem 0;
   font-style: italic;
 }
 
-.where-now strong {
-  color: #FF8C42;
+.member-details {
+  margin: 0 0 1rem 0;
+}
+
+.member-details p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.member-details strong {
+  color: #333;
+}
+
+.member-bio {
+  margin-top: 1rem;
+  color: #444;
+  line-height: 1.6;
 }
 
 /* Email links - teal */
@@ -571,21 +376,29 @@ nav a:visited {
   border-bottom-color: #FF8C42;
 }
 
-/* Section headers - teal underline */
-.section-header {
-  font-size: 1.8rem;
-  margin: 2.5rem 0 1.5rem 0;
-  color: #333;
-  border-bottom: 3px solid #008B8B;
-  padding-bottom: 0.5rem;
+/* PI section - teal */
+.pi-card {
+  background: #e0f7f7 !important;
+  border: 3px solid #008B8B !important;
+  box-shadow: 5px 5px 0 #333 !important;
 }
 
-/* ===== NEWS PAGE ===== */
+/* Past members section */
+.past-member-card {
+  opacity: 0.9;
+}
 
-/* News heading hover - teal */
-.news-text h2 a:hover {
-  color: #008B8B;
-  text-decoration: underline;
+/* Where Are They Now box - orange */
+.where-now {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff5eb;
+  border-left: 4px solid #FF8C42;
+  font-style: italic;
+}
+
+.where-now strong {
+  color: #FF8C42;
 }
 
 /* ===== MARC ETHERINGTON PAGE ===== */
@@ -879,8 +692,435 @@ nav a:visited {
   transform: translate(-1px, -1px);
 }
 
-/* Mobile responsive for Marc page */
+/* ===== SEMINARS PAGE ===== */
+
+/* Invited talks (danger alerts) - burnt orange */
+.alert-danger,
+div.alert-danger {
+  background: #fff5eb !important;
+  border: 3px solid #FF8C42 !important;
+  border-left: 8px solid #FF8C42 !important;
+  box-shadow: 3px 3px 0 #333 !important;
+  color: #333 !important;
+  padding: 1rem 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Contributed talks (secondary alerts) - light teal */
+.alert-secondary,
+div.alert-secondary {
+  background: #e0f7f7 !important;
+  border: 2px solid #008B8B !important;
+  border-left: 6px solid #008B8B !important;
+  box-shadow: 2px 2px 0 #333 !important;
+  color: #333 !important;
+  padding: 1rem 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ===== PUBLICATIONS PAGE ===== */
+
+/* Publication stats section */
+.pub-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background: #e0f7f7;
+  border: 3px solid #008B8B;
+  box-shadow: 5px 5px 0 #333;
+}
+
+.pub-stat {
+  text-align: center;
+}
+
+.pub-stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #008B8B;
+  margin-bottom: 0.5rem;
+}
+
+.pub-stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Publication key/legend */
+.pub-key {
+  background: #f9f9f9;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.pub-key h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.key-items {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.key-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.key-box {
+  width: 60px;
+  height: 40px;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #333;
+}
+
+/* Publication filters */
+.pub-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-family: 'Neucha', cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.1s ease;
+  color: #333;
+}
+
+.filter-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #333;
+  background: #f5f5f5;
+}
+
+.filter-btn.active {
+  background: #008B8B;
+  color: white;
+  border-color: #008B8B;
+}
+
+/* Year badges - teal */
+.badge,
+span.badge,
+h3 .badge {
+  background: #008B8B !important;
+  color: white !important;
+  border: 2px solid #333 !important;
+  box-shadow: 3px 3px 0 #333 !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: bold !important;
+  display: inline-block !important;
+}
+
+/* Publication cards (primary alerts) - teal accent by default */
+.alert-primary,
+div.alert-primary {
+  background: white !important;
+  border: 2px solid #333 !important;
+  border-left: 6px solid #008B8B !important;
+  box-shadow: 3px 3px 0 #333 !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.alert-primary:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 5px 5px 0 #333 !important;
+}
+
+/* Corresponding author highlighting - orange accent */
+.alert-primary.corresponding {
+  border-left-width: 8px !important;
+  border-left-color: #FF8C42 !important;
+  background: #fffbf5 !important;
+}
+
+/* Collapsible publication titles */
+.collapsible,
+details {
+  width: 100%;
+}
+
+.collapsible summary,
+details summary {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  color: #333 !important;
+  list-style: none !important;
+  padding: 0.5rem 0 !important;
+  transition: color 0.2s ease !important;
+}
+
+.collapsible summary:hover,
+details summary:hover {
+  color: #008B8B !important;
+}
+
+/* Remove default disclosure triangle */
+.collapsible summary::-webkit-details-marker,
+details summary::-webkit-details-marker,
+.collapsible summary::marker,
+details summary::marker {
+  display: none;
+  content: none;
+}
+
+/* Custom expand indicator */
+.collapsible summary::before,
+details summary::before {
+  content: "▶ ";
+  color: #008B8B;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.collapsible[open] summary::before,
+details[open] summary::before {
+  transform: rotate(90deg);
+  color: #FF8C42;
+}
+
+/* Journal/citation info */
+.color-secondary,
+span.color-secondary,
+.text-secondary,
+div.text-secondary {
+  color: #666 !important;
+  font-style: italic !important;
+  font-size: 0.95rem !important;
+}
+
+/* TOC images in publications */
+.alert-primary img {
+  border: 2px solid #333 !important;
+  box-shadow: 2px 2px 0 #333 !important;
+  margin-left: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Altmetric badges */
+.altmetric-embed {
+  margin-top: 1rem !important;
+  clear: both;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  background: #FF8C42;
+  color: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-family: 'Neucha', cursive;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 999;
+  transition: all 0.1s ease;
+}
+
+.back-to-top:hover {
+  background: #ff7a28;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #333;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets and Mobile (992px and below) - Hamburger Menu */
+@media (max-width: 992px) {
+  /* Show hamburger button */
+  .hero-hamburger {
+    display: block !important;
+    width: 100%;
+    padding: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    box-shadow: 3px 3px 0 #333;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.1s ease;
+  }
+  
+  .hero-hamburger:hover {
+    box-shadow: 4px 4px 0 #333;
+    transform: translate(-1px, -1px);
+  }
+  
+  .hero-hamburger:active {
+    box-shadow: 1px 1px 0 #333;
+    transform: translate(2px, 2px);
+  }
+  
+  /* Display menu text */
+  .hero-hamburger::after {
+    content: "☰ Menu";
+  }
+  
+  /* Change to close icon when menu is open */
+  .hero-menu-toggle:checked ~ .hero-hamburger::after {
+    content: "✕ Close";
+  }
+  
+  /* Hide buttons by default */
+  .hero-buttons {
+    display: none;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  
+  /* Show buttons when checkbox is checked */
+  .hero-menu-toggle:checked ~ .hero-buttons {
+    display: flex !important;
+  }
+  
+  /* Full width buttons */
+  .hero-buttons .paper-btn {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  /* News thumbnails on tablets */
+  .news-content {
+    gap: 1.2rem;
+  }
+  
+  .news-thumbnail {
+    width: 150px !important;
+    height: 110px !important;
+    max-width: 150px !important;
+    max-height: 110px !important;
+  }
+  
+  .news-text h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile (768px and below) */
 @media (max-width: 768px) {
+  /* Hero responsive */
+  .welcome-hero {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-hero-compact {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-title-compact {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Social media responsive */
+  .social-float-compact {
+    right: 0.5rem;
+    bottom: 1rem;
+    padding: 0.4rem;
+    gap: 0.4rem;
+  }
+  
+  .social-float-compact a {
+    width: 35px;
+    height: 35px;
+    padding: 0.25rem;
+  }
+  
+  /* News responsive */
+  .news-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .news-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .news-thumbnail-wrapper {
+    width: 100%;
+  }
+  
+  .news-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 300px !important;
+  }
+  
+  .news-text h2 {
+    font-size: 1.2rem;
+  }
+  
+  /* Group page responsive */
+  .member-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .member-photo {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-header {
+    font-size: 1.5rem;
+  }
+  
+  /* Marc page responsive */
   .profile-header-marc {
     flex-direction: column;
     text-align: center;
@@ -940,305 +1180,8 @@ nav a:visited {
   .bio-section-marc {
     padding: 1.5rem;
   }
-}
-
-/* ===== SEMINARS PAGE - COLOR PALETTE ===== */
-
-/* Year badges - teal */
-.badge,
-span.badge {
-  background: #008B8B !important;
-  color: white !important;
-  border: 2px solid #333 !important;
-  box-shadow: 3px 3px 0 #333 !important;
-  padding: 0.5rem 1rem !important;
-  font-weight: bold !important;
-}
-
-/* Invited talks (danger alerts) - burnt orange */
-.alert-danger,
-div.alert-danger {
-  background: #fff5eb !important;
-  border: 3px solid #FF8C42 !important;
-  border-left: 8px solid #FF8C42 !important;
-  box-shadow: 3px 3px 0 #333 !important;
-  color: #333 !important;
-  padding: 1rem 1.5rem !important;
-  margin-bottom: 1rem !important;
-}
-
-/* Contributed talks (secondary alerts) - light teal */
-.alert-secondary,
-div.alert-secondary {
-  background: #e0f7f7 !important;
-  border: 2px solid #008B8B !important;
-  border-left: 6px solid #008B8B !important;
-  box-shadow: 2px 2px 0 #333 !important;
-  color: #333 !important;
-  padding: 1rem 1.5rem !important;
-  margin-bottom: 1rem !important;
-}
-
-/* Seminars page headers */
-.seminars-page h2,
-body h2 {
-  color: #333;
-  border-bottom: 3px solid #008B8B;
-  padding-bottom: 0.5rem;
-}
-
-/* Seminars page year headings (h3) */
-body h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Key section at top - style differently */
-.alert-danger:first-of-type,
-.alert-secondary:first-of-type {
-  margin-top: 1rem;
-}
-/* ===== PUBLICATIONS PAGE - COLOR PALETTE & IMPROVEMENTS ===== */
-
-/* Publication stats section */
-.pub-stats {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin: 2rem 0 3rem 0;
-  padding: 2rem;
-  background: #e0f7f7;
-  border: 3px solid #008B8B;
-  box-shadow: 5px 5px 0 #333;
-}
-
-.pub-stat {
-  text-align: center;
-}
-
-.pub-stat-number {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #008B8B;
-  margin-bottom: 0.5rem;
-}
-
-.pub-stat-label {
-  display: block;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Publication key/legend */
-.pub-key {
-  background: #f9f9f9;
-  border: 2px solid #333;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 3px 3px 0 #333;
-}
-
-.pub-key h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  color: #333;
-}
-
-.key-items {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.key-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.key-box {
-  width: 60px;
-  height: 40px;
-  border: 2px solid #333;
-  box-shadow: 2px 2px 0 #333;
-}
-
-/* Publication filters */
-.pub-filters {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  background: white;
-  border: 2px solid #333;
-  box-shadow: 3px 3px 0 #333;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  font-family: 'Neucha', cursive;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: all 0.1s ease;
-  color: #333;
-}
-
-.filter-btn:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0 #333;
-  background: #f5f5f5;
-}
-
-.filter-btn.active {
-  background: #008B8B;
-  color: white;
-  border-color: #008B8B;
-}
-
-/* Year badges - teal */
-.badge,
-span.badge,
-h3 .badge {
-  background: #008B8B !important;
-  color: white !important;
-  border: 2px solid #333 !important;
-  box-shadow: 3px 3px 0 #333 !important;
-  padding: 0.5rem 1rem !important;
-  font-weight: bold !important;
-  display: inline-block !important;
-}
-
-/* Publication cards (primary alerts) - clean with teal accent */
-.alert-primary,
-div.alert-primary {
-  background: white !important;
-  border: 2px solid #333 !important;
-  border-left: 6px solid #008B8B !important;
-  box-shadow: 3px 3px 0 #333 !important;
-  padding: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-  transition: all 0.2s ease !important;
-}
-
-.alert-primary:hover {
-  transform: translate(-2px, -2px) !important;
-  box-shadow: 5px 5px 0 #333 !important;
-  border-left-color: #FF8C42 !important;
-}
-
-/* Collapsible publication titles */
-.collapsible summary,
-details summary {
-  font-size: 1.1rem !important;
-  font-weight: bold !important;
-  cursor: pointer !important;
-  color: #333 !important;
-  list-style: none !important;
-  padding: 0.5rem 0 !important;
-}
-
-.collapsible summary:hover,
-details summary:hover {
-  color: #008B8B !important;
-}
-
-/* Remove default disclosure triangle */
-.collapsible summary::-webkit-details-marker,
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Add custom expand indicator */
-.collapsible summary::before,
-details summary::before {
-  content: "▶ ";
-  color: #008B8B;
-  margin-right: 0.5rem;
-  transition: transform 0.2s ease;
-  display: inline-block;
-}
-
-.collapsible[open] summary::before,
-details[open] summary::before {
-  transform: rotate(90deg);
-  color: #FF8C42;
-}
-
-/* Journal/citation info (secondary color shortcode) */
-.color-secondary,
-span.color-secondary {
-  color: #666 !important;
-  font-style: italic !important;
-  font-size: 0.95rem !important;
-  display: block !important;
-  margin-top: 0.75rem !important;
-}
-
-/* TOC images in publications */
-.alert-primary img {
-  border: 2px solid #333 !important;
-  box-shadow: 2px 2px 0 #333 !important;
-  margin-left: 1rem !important;
-}
-
-/* Altmetric badges */
-.altmetric-embed {
-  margin-top: 1rem !important;
-}
-
-/* Back to top button */
-.back-to-top {
-  position: fixed;
-  bottom: 5rem;
-  right: 1rem;
-  background: #FF8C42;
-  color: white;
-  border: 2px solid #333;
-  box-shadow: 3px 3px 0 #333;
-  padding: 0.75rem 1rem;
-  cursor: pointer;
-  font-family: 'Neucha', cursive;
-  font-weight: bold;
-  font-size: 1.1rem;
-  z-index: 999;
-  transition: all 0.1s ease;
-}
-
-.back-to-top:hover {
-  background: #ff7a28;
-  transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0 #333;
-}
-
-/* Publications page headers */
-.publications-page h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #333;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid #008B8B;
-  padding-bottom: 1rem;
-}
-
-.publications-page h3 {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-}
-
-.publications-page h4 {
-  text-align: center;
-  color: #666;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
+  
+  /* Publications responsive */
   .pub-stats {
     flex-direction: column;
     gap: 1.5rem;
@@ -1268,29 +1211,35 @@ span.color-secondary {
     display: block !important;
     margin: 1rem auto !important;
     max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  .key-items {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
-/* Publication cards (primary alerts) - clean with teal accent */
-.alert-primary,
-div.alert-primary {
-  background: white !important;
-  border: 2px solid #333 !important;
-  border-left: 6px solid #008B8B !important;
-  box-shadow: 3px 3px 0 #333 !important;
-  padding: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-  transition: all 0.2s ease !important;
-}
-
-.alert-primary:hover {
-  transform: translate(-2px, -2px) !important;
-  box-shadow: 5px 5px 0 #333 !important;
-  border-left-color: #FF8C42 !important;
-
-  /* Corresponding author highlighting via CSS class */
-.alert-primary.corresponding {
-  border-left-width: 8px !important;
-  border-left-color: #FF8C42 !important;
-  background: #fffbf5 !important;
+/* Small mobile (480px and below) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .news-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .news-text h2 {
+    font-size: 1.1rem;
+  }
+  
+  .news-text p {
+    font-size: 0.95rem;
+  }
 }
