@@ -1,0 +1,139 @@
+{{ define "main" }}
+
+<!-- Compact Hero -->
+<section class="welcome-hero welcome-hero-compact">
+  <div class="hero-content">
+    <h1 class="hero-title-compact">Welcome to The Etherington Lab!</h1>
+    <div class="hero-nav-wrapper">
+      <input type="checkbox" id="hero-menu-toggle" class="hero-menu-toggle">
+      <label for="hero-menu-toggle" class="hero-hamburger"></label>
+      <div class="hero-buttons">
+        <a href="/" class="paper-btn">News</a>
+        <a href="/marc-etherington" class="paper-btn">Marc Etherington</a>
+        <a href="/group" class="paper-btn">Group</a>
+        <a href="/research" class="paper-btn">Research</a>
+        <a href="/teaching" class="paper-btn">Teaching</a>
+        <a href="/publications" class="paper-btn active">Publications</a>
+        <a href="/seminars" class="paper-btn">Seminars</a>
+        <a href="/join-us" class="paper-btn btn-highlight">Join Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h1>{{ .Title }}</h1>
+
+<!-- Publication Stats -->
+<div class="pub-stats">
+  <div class="pub-stat">
+    <span class="pub-stat-number">30</span>
+    <span class="pub-stat-label">Total Publications</span>
+  </div>
+  <div class="pub-stat">
+    <span class="pub-stat-number">2,500+</span>
+    <span class="pub-stat-label">Citations</span>
+  </div>
+  <div class="pub-stat">
+    <span class="pub-stat-number">3</span>
+    <span class="pub-stat-label">Nature Family</span>
+  </div>
+</div>
+
+<!-- Publication Key -->
+<div class="pub-key">
+  <h3>Publication Key</h3>
+  <div class="key-items">
+    <div class="key-item">
+      <div class="key-box" style="border-left: 6px solid #008B8B; background: white;"></div>
+      <span>Standard Publication</span>
+    </div>
+    <div class="key-item">
+      <div class="key-box" style="border-left: 8px solid #FF8C42; background: #fffbf5;"></div>
+      <span>Corresponding Author or High-Impact Journal</span>
+    </div>
+  </div>
+</div>
+
+<!-- Filter Buttons -->
+<div class="pub-filters">
+  <button class="filter-btn active" onclick="filterPubs('all', this)">All Papers (30)</button>
+  <button class="filter-btn" onclick="filterPubs('corresponding', this)">As Corresponding Author</button>
+  <button class="filter-btn" onclick="filterPubs('nature', this)">Nature Family</button>
+  <button class="filter-btn" onclick="filterPubs('review', this)">Reviews</button>
+</div>
+
+<h4><strong>Click on the name of the paper to expand</strong></h4>
+
+<!-- Publications Content -->
+{{ .Content }}
+
+<!-- Back to Top Button -->
+<button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
+
+<!-- Floating Social Media -->
+<div class="social-float-compact">
+  <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" title="LinkedIn">
+    <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
+  </a>
+  <a href="YOUR_BLUESKY_URL" target="_blank" rel="noopener" title="Bluesky">
+    <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
+  </a>
+  <a href="YOUR_RESEARCHGATE_URL" target="_blank" rel="noopener" title="ResearchGate">
+    <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
+  </a>
+  <a href="YOUR_SCHOLAR_URL" target="_blank" rel="noopener" title="Google Scholar">
+    <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
+  </a>
+</div>
+
+<script>
+// Publication filtering functionality
+function filterPubs(category, button) {
+  const pubs = document.querySelectorAll('.alert-primary');
+  const buttons = document.querySelectorAll('.filter-btn');
+  
+  // Update active button
+  buttons.forEach(btn => btn.classList.remove('active'));
+  button.classList.add('active');
+  
+  // Show/hide based on category
+  pubs.forEach(pub => {
+    const text = pub.textContent;
+    const isCorresponding = text.includes('Marc K. Etherington*');
+    const isNature = text.includes('Nature Communications') || text.includes('Nature Materials');
+    const isReview = text.includes('Beyond the Single Molecule');
+    
+    let show = false;
+    
+    if (category === 'all') {
+      show = true;
+    } else if (category === 'corresponding' && isCorresponding) {
+      show = true;
+    } else if (category === 'nature' && isNature) {
+      show = true;
+    } else if (category === 'review' && isReview) {
+      show = true;
+    }
+    
+    pub.style.display = show ? 'block' : 'none';
+  });
+  
+  // Hide/show year headers
+  const years = document.querySelectorAll('h3');
+  years.forEach(year => {
+    const nextPubs = [];
+    let next = year.nextElementSibling;
+    while (next && next.tagName !== 'H3') {
+      if (next.classList && next.classList.contains('alert-primary')) {
+        nextPubs.push(next);
+      }
+      next = next.nextElementSibling;
+    }
+    
+    const anyVisible = nextPubs.some(pub => pub.style.display !== 'none');
+    year.style.display = anyVisible ? 'block' : 'none';
+  });
+}
+</script>
+
+{{ end }}
