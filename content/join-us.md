@@ -201,17 +201,23 @@ date = "2025-01-11"
 <h2 id="funding">Funding Opportunities</h2>
 
 <div class="funding-info">
-  <p>Multiple funding routes available for PhD students:</p>
+  <p>Multiple funding routes available for PhD students, PDRAs, fellows and visitors:</p>
   
   <div class="funding-list">
     <div class="funding-item">
-      <strong>UKRI Studentships</strong>
+      <strong>PhD Studentships</strong>
       <span>UK Research Council funding via Northumbria (competitive)</span>
     </div>
 
   <div class="funding-item">
-    <strong>International Funding</strong>
+    <strong>PDRA/Fellowship Funding</strong>
     <span>CSC, Commonwealth, country-specific schemes</span>
+  </div>
+
+  <div class="funding-item">
+    <strong>Visitor Exchange Grants</strong>
+    <span>RSC, Royal Society</span>
+  </div>
   </div>
 
   <div class="funding-item">
