@@ -1178,24 +1178,6 @@ span.color-secondary {
   margin-top: 0.75rem !important;
 }
 
-/* Highlight corresponding author papers - orange border */
-.alert-primary:has(strong) {
-  border-left-width: 8px !important;
-}
-
-/* Check if Marc is corresponding author (has *) */
-.alert-primary strong:contains("Marc K. Etherington*") {
-  color: #FF8C42 !important;
-}
-
-/* Nature/high-impact papers - orange accent */
-.pub-nature .alert-primary,
-.alert-primary:has(a[href*="nature.com"]) {
-  background: #fffbf5 !important;
-  border-left-color: #FF8C42 !important;
-  border-left-width: 8px !important;
-}
-
 /* TOC images in publications */
 .alert-primary img {
   border: 2px solid #333 !important;
