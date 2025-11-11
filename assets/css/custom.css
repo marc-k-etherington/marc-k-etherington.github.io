@@ -1331,3 +1331,62 @@ div.text-secondary {
   margin-top: 0.25rem;
   font-style: italic;
 }
+
+/* ===== BUTTON TEXT CONSISTENCY ===== */
+
+/* All buttons and their links use appropriate text colors */
+.paper-btn,
+.paper-btn a,
+.contact-btn,
+.contact-btn a,
+.filter-btn,
+.filter-btn a,
+.cta-btn-marc,
+.cta-btn-marc a,
+.hero-buttons .paper-btn,
+.hero-buttons .paper-btn a {
+  text-decoration: none !important;
+}
+
+/* White background buttons - black text */
+.paper-btn:not(.active):not(.btn-highlight),
+.contact-btn:not(.primary),
+.filter-btn:not(.active) {
+  color: #333 !important;
+}
+
+.paper-btn:not(.active):not(.btn-highlight) a,
+.contact-btn:not(.primary) a,
+.filter-btn:not(.active) a {
+  color: #333 !important;
+}
+
+/* Active/colored buttons - white text */
+.paper-btn.active,
+.paper-btn.active a,
+.filter-btn.active,
+.filter-btn.active a,
+.contact-btn.primary,
+.contact-btn.primary a,
+.cta-btn-marc,
+.cta-btn-marc a,
+.btn-highlight.active,
+.btn-highlight.active a {
+  color: white !important;
+}
+
+/* Orange hover buttons - white text */
+.btn-highlight:hover,
+.btn-highlight:hover a,
+.cta-btn-marc:hover,
+.cta-btn-marc:hover a,
+.contact-btn.primary:hover,
+.contact-btn.primary:hover a {
+  color: white !important;
+}
+
+/* Teal active buttons - white text */
+.hero-buttons .paper-btn.active,
+.hero-buttons .paper-btn.active a {
+  color: white !important;
+}
