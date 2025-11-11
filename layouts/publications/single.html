@@ -134,6 +134,23 @@ function filterPubs(category, button) {
     year.style.display = anyVisible ? 'block' : 'none';
   });
 }
+
+  <script>
+// Highlight corresponding author papers on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const pubs = document.querySelectorAll('.alert-primary');
+  
+  pubs.forEach(pub => {
+    const text = pub.textContent;
+    // Check if Marc is corresponding author (asterisk after name)
+    if (/Marc\s+K\.?\s+Etherington[^a-zA-Z]*\*/i.test(text)) {
+      pub.style.borderLeftWidth = '8px';
+      pub.style.borderLeftColor = '#FF8C42';
+      pub.style.background = '#fffbf5';
+    }
+  });
+});
+</script>
 </script>
 
 {{ end }}
