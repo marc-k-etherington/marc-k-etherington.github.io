@@ -1,5 +1,34 @@
 {{ define "main" }}
 
+<style>
+/* Responsive typography for this post page */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2 {
+    font-size: 1.4rem !important;
+  }
+  
+  p {
+    font-size: 1rem !important;
+  }
+  
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+}
+</style>
+
 <!-- Compact Hero for post pages -->
 <section class="welcome-hero welcome-hero-compact">
   <div class="hero-content">
