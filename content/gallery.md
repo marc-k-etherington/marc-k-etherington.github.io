@@ -3,7 +3,7 @@ title = "Gallery"
 type = "gallery"
 subtitle = "Moments from the lab, conferences, and adventures"
 hero_image = "/images/gallery/japan-pagoda-fuji.jpg"
-hero_caption = "Mount Fuji & Chureito Pagoda - Research visit to Japan 🇯🇵"
+hero_caption = "Mount Fuji & Chureito Pagoda - Research visit to Japan 🗻"
 
 
 [[photos]]
