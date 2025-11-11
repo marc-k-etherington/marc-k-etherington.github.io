@@ -998,3 +998,293 @@ body h3 {
 .alert-secondary:first-of-type {
   margin-top: 1rem;
 }
+/* ===== PUBLICATIONS PAGE - COLOR PALETTE & IMPROVEMENTS ===== */
+
+/* Publication stats section */
+.pub-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background: #e0f7f7;
+  border: 3px solid #008B8B;
+  box-shadow: 5px 5px 0 #333;
+}
+
+.pub-stat {
+  text-align: center;
+}
+
+.pub-stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #008B8B;
+  margin-bottom: 0.5rem;
+}
+
+.pub-stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Publication key/legend */
+.pub-key {
+  background: #f9f9f9;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.pub-key h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.key-items {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.key-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.key-box {
+  width: 60px;
+  height: 40px;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #333;
+}
+
+/* Publication filters */
+.pub-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-family: 'Neucha', cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.1s ease;
+  color: #333;
+}
+
+.filter-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #333;
+  background: #f5f5f5;
+}
+
+.filter-btn.active {
+  background: #008B8B;
+  color: white;
+  border-color: #008B8B;
+}
+
+/* Year badges - teal */
+.badge,
+span.badge,
+h3 .badge {
+  background: #008B8B !important;
+  color: white !important;
+  border: 2px solid #333 !important;
+  box-shadow: 3px 3px 0 #333 !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: bold !important;
+  display: inline-block !important;
+}
+
+/* Publication cards (primary alerts) - clean with teal accent */
+.alert-primary,
+div.alert-primary {
+  background: white !important;
+  border: 2px solid #333 !important;
+  border-left: 6px solid #008B8B !important;
+  box-shadow: 3px 3px 0 #333 !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.alert-primary:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 5px 5px 0 #333 !important;
+  border-left-color: #FF8C42 !important;
+}
+
+/* Collapsible publication titles */
+.collapsible summary,
+details summary {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  color: #333 !important;
+  list-style: none !important;
+  padding: 0.5rem 0 !important;
+}
+
+.collapsible summary:hover,
+details summary:hover {
+  color: #008B8B !important;
+}
+
+/* Remove default disclosure triangle */
+.collapsible summary::-webkit-details-marker,
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add custom expand indicator */
+.collapsible summary::before,
+details summary::before {
+  content: "▶ ";
+  color: #008B8B;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.collapsible[open] summary::before,
+details[open] summary::before {
+  transform: rotate(90deg);
+  color: #FF8C42;
+}
+
+/* Journal/citation info (secondary color shortcode) */
+.color-secondary,
+span.color-secondary {
+  color: #666 !important;
+  font-style: italic !important;
+  font-size: 0.95rem !important;
+  display: block !important;
+  margin-top: 0.75rem !important;
+}
+
+/* Highlight corresponding author papers - orange border */
+.alert-primary:has(strong) {
+  border-left-width: 8px !important;
+}
+
+/* Check if Marc is corresponding author (has *) */
+.alert-primary strong:contains("Marc K. Etherington*") {
+  color: #FF8C42 !important;
+}
+
+/* Nature/high-impact papers - orange accent */
+.pub-nature .alert-primary,
+.alert-primary:has(a[href*="nature.com"]) {
+  background: #fffbf5 !important;
+  border-left-color: #FF8C42 !important;
+  border-left-width: 8px !important;
+}
+
+/* TOC images in publications */
+.alert-primary img {
+  border: 2px solid #333 !important;
+  box-shadow: 2px 2px 0 #333 !important;
+  margin-left: 1rem !important;
+}
+
+/* Altmetric badges */
+.altmetric-embed {
+  margin-top: 1rem !important;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  background: #FF8C42;
+  color: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-family: 'Neucha', cursive;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 999;
+  transition: all 0.1s ease;
+}
+
+.back-to-top:hover {
+  background: #ff7a28;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #333;
+}
+
+/* Publications page headers */
+.publications-page h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 1rem;
+}
+
+.publications-page h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.publications-page h4 {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pub-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .pub-stat-number {
+    font-size: 2rem;
+  }
+  
+  .pub-filters {
+    flex-direction: column;
+  }
+  
+  .filter-btn {
+    width: 100%;
+  }
+  
+  .back-to-top {
+    bottom: 4rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .alert-primary img {
+    float: none !important;
+    display: block !important;
+    margin: 1rem auto !important;
+    max-width: 100% !important;
+  }
+}
