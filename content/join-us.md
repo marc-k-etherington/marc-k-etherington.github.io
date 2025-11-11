@@ -188,25 +188,25 @@ date = "2025-01-11"
   <p>Multiple funding routes available for PhD students, PDRAs, fellows and visitors:</p>
   
   <div class="funding-list">
-    <div class="funding-item">
-    <strong>PhD Studentships</strong>
-    <span>UK Research Council funding via Northumbria (competitive)</span>
-    </div>
+  <div class="funding-item">
+  <strong>PhD Studentships</strong>
+  <span>UK Research Council funding via Northumbria (competitive)</span>
+  </div>
 
-    <div class="funding-item">
-    <strong>PDRA/Fellowship Funding</strong>
-    <span>CSC, Commonwealth, country-specific schemes</span>
-    </div>
+  <div class="funding-item">
+  <strong>PDRA/Fellowship Funding</strong>
+  <span>CSC, Commonwealth, country-specific schemes</span>
+  </div>
 
-    <div class="funding-item">
-    <strong>Visitor Exchange Grants</strong>
-    <span>RSC, Royal Society</span>
-    </div>
+  <div class="funding-item">
+  <strong>Visitor Exchange Grants</strong>
+  <span>RSC, Royal Society</span>
+  </div>
 
-    <div class="funding-item">
-    <strong>Self-Funded</strong>
-    <span>UK/EU/International students welcome</span>
-    </div>
+  <div class="funding-item">
+  <strong>Self-Funded</strong>
+  <span>UK/EU/International students welcome</span>
+  </div>
   </div>
 
   <div class="info-box">
