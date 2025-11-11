@@ -48,6 +48,13 @@ decoration = "taped"
 link = ""
 
 [[photos]]
+image = "/images/gallery/Kobe.jpeg"
+caption = "August 2025 - The Heights of Kobe"
+category = "travel"
+decoration = "taped"
+link = ""
+
+[[photos]]
 image = "/post/images/DN_2025.jpg"
 caption = "March 2025 - Deep North coffee fuel ☕"
 category = "social"
