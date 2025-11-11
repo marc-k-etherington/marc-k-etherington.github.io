@@ -7,6 +7,45 @@ type = "publications"
 <h2>Publications</h2>
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 
+<!-- Publication Stats -->
+<div class="pub-stats">
+  <div class="pub-stat">
+    <span class="pub-stat-number">30</span>
+    <span class="pub-stat-label">Total Publications</span>
+  </div>
+  <div class="pub-stat">
+    <span class="pub-stat-number">2,500+</span>
+    <span class="pub-stat-label">Citations</span>
+  </div>
+  <div class="pub-stat">
+    <span class="pub-stat-number">3</span>
+    <span class="pub-stat-label">Nature Family</span>
+  </div>
+</div>
+
+<!-- Publication Key -->
+<div class="pub-key">
+  <h3>Publication Key</h3>
+  <div class="key-items">
+    <div class="key-item">
+      <div class="key-box" style="border-left: 6px solid #008B8B; background: white;"></div>
+      <span>Standard Publication</span>
+    </div>
+    <div class="key-item">
+      <div class="key-box" style="border-left: 8px solid #FF8C42; background: #fffbf5;"></div>
+      <span>Corresponding Author</span>
+    </div>
+  </div>
+</div>
+
+<!-- Filter Buttons -->
+<div class="pub-filters">
+  <button class="filter-btn active" onclick="filterPubs('all', this)">All Papers (30)</button>
+  <button class="filter-btn" onclick="filterPubs('corresponding', this)">As Corresponding Author</button>
+  <button class="filter-btn" onclick="filterPubs('nature', this)">Nature Family</button>
+  <button class="filter-btn" onclick="filterPubs('review', this)">Reviews</button>
+</div>
+
 <h4>**Click on the name of the paper to expand**</h4>
 
 <h3>{{< badge >}}2025{{< /badge >}}</h3>
