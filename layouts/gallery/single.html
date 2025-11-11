@@ -3,6 +3,10 @@
 <!-- Hero Banner -->
 {{ partial "hero-banner.html" . }}
 
+
+
+<h1>{{ .Title }}</h1>
+
 <!-- Gallery Hero Image -->
 {{ if .Params.hero_image }}
 <div class="gallery-hero">
@@ -12,8 +16,6 @@
   {{ end }}
 </div>
 {{ end }}
-
-<h1>{{ .Title }}</h1>
 <p class="intro">{{ .Params.subtitle | default "Moments from the lab, conferences, and adventures" }}</p>
 
 <!-- Filter Buttons -->
