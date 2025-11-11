@@ -21,7 +21,7 @@ link = "/fluorofrog/"
 
 [[photos]]
 image = "/post/images/Ruth_ICEL_Talk.jpg"
-caption = "Ruth at ICEL 2024, Kyoto 🇯🇵"
+caption = "Ruth at ICEL 2024, Kyoto 🗾"
 category = "conferences"
 decoration = ""
 link = "/ruth-icel-2024/"
