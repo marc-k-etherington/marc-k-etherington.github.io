@@ -49,7 +49,7 @@ link = ""
 
 [[photos]]
 image = "/images/gallery/Kobe.jpeg"
-caption = "August 2025 - The Heights of Kobe"
+caption = "August 2025 - The Heights of Kobe 🚠"
 category = "travel"
 decoration = "taped"
 link = ""
