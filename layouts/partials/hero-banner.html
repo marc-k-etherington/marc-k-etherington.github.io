@@ -1,0 +1,28 @@
+<section class="welcome-hero {{ if not .IsHome }}welcome-hero-compact{{ end }}">
+  <div class="hero-content">
+    {{ if .IsHome }}
+      <!-- Full hero for homepage -->
+      <h1 class="hero-title">Welcome to The Etherington Lab!</h1>
+      <p class="hero-subtitle">Advancing organic photonics, TADF materials, and photophysical chemistry at Northumbria University</p>
+    {{ else }}
+      <!-- Compact hero for other pages -->
+      <h1 class="hero-title-compact">Welcome to The Etherington Lab!</h1>
+    {{ end }}
+    
+    <div class="hero-nav-wrapper">
+      <input type="checkbox" id="hero-menu-toggle" class="hero-menu-toggle">
+      <label for="hero-menu-toggle" class="hero-hamburger"></label>
+      <div class="hero-buttons">
+        <a href="/" class="paper-btn {{ if .IsHome }}active{{ end }}">News</a>
+        <a href="/marc-etherington" class="paper-btn {{ if eq .File.ContentBaseName "marc-etherington" }}active{{ end }}">Marc Etherington</a>
+        <a href="/group" class="paper-btn {{ if eq .File.ContentBaseName "group" }}active{{ end }}">Group</a>
+        <a href="/research" class="paper-btn {{ if eq .File.ContentBaseName "research" }}active{{ end }}">Research</a>
+        <a href="/teaching" class="paper-btn {{ if eq .File.ContentBaseName "teaching" }}active{{ end }}">Teaching</a>
+        <a href="/publications" class="paper-btn {{ if eq .File.ContentBaseName "publications" }}active{{ end }}">Publications</a>
+        <a href="/seminars" class="paper-btn {{ if eq .File.ContentBaseName "seminars" }}active{{ end }}">Seminars</a>
+        <a href="/gallery" class="paper-btn {{ if eq .File.ContentBaseName "gallery" }}active{{ end }}">Gallery</a>
+        <a href="/join-us" class="paper-btn btn-highlight {{ if eq .File.ContentBaseName "join-us" }}active{{ end }}">Join Us</a>
+      </div>
+    </div>
+  </div>
+</section>
