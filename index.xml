@@ -6,7 +6,7 @@
 &lt;/div&gt;
 &lt;!-- Why Join --&gt;
 &lt;div class="why-join"&gt;
- &lt;h2&gt;Why Join The Etherington Lab?&lt;/h2&gt;
+ &lt;h2&gt;Why Join Us?&lt;/h2&gt;
  &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;World-leading expertise&lt;/strong&gt; in TADF mechanisms and spin-vibronic coupling (Nature Communications, 500+ citations)&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;International collaborations&lt;/strong&gt; with Durham, Osaka and Kitasato Universities&lt;/li&gt;
@@ -78,8 +78,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_7bded247f938d4e65cc146c3f7d6b241" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_7bded247f938d4e65cc146c3f7d6b241"&gt;
+ &lt;input id="collapsible_2bb4de13c4d47efdf285c166c346d977" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_2bb4de13c4d47efdf285c166c346d977"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -142,8 +142,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_78b6fd2ed6d4fd2433c14ce7c147695b" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_78b6fd2ed6d4fd2433c14ce7c147695b"&gt;
+ &lt;input id="collapsible_f17dddd265393fe2c74c441c6467bbe8" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_f17dddd265393fe2c74c441c6467bbe8"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
