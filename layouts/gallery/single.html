@@ -3,8 +3,6 @@
 <!-- Hero Banner -->
 {{ partial "hero-banner.html" . }}
 
-
-
 <h1>{{ .Title }}</h1>
 
 <!-- Gallery Hero Image -->
@@ -76,13 +74,23 @@
       {{ end }}
       
       <!-- Photo Polaroid -->
+      <!-- Handle both single category (string) and multiple categories (array) -->
+      {{ $categoryData := "" }}
+      {{ if reflect.IsSlice $photo.categories }}
+        {{ $categoryData = delimit $photo.categories "," }}
+      {{ else if $photo.category }}
+        {{ $categoryData = $photo.category }}
+      {{ else if $photo.categories }}
+        {{ $categoryData = $photo.categories }}
+      {{ end }}
+      
       {{ if $photo.link }}
-        <a href="{{ $photo.link }}" class="polaroid clickable {{ $photo.decoration }}" data-category="{{ $photo.category }}">
+        <a href="{{ $photo.link }}" class="polaroid clickable {{ $photo.decoration }}" data-category="{{ $categoryData }}">
           <img src="{{ $photo.image }}" alt="{{ $photo.caption }}" class="polaroid-photo">
           <div class="polaroid-caption">{{ $photo.caption }}</div>
         </a>
       {{ else }}
-        <div class="polaroid {{ $photo.decoration }}" data-category="{{ $photo.category }}">
+        <div class="polaroid {{ $photo.decoration }}" data-category="{{ $categoryData }}">
           <img src="{{ $photo.image }}" alt="{{ $photo.caption }}" class="polaroid-photo">
           <div class="polaroid-caption">{{ $photo.caption }}</div>
         </div>
@@ -124,9 +132,12 @@ function filterGallery(category) {
   
   // Show/hide polaroids
   polaroids.forEach(polaroid => {
-    const photoCategory = polaroid.getAttribute('data-category');
+    const categoryData = polaroid.getAttribute('data-category');
     
-    if (category === 'all' || photoCategory === category) {
+    // Handle both single category and multiple categories (comma-separated)
+    const photoCategories = categoryData ? categoryData.split(',').map(c => c.trim()) : [];
+    
+    if (category === 'all' || photoCategories.includes(category)) {
       polaroid.style.display = 'block';
     } else {
       polaroid.style.display = 'none';
