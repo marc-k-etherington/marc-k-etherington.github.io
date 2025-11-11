@@ -5,6 +5,13 @@ subtitle = "Moments from the lab, conferences, and adventures"
 hero_image = "/images/gallery/japan-pagoda-fuji.jpg"
 hero_caption = "Mount Fuji & Chureito Pagoda - Research visit to Japan 🗻"
 
+[[photos]]
+image = "/images/gallery/Marc_Izakaya.jpeg"
+caption = "Who ordered the French fries! 🍟"
+category = "social"
+decoration = "pinned"
+link = ""
+
 
 [[photos]]
 image = "/post/images/DN_2025.jpg"
