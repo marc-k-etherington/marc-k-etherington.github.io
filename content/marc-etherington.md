@@ -1,6 +1,8 @@
 +++
 date = "2023-02-07"
 author = "Marc Etherington"
+title = "Marc Etherington"
+type = "marc-etherington"
 +++
 <h2>Marc Etherington</h2>
 
