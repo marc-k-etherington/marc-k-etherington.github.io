@@ -1243,3 +1243,81 @@ div.text-secondary {
     font-size: 0.95rem;
   }
 }
+
+/* ===== SEMINARS PAGE - STATS & FILTERS ===== */
+
+/* Seminar stats section */
+.seminar-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background: #fff5eb;
+  border: 3px solid #FF8C42;
+  box-shadow: 5px 5px 0 #333;
+}
+
+.seminar-stat {
+  text-align: center;
+}
+
+.seminar-stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FF8C42;
+  margin-bottom: 0.5rem;
+}
+
+.seminar-stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Seminar key/legend */
+.seminar-key {
+  background: #f9f9f9;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.seminar-key h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* Seminar filters */
+.seminar-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive for seminars */
+@media (max-width: 768px) {
+  .seminar-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .seminar-stat-number {
+    font-size: 2rem;
+  }
+  
+  .seminar-filters {
+    flex-direction: column;
+  }
+  
+  .seminar-filters .filter-btn {
+    width: 100%;
+  }
+}
