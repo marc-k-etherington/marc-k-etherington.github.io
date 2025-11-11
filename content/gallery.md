@@ -13,6 +13,13 @@ decoration = "taped"
 link = ""
 
 [[photos]]
+image = "/images/gallery/Fuji_Climb.jpeg"
+caption = "Running up Fuji with Nicki and Carol 🗻"
+category = "travel"
+decoration = "pinned"
+link = ""
+
+[[photos]]
 image = "/images/gallery/Nara_Deer.jpeg"
 caption = "To be a deer in Nara 🦌"
 category = "travel"
