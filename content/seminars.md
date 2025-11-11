@@ -13,11 +13,11 @@ type = "seminars"
     <span class="seminar-stat-label">Total Seminars</span>
   </div>
   <div class="seminar-stat">
-    <span class="seminar-stat-number">15</span>
+    <span class="seminar-stat-number">13</span>
     <span class="seminar-stat-label">Invited Talks</span>
   </div>
   <div class="seminar-stat">
-    <span class="seminar-stat-number">8</span>
+    <span class="seminar-stat-number">9</span>
     <span class="seminar-stat-label">Countries</span>
   </div>
 </div>
