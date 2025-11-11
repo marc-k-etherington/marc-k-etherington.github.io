@@ -13,6 +13,13 @@ decoration = "taped"
 link = ""
 
 [[photos]]
+image = "/images/gallery/FUK_Coffee.jpeg"
+caption = "Some conference downtime ☕"
+category = "conference,travel"
+decoration = "taped"
+link = ""
+
+[[photos]]
 image = "/images/gallery/Fuji_Climb.jpeg"
 caption = "Running up Fuji with Nicki and Carol 🗻"
 category = "travel"
