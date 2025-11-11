@@ -10,8 +10,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_8bcbd6234fc319467724d1c567efde4d" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_8bcbd6234fc319467724d1c567efde4d"&gt;
+ &lt;input id="collapsible_52cf72bd7e1614b364c47d9f46dd3c8e" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_52cf72bd7e1614b364c47d9f46dd3c8e"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -75,8 +75,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_647f3e7bcfd5d7d6c4e429c31421db86" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_647f3e7bcfd5d7d6c4e429c31421db86"&gt;
+ &lt;input id="collapsible_ed643cf44ddeb95fc487cd236161772b" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_ed643cf44ddeb95fc487cd236161772b"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -86,11 +86,11 @@ This page will be populated soon. Check out the publications page as that is goi
 &lt;!-- Seminar Stats --&gt;
 &lt;div class="seminar-stats"&gt;
  &lt;div class="seminar-stat"&gt;
- &lt;span class="seminar-stat-number"&gt;{{ len (findRE `(?s)&lt;div class="alert alert-(?:danger|secondary)` .Content) }}&lt;/span&gt;
+ &lt;span class="seminar-stat-number"&gt;27&lt;/span&gt;
  &lt;span class="seminar-stat-label"&gt;Total Seminars&lt;/span&gt;
  &lt;/div&gt;
  &lt;div class="seminar-stat"&gt;
- &lt;span class="seminar-stat-number"&gt;{{ len (findRE `(?s)&lt;div class="alert alert-danger` .Content) }}&lt;/span&gt;
+ &lt;span class="seminar-stat-number"&gt;15&lt;/span&gt;
  &lt;span class="seminar-stat-label"&gt;Invited Talks&lt;/span&gt;
  &lt;/div&gt;
  &lt;div class="seminar-stat"&gt;
