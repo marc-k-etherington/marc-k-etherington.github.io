@@ -1,0 +1,138 @@
+{{ define "main" }}
+
+<!-- Hero Banner -->
+{{ partial "hero-banner.html" . }}
+
+<!-- Gallery Hero Image -->
+{{ if .Params.hero_image }}
+<div class="gallery-hero">
+  <img src="{{ .Params.hero_image }}" alt="{{ .Params.hero_caption | default "Gallery" }}" class="gallery-hero-img">
+  {{ if .Params.hero_caption }}
+  <div class="gallery-hero-caption">{{ .Params.hero_caption }}</div>
+  {{ end }}
+</div>
+{{ end }}
+
+<h1>{{ .Title }}</h1>
+<p class="intro">{{ .Params.subtitle | default "Moments from the lab, conferences, and adventures" }}</p>
+
+<!-- Filter Buttons -->
+<div class="gallery-filters">
+  <button class="gallery-filter-btn active" onclick="filterGallery('all')">All Photos</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('lab')">Lab Life</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('conferences')">Conferences</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('social')">Social</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('travel')">Travel</button>
+</div>
+
+<!-- Corkboard Container -->
+<div class="scrapbook-container">
+  <div class="scrapbook" id="scrapbook-grid">
+    
+    {{ $photos := .Params.photos }}
+    {{ $decorativeFrequency := 4 }}
+    
+    {{ range $index, $photo := $photos }}
+      
+      <!-- Insert decorative item every 4th position -->
+      {{ if and (gt $index 0) (eq (mod $index $decorativeFrequency) 0) }}
+        {{ $decorType := mod (div $index $decorativeFrequency) 4 }}
+        
+        {{ if eq $decorType 0 }}
+          <!-- Sticky Note -->
+          <div class="decorative-item">
+            <div class="sticky-note" style="--rotation: {{ sub 0 (mod $index 15) }}deg; background: {{ index (slice "linear-gradient(135deg, #ffeb3b 0%, #ffd700 100%)" "linear-gradient(135deg, #a8e6cf 0%, #7bc9a3 100%)" "linear-gradient(135deg, #ffb3ba 0%, #ff8a9a 100%)" "linear-gradient(135deg, #ffd4a3 0%, #ffb347 100%)") (mod $index 4) }};">
+              {{ index (slice "TADF Research\n⚡" "Beyond the\nsingle molecule\n📚" "Nature Comms\n2016 & 2017\n🌟" "Spin-vibronic\ncoupling\n⚗️") (mod $index 4) }}
+            </div>
+          </div>
+        {{ else if eq $decorType 1 }}
+          <!-- Icon -->
+          <div class="decorative-item">
+            <div class="cork-item" style="--rotation: {{ mod $index 30 }}deg;">
+              {{ index (slice "🧪" "🔬" "⚗️" "💡" "📊" "🎯" "📐") (mod $index 7) }}
+            </div>
+          </div>
+        {{ else if eq $decorType 2 }}
+          <!-- Business Card -->
+          <div class="decorative-item">
+            <div class="business-card" style="--rotation: {{ sub 0 (mod $index 12) }}deg;">
+              <strong>The Etherington Lab</strong>
+              Organic Photonics & TADF<br>
+              Northumbria University<br>
+              Newcastle upon Tyne<br>
+              🔬 Spectroscopy • Photophysics
+            </div>
+          </div>
+        {{ else }}
+          <!-- Another sticky note -->
+          <div class="decorative-item">
+            <div class="sticky-note" style="--rotation: {{ mod $index 20 }}deg; background: {{ index (slice "linear-gradient(135deg, #c5e1a5 0%, #aed581 100%)" "linear-gradient(135deg, #e1bee7 0%, #ce93d8 100%)" "linear-gradient(135deg, #ffccbc 0%, #ffab91 100%)") (mod $index 3) }};">
+              {{ index (slice "Low temp\nmeasurements\n📉" "Conference\nseason!\n✈️" "New results!\n🎉") (mod $index 3) }}
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+      
+      <!-- Photo Polaroid -->
+      {{ if $photo.link }}
+        <a href="{{ $photo.link }}" class="polaroid clickable {{ $photo.decoration }}" data-category="{{ $photo.category }}">
+          <img src="{{ $photo.image }}" alt="{{ $photo.caption }}" class="polaroid-photo">
+          <div class="polaroid-caption">{{ $photo.caption }}</div>
+        </a>
+      {{ else }}
+        <div class="polaroid {{ $photo.decoration }}" data-category="{{ $photo.category }}">
+          <img src="{{ $photo.image }}" alt="{{ $photo.caption }}" class="polaroid-photo">
+          <div class="polaroid-caption">{{ $photo.caption }}</div>
+        </div>
+      {{ end }}
+      
+    {{ end }}
+    
+  </div>
+</div>
+
+<!-- Floating Social Media -->
+<div class="social-float-compact">
+  <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" title="LinkedIn">
+    <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
+  </a>
+  <a href="YOUR_BLUESKY_URL" target="_blank" rel="noopener" title="Bluesky">
+    <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
+  </a>
+  <a href="YOUR_RESEARCHGATE_URL" target="_blank" rel="noopener" title="ResearchGate">
+    <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
+  </a>
+  <a href="YOUR_SCHOLAR_URL" target="_blank" rel="noopener" title="Google Scholar">
+    <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
+  </a>
+</div>
+
+<script>
+function filterGallery(category) {
+  const polaroids = document.querySelectorAll('.polaroid');
+  const decoratives = document.querySelectorAll('.decorative-item');
+  const buttons = document.querySelectorAll('.gallery-filter-btn');
+  
+  // Update active button
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  // Show/hide polaroids
+  polaroids.forEach(polaroid => {
+    const photoCategory = polaroid.getAttribute('data-category');
+    
+    if (category === 'all' || photoCategory === category) {
+      polaroid.style.display = 'block';
+    } else {
+      polaroid.style.display = 'none';
+    }
+  });
+  
+  // Show decorative items only when "all" is selected
+  decoratives.forEach(item => {
+    item.style.display = category === 'all' ? 'flex' : 'none';
+  });
+}
+</script>
+
+{{ end }}
