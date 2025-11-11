@@ -1,0 +1,100 @@
+{{ define "main" }}
+
+<!-- Compact Hero -->
+<section class="welcome-hero welcome-hero-compact">
+  <div class="hero-content">
+    <h1 class="hero-title-compact">Welcome to The Etherington Lab!</h1>
+    <div class="hero-nav-wrapper">
+      <input type="checkbox" id="hero-menu-toggle" class="hero-menu-toggle">
+      <label for="hero-menu-toggle" class="hero-hamburger"></label>
+      <div class="hero-buttons">
+        <a href="/" class="paper-btn">News</a>
+        <a href="/marc-etherington" class="paper-btn">Marc Etherington</a>
+        <a href="/group" class="paper-btn">Group</a>
+        <a href="/research" class="paper-btn">Research</a>
+        <a href="/teaching" class="paper-btn">Teaching</a>
+        <a href="/publications" class="paper-btn">Publications</a>
+        <a href="/seminars" class="paper-btn active">Seminars</a>
+        <a href="/join-us" class="paper-btn btn-highlight">Join Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h1>{{ .Title }}</h1>
+
+<!-- Seminars Content -->
+{{ .Content }}
+
+<!-- Back to Top Button -->
+<button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
+
+<!-- Floating Social Media -->
+<div class="social-float-compact">
+  <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" title="LinkedIn">
+    <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
+  </a>
+  <a href="YOUR_BLUESKY_URL" target="_blank" rel="noopener" title="Bluesky">
+    <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
+  </a>
+  <a href="YOUR_RESEARCHGATE_URL" target="_blank" rel="noopener" title="ResearchGate">
+    <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
+  </a>
+  <a href="YOUR_SCHOLAR_URL" target="_blank" rel="noopener" title="Google Scholar">
+    <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
+  </a>
+</div>
+
+<script>
+// Seminar filtering functionality
+function filterSeminars(category, button) {
+  const seminars = document.querySelectorAll('.alert-danger, .alert-secondary');
+  const buttons = document.querySelectorAll('.filter-btn');
+  
+  // Update active button
+  buttons.forEach(btn => btn.classList.remove('active'));
+  button.classList.add('active');
+  
+  // Show/hide based on category
+  seminars.forEach(seminar => {
+    const isInvited = seminar.classList.contains('alert-danger');
+    const isContributed = seminar.classList.contains('alert-secondary');
+    const text = seminar.textContent;
+    const isInternational = !text.includes('(UK)');
+    
+    let show = false;
+    
+    if (category === 'all') {
+      show = true;
+    } else if (category === 'invited' && isInvited) {
+      show = true;
+    } else if (category === 'contributed' && isContributed) {
+      show = true;
+    } else if (category === 'international' && isInternational) {
+      show = true;
+    }
+    
+    seminar.style.display = show ? 'block' : 'none';
+  });
+  
+  // Hide/show year headers
+  const years = document.querySelectorAll('h3');
+  years.forEach(year => {
+    let next = year.nextElementSibling;
+    let anyVisible = false;
+    
+    while (next && next.tagName !== 'H3') {
+      if ((next.classList.contains('alert-danger') || next.classList.contains('alert-secondary')) && 
+          next.style.display !== 'none') {
+        anyVisible = true;
+        break;
+      }
+      next = next.nextElementSibling;
+    }
+    
+    year.style.display = anyVisible ? 'block' : 'none';
+  });
+}
+</script>
+
+{{ end }}
