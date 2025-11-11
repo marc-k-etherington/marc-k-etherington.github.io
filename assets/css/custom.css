@@ -1321,3 +1321,13 @@ div.text-secondary {
     width: 100%;
   }
 }
+
+/* Citation/stat count date stamp */
+.pub-stat-updated,
+.seminar-stat-updated {
+  display: block;
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
