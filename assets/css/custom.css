@@ -1390,3 +1390,511 @@ div.text-secondary {
 .hero-buttons .paper-btn.active a {
   color: white !important;
 }
+
+/* ===== JOIN US PAGE ===== */
+
+/* Recruiting banner */
+.recruiting-banner {
+  background: #FF8C42;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border: 3px solid #333;
+  box-shadow: 5px 5px 0 #333;
+  margin-bottom: 2rem;
+}
+
+.recruiting-banner h2 {
+  margin: 0 0 0.5rem 0;
+  color: white;
+  border: none;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.recruiting-banner p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Why join section */
+.why-join {
+  background: #e0f7f7;
+  border: 3px solid #008B8B;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 0 #333;
+}
+
+.why-join h2 {
+  margin-top: 0;
+  color: #008B8B;
+  border: none;
+  padding: 0;
+}
+
+.why-join ul {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.why-join li {
+  margin-bottom: 0.5rem;
+}
+
+/* Audience cards - interactive tabs */
+.audience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.audience-card {
+  background: white;
+  border: 3px solid #333;
+  box-shadow: 4px 4px 0 #333;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.audience-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #333;
+}
+
+.audience-card.active {
+  background: #008B8B;
+  color: white;
+  border-color: #008B8B;
+}
+
+.audience-card.active .audience-title,
+.audience-card.active .audience-subtitle {
+  color: white;
+}
+
+.audience-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.audience-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.audience-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Opportunities key */
+.opportunities-key {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 2px solid #333;
+  flex-wrap: wrap;
+}
+
+.opportunities-key .key-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.opportunities-key .key-box {
+  width: 60px;
+  height: 40px;
+  box-shadow: 2px 2px 0 #333;
+}
+
+/* Opportunities grid */
+.opportunities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.opportunity-card {
+  background: white;
+  border: 3px solid #333;
+  padding: 1.5rem;
+  box-shadow: 4px 4px 0 #333;
+}
+
+.opportunity-card.unfunded {
+  background: #fff5eb;
+  border-color: #FF8C42;
+  border-left: 8px solid #FF8C42;
+}
+
+.opportunity-card.unfunded h3 {
+  color: #FF8C42;
+}
+
+.opportunity-card.funded {
+  background: #e0f7f7;
+  border-color: #008B8B;
+  border-left: 8px solid #008B8B;
+}
+
+.opportunity-card.funded h3 {
+  color: #008B8B;
+}
+
+.opportunity-card.available {
+  background: #e8f5e9;
+  border-color: #28a745;
+  border-left: 8px solid #28a745;
+}
+
+.opportunity-card.available h3 {
+  color: #28a745;
+}
+
+.opportunity-card.none-available {
+  background: #f5f5f5;
+  border-color: #999;
+  text-align: center;
+}
+
+.opportunity-card.none-available h3 {
+  color: #666;
+}
+
+.opportunity-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.opportunity-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.opportunity-card ul {
+  text-align: left;
+  color: #555;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.opportunity-card li {
+  margin-bottom: 0.25rem;
+}
+
+.opportunity-btn {
+  display: inline-block;
+  background: #333;
+  color: white !important;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none !important;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  transition: all 0.1s ease;
+}
+
+.opportunity-btn:hover {
+  background: #555;
+  color: white !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 #333;
+}
+
+.opportunity-card.unfunded .opportunity-btn {
+  background: #FF8C42;
+  border-color: #FF8C42;
+}
+
+.opportunity-card.unfunded .opportunity-btn:hover {
+  background: #ff7a28;
+}
+
+.opportunity-card.funded .opportunity-btn {
+  background: #008B8B;
+  border-color: #008B8B;
+}
+
+.opportunity-card.funded .opportunity-btn:hover {
+  background: #007070;
+}
+
+/* Student success cards */
+.student-success {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.success-card {
+  background: white;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 0 #333;
+  border-left: 6px solid #FF8C42;
+}
+
+.success-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.success-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.success-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Funding info sections */
+.funding-info {
+  background: #f9f9f9;
+  border: 2px solid #333;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.funding-info h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.funding-info h3:first-of-type {
+  margin-top: 0;
+}
+
+.funding-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.funding-item {
+  background: white;
+  border: 2px solid #333;
+  padding: 1rem;
+  border-left: 4px solid #008B8B;
+}
+
+.funding-item strong {
+  color: #008B8B;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Info boxes */
+.info-box {
+  background: #fffbf5;
+  border-left: 5px solid #FF8C42;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.info-box strong {
+  color: #FF8C42;
+}
+
+/* Application process timeline */
+.process-timeline {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f9f9f9;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 4px;
+  background: #008B8B;
+  z-index: 0;
+}
+
+.process-step {
+  text-align: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.process-number {
+  width: 50px;
+  height: 50px;
+  background: #008B8B;
+  color: white;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 0.75rem auto;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.process-label {
+  font-weight: bold;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* FAQ section */
+.faq {
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  background: white;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #008B8B;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.faq-answer {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: #008B8B;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border: 3px solid #333;
+  box-shadow: 5px 5px 0 #333;
+  margin: 3rem 0;
+}
+
+.contact-cta h2 {
+  margin: 0 0 1rem 0;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+.contact-cta p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.email-btn {
+  background: #FF8C42;
+  color: white !important;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 1rem 2rem;
+  text-decoration: none !important;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: all 0.1s ease;
+}
+
+.email-btn:hover {
+  background: #ff7a28;
+  color: white !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #333;
+}
+
+/* Join Us page responsive */
+@media (max-width: 768px) {
+  .audience-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-timeline {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+
+  .process-step {
+    margin-bottom: 1.5rem;
+  }
+
+  .opportunities {
+    grid-template-columns: 1fr;
+  }
+
+  .student-success {
+    grid-template-columns: 1fr;
+  }
+
+  .funding-list {
+    grid-template-columns: 1fr;
+  }
+
+  .opportunities-key {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .audience-cards {
+    grid-template-columns: 1fr;
+  }
+}
