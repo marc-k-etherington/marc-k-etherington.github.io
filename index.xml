@@ -10,8 +10,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_8642c4b7cd346f7e172c54eb1dd6f3d9" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_8642c4b7cd346f7e172c54eb1dd6f3d9"&gt;
+ &lt;input id="collapsible_42466b73b6de9d1c457d4cc3f18e7f2d" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_42466b73b6de9d1c457d4cc3f18e7f2d"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -74,23 +74,50 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_7fc4c2126947c4dd564d1d3e3b67ebf8" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_7fc4c2126947c4dd564d1d3e3b67ebf8"&gt;
+ &lt;input id="collapsible_9d646c38c2be62d474df1d4b17e3c57f" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_9d646c38c2be62d474df1d4b17e3c57f"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
  &lt;img src="https://onlinelibrary.wiley.com/cms/asset/58b409f8-6dd5-4ce2-a336-3f06035ef497/anie70198-gra-0001-m.png" alt="TOC" width="250" height="auto" style="float:right"&gt;
 &lt;p&gt;&lt;a href="https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202516629"&gt;Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://marc-k-etherington.github.io/research/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/research/</guid><description>&lt;h2&gt;Research&lt;/h2&gt;
 This page will be populated soon. Check out the publications page as that is going to be populated first.</description></item><item><title/><link>https://marc-k-etherington.github.io/seminars/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/seminars/</guid><description>&lt;h2&gt;Seminars&lt;/h2&gt;
-&lt;h2&gt; Key &lt;/h2&gt;
-&lt;div class="alert alert-danger "&gt;
- Invited Talk
+&lt;!-- Seminar Stats --&gt;
+&lt;div class="seminar-stats"&gt;
+ &lt;div class="seminar-stat"&gt;
+ &lt;span class="seminar-stat-number"&gt;35+&lt;/span&gt;
+ &lt;span class="seminar-stat-label"&gt;Total Seminars&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="seminar-stat"&gt;
+ &lt;span class="seminar-stat-number"&gt;15&lt;/span&gt;
+ &lt;span class="seminar-stat-label"&gt;Invited Talks&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="seminar-stat"&gt;
+ &lt;span class="seminar-stat-number"&gt;8&lt;/span&gt;
+ &lt;span class="seminar-stat-label"&gt;Countries&lt;/span&gt;
+ &lt;/div&gt;
 &lt;/div&gt;
-
-&lt;div class="alert alert-secondary "&gt;
- Contributed Talk
+&lt;!-- Seminar Key --&gt;
+&lt;div class="seminar-key"&gt;
+ &lt;h3&gt;Seminar Key&lt;/h3&gt;
+ &lt;div class="key-items"&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="border-left: 8px solid #FF8C42; background: #fff5eb;"&gt;&lt;/div&gt;
+ &lt;span&gt;Invited Talk&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="border-left: 6px solid #008B8B; background: #e0f7f7;"&gt;&lt;/div&gt;
+ &lt;span&gt;Contributed Talk&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
 &lt;/div&gt;
-
+&lt;!-- Filter Buttons --&gt;
+&lt;div class="seminar-filters"&gt;
+ &lt;button class="filter-btn active" onclick="filterSeminars('all', this)"&gt;All Seminars&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterSeminars('invited', this)"&gt;Invited Talks&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterSeminars('contributed', this)"&gt;Contributed Talks&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterSeminars('international', this)"&gt;International&lt;/button&gt;
+&lt;/div&gt;
 &lt;h3&gt;&lt;span class="badge "&gt;
  2025
 &lt;/span&gt;&lt;/h3&gt;
