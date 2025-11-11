@@ -87,20 +87,6 @@
 </div>
 
 <script>
-// Highlight corresponding author papers on load
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    const corPubs = document.querySelectorAll('.alert-primary.corresponding');
-    console.log('Found', corPubs.length, 'corresponding author papers');
-    
-    corPubs.forEach(pub => {
-      pub.style.borderLeftWidth = '8px';
-      pub.style.borderLeftColor = '#FF8C42';
-      pub.style.background = '#fffbf5';
-    });
-  }, 500);
-});
-
 // Publication filtering
 function filterPubs(category, button) {
   const pubs = document.querySelectorAll('.alert-primary');
