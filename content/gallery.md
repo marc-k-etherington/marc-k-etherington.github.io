@@ -6,21 +6,21 @@ hero_image = "/images/gallery/japan-pagoda-fuji.jpg"
 hero_caption = "Mount Fuji & Chureito Pagoda - Research visit to Japan 🇯🇵"
 
 [[photos]]
-image = "/images/gallery/ap-hatch.jpg"
+image = "/post/images/AP_Hatch.jpg"
 caption = "Celebrating annual progression! 🎉"
 category = "social"
 decoration = "taped"
 link = "/ap-hatch/"
 
 [[photos]]
-image = "/images/gallery/fluorofrog.jpg"
+image = "/post/images/fluorofrog.jpg"
 caption = "Flint the Fluorofrog! 🐸"
 category = "lab"
 decoration = "pinned"
 link = "/fluorofrog/"
 
 [[photos]]
-image = "/images/gallery/ruth-icel.jpg"
+image = "/post/images/Ruth_ICEL_Talk.jpg"
 caption = "Ruth at ICEL 2024, Kyoto 🇯🇵"
 category = "conferences"
 decoration = ""
