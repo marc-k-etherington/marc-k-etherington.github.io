@@ -286,7 +286,7 @@ Journal of Materials Chemistry C, 10, 6306-6313, 2022
   
 <h3>{{< badge >}}2021{{< /badge >}}</h3>
   
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding">}}
 {{< collapsible "Suppressing dimer formation by increasing conformational freedom in multi-carbazole thermally activated delayed fluorescence emitters" >}}
 <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D0TC04222F&imageInfo.ImageIdentifier.Year=2021" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -424,7 +424,7 @@ The Journal of Physical Chemistry C, 123, 19, 12400-12410, 2019
 {{< /collapsible >}}
 {{< /alert >}}
   
-{{< alert "primary" >}}
+{{< alert "primary" "corresponding" >}}
 {{< collapsible "Persistent Dimer Emission in Thermally Activated Delayed Fluorescence Materials" >}}
 <img src="https://pubs.acs.org/cms/10.1021/acs.jpcc.9b01458/asset/images/medium/jp-2019-01458c_0008.gif" alt="TOC" width="250" height="auto" style="float:right">
 
@@ -483,7 +483,7 @@ Journal of Materials Chemistry C, 6, 8219-8225, 2018
 {{< /alert >}}
   
   
-{{< alert "primary" >}}
+{{< alert "primary" "review" >}}
 {{< collapsible "Chemical and conformational control of the energy gaps involved in the thermally activated delayed fluorescence mechanism" >}}
 <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C8TC00991K&imageInfo.ImageIdentifier.Year=2018" alt="TOC" width="250" height="auto" style="float:right">
 
