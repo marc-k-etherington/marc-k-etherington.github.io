@@ -87,90 +87,57 @@
 </div>
 
 <script>
-// Highlight corresponding author papers - runs once on load
-function highlightCorrespondingAuthor() {
-  const pubs = document.querySelectorAll('.alert-primary');
-  let count = 0;
-  
-  pubs.forEach(pub => {
-    const html = pub.innerHTML;
-    
-    // Check if Marc is corresponding author
-    if (html.includes('Marc K. Etherington*')) {
-      pub.classList.add('corresponding-author-pub');
-      pub.style.borderLeftWidth = '8px';
-      pub.style.borderLeftColor = '#FF8C42';
-      pub.style.background = '#fffbf5';
-      count++;
-    }
-  });
-  
-  console.log('Highlighted', count, 'corresponding author papers');
-}
-
-// Run highlighting only once
-let highlightingDone = false;
+// Highlight corresponding author papers
 window.addEventListener('load', function() {
-  if (!highlightingDone) {
-    highlightCorrespondingAuthor();
-    highlightingDone = true;
-  }
+  const corPubs = document.querySelectorAll('.alert-primary.corresponding');
+  console.log('Found', corPubs.length, 'corresponding author papers');
+  
+  corPubs.forEach(pub => {
+    pub.style.borderLeftWidth = '8px';
+    pub.style.borderLeftColor = '#FF8C42';
+    pub.style.background = '#fffbf5';
+  });
 });
 
-// Publication filtering functionality
+// Filtering
 function filterPubs(category, button) {
   const pubs = document.querySelectorAll('.alert-primary');
   const buttons = document.querySelectorAll('.filter-btn');
   
-  // Update active button
   buttons.forEach(btn => btn.classList.remove('active'));
   button.classList.add('active');
   
-  // Show/hide based on category
   pubs.forEach(pub => {
-    const html = pub.innerHTML;
-    
-    // Look for Marc K. Etherington followed by * in the HTML
-    const isCorresponding = html.includes('Marc K. Etherington*');
-    
-    // Check for Nature journals
-    const isNature = html.includes('Nature Communications') || html.includes('Nature Materials');
-    
-    // Check for reviews
-    const isReview = html.includes('Beyond the Single Molecule');
-    
     let show = false;
     
     if (category === 'all') {
       show = true;
-    } else if (category === 'corresponding' && isCorresponding) {
+    } else if (category === 'corresponding' && pub.classList.contains('corresponding')) {
       show = true;
-    } else if (category === 'nature' && isNature) {
+    } else if (category === 'nature' && pub.classList.contains('nature')) {
       show = true;
-    } else if (category === 'review' && isReview) {
+    } else if (category === 'review' && pub.classList.contains('review')) {
       show = true;
     }
     
-    // Set display but preserve the highlighting styles
     pub.style.display = show ? 'block' : 'none';
   });
   
-  // Hide/show year headers
+  // Hide/show years
   const years = document.querySelectorAll('h3');
   years.forEach(year => {
-    const nextPubs = [];
     let next = year.nextElementSibling;
+    let anyVisible = false;
+    
     while (next && next.tagName !== 'H3') {
-      if (next.classList && next.classList.contains('alert-primary')) {
-        nextPubs.push(next);
+      if (next.classList && next.classList.contains('alert-primary') && next.style.display !== 'none') {
+        anyVisible = true;
+        break;
       }
       next = next.nextElementSibling;
     }
     
-    const anyVisible = nextPubs.some(pub => pub.style.display !== 'none');
     year.style.display = anyVisible ? 'block' : 'none';
   });
 }
 </script>
-
-{{ end }}
