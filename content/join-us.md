@@ -4,7 +4,6 @@ title = "Join Us"
 type = "join-us"
 date = "2025-01-11"
 +++
-<h2>Join Us</h2>
 
 <!-- Recruiting Banner -->
 <div class="recruiting-banner">
@@ -80,24 +79,8 @@ date = "2025-01-11"
     <strong>💡 Funding Status:</strong> We don't currently have dedicated PhD funding, but we actively support strong candidates in applying for competitive scholarships. Contact us to discuss funding options!
   </div>
 
-  <!--div class="opportunities">
+  <div class="opportunities">
     <div class="opportunity-card unfunded">
-      <h3>🔬 TADF for Bioimaging</h3>
-      <p><strong>Project:</strong> Developing dual-emission TADF systems for cellular imaging using dibenzophenazine-based emitters</p>
-      <p><strong>Duration:</strong> 3-4 years</p>
-      <p><strong>Skills:</strong> Chemistry/Physics, interest in spectroscopy</p>
-      <a href="#funding" class="opportunity-btn">View Funding Options →</a>
-    </div-->
-
-  <!--div class="opportunity-card unfunded">
-      <h3>🧪 Through-Space Charge Transfer</h3>
-      <p><strong>Project:</strong> Modular design of quinoline-based emitters inspired by quinine's glow</p>
-      <p><strong>Duration:</strong> 3-4 years</p>
-      <p><strong>Skills:</strong> Photophysics, molecular design</p>
-      <a href="#funding" class="opportunity-btn">View Funding Options →</a>
-    </div-->
-
-  <div class="opportunity-card unfunded">
       <h3>💡 Your Own Project</h3>
       <p>Have ideas related to TADF, photophysics, or organic emitters? We're open to discussing projects aligned with our expertise.</p>
       <a href="#contact" class="opportunity-btn">Get in Touch →</a>
@@ -209,21 +192,20 @@ date = "2025-01-11"
       <span>UK Research Council funding via Northumbria (competitive)</span>
     </div>
 
-  <div class="funding-item">
-    <strong>PDRA/Fellowship Funding</strong>
-    <span>CSC, Commonwealth, country-specific schemes</span>
-  </div>
+    <div class="funding-item">
+      <strong>PDRA/Fellowship Funding</strong>
+      <span>CSC, Commonwealth, country-specific schemes</span>
+    </div>
 
-  <div class="funding-item">
-    <strong>Visitor Exchange Grants</strong>
-    <span>RSC, Royal Society</span>
-  </div>
-  </div>
+    <div class="funding-item">
+      <strong>Visitor Exchange Grants</strong>
+      <span>RSC, Royal Society</span>
+    </div>
 
-  <div class="funding-item">
-    <strong>Self-Funded</strong>
-    <span>UK/EU/International students welcome</span>
-  </div>
+    <div class="funding-item">
+      <strong>Self-Funded</strong>
+      <span>UK/EU/International students welcome</span>
+    </div>
   </div>
 
   <div class="info-box">
