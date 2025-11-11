@@ -15,7 +15,7 @@ link = ""
 [[photos]]
 image = "/images/gallery/Nara_Deer.jpeg"
 caption = "To be a deer in Nara 🦌"
-category = "social"
+category = "travel"
 decoration = "pinned"
 link = ""
 
