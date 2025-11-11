@@ -14,7 +14,7 @@ date = "2025-01-11"
 
 <!-- Why Join -->
 <div class="why-join">
-  <h2>Why Join The Etherington Lab?</h2>
+  <h2>Why Join Us?</h2>
   <ul>
     <li><strong>World-leading expertise</strong> in TADF mechanisms and spin-vibronic coupling (Nature Communications, 500+ citations)</li>
     <li><strong>International collaborations</strong> with Durham, Osaka and Kitasato Universities</li>
