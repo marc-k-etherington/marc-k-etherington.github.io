@@ -87,6 +87,36 @@
 </div>
 
 <script>
+// Highlight corresponding author papers - runs once on load
+function highlightCorrespondingAuthor() {
+  const pubs = document.querySelectorAll('.alert-primary');
+  let count = 0;
+  
+  pubs.forEach(pub => {
+    const html = pub.innerHTML;
+    
+    // Check if Marc is corresponding author
+    if (html.includes('Marc K. Etherington*')) {
+      pub.classList.add('corresponding-author-pub');
+      pub.style.borderLeftWidth = '8px';
+      pub.style.borderLeftColor = '#FF8C42';
+      pub.style.background = '#fffbf5';
+      count++;
+    }
+  });
+  
+  console.log('Highlighted', count, 'corresponding author papers');
+}
+
+// Run highlighting only once
+let highlightingDone = false;
+window.addEventListener('load', function() {
+  if (!highlightingDone) {
+    highlightCorrespondingAuthor();
+    highlightingDone = true;
+  }
+});
+
 // Publication filtering functionality
 function filterPubs(category, button) {
   const pubs = document.querySelectorAll('.alert-primary');
@@ -121,6 +151,7 @@ function filterPubs(category, button) {
       show = true;
     }
     
+    // Set display but preserve the highlighting styles
     pub.style.display = show ? 'block' : 'none';
   });
   
@@ -140,39 +171,6 @@ function filterPubs(category, button) {
     year.style.display = anyVisible ? 'block' : 'none';
   });
 }
-
-// Highlight corresponding author papers - function version
-function highlightCorrespondingAuthor() {
-  const pubs = document.querySelectorAll('.alert-primary');
-  let count = 0;
-  
-  pubs.forEach(pub => {
-    const html = pub.innerHTML;
-    
-    // Check if Marc is corresponding author
-    if (html.includes('Marc K. Etherington*')) {
-      pub.style.borderLeftWidth = '8px';
-      pub.style.borderLeftColor = '#FF8C42';
-      pub.style.background = '#fffbf5';
-      count++;
-    }
-  });
-  
-  console.log('Highlighted', count, 'corresponding author papers');
-}
-
-// Try multiple times to ensure content is loaded
-document.addEventListener('DOMContentLoaded', function() {
-  // Run immediately
-  highlightCorrespondingAuthor();
-  
-  // Run again after a short delay
-  setTimeout(highlightCorrespondingAuthor, 100);
-  setTimeout(highlightCorrespondingAuthor, 500);
-});
-
-// Also run on full page load
-window.addEventListener('load', highlightCorrespondingAuthor);
 </script>
 
 {{ end }}
