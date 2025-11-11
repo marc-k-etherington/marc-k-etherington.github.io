@@ -209,15 +209,15 @@ date = "2025-01-11"
       <span>UK Research Council funding via Northumbria (competitive)</span>
     </div>
 
-    <div class="funding-item">
+  <div class="funding-item">
     <strong>International Funding</strong>
     <span>CSC, Commonwealth, country-specific schemes</span>
-    </div>
+  </div>
 
-    <div class="funding-item">
-     <strong>Self-Funded</strong>
-     <span>UK/EU/International students welcome</span>
-    </div>
+  <div class="funding-item">
+    <strong>Self-Funded</strong>
+    <span>UK/EU/International students welcome</span>
+  </div>
   </div>
 
   <div class="info-box">
