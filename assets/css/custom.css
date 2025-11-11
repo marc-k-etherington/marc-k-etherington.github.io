@@ -477,3 +477,467 @@ nav.split-nav {
   }
 }
 
+/* ===== SITE-WIDE COLOR PALETTE: TEAL/ORANGE/BLACK ===== */
+/* Deep Teal: #008B8B, Burnt Orange: #FF8C42, Black: #333 */
+
+/* ===== LINKS ===== */
+a,
+a:visited {
+  color: #008B8B;
+  background-image: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #FF8C42;
+}
+
+/* Keep nav links neutral */
+nav a,
+nav a:visited {
+  color: #41403e;
+  text-decoration: none;
+}
+
+/* ===== HERO BANNER ===== */
+
+/* Compact hero - teal top border accent */
+.welcome-hero-compact {
+  padding: 2rem !important;
+  border-top: 5px solid #008B8B;
+}
+
+/* Join Us button - orange hover */
+.hero-buttons .btn-highlight {
+  background-color: white !important;
+  color: #333 !important;
+  border: 2px solid #333 !important;
+  box-shadow: 3px 3px 0 #333 !important;
+}
+
+.hero-buttons .btn-highlight:hover {
+  background-color: #FF8C42 !important;
+  border-color: #FF8C42 !important;
+  color: white !important;
+  box-shadow: 4px 4px 0 #333 !important;
+  transform: translate(-1px, -1px) !important;
+}
+
+/* Active button state - teal */
+.hero-buttons .paper-btn.active {
+  background-color: #008B8B !important;
+  color: white !important;
+  border-color: #008B8B !important;
+}
+
+/* ===== SOCIAL MEDIA ===== */
+
+/* Social icon hover - teal tint */
+.social-float-compact a:hover .social-icon {
+  filter: sepia(1) saturate(5) hue-rotate(150deg) brightness(0.8);
+}
+
+/* ===== GROUP PAGE ===== */
+
+/* PI card - teal */
+.pi-card {
+  background: #e0f7f7 !important;
+  border: 3px solid #008B8B !important;
+  box-shadow: 5px 5px 0 #333 !important;
+}
+
+/* Where Are They Now box - orange */
+.where-now {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff5eb;
+  border-left: 4px solid #FF8C42;
+  font-style: italic;
+}
+
+.where-now strong {
+  color: #FF8C42;
+}
+
+/* Email links - teal */
+.email-link {
+  color: #008B8B;
+  text-decoration: none;
+  border-bottom: 1px dotted #008B8B;
+}
+
+.email-link:hover {
+  color: #FF8C42;
+  border-bottom-color: #FF8C42;
+}
+
+/* Section headers - teal underline */
+.section-header {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1.5rem 0;
+  color: #333;
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 0.5rem;
+}
+
+/* ===== NEWS PAGE ===== */
+
+/* News heading hover - teal */
+.news-text h2 a:hover {
+  color: #008B8B;
+  text-decoration: underline;
+}
+
+/* ===== MARC ETHERINGTON PAGE ===== */
+
+/* Profile header - teal background */
+.profile-header-marc {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #008B8B;
+  border: 3px solid #333;
+  box-shadow: 5px 5px 0 #333;
+  color: white;
+}
+
+.profile-photo-marc {
+  flex-shrink: 0;
+}
+
+.profile-photo-marc img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #333;
+  box-shadow: 4px 4px 0 #333;
+}
+
+.profile-info-marc {
+  flex: 1;
+}
+
+.profile-name-marc {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.profile-title-marc {
+  font-size: 1.3rem;
+  color: #e0f7f7;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.profile-contact-marc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* Contact buttons */
+.contact-btn {
+  background: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.1s ease;
+  display: inline-block;
+}
+
+.contact-btn:hover {
+  box-shadow: 4px 4px 0 #333;
+  transform: translate(-1px, -1px);
+  background: #f5f5f5;
+}
+
+.contact-btn.primary {
+  background: #FF8C42;
+  color: white;
+  border-color: #333;
+}
+
+.contact-btn.primary:hover {
+  background: #ff7a28;
+}
+
+/* Research vision - light teal */
+.research-vision-marc {
+  background: #e0f7f7;
+  border: 3px solid #008B8B;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 0 #333;
+}
+
+.research-vision-marc h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #008B8B;
+  margin-bottom: 1rem;
+}
+
+.research-vision-marc p {
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Stats grid */
+.stats-grid-marc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card-marc {
+  background: white;
+  border: 3px solid #008B8B;
+  box-shadow: 4px 4px 0 #333;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-icon-marc {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number-marc {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #008B8B;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label-marc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Roles section */
+.roles-section-marc {
+  margin-bottom: 3rem;
+}
+
+.roles-section-marc h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 0.5rem;
+}
+
+.roles-grid-marc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.role-card-marc {
+  background: #f9f9f9;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 0 #333;
+}
+
+.role-card-marc.breakthrough-card {
+  background: white;
+}
+
+.role-card-marc h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.role-card-marc p {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Expertise section */
+.expertise-section-marc {
+  margin-bottom: 3rem;
+}
+
+.expertise-section-marc h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 0.5rem;
+}
+
+.expertise-tags-marc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.expertise-tag-marc {
+  background: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.expertise-tag-marc.highlight {
+  background: #FF8C42;
+  color: white;
+  border-color: #333;
+}
+
+/* Bio section */
+.bio-section-marc {
+  background: white;
+  border: 2px solid #333;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.bio-section-marc h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 0.5rem;
+}
+
+.bio-section-marc p {
+  margin-bottom: 1rem;
+}
+
+/* Call to action */
+.cta-grid-marc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.cta-box-marc {
+  background: #fff5eb;
+  border: 3px solid #FF8C42;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 4px 4px 0 #333;
+  transition: all 0.2s ease;
+}
+
+.cta-box-marc:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #333;
+  background: #ffe8d6;
+}
+
+.cta-box-marc h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.cta-box-marc p {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.cta-btn-marc {
+  background: #FF8C42;
+  color: white;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 0 #333;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.1s ease;
+}
+
+.cta-btn-marc:hover {
+  background: #ff7a28;
+  box-shadow: 4px 4px 0 #333;
+  transform: translate(-1px, -1px);
+}
+
+/* Mobile responsive for Marc page */
+@media (max-width: 768px) {
+  .profile-header-marc {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .profile-photo-marc img {
+    width: 180px;
+    height: 225px;
+  }
+
+  .profile-name-marc {
+    font-size: 2rem;
+  }
+
+  .profile-title-marc {
+    font-size: 1.1rem;
+  }
+
+  .profile-contact-marc {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stats-grid-marc {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .stat-card-marc {
+    padding: 1rem;
+  }
+
+  .stat-number-marc {
+    font-size: 1.5rem;
+  }
+
+  .roles-grid-marc,
+  .cta-grid-marc {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-tags-marc {
+    gap: 0.5rem;
+  }
+
+  .expertise-tag-marc {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .bio-section-marc {
+    padding: 1.5rem;
+  }
+}
