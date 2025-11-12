@@ -1,349 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Etherington Lab</title><link>https://marc-k-etherington.github.io/</link><description>Recent content on The Etherington Lab</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marc-k-etherington.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Group Meeting at Deep North</title><link>https://marc-k-etherington.github.io/dn-2025/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/dn-2025/</guid><description>Another group meeting at Deep North to ensure the team has the fuel for the science ahead.</description></item><item><title>IDRT Showcase 2025</title><link>https://marc-k-etherington.github.io/idrt-showcase-2025/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/idrt-showcase-2025/</guid><description>Marc helps out with the Energy Materials and Systems Peak of Excellence display at the IDRT Showcase 2025</description></item><item><title>Join Us</title><link>https://marc-k-etherington.github.io/join-us/</link><pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/join-us/</guid><description>&lt;h2&gt;Join Us&lt;/h2&gt;
-&lt;!-- Recruiting Banner --&gt;
-&lt;div class="recruiting-banner"&gt;
- &lt;h2&gt;🎓 Join The Etherington Lab&lt;/h2&gt;
- &lt;p&gt;Explore fundamental photophysics and develop next-generation light-emitting materials&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- Why Join --&gt;
-&lt;div class="why-join"&gt;
- &lt;h2&gt;Why Join Us?&lt;/h2&gt;
- &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;World-leading expertise&lt;/strong&gt; in TADF mechanisms and spin-vibronic coupling (Nature Communications, 500+ citations)&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;International collaborations&lt;/strong&gt; with Durham, Osaka and Kitasato Universities&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;State-of-the-art facilities&lt;/strong&gt; including Fluorolog-QM spectroscopy and low-temperature systems&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Joint supervision&lt;/strong&gt; with Dr Jon Knowles - synthetic and spectroscopic expertise combined&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Student success&lt;/strong&gt; - publish in high-impact journals and win poster prizes&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;International conferences&lt;/strong&gt; - present at meetings in Japan, Europe, and beyond&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Supportive culture&lt;/strong&gt; - regular meetings, collaboration, work-life balance&lt;/li&gt;
- &lt;/ul&gt;
-&lt;/div&gt;
-&lt;!-- Select Your Path --&gt;
-&lt;h2&gt;Select Your Path&lt;/h2&gt;
-&lt;div class="audience-cards"&gt;
- &lt;div class="audience-card phd active" onclick="showTab('phd')"&gt;
- &lt;div class="audience-icon"&gt;🎓&lt;/div&gt;
- &lt;div class="audience-title"&gt;PhD&lt;/div&gt;
- &lt;div class="audience-subtitle"&gt;3-4 years&lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="audience-card postdoc" onclick="showTab('postdoc')"&gt;
- &lt;div class="audience-icon"&gt;🔬&lt;/div&gt;
- &lt;div class="audience-title"&gt;Postdocs&lt;/div&gt;
- &lt;div class="audience-subtitle"&gt;PDRA&lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="audience-card fellowship" onclick="showTab('fellowship')"&gt;
- &lt;div class="audience-icon"&gt;🏆&lt;/div&gt;
- &lt;div class="audience-title"&gt;Fellowships&lt;/div&gt;
- &lt;div class="audience-subtitle"&gt;Independent&lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="audience-card undergrad" onclick="showTab('undergrad')"&gt;
- &lt;div class="audience-icon"&gt;📚&lt;/div&gt;
- &lt;div class="audience-title"&gt;UG/Masters&lt;/div&gt;
- &lt;div class="audience-subtitle"&gt;Projects&lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="audience-card visitor" onclick="showTab('visitor')"&gt;
- &lt;div class="audience-icon"&gt;🌍&lt;/div&gt;
- &lt;div class="audience-title"&gt;Visitors&lt;/div&gt;
- &lt;div class="audience-subtitle"&gt;Exchanges&lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Opportunities Key --&gt;
-&lt;div class="opportunities-key"&gt;
- &lt;div class="key-item"&gt;
- &lt;div class="key-box" style="background: #fff5eb; border: 3px solid #FF8C42;"&gt;&lt;/div&gt;
- &lt;span&gt;&lt;strong&gt;Orange:&lt;/strong&gt; Bring Your Own Funding&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="key-item"&gt;
- &lt;div class="key-box" style="background: #e0f7f7; border: 3px solid #008B8B;"&gt;&lt;/div&gt;
- &lt;span&gt;&lt;strong&gt;Teal:&lt;/strong&gt; Fully Funded&lt;/span&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- PhD Tab --&gt;
-&lt;div class="tab-content active" id="tab-phd"&gt;
- &lt;h2&gt;PhD Opportunities&lt;/h2&gt;
- &lt;div class="info-box"&gt;
- &lt;strong&gt;💡 Funding Status:&lt;/strong&gt; We don't currently have dedicated PhD funding, but we actively support strong candidates in applying for competitive scholarships. Contact us to discuss funding options!
- &lt;/div&gt;
- &lt;div class="opportunities"&gt;
- &lt;div class="opportunity-card unfunded"&gt;
- &lt;h3&gt;💡 Your Own Project&lt;/h3&gt;
- &lt;p&gt;Have ideas related to TADF, photophysics, or organic emitters? We're open to discussing projects aligned with our expertise.&lt;/p&gt;</description></item><item><title>Christmas Group Meal</title><link>https://marc-k-etherington.github.io/xmas-2024/</link><pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/xmas-2024/</guid><description>To see out 2024 we had a group meal at My Delhi and cofee at Lagom</description></item><item><title>Ruth gives talk at international conference in Japan</title><link>https://marc-k-etherington.github.io/ruth-icel-2024/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-icel-2024/</guid><description>Ruth presents her latest research at ICEL 2024 in Kyoto, Japan.</description></item><item><title>Ruth has her first publication</title><link>https://marc-k-etherington.github.io/ruth-first-paper/</link><pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-first-paper/</guid><description>Proud moment as Ruth publishes her first work in the Journal of Physical Chemistry B!</description></item><item><title>New Collaborative Work Published</title><link>https://marc-k-etherington.github.io/pt-ncn-paper/</link><pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/pt-ncn-paper/</guid><description>A collaborative work with Dr Rebecca Salthouse and Dr Gareth Williams is now published</description></item><item><title>Marc gives a seminar at Newcastle University</title><link>https://marc-k-etherington.github.io/ncl-seminar/</link><pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ncl-seminar/</guid><description>Marc presents the group&amp;rsquo;s latest work on charge transfer and thermally activated delayed fluorescence at Newcastle University</description></item><item><title>Flint the Fluorofrog!</title><link>https://marc-k-etherington.github.io/fluorofrog/</link><pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fluorofrog/</guid><description>Our resident artist Will Tetlow has given our Fluorolog-QM a re-branding.</description></item><item><title>Everyone passes Annual Progression!</title><link>https://marc-k-etherington.github.io/ap-hatch/</link><pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ap-hatch/</guid><description>To celebrate everyone passing this year&amp;rsquo;s annual progression I gifted them their very own Hatch-branded Keep Cup</description></item><item><title>Ruth wins Poster Prize at the RSC PPG Early Career Meeting</title><link>https://marc-k-etherington.github.io/rsc-ppg-ecm-2024/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-ppg-ecm-2024/</guid><description>Ruth wins a poster prize at the Royal Society of Chemistry Photophysics and Photochemistry Group Early Career Meeting in Sheffield</description></item><item><title>Rebecca Salthouse visits the group</title><link>https://marc-k-etherington.github.io/rs-visit-2024/</link><pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rs-visit-2024/</guid><description>Dr Rebecca Salthouse from UPC in Barcelona visits the group to give a seminar and discuss a new collaboration</description></item><item><title>ErrantScience Workshop</title><link>https://marc-k-etherington.github.io/errantscience/</link><pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/errantscience/</guid><description>The group hosts ErrantScience to provide a workshop for communicating science through cartoons</description></item><item><title>Ruth is successful with an RSC Researcher Collaborations Grant</title><link>https://marc-k-etherington.github.io/ruth-rsc-rcg/</link><pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-rsc-rcg/</guid><description>Ruth has been awarded some money from the Royal Society of Chemistry to visit the group of Dr Zac Hudson at the University of British Columbia</description></item><item><title>Will joins the group!</title><link>https://marc-k-etherington.github.io/will-joins-2024/</link><pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/will-joins-2024/</guid><description>Will joins the group and presents his research from his visit to Uppsala University at the NUPV Group Meeting</description></item><item><title>ICSM 2024</title><link>https://marc-k-etherington.github.io/icsm-2024/</link><pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/icsm-2024/</guid><description>Ruth and Marc represent the group at ICSM 2024</description></item><item><title>Group visit to Durham University Chemistry PGR Conference</title><link>https://marc-k-etherington.github.io/durham-pgr-2024/</link><pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/durham-pgr-2024/</guid><description>The group visits the Durham University Chemistry Department Postgraduate Research Conference to see some of their latest research.</description></item><item><title>Hannah Hamilton visits from the Royal Society of Chemistry</title><link>https://marc-k-etherington.github.io/hh-rsc-visit/</link><pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/hh-rsc-visit/</guid><description>The group hosts Hannah Hamilton from the Royal Society of Chemistry (RSC) as she gives a presentation about the RSC&amp;rsquo;s energy and green portfolio of journals.</description></item><item><title>Group visit to Deep North</title><link>https://marc-k-etherington.github.io/group-dn-2024/</link><pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/group-dn-2024/</guid><description>Today we had our group meeting at Deep North making sure the team has the right fuel for their science</description></item><item><title>Ruth hosts a Pint of Science event in Newcastle!</title><link>https://marc-k-etherington.github.io/ruth-pos-2024/</link><pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-pos-2024/</guid><description>Ruth demonstrates our group&amp;rsquo;s commitment to outreach by getting involved in Pint of Science and hosting one of the local events.</description></item><item><title>RSC Sustainable Laboratories Grant Success!</title><link>https://marc-k-etherington.github.io/rsc-slg/</link><pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-slg/</guid><description>The group has been awarded a Royal Society of Chemistry Sustainable Laboratories Grant to explore greener solvents for spectroscopy.</description></item><item><title>Latest publication in Nature Materials</title><link>https://marc-k-etherington.github.io/blue-oleds-nm/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/blue-oleds-nm/</guid><description>Out latest research on the improvement of Blue OLEDs is published in Nature Materials</description></item><item><title>Ruth gives her first full talk at an international conference</title><link>https://marc-k-etherington.github.io/ruth-tide/</link><pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-tide/</guid><description>Ruth presents her recent work at the TIDE conference in Cologne.</description></item><item><title>TCSPC Capabiity for Fluorolog-QM</title><link>https://marc-k-etherington.github.io/fluorolog-tcspc/</link><pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fluorolog-tcspc/</guid><description>Time-correlated single photon counting (TCSPC) capability is now available on our Fluorolog-QM</description></item><item><title>Interdisciplinary Research Theme (IDRT) Showcase 2024</title><link>https://marc-k-etherington.github.io/idrt-showcase-2024/</link><pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/idrt-showcase-2024/</guid><description>Energy Futures presents their latest research at the IDRT Showcase at Northumbria University</description></item><item><title>Eli visits Newcastle</title><link>https://marc-k-etherington.github.io/eli-visits-2024/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/eli-visits-2024/</guid><description>Prof. Eli Zysman-Colman gives a seminar at Newcastle University and visits our group at Northumbria University.</description></item><item><title>Bring on 2024!</title><link>https://marc-k-etherington.github.io/new-year-2024/</link><pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/new-year-2024/</guid><description>A new year brings new science!</description></item><item><title>Ruth gives a talk at CDT Week!</title><link>https://marc-k-etherington.github.io/ruth-cdt-week/</link><pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-cdt-week/</guid><description>Ruth presents her latest results on methylation of nitrogen atoms and the impact on photophysics at CDT Week 2023.</description></item><item><title>Dr Silvia Motti visits!</title><link>https://marc-k-etherington.github.io/silvia-motti-visits/</link><pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/silvia-motti-visits/</guid><description>Dr Silvia Motti from the University of Southampton visits the group to give a research talk</description></item><item><title>Prof. Andy Monkman from Durham University gives a talk during Enrichment Week</title><link>https://marc-k-etherington.github.io/enrichment-andy/</link><pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/enrichment-andy/</guid><description>Prof. Andy Monkman gives a talk to our 2nd year Physics students on From molecules that glow to TVs that you can roll up and put in your pocket</description></item><item><title>Dr Giorgia Marucci from HORIBA gives a talk during Enrichment Week</title><link>https://marc-k-etherington.github.io/enrichment-giorgia/</link><pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/enrichment-giorgia/</guid><description>Dr Giorgia Marucci from HORIBA gives a talk to our 2nd year Physics students on Spectroscopy, industry and curiosity - the unexpected paths of light.</description></item><item><title>HORIBA - Science in Action Blog</title><link>https://marc-k-etherington.github.io/science-in-action/</link><pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/science-in-action/</guid><description>Marc is featured in the latest Science in Action blog by HORIBA</description></item><item><title>Aidan joins the group!</title><link>https://marc-k-etherington.github.io/aidan-joins-2023/</link><pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/aidan-joins-2023/</guid><description>Aidan joins the Knowles-Etherington Group, our joint team bridging the interface of synthetic and physical chemistry.</description></item><item><title>Ruth gives her first talk at Optical Probes 2023</title><link>https://marc-k-etherington.github.io/optical-probes-2023-ruth/</link><pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/optical-probes-2023-ruth/</guid><description>Ruth presents some of her latest work as both a flash talk and poster at Optical Probes 2023 in Como, Italy.</description></item><item><title>Marc gives a flash talk and poster presentation at Optical Probes 2023</title><link>https://marc-k-etherington.github.io/optical-probes-2023-marc/</link><pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/optical-probes-2023-marc/</guid><description>Marc presents some of the group&amp;rsquo;s latest work at the Optical Probes 2023 in Como, Italy.</description></item><item><title>Marc talks at RSC Photophysics and Photochemistry Group Early Career Meeting 2023</title><link>https://marc-k-etherington.github.io/rsc-photochem-2023-talk/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-photochem-2023-talk/</guid><description>Marc presents some of the group&amp;rsquo;s latest work at the RSC Photophysics and Photochemistry Group Early Career Meeting 2023 at the University of Strathclyde</description></item><item><title>Ruth presents a poster at the RSC Photophysics and Photochemistry Group Early Career Meeting 2023</title><link>https://marc-k-etherington.github.io/rsc-photochem-2023-ruth/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-photochem-2023-ruth/</guid><description>Ruth presents some of her latest research at the RSC Photophysics and Photochemistry Group Early Career Meeting 2023 at the University of Strathclyde</description></item><item><title>Fluorolog-QM's 2nd Birthday</title><link>https://marc-k-etherington.github.io/fluorolog-second-birthday/</link><pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fluorolog-second-birthday/</guid><description>We celebrate the 2nd Birthday of one of our crucial pieces of equipment.</description></item><item><title>Chris leaves the Group</title><link>https://marc-k-etherington.github.io/chris-leaving-2023/</link><pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/chris-leaving-2023/</guid><description>Chris leaves the group for new pastures.</description></item><item><title>Article Published!</title><link>https://marc-k-etherington.github.io/ewan-matheson-article-2023/</link><pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ewan-matheson-article-2023/</guid><description>The first article in collaboration with Ewan Matheson and the NUPV group is published.</description></item><item><title>Take a Break</title><link>https://marc-k-etherington.github.io/coffee-break-2023/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/coffee-break-2023/</guid><description>It&amp;rsquo;s always nice to have a coffee break with the team</description></item><item><title>Marc and Chris visit York</title><link>https://marc-k-etherington.github.io/visit-to-york-2023/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/visit-to-york-2023/</guid><description>Marc and Chris have a trip to York to chat science with the McGonigal Group</description></item><item><title>Fabio Cucinotta visits the Group</title><link>https://marc-k-etherington.github.io/fabio-cucinotta-visit-2023/</link><pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fabio-cucinotta-visit-2023/</guid><description>Fabio Cucinotta from Newcastle University gives a seminar and visits the group to chat science.</description></item><item><title>Mark Thompson visits the Group</title><link>https://marc-k-etherington.github.io/mark-thompson-visit-2023/</link><pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/mark-thompson-visit-2023/</guid><description>Mark Thompson from the University of Southern California visits Newcastle and the Group</description></item><item><title>Marc presents at the Lit&amp;Phil</title><link>https://marc-k-etherington.github.io/marc-lit-and-phil/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/marc-lit-and-phil/</guid><description>Marc gives an outreach talk at the Lit&amp;amp;Phil</description></item><item><title>Ruth presents at the 2023 PGR Conference</title><link>https://marc-k-etherington.github.io/ruth-presents-pgr-conference-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-presents-pgr-conference-2023/</guid><description>Ruth presents her research on the carbazole-pyridinium salts at the 2023 PGR Conference</description></item><item><title>Chris Hogg presents at Group Meeting</title><link>https://marc-k-etherington.github.io/chris-presents/</link><pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/chris-presents/</guid><description>Chris presents his PhD work at our weekly Group Meeting</description></item><item><title>Chris Hogg Joins the Group</title><link>https://marc-k-etherington.github.io/chris-hogg-joins-group/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/chris-hogg-joins-group/</guid><description>Chris Hogg joins the group as a Research Assistant</description></item><item><title>Preprint Submitted</title><link>https://marc-k-etherington.github.io/watson-preprint-submitted/</link><pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/watson-preprint-submitted/</guid><description>Preprint of 2022 internally funded work uploaded to ChemRxiv.</description></item><item><title>Internal Funding Success</title><link>https://marc-k-etherington.github.io/internal-funding-success/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/internal-funding-success/</guid><description>Success with internal funds for a research assistant supervised jointly with The Knowles Group.</description></item><item><title>Article Published!</title><link>https://marc-k-etherington.github.io/phenothiazine-article-2023/</link><pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/phenothiazine-article-2023/</guid><description>collaborative work with Dr Iain Wright and Prof. Martin Bryce published in Chemistry A European Journal</description></item><item><title>New Module</title><link>https://marc-k-etherington.github.io/new-module/</link><pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/new-module/</guid><description>We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students.</description></item><item><title/><link>https://marc-k-etherington.github.io/group/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/group/</guid><description>&lt;meta property="og:image" content="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" /&gt;
-&lt;h2&gt;Group&lt;/h2&gt;
-&lt;img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" alt="Lego" width="1000" height="auto" style="float:right"&gt;
-&lt;h3&gt;PhD Students&lt;/h3&gt;
-
-
-
-
-
-
-
-&lt;div class="collapsible"&gt;
- &lt;input id="collapsible_d2fc4f16ec874be63d79752cbd43d614" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_d2fc4f16ec874be63d79752cbd43d614"&gt;
- Ruth Pollard
- &lt;/label&gt;
- &lt;div class="collapsible-body"&gt;
- &lt;img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right"&gt;
-&lt;p&gt;&lt;b&gt;Name:&lt;/b&gt; Ruth Pollard
-&lt;br&gt;
-&lt;b&gt;Job Title:&lt;/b&gt; PhD student
-&lt;br&gt;
-&lt;b&gt;Department:&lt;/b&gt; Mathematics, Physics and Electrical Engineering
-&lt;br&gt;
-&lt;b&gt;Office:&lt;/b&gt; Ellison D-Block 111
-&lt;br&gt;
-&lt;b&gt;Email:&lt;/b&gt; ruth.pollard &amp;lsquo;at&amp;rsquo; northumbria.ac.uk
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Bio:&lt;/b&gt;
-&lt;br&gt;
-Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018. In 2019, she began an MPhil under Dr Cucinotta looking at inorganic light-emitting materials in plasmonic nanosystems. Ruth joined the group in 2021 studying organic materials for LEDs working as a joint student with Dr Jon Knowles. Ruth sings in multiple choirs in her spare time, and enjoys travelling and spending time with her friends.&lt;/p&gt;</description></item><item><title/><link>https://marc-k-etherington.github.io/publications/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/publications/</guid><description>&lt;h2&gt;Publications&lt;/h2&gt;
-&lt;script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"&gt;&lt;/script&gt;
-&lt;!-- Publication Stats --&gt;
-&lt;div class="pub-stats"&gt;
- &lt;div class="pub-stat"&gt;
- &lt;span class="pub-stat-number"&gt;30&lt;/span&gt;
- &lt;span class="pub-stat-label"&gt;Total Publications&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="pub-stat"&gt;
- &lt;span class="pub-stat-number"&gt;2,700+&lt;/span&gt;
- &lt;span class="pub-stat-label"&gt;Citations&lt;/span&gt;
- &lt;span class="pub-stat-updated"&gt;(Nov 2025)&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="pub-stat"&gt;
- &lt;span class="pub-stat-number"&gt;3&lt;/span&gt;
- &lt;span class="pub-stat-label"&gt;Nature Family&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="pub-stat"&gt;
- &lt;span class="pub-stat-number"&gt;3&lt;/span&gt;
- &lt;span class="pub-stat-label"&gt;Angewandte Chemie&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="pub-stat"&gt;
- &lt;span class="pub-stat-number"&gt;1&lt;/span&gt;
- &lt;span class="pub-stat-label"&gt;JACS&lt;/span&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Publication Key --&gt;
-&lt;div class="pub-key"&gt;
- &lt;h3&gt;Publication Key&lt;/h3&gt;
- &lt;div class="key-items"&gt;
- &lt;div class="key-item"&gt;
- &lt;div class="key-box" style="border-left: 6px solid #008B8B; background: white;"&gt;&lt;/div&gt;
- &lt;span&gt;Standard Publication&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="key-item"&gt;
- &lt;div class="key-box" style="border-left: 8px solid #FF8C42; background: #fffbf5;"&gt;&lt;/div&gt;
- &lt;span&gt;Corresponding Author&lt;/span&gt;
- &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Filter Buttons --&gt;
-&lt;div class="pub-filters"&gt;
- &lt;button class="filter-btn active" onclick="filterPubs('all', this)"&gt;All Papers&lt;/button&gt;
- &lt;button class="filter-btn" onclick="filterPubs('corresponding', this)"&gt;As Corresponding Author&lt;/button&gt;
- &lt;button class="filter-btn" onclick="filterPubs('nature', this)"&gt;Nature Family&lt;/button&gt;
- &lt;button class="filter-btn" onclick="filterPubs('review', this)"&gt;Reviews&lt;/button&gt;
-&lt;/div&gt;
-&lt;h4&gt;**Click on the name of the paper to expand**&lt;/h4&gt;
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2025
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-primary "&gt;
- &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_5734d76ed632c816f4bde4bc19f47cd2" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_5734d76ed632c816f4bde4bc19f47cd2"&gt;
- Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
- &lt;/label&gt;
- &lt;div class="collapsible-body"&gt;
- &lt;img src="https://onlinelibrary.wiley.com/cms/asset/58b409f8-6dd5-4ce2-a336-3f06035ef497/anie70198-gra-0001-m.png" alt="TOC" width="250" height="auto" style="float:right"&gt;
-&lt;p&gt;&lt;a href="https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202516629"&gt;Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://marc-k-etherington.github.io/seminars/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/seminars/</guid><description>&lt;h2&gt;Seminars&lt;/h2&gt;
-&lt;!-- Seminar Stats --&gt;
-&lt;div class="seminar-stats"&gt;
- &lt;div class="seminar-stat"&gt;
- &lt;span class="seminar-stat-number"&gt;27&lt;/span&gt;
- &lt;span class="seminar-stat-label"&gt;Total Seminars&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="seminar-stat"&gt;
- &lt;span class="seminar-stat-number"&gt;13&lt;/span&gt;
- &lt;span class="seminar-stat-label"&gt;Invited Talks&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="seminar-stat"&gt;
- &lt;span class="seminar-stat-number"&gt;9&lt;/span&gt;
- &lt;span class="seminar-stat-label"&gt;Countries&lt;/span&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Seminar Key --&gt;
-&lt;div class="seminar-key"&gt;
- &lt;h3&gt;Seminar Key&lt;/h3&gt;
- &lt;div class="key-items"&gt;
- &lt;div class="key-item"&gt;
- &lt;div class="key-box" style="border-left: 8px solid #FF8C42; background: #fff5eb;"&gt;&lt;/div&gt;
- &lt;span&gt;Invited Talk&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="key-item"&gt;
- &lt;div class="key-box" style="border-left: 6px solid #008B8B; background: #e0f7f7;"&gt;&lt;/div&gt;
- &lt;span&gt;Contributed Talk&lt;/span&gt;
- &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Filter Buttons --&gt;
-&lt;div class="seminar-filters"&gt;
- &lt;button class="filter-btn active" onclick="filterSeminars('all', this)"&gt;All Seminars&lt;/button&gt;
- &lt;button class="filter-btn" onclick="filterSeminars('invited', this)"&gt;Invited Talks&lt;/button&gt;
- &lt;button class="filter-btn" onclick="filterSeminars('contributed', this)"&gt;Contributed Talks&lt;/button&gt;
- &lt;button class="filter-btn" onclick="filterSeminars('international', this)"&gt;International&lt;/button&gt;
-&lt;/div&gt;
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2025
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;Kyushu University&lt;/em&gt; (Japan)
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;University of Osaka&lt;/em&gt; (Japan)
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;Kitasato University&lt;/em&gt; (Japan)
-&lt;/div&gt;
-
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Tuning the chromophore of an N-aryl scaffold for thermally activated delayed fluorescence&lt;/strong&gt; - Optical Probes 2025, &lt;em&gt;Fukuoka&lt;/em&gt; (Japan)
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Quinine: Is this the &lt;em&gt;tonic&lt;/em&gt; for a new class of thermally activated delayed fluorescence (TADF) emitters?&lt;/strong&gt; - &lt;em&gt;University of Edinburgh&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2024
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Lone pair interactions, charge transfer and the pathways towards thermally activated delayed fluorescence (TADF)&lt;/strong&gt; - &lt;em&gt;Newcastle University&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence&lt;/strong&gt; - RSC Photophysics and Photochemistry Group Early Career Meeting 2024, &lt;em&gt;University of Sheffield&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence&lt;/strong&gt; - International Conference on the Science and Technology of Synthetic Electronic Materials, &lt;em&gt;TU Dresden&lt;/em&gt; (Germany)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2023
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;A modular approach to tuning emissive N-aryl through-space charge transfer states&lt;/strong&gt; - Optical Probes 2023, &lt;em&gt;Como&lt;/em&gt; (Italy)
-&lt;/div&gt;
-
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;A modular approach to tuning emissive N-aryl through-space charge transfer states&lt;/strong&gt; - RSC Photophysics and Photochemistry Group Early Career Meeting 2023, &lt;em&gt;University of Strathclyde&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2022
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;From phosphorescence to delayed fluorescence in one step&lt;/strong&gt; - 13th International Conference of Electroluminescence and Optoelectronic Devices, &lt;em&gt;Chelsea Football Club&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Intermolecular interactions in thermally activated delayed fluorescence emitters&lt;/strong&gt; - SPIE, &lt;em&gt;San Diego Convention Center&lt;/em&gt; (USA)
-&lt;/div&gt;
-
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Modulation of charge transfer by &lt;em&gt;N&lt;/em&gt;-alkylation to control photoluminescence energy and quantum yield&lt;/strong&gt; - International Conference on the Science and Technology of Synthetic Metals, &lt;em&gt;University of Glasgow&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2021
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Thermally activated delayed fluorescence: Beyond the single molecule&lt;/strong&gt; - 6th International TADF Workshop, &lt;em&gt;Kyushu University&lt;/em&gt; (Japan) - WEBINAR
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Thermally activated delayed fluorescence: Beyond the single molecule&lt;/strong&gt; - NECEM Photophysics for Energy Materials Conference, &lt;em&gt;Newcastle University&lt;/em&gt; (UK) - WEBINAR
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2020
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Capturing tonic water&amp;rsquo;s blue glow for photonic applications&lt;/strong&gt; - Natural Sciences Hour, &lt;em&gt;University of York&lt;/em&gt; (UK) - WEBINAR
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Capturing tonic water&amp;rsquo;s blue glow for photonic applications&lt;/strong&gt; - North East Centre for Energy Materials (NECEM), &lt;em&gt;Newcastle University&lt;/em&gt; (UK) - WEBINAR
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Modulation of charge transfer by &lt;em&gt;N&lt;/em&gt;-alkylation to control photoluminescence energy and quantum yield&lt;/strong&gt; - Durham Energy Institute, &lt;em&gt;Durham University&lt;/em&gt; (UK) - WEBINAR
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Controlling charge transfer in tonic water and looking at thermally activated delayed fluorescence beyond the single molecule&lt;/strong&gt; - Department of Physics, &lt;em&gt;University of Sheffield&lt;/em&gt; (UK) - WEBINAR
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2019
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Persistent dimer emission in thermally activated delayed fluorescence materials&lt;/strong&gt; - Optical Probes, &lt;em&gt;Vilnius&lt;/em&gt; (Lithuania)
-&lt;/div&gt;
-
-&lt;div class="alert alert-danger "&gt;
- &lt;strong&gt;Persistent dimer emission in thermally activated delayed fluorescence materials&lt;/strong&gt; - Department of Chemistry, &lt;em&gt;University of Edinburgh&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2018
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Excited-state aromatic interactions in the aggregation-induced emission of molecular rotors&lt;/strong&gt; - WOREN, &lt;em&gt;Wisla&lt;/em&gt; (Poland)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2017
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Photoinduced absorption meets thermally activated delayed fluorescence: When slow and (quasi-)steady wins the race&lt;/strong&gt; - Optical Probes, &lt;em&gt;Quebec City&lt;/em&gt; (Canada)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2016
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Spin-orbit charge transfer mechanism in a thermally activated delayed fluorescence molecule&lt;/strong&gt; - MQD Workshop, &lt;em&gt;University of York&lt;/em&gt; (UK)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2015
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Hetero triplet fusion in acene-based organic light-emitting diodes&lt;/strong&gt; - Optical Probes, &lt;em&gt;Hong Kong University of Science and Technology&lt;/em&gt; (China)
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;span class="badge "&gt;
- 2014
-&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Magnetic field effects on the photocurrent of polymer:fullerene solar cells&lt;/strong&gt; - SpinOS, &lt;em&gt;Himeji&lt;/em&gt; (Japan)
-&lt;/div&gt;
-
-&lt;div class="alert alert-secondary "&gt;
- &lt;strong&gt;Recombination pathways in organic photovoltaics observed through spin polarization measurements&lt;/strong&gt; - Fall MRS, &lt;em&gt;Boston&lt;/em&gt; (USA)
-&lt;/div&gt;</description></item><item><title/><link>https://marc-k-etherington.github.io/teaching/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/teaching/</guid><description>&lt;h2&gt;Teaching&lt;/h2&gt;
-This page will be populated soon. Check out the publications page as that is going to be populated first.</description></item><item><title>New Website</title><link>https://marc-k-etherington.github.io/new-website/</link><pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/new-website/</guid><description>Welcome to the new website of the Etherington Group.</description></item><item><title>HORIBA Fluorolog-QM Installed</title><link>https://marc-k-etherington.github.io/fluorolog-qm/</link><pubDate>Fri, 23 Jul 2021 13:50:01 -0600</pubDate><guid>https://marc-k-etherington.github.io/fluorolog-qm/</guid><description>The latest Fluorolog-QM from HORIBA is now installed at Northumbria University.</description></item><item><title/><link>https://marc-k-etherington.github.io/single/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/single/</guid><description/></item><item><title/><link>https://marc-k-etherington.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/research/</guid><description>&lt;h1 id="file-1-contentresearchmd"&gt;FILE 1: content/research.md&lt;/h1&gt;
-&lt;h1 id="heading"&gt;==========================&lt;/h1&gt;
-&lt;p&gt;+++
-title = &amp;ldquo;Research&amp;rdquo;
-date = &amp;ldquo;2025-01-15&amp;rdquo;
-author = &amp;ldquo;Marc Etherington&amp;rdquo;
-+++&lt;/p&gt;
-&lt;style&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Etherington Lab</title><link>https://marc-k-etherington.github.io/</link><description>Recent content on The Etherington Lab</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marc-k-etherington.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Group Meeting at Deep North</title><link>https://marc-k-etherington.github.io/dn-2025/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/dn-2025/</guid><description>Another group meeting at Deep North to ensure the team has the fuel for the science ahead.</description></item><item><title>IDRT Showcase 2025</title><link>https://marc-k-etherington.github.io/idrt-showcase-2025/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/idrt-showcase-2025/</guid><description>Marc helps out with the Energy Materials and Systems Peak of Excellence display at the IDRT Showcase 2025</description></item><item><title>Research</title><link>https://marc-k-etherington.github.io/research/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/research/</guid><description>&lt;style&gt;
 /* Tab Navigation - Folder Tab Style */
 .research-tab-nav {
  display: flex;
@@ -793,4 +448,342 @@ author = &amp;ldquo;Marc Etherington&amp;rdquo;
 &lt;/style&gt;
 &lt;p class="research-intro"&gt;
  The Etherington Lab advances organic photonics through fundamental photophysical understanding of thermally activated delayed fluorescence (TADF) materials, charge transfer states, and light-emitting molecular systems.
-&lt;/p&gt;</description></item><item><title>Gallery</title><link>https://marc-k-etherington.github.io/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/gallery/</guid><description/></item><item><title>Marc Etherington</title><link>https://marc-k-etherington.github.io/marc-etherington/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/marc-etherington/</guid><description>&lt;p&gt;Marc Etherington (b. 1988) started at Northumbria University in January 2020 as a Vice-Chancellor&amp;rsquo;s Senior Fellow in the Department of Mathematics, Physics and Electrical Engineering. In 2022 he became Assistant Professor and he continues to lead his research in the spectroscopic study of organic light-emitting materials. Marc is also the lead of the Energy Futures Network at Northumbria an inter-faculty and interdisciplinary network that brings academics from across the University to work towards Carbon Net Zero. Marc works closely with colleagues in the Department of Applied Sciences, in particular Dr Jon Knowles with whom he shares co-supervision of PhD students to ensure the wider Knowles-Etherington Group can tackle synthetic and spectroscopic challenges in parallel.&lt;/p&gt;</description></item></channel></rss>
+&lt;/p&gt;</description></item><item><title>Join Us</title><link>https://marc-k-etherington.github.io/join-us/</link><pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/join-us/</guid><description>&lt;h2&gt;Join Us&lt;/h2&gt;
+&lt;!-- Recruiting Banner --&gt;
+&lt;div class="recruiting-banner"&gt;
+ &lt;h2&gt;🎓 Join The Etherington Lab&lt;/h2&gt;
+ &lt;p&gt;Explore fundamental photophysics and develop next-generation light-emitting materials&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- Why Join --&gt;
+&lt;div class="why-join"&gt;
+ &lt;h2&gt;Why Join Us?&lt;/h2&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;strong&gt;World-leading expertise&lt;/strong&gt; in TADF mechanisms and spin-vibronic coupling (Nature Communications, 500+ citations)&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;International collaborations&lt;/strong&gt; with Durham, Osaka and Kitasato Universities&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;State-of-the-art facilities&lt;/strong&gt; including Fluorolog-QM spectroscopy and low-temperature systems&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;Joint supervision&lt;/strong&gt; with Dr Jon Knowles - synthetic and spectroscopic expertise combined&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;Student success&lt;/strong&gt; - publish in high-impact journals and win poster prizes&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;International conferences&lt;/strong&gt; - present at meetings in Japan, Europe, and beyond&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;Supportive culture&lt;/strong&gt; - regular meetings, collaboration, work-life balance&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- Select Your Path --&gt;
+&lt;h2&gt;Select Your Path&lt;/h2&gt;
+&lt;div class="audience-cards"&gt;
+ &lt;div class="audience-card phd active" onclick="showTab('phd')"&gt;
+ &lt;div class="audience-icon"&gt;🎓&lt;/div&gt;
+ &lt;div class="audience-title"&gt;PhD&lt;/div&gt;
+ &lt;div class="audience-subtitle"&gt;3-4 years&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audience-card postdoc" onclick="showTab('postdoc')"&gt;
+ &lt;div class="audience-icon"&gt;🔬&lt;/div&gt;
+ &lt;div class="audience-title"&gt;Postdocs&lt;/div&gt;
+ &lt;div class="audience-subtitle"&gt;PDRA&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audience-card fellowship" onclick="showTab('fellowship')"&gt;
+ &lt;div class="audience-icon"&gt;🏆&lt;/div&gt;
+ &lt;div class="audience-title"&gt;Fellowships&lt;/div&gt;
+ &lt;div class="audience-subtitle"&gt;Independent&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audience-card undergrad" onclick="showTab('undergrad')"&gt;
+ &lt;div class="audience-icon"&gt;📚&lt;/div&gt;
+ &lt;div class="audience-title"&gt;UG/Masters&lt;/div&gt;
+ &lt;div class="audience-subtitle"&gt;Projects&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audience-card visitor" onclick="showTab('visitor')"&gt;
+ &lt;div class="audience-icon"&gt;🌍&lt;/div&gt;
+ &lt;div class="audience-title"&gt;Visitors&lt;/div&gt;
+ &lt;div class="audience-subtitle"&gt;Exchanges&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Opportunities Key --&gt;
+&lt;div class="opportunities-key"&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="background: #fff5eb; border: 3px solid #FF8C42;"&gt;&lt;/div&gt;
+ &lt;span&gt;&lt;strong&gt;Orange:&lt;/strong&gt; Bring Your Own Funding&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="background: #e0f7f7; border: 3px solid #008B8B;"&gt;&lt;/div&gt;
+ &lt;span&gt;&lt;strong&gt;Teal:&lt;/strong&gt; Fully Funded&lt;/span&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- PhD Tab --&gt;
+&lt;div class="tab-content active" id="tab-phd"&gt;
+ &lt;h2&gt;PhD Opportunities&lt;/h2&gt;
+ &lt;div class="info-box"&gt;
+ &lt;strong&gt;💡 Funding Status:&lt;/strong&gt; We don't currently have dedicated PhD funding, but we actively support strong candidates in applying for competitive scholarships. Contact us to discuss funding options!
+ &lt;/div&gt;
+ &lt;div class="opportunities"&gt;
+ &lt;div class="opportunity-card unfunded"&gt;
+ &lt;h3&gt;💡 Your Own Project&lt;/h3&gt;
+ &lt;p&gt;Have ideas related to TADF, photophysics, or organic emitters? We're open to discussing projects aligned with our expertise.&lt;/p&gt;</description></item><item><title>Christmas Group Meal</title><link>https://marc-k-etherington.github.io/xmas-2024/</link><pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/xmas-2024/</guid><description>To see out 2024 we had a group meal at My Delhi and cofee at Lagom</description></item><item><title>Ruth gives talk at international conference in Japan</title><link>https://marc-k-etherington.github.io/ruth-icel-2024/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-icel-2024/</guid><description>Ruth presents her latest research at ICEL 2024 in Kyoto, Japan.</description></item><item><title>Ruth has her first publication</title><link>https://marc-k-etherington.github.io/ruth-first-paper/</link><pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-first-paper/</guid><description>Proud moment as Ruth publishes her first work in the Journal of Physical Chemistry B!</description></item><item><title>New Collaborative Work Published</title><link>https://marc-k-etherington.github.io/pt-ncn-paper/</link><pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/pt-ncn-paper/</guid><description>A collaborative work with Dr Rebecca Salthouse and Dr Gareth Williams is now published</description></item><item><title>Marc gives a seminar at Newcastle University</title><link>https://marc-k-etherington.github.io/ncl-seminar/</link><pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ncl-seminar/</guid><description>Marc presents the group&amp;rsquo;s latest work on charge transfer and thermally activated delayed fluorescence at Newcastle University</description></item><item><title>Flint the Fluorofrog!</title><link>https://marc-k-etherington.github.io/fluorofrog/</link><pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fluorofrog/</guid><description>Our resident artist Will Tetlow has given our Fluorolog-QM a re-branding.</description></item><item><title>Everyone passes Annual Progression!</title><link>https://marc-k-etherington.github.io/ap-hatch/</link><pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ap-hatch/</guid><description>To celebrate everyone passing this year&amp;rsquo;s annual progression I gifted them their very own Hatch-branded Keep Cup</description></item><item><title>Ruth wins Poster Prize at the RSC PPG Early Career Meeting</title><link>https://marc-k-etherington.github.io/rsc-ppg-ecm-2024/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-ppg-ecm-2024/</guid><description>Ruth wins a poster prize at the Royal Society of Chemistry Photophysics and Photochemistry Group Early Career Meeting in Sheffield</description></item><item><title>Rebecca Salthouse visits the group</title><link>https://marc-k-etherington.github.io/rs-visit-2024/</link><pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rs-visit-2024/</guid><description>Dr Rebecca Salthouse from UPC in Barcelona visits the group to give a seminar and discuss a new collaboration</description></item><item><title>ErrantScience Workshop</title><link>https://marc-k-etherington.github.io/errantscience/</link><pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/errantscience/</guid><description>The group hosts ErrantScience to provide a workshop for communicating science through cartoons</description></item><item><title>Ruth is successful with an RSC Researcher Collaborations Grant</title><link>https://marc-k-etherington.github.io/ruth-rsc-rcg/</link><pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-rsc-rcg/</guid><description>Ruth has been awarded some money from the Royal Society of Chemistry to visit the group of Dr Zac Hudson at the University of British Columbia</description></item><item><title>Will joins the group!</title><link>https://marc-k-etherington.github.io/will-joins-2024/</link><pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/will-joins-2024/</guid><description>Will joins the group and presents his research from his visit to Uppsala University at the NUPV Group Meeting</description></item><item><title>ICSM 2024</title><link>https://marc-k-etherington.github.io/icsm-2024/</link><pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/icsm-2024/</guid><description>Ruth and Marc represent the group at ICSM 2024</description></item><item><title>Group visit to Durham University Chemistry PGR Conference</title><link>https://marc-k-etherington.github.io/durham-pgr-2024/</link><pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/durham-pgr-2024/</guid><description>The group visits the Durham University Chemistry Department Postgraduate Research Conference to see some of their latest research.</description></item><item><title>Hannah Hamilton visits from the Royal Society of Chemistry</title><link>https://marc-k-etherington.github.io/hh-rsc-visit/</link><pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/hh-rsc-visit/</guid><description>The group hosts Hannah Hamilton from the Royal Society of Chemistry (RSC) as she gives a presentation about the RSC&amp;rsquo;s energy and green portfolio of journals.</description></item><item><title>Group visit to Deep North</title><link>https://marc-k-etherington.github.io/group-dn-2024/</link><pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/group-dn-2024/</guid><description>Today we had our group meeting at Deep North making sure the team has the right fuel for their science</description></item><item><title>Ruth hosts a Pint of Science event in Newcastle!</title><link>https://marc-k-etherington.github.io/ruth-pos-2024/</link><pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-pos-2024/</guid><description>Ruth demonstrates our group&amp;rsquo;s commitment to outreach by getting involved in Pint of Science and hosting one of the local events.</description></item><item><title>RSC Sustainable Laboratories Grant Success!</title><link>https://marc-k-etherington.github.io/rsc-slg/</link><pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-slg/</guid><description>The group has been awarded a Royal Society of Chemistry Sustainable Laboratories Grant to explore greener solvents for spectroscopy.</description></item><item><title>Latest publication in Nature Materials</title><link>https://marc-k-etherington.github.io/blue-oleds-nm/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/blue-oleds-nm/</guid><description>Out latest research on the improvement of Blue OLEDs is published in Nature Materials</description></item><item><title>Ruth gives her first full talk at an international conference</title><link>https://marc-k-etherington.github.io/ruth-tide/</link><pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-tide/</guid><description>Ruth presents her recent work at the TIDE conference in Cologne.</description></item><item><title>TCSPC Capabiity for Fluorolog-QM</title><link>https://marc-k-etherington.github.io/fluorolog-tcspc/</link><pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fluorolog-tcspc/</guid><description>Time-correlated single photon counting (TCSPC) capability is now available on our Fluorolog-QM</description></item><item><title>Interdisciplinary Research Theme (IDRT) Showcase 2024</title><link>https://marc-k-etherington.github.io/idrt-showcase-2024/</link><pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/idrt-showcase-2024/</guid><description>Energy Futures presents their latest research at the IDRT Showcase at Northumbria University</description></item><item><title>Eli visits Newcastle</title><link>https://marc-k-etherington.github.io/eli-visits-2024/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/eli-visits-2024/</guid><description>Prof. Eli Zysman-Colman gives a seminar at Newcastle University and visits our group at Northumbria University.</description></item><item><title>Bring on 2024!</title><link>https://marc-k-etherington.github.io/new-year-2024/</link><pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/new-year-2024/</guid><description>A new year brings new science!</description></item><item><title>Ruth gives a talk at CDT Week!</title><link>https://marc-k-etherington.github.io/ruth-cdt-week/</link><pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-cdt-week/</guid><description>Ruth presents her latest results on methylation of nitrogen atoms and the impact on photophysics at CDT Week 2023.</description></item><item><title>Dr Silvia Motti visits!</title><link>https://marc-k-etherington.github.io/silvia-motti-visits/</link><pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/silvia-motti-visits/</guid><description>Dr Silvia Motti from the University of Southampton visits the group to give a research talk</description></item><item><title>Prof. Andy Monkman from Durham University gives a talk during Enrichment Week</title><link>https://marc-k-etherington.github.io/enrichment-andy/</link><pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/enrichment-andy/</guid><description>Prof. Andy Monkman gives a talk to our 2nd year Physics students on From molecules that glow to TVs that you can roll up and put in your pocket</description></item><item><title>Dr Giorgia Marucci from HORIBA gives a talk during Enrichment Week</title><link>https://marc-k-etherington.github.io/enrichment-giorgia/</link><pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/enrichment-giorgia/</guid><description>Dr Giorgia Marucci from HORIBA gives a talk to our 2nd year Physics students on Spectroscopy, industry and curiosity - the unexpected paths of light.</description></item><item><title>HORIBA - Science in Action Blog</title><link>https://marc-k-etherington.github.io/science-in-action/</link><pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/science-in-action/</guid><description>Marc is featured in the latest Science in Action blog by HORIBA</description></item><item><title>Aidan joins the group!</title><link>https://marc-k-etherington.github.io/aidan-joins-2023/</link><pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/aidan-joins-2023/</guid><description>Aidan joins the Knowles-Etherington Group, our joint team bridging the interface of synthetic and physical chemistry.</description></item><item><title>Ruth gives her first talk at Optical Probes 2023</title><link>https://marc-k-etherington.github.io/optical-probes-2023-ruth/</link><pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/optical-probes-2023-ruth/</guid><description>Ruth presents some of her latest work as both a flash talk and poster at Optical Probes 2023 in Como, Italy.</description></item><item><title>Marc gives a flash talk and poster presentation at Optical Probes 2023</title><link>https://marc-k-etherington.github.io/optical-probes-2023-marc/</link><pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/optical-probes-2023-marc/</guid><description>Marc presents some of the group&amp;rsquo;s latest work at the Optical Probes 2023 in Como, Italy.</description></item><item><title>Marc talks at RSC Photophysics and Photochemistry Group Early Career Meeting 2023</title><link>https://marc-k-etherington.github.io/rsc-photochem-2023-talk/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-photochem-2023-talk/</guid><description>Marc presents some of the group&amp;rsquo;s latest work at the RSC Photophysics and Photochemistry Group Early Career Meeting 2023 at the University of Strathclyde</description></item><item><title>Ruth presents a poster at the RSC Photophysics and Photochemistry Group Early Career Meeting 2023</title><link>https://marc-k-etherington.github.io/rsc-photochem-2023-ruth/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/rsc-photochem-2023-ruth/</guid><description>Ruth presents some of her latest research at the RSC Photophysics and Photochemistry Group Early Career Meeting 2023 at the University of Strathclyde</description></item><item><title>Fluorolog-QM's 2nd Birthday</title><link>https://marc-k-etherington.github.io/fluorolog-second-birthday/</link><pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fluorolog-second-birthday/</guid><description>We celebrate the 2nd Birthday of one of our crucial pieces of equipment.</description></item><item><title>Chris leaves the Group</title><link>https://marc-k-etherington.github.io/chris-leaving-2023/</link><pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/chris-leaving-2023/</guid><description>Chris leaves the group for new pastures.</description></item><item><title>Article Published!</title><link>https://marc-k-etherington.github.io/ewan-matheson-article-2023/</link><pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ewan-matheson-article-2023/</guid><description>The first article in collaboration with Ewan Matheson and the NUPV group is published.</description></item><item><title>Take a Break</title><link>https://marc-k-etherington.github.io/coffee-break-2023/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/coffee-break-2023/</guid><description>It&amp;rsquo;s always nice to have a coffee break with the team</description></item><item><title>Marc and Chris visit York</title><link>https://marc-k-etherington.github.io/visit-to-york-2023/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/visit-to-york-2023/</guid><description>Marc and Chris have a trip to York to chat science with the McGonigal Group</description></item><item><title>Fabio Cucinotta visits the Group</title><link>https://marc-k-etherington.github.io/fabio-cucinotta-visit-2023/</link><pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/fabio-cucinotta-visit-2023/</guid><description>Fabio Cucinotta from Newcastle University gives a seminar and visits the group to chat science.</description></item><item><title>Mark Thompson visits the Group</title><link>https://marc-k-etherington.github.io/mark-thompson-visit-2023/</link><pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/mark-thompson-visit-2023/</guid><description>Mark Thompson from the University of Southern California visits Newcastle and the Group</description></item><item><title>Marc presents at the Lit&amp;Phil</title><link>https://marc-k-etherington.github.io/marc-lit-and-phil/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/marc-lit-and-phil/</guid><description>Marc gives an outreach talk at the Lit&amp;amp;Phil</description></item><item><title>Ruth presents at the 2023 PGR Conference</title><link>https://marc-k-etherington.github.io/ruth-presents-pgr-conference-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/ruth-presents-pgr-conference-2023/</guid><description>Ruth presents her research on the carbazole-pyridinium salts at the 2023 PGR Conference</description></item><item><title>Chris Hogg presents at Group Meeting</title><link>https://marc-k-etherington.github.io/chris-presents/</link><pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/chris-presents/</guid><description>Chris presents his PhD work at our weekly Group Meeting</description></item><item><title>Chris Hogg Joins the Group</title><link>https://marc-k-etherington.github.io/chris-hogg-joins-group/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/chris-hogg-joins-group/</guid><description>Chris Hogg joins the group as a Research Assistant</description></item><item><title>Preprint Submitted</title><link>https://marc-k-etherington.github.io/watson-preprint-submitted/</link><pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/watson-preprint-submitted/</guid><description>Preprint of 2022 internally funded work uploaded to ChemRxiv.</description></item><item><title>Internal Funding Success</title><link>https://marc-k-etherington.github.io/internal-funding-success/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/internal-funding-success/</guid><description>Success with internal funds for a research assistant supervised jointly with The Knowles Group.</description></item><item><title>Article Published!</title><link>https://marc-k-etherington.github.io/phenothiazine-article-2023/</link><pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/phenothiazine-article-2023/</guid><description>collaborative work with Dr Iain Wright and Prof. Martin Bryce published in Chemistry A European Journal</description></item><item><title>New Module</title><link>https://marc-k-etherington.github.io/new-module/</link><pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/new-module/</guid><description>We have developed a new module on Quantum and Molecular Photophysics for the 3rd Year students.</description></item><item><title/><link>https://marc-k-etherington.github.io/group/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/group/</guid><description>&lt;meta property="og:image" content="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" /&gt;
+&lt;h2&gt;Group&lt;/h2&gt;
+&lt;img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Group_Lego.jpg?raw=true" alt="Lego" width="1000" height="auto" style="float:right"&gt;
+&lt;h3&gt;PhD Students&lt;/h3&gt;
+
+
+
+
+
+
+
+&lt;div class="collapsible"&gt;
+ &lt;input id="collapsible_67c1b7f46283e71c9f54d36e4d4dd2cb" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_67c1b7f46283e71c9f54d36e4d4dd2cb"&gt;
+ Ruth Pollard
+ &lt;/label&gt;
+ &lt;div class="collapsible-body"&gt;
+ &lt;img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right"&gt;
+&lt;p&gt;&lt;b&gt;Name:&lt;/b&gt; Ruth Pollard
+&lt;br&gt;
+&lt;b&gt;Job Title:&lt;/b&gt; PhD student
+&lt;br&gt;
+&lt;b&gt;Department:&lt;/b&gt; Mathematics, Physics and Electrical Engineering
+&lt;br&gt;
+&lt;b&gt;Office:&lt;/b&gt; Ellison D-Block 111
+&lt;br&gt;
+&lt;b&gt;Email:&lt;/b&gt; ruth.pollard &amp;lsquo;at&amp;rsquo; northumbria.ac.uk
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bio:&lt;/b&gt;
+&lt;br&gt;
+Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018. In 2019, she began an MPhil under Dr Cucinotta looking at inorganic light-emitting materials in plasmonic nanosystems. Ruth joined the group in 2021 studying organic materials for LEDs working as a joint student with Dr Jon Knowles. Ruth sings in multiple choirs in her spare time, and enjoys travelling and spending time with her friends.&lt;/p&gt;</description></item><item><title/><link>https://marc-k-etherington.github.io/publications/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/publications/</guid><description>&lt;h2&gt;Publications&lt;/h2&gt;
+&lt;script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"&gt;&lt;/script&gt;
+&lt;!-- Publication Stats --&gt;
+&lt;div class="pub-stats"&gt;
+ &lt;div class="pub-stat"&gt;
+ &lt;span class="pub-stat-number"&gt;30&lt;/span&gt;
+ &lt;span class="pub-stat-label"&gt;Total Publications&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="pub-stat"&gt;
+ &lt;span class="pub-stat-number"&gt;2,700+&lt;/span&gt;
+ &lt;span class="pub-stat-label"&gt;Citations&lt;/span&gt;
+ &lt;span class="pub-stat-updated"&gt;(Nov 2025)&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="pub-stat"&gt;
+ &lt;span class="pub-stat-number"&gt;3&lt;/span&gt;
+ &lt;span class="pub-stat-label"&gt;Nature Family&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="pub-stat"&gt;
+ &lt;span class="pub-stat-number"&gt;3&lt;/span&gt;
+ &lt;span class="pub-stat-label"&gt;Angewandte Chemie&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="pub-stat"&gt;
+ &lt;span class="pub-stat-number"&gt;1&lt;/span&gt;
+ &lt;span class="pub-stat-label"&gt;JACS&lt;/span&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Publication Key --&gt;
+&lt;div class="pub-key"&gt;
+ &lt;h3&gt;Publication Key&lt;/h3&gt;
+ &lt;div class="key-items"&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="border-left: 6px solid #008B8B; background: white;"&gt;&lt;/div&gt;
+ &lt;span&gt;Standard Publication&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="border-left: 8px solid #FF8C42; background: #fffbf5;"&gt;&lt;/div&gt;
+ &lt;span&gt;Corresponding Author&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Filter Buttons --&gt;
+&lt;div class="pub-filters"&gt;
+ &lt;button class="filter-btn active" onclick="filterPubs('all', this)"&gt;All Papers&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterPubs('corresponding', this)"&gt;As Corresponding Author&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterPubs('nature', this)"&gt;Nature Family&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterPubs('review', this)"&gt;Reviews&lt;/button&gt;
+&lt;/div&gt;
+&lt;h4&gt;**Click on the name of the paper to expand**&lt;/h4&gt;
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2025
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-primary "&gt;
+ &lt;div class="collapsible"&gt;
+ &lt;input id="collapsible_27c437c5fd946e4bf81edbd4d6c73162" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_27c437c5fd946e4bf81edbd4d6c73162"&gt;
+ Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
+ &lt;/label&gt;
+ &lt;div class="collapsible-body"&gt;
+ &lt;img src="https://onlinelibrary.wiley.com/cms/asset/58b409f8-6dd5-4ce2-a336-3f06035ef497/anie70198-gra-0001-m.png" alt="TOC" width="250" height="auto" style="float:right"&gt;
+&lt;p&gt;&lt;a href="https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202516629"&gt;Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://marc-k-etherington.github.io/seminars/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/seminars/</guid><description>&lt;h2&gt;Seminars&lt;/h2&gt;
+&lt;!-- Seminar Stats --&gt;
+&lt;div class="seminar-stats"&gt;
+ &lt;div class="seminar-stat"&gt;
+ &lt;span class="seminar-stat-number"&gt;27&lt;/span&gt;
+ &lt;span class="seminar-stat-label"&gt;Total Seminars&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="seminar-stat"&gt;
+ &lt;span class="seminar-stat-number"&gt;13&lt;/span&gt;
+ &lt;span class="seminar-stat-label"&gt;Invited Talks&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="seminar-stat"&gt;
+ &lt;span class="seminar-stat-number"&gt;9&lt;/span&gt;
+ &lt;span class="seminar-stat-label"&gt;Countries&lt;/span&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Seminar Key --&gt;
+&lt;div class="seminar-key"&gt;
+ &lt;h3&gt;Seminar Key&lt;/h3&gt;
+ &lt;div class="key-items"&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="border-left: 8px solid #FF8C42; background: #fff5eb;"&gt;&lt;/div&gt;
+ &lt;span&gt;Invited Talk&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="key-item"&gt;
+ &lt;div class="key-box" style="border-left: 6px solid #008B8B; background: #e0f7f7;"&gt;&lt;/div&gt;
+ &lt;span&gt;Contributed Talk&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Filter Buttons --&gt;
+&lt;div class="seminar-filters"&gt;
+ &lt;button class="filter-btn active" onclick="filterSeminars('all', this)"&gt;All Seminars&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterSeminars('invited', this)"&gt;Invited Talks&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterSeminars('contributed', this)"&gt;Contributed Talks&lt;/button&gt;
+ &lt;button class="filter-btn" onclick="filterSeminars('international', this)"&gt;International&lt;/button&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2025
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;Kyushu University&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;University of Osaka&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission&lt;/strong&gt; - &lt;em&gt;Kitasato University&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Tuning the chromophore of an N-aryl scaffold for thermally activated delayed fluorescence&lt;/strong&gt; - Optical Probes 2025, &lt;em&gt;Fukuoka&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Quinine: Is this the &lt;em&gt;tonic&lt;/em&gt; for a new class of thermally activated delayed fluorescence (TADF) emitters?&lt;/strong&gt; - &lt;em&gt;University of Edinburgh&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2024
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Lone pair interactions, charge transfer and the pathways towards thermally activated delayed fluorescence (TADF)&lt;/strong&gt; - &lt;em&gt;Newcastle University&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence&lt;/strong&gt; - RSC Photophysics and Photochemistry Group Early Career Meeting 2024, &lt;em&gt;University of Sheffield&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence&lt;/strong&gt; - International Conference on the Science and Technology of Synthetic Electronic Materials, &lt;em&gt;TU Dresden&lt;/em&gt; (Germany)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2023
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;A modular approach to tuning emissive N-aryl through-space charge transfer states&lt;/strong&gt; - Optical Probes 2023, &lt;em&gt;Como&lt;/em&gt; (Italy)
+&lt;/div&gt;
+
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;A modular approach to tuning emissive N-aryl through-space charge transfer states&lt;/strong&gt; - RSC Photophysics and Photochemistry Group Early Career Meeting 2023, &lt;em&gt;University of Strathclyde&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2022
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;From phosphorescence to delayed fluorescence in one step&lt;/strong&gt; - 13th International Conference of Electroluminescence and Optoelectronic Devices, &lt;em&gt;Chelsea Football Club&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Intermolecular interactions in thermally activated delayed fluorescence emitters&lt;/strong&gt; - SPIE, &lt;em&gt;San Diego Convention Center&lt;/em&gt; (USA)
+&lt;/div&gt;
+
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Modulation of charge transfer by &lt;em&gt;N&lt;/em&gt;-alkylation to control photoluminescence energy and quantum yield&lt;/strong&gt; - International Conference on the Science and Technology of Synthetic Metals, &lt;em&gt;University of Glasgow&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2021
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Thermally activated delayed fluorescence: Beyond the single molecule&lt;/strong&gt; - 6th International TADF Workshop, &lt;em&gt;Kyushu University&lt;/em&gt; (Japan) - WEBINAR
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Thermally activated delayed fluorescence: Beyond the single molecule&lt;/strong&gt; - NECEM Photophysics for Energy Materials Conference, &lt;em&gt;Newcastle University&lt;/em&gt; (UK) - WEBINAR
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2020
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Capturing tonic water&amp;rsquo;s blue glow for photonic applications&lt;/strong&gt; - Natural Sciences Hour, &lt;em&gt;University of York&lt;/em&gt; (UK) - WEBINAR
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Capturing tonic water&amp;rsquo;s blue glow for photonic applications&lt;/strong&gt; - North East Centre for Energy Materials (NECEM), &lt;em&gt;Newcastle University&lt;/em&gt; (UK) - WEBINAR
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Modulation of charge transfer by &lt;em&gt;N&lt;/em&gt;-alkylation to control photoluminescence energy and quantum yield&lt;/strong&gt; - Durham Energy Institute, &lt;em&gt;Durham University&lt;/em&gt; (UK) - WEBINAR
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Controlling charge transfer in tonic water and looking at thermally activated delayed fluorescence beyond the single molecule&lt;/strong&gt; - Department of Physics, &lt;em&gt;University of Sheffield&lt;/em&gt; (UK) - WEBINAR
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2019
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Persistent dimer emission in thermally activated delayed fluorescence materials&lt;/strong&gt; - Optical Probes, &lt;em&gt;Vilnius&lt;/em&gt; (Lithuania)
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger "&gt;
+ &lt;strong&gt;Persistent dimer emission in thermally activated delayed fluorescence materials&lt;/strong&gt; - Department of Chemistry, &lt;em&gt;University of Edinburgh&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2018
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Excited-state aromatic interactions in the aggregation-induced emission of molecular rotors&lt;/strong&gt; - WOREN, &lt;em&gt;Wisla&lt;/em&gt; (Poland)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2017
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Photoinduced absorption meets thermally activated delayed fluorescence: When slow and (quasi-)steady wins the race&lt;/strong&gt; - Optical Probes, &lt;em&gt;Quebec City&lt;/em&gt; (Canada)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2016
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Spin-orbit charge transfer mechanism in a thermally activated delayed fluorescence molecule&lt;/strong&gt; - MQD Workshop, &lt;em&gt;University of York&lt;/em&gt; (UK)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2015
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Hetero triplet fusion in acene-based organic light-emitting diodes&lt;/strong&gt; - Optical Probes, &lt;em&gt;Hong Kong University of Science and Technology&lt;/em&gt; (China)
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;span class="badge "&gt;
+ 2014
+&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Magnetic field effects on the photocurrent of polymer:fullerene solar cells&lt;/strong&gt; - SpinOS, &lt;em&gt;Himeji&lt;/em&gt; (Japan)
+&lt;/div&gt;
+
+&lt;div class="alert alert-secondary "&gt;
+ &lt;strong&gt;Recombination pathways in organic photovoltaics observed through spin polarization measurements&lt;/strong&gt; - Fall MRS, &lt;em&gt;Boston&lt;/em&gt; (USA)
+&lt;/div&gt;</description></item><item><title/><link>https://marc-k-etherington.github.io/teaching/</link><pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/teaching/</guid><description>&lt;h2&gt;Teaching&lt;/h2&gt;
+This page will be populated soon. Check out the publications page as that is going to be populated first.</description></item><item><title>New Website</title><link>https://marc-k-etherington.github.io/new-website/</link><pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/new-website/</guid><description>Welcome to the new website of the Etherington Group.</description></item><item><title>HORIBA Fluorolog-QM Installed</title><link>https://marc-k-etherington.github.io/fluorolog-qm/</link><pubDate>Fri, 23 Jul 2021 13:50:01 -0600</pubDate><guid>https://marc-k-etherington.github.io/fluorolog-qm/</guid><description>The latest Fluorolog-QM from HORIBA is now installed at Northumbria University.</description></item><item><title/><link>https://marc-k-etherington.github.io/single/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/single/</guid><description/></item><item><title>Gallery</title><link>https://marc-k-etherington.github.io/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/gallery/</guid><description/></item><item><title>Marc Etherington</title><link>https://marc-k-etherington.github.io/marc-etherington/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marc-k-etherington.github.io/marc-etherington/</guid><description>&lt;p&gt;Marc Etherington (b. 1988) started at Northumbria University in January 2020 as a Vice-Chancellor&amp;rsquo;s Senior Fellow in the Department of Mathematics, Physics and Electrical Engineering. In 2022 he became Assistant Professor and he continues to lead his research in the spectroscopic study of organic light-emitting materials. Marc is also the lead of the Energy Futures Network at Northumbria an inter-faculty and interdisciplinary network that brings academics from across the University to work towards Carbon Net Zero. Marc works closely with colleagues in the Department of Applied Sciences, in particular Dr Jon Knowles with whom he shares co-supervision of PhD students to ensure the wider Knowles-Etherington Group can tackle synthetic and spectroscopic challenges in parallel.&lt;/p&gt;</description></item></channel></rss>
