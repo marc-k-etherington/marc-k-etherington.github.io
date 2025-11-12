@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Indie+Flower&display=swap');
 
-/* ===== FALLBACKS FOR LOGICAL PROPERTIES ===== */
-/* These provide compatibility for browsers that don't support logical properties */
+/* ===== COMPREHENSIVE BORDER FALLBACKS ===== */
+/* Traditional properties as fallbacks for logical properties across all pages */
 
+/* Top borders */
 .welcome-hero-compact {
   border-top: 5px solid #008B8B;
 }
 
+/* Bottom borders - section dividers */
 .section-header,
 .roles-section-marc h2,
 .expertise-section-marc h2,
-.bio-section-marc h2 {
+.bio-section-marc h2,
+.news-item {
   border-bottom: 3px solid #008B8B;
   padding-bottom: 0.5rem;
 }
@@ -24,23 +27,19 @@
   border-bottom: none;
 }
 
-.where-now,
-.alert-primary,
-div.alert-primary,
-.alert-danger,
-div.alert-danger,
-.alert-secondary,
-div.alert-secondary,
-.success-card,
-.funding-item,
-.info-box {
-  border-left: 4px solid;
+.research-theme-card-image {
+  border-bottom: 4px solid #FF8C42;
+}
+
+/* Left borders - colored accents */
+.where-now {
+  border-left: 4px solid #FF8C42;
 }
 
 .alert-primary,
 div.alert-primary {
-  border-left-width: 6px;
-  border-left-color: #008B8B;
+  border: 2px solid #333;
+  border-left: 6px solid #008B8B;
 }
 
 .alert-primary.corresponding {
@@ -50,41 +49,32 @@ div.alert-primary {
 
 .alert-danger,
 div.alert-danger {
-  border-left-width: 8px;
-  border-left-color: #FF8C42;
+  border: 3px solid #FF8C42;
+  border-left: 8px solid #FF8C42;
 }
 
 .alert-secondary,
 div.alert-secondary {
-  border-left-width: 6px;
-  border-left-color: #008B8B;
+  border: 2px solid #008B8B;
+  border-left: 6px solid #008B8B;
 }
 
 .success-card {
-  border-left-width: 6px;
-  border-left-color: #FF8C42;
+  border: 2px solid #333;
+  border-left: 6px solid #FF8C42;
 }
 
 .funding-item {
-  border-left-width: 4px;
-  border-left-color: #008B8B;
+  border: 2px solid #333;
+  border-left: 4px solid #008B8B;
 }
 
 .info-box {
-  border-left-width: 5px;
-  border-left-color: #FF8C42;
-}
-
-.where-now {
-  border-left-width: 4px;
-  border-left-color: #FF8C42;
-}
-
-.research-theme-card-image {
-  border-bottom: 4px solid #FF8C42;
+  border-left: 5px solid #FF8C42;
 }
 
 .research-project-card {
+  border: 3px solid #333;
   border-left: 8px solid #008B8B;
 }
 
@@ -97,22 +87,90 @@ div.alert-secondary {
 }
 
 .opportunity-card.unfunded {
+  border: 3px solid #FF8C42;
   border-left: 8px solid #FF8C42;
 }
 
 .opportunity-card.funded {
+  border: 3px solid #008B8B;
   border-left: 8px solid #008B8B;
 }
 
 .opportunity-card.available {
+  border: 3px solid #28a745;
   border-left: 8px solid #28a745;
 }
 
-.pi-card {
-  border: 3px solid #008B8B;
+/* All standard card borders */
+.member-card,
+.member-photo,
+.role-card-marc,
+.stat-card-marc,
+.research-stat-card,
+.research-theme-card,
+.research-summary-card,
+.research-capability-item,
+.research-nav-card,
+.pub-key,
+.seminar-key,
+.key-box,
+.faq-item,
+.opportunity-card,
+.cta-box-marc,
+.audience-card,
+.group-photo,
+.pi-card,
+.contact-btn,
+.filter-btn,
+.hero-buttons .paper-btn,
+.gallery-filter-btn,
+.research-tab-btn,
+.research-toggle-btn,
+.social-float-compact,
+.back-to-top,
+.news-thumbnail,
+.business-card,
+.research-theme-card-meta {
+  border: 2px solid #333;
 }
 
-/* Spacing fallbacks for critical elements */
+/* Thicker borders */
+.welcome-hero,
+.research-summary-section,
+.pub-stats,
+.seminar-stats,
+.recruiting-banner,
+.why-join,
+.contact-cta,
+.gallery-hero,
+.scrapbook-container,
+.research-tab-container,
+.profile-header-marc,
+.research-vision-marc {
+  border: 3px solid;
+}
+
+.research-stat-card,
+.stat-card-marc,
+.cta-box-marc,
+.audience-card,
+.research-theme-card,
+.research-nav-card {
+  border: 3px solid #333;
+}
+
+/* Tab button borders */
+.research-tab-btn {
+  border: 2px solid #333;
+  border-bottom: none;
+}
+
+.research-tab-btn.active {
+  border: 2px solid #008B8B;
+  border-bottom: none;
+}
+
+/* Spacing fallbacks */
 .hero-content,
 .research-intro {
   margin-left: auto;
@@ -127,6 +185,17 @@ div.alert-secondary {
 .back-to-top {
   bottom: 5rem;
   right: 1rem;
+}
+
+.opportunity-card ul {
+  padding-left: 1.5rem;
+}
+
+.news-text time,
+.news-item,
+.member-bio,
+.research-tab-content h2:first-child {
+  margin-top: 0;
 }
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
