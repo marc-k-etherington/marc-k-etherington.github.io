@@ -134,8 +134,8 @@ link = ""
 
 [[photos]]
 image = "/images/gallery/Osaka_Marc_Lab.jpeg"
-caption = "August 2025 - Making films in the lab 🧪"
-category = "travel"
+caption = "August 2025 - Making films in the lab @ Osaka 🧪"
+categories = ["lab", "travel"]
 decoration = "pinned"
 link = ""
 
