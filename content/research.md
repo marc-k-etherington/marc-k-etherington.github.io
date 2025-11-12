@@ -38,7 +38,7 @@ label = "Active PhDs"
 [[impact]]
 icon = "💡"
 title = "Energy-Efficient Displays"
-description = "TADF materials enable OLED technology with improved efficiency and color quality for smartphones, TVs, and flexible displays."
+description = "TADF materials enable OLED technology with improved efficiency and colour quality for smartphones, TVs, and flexible displays."
 
 [[impact]]
 icon = "🏥"
@@ -55,40 +55,35 @@ icon = "🔬"
 title = "Thermally Activated Delayed Fluorescence (TADF)"
 description = "Investigating the fundamental photophysics of TADF materials for next-generation organic light-emitting diodes. Our work focuses on understanding spin-vibronic coupling mechanisms and optimizing reverse intersystem crossing rates."
 techniques = "Time-resolved spectroscopy, Low-temperature measurements"
-recent_work = "Dual emission in TADF systems (Nature Chemistry, 2022)"
+recent_work = "Overcoming Dexter transfer in hyperfluorescent materials (Nature Materials, 2024)"
 
 [[themes]]
 icon = "⚡"
 title = "Charge Transfer States & Molecular Design"
 description = "Exploring the relationship between molecular architecture and charge transfer state properties. We design novel donor-acceptor systems to control energy gaps and emission characteristics for targeted applications."
 techniques = "Photophysical characterization, Computational modeling"
-recent_work = "Through-space CT in N-quinolyl systems (JPCB, 2024)"
+recent_work = "Through-space CT in N-quinolyl systems (Journal of Physical Chemistry B, 2024)"
 
 [[themes]]
 icon = "📊"
 title = "Singlet-Triplet Energy Gaps"
 description = "Developing advanced spectroscopic methods to accurately measure ΔEST in organic emitters. Understanding these energy gaps is crucial for designing efficient TADF materials and predicting device performance."
 techniques = "Cryogenic spectroscopy, Dual emission analysis"
-recent_work = "Dibenzophenazine dual emission systems"
+recent_work = ""
 
 [[themes]]
 icon = "🧬"
 title = "Bioimaging Applications"
 description = "Applying our fundamental understanding of organic emitters to develop new materials for biological imaging. Collaborating with the Takeda group to create TADF-based probes with enhanced imaging capabilities."
 techniques = "Photoluminescence spectroscopy, Biocompatibility testing"
-recent_work = "Collaboration: Kitasato University (Japan)"
+recent_work = "Collaboration: University of Osaka (Japan)"
 
-[[featured_publications]]
-journal = "Nature Chemistry"
-year = "2022"
-title = "Rupturing aromaticity by periphery overcrowding"
-description = "Design principles for controlling photocyclization-induced quenching in aggregation-induced emitters."
 
 [[featured_publications]]
 journal = "J. Phys. Chem. B"
 year = "2024"
-title = "Modular Approach to N-Quinolyl CT States"
-description = "Novel molecular design strategies for controlling charge transfer emission. First-author student publication."
+title = ""
+description = ""
 
 [[featured_publications]]
 journal = "J. Mater. Chem. C"
@@ -122,11 +117,6 @@ title = "Cryogenic Systems"
 description = "Low-temperature spectroscopy to liquid helium temperatures. Unique capability for ΔEST measurements and dual emission studies"
 
 [[capabilities]]
-icon = "💻"
-title = "Computational Expertise"
-description = "TD-DFT calculations, molecular dynamics simulations, energy level predictions, structure-property relationships"
-
-[[capabilities]]
 icon = "📐"
 title = "Photophysical Characterization"
 description = "Complete photophysical package: ΔEST, quantum yields, excited state kinetics, emission/absorption spectra"
@@ -139,20 +129,20 @@ description = "Long-standing collaboration on TADF materials and photophysics. J
 
 [[collaborations]]
 flag = "🇯🇵"
-institution = "Osaka University"
-contact = "JST ASPIRE Program"
+institution = "University of Osaka"
+contact = "Dr Youhei Takeda"
 description = "International collaboration funded by Japan Science and Technology Agency on advanced TADF systems."
 
 [[collaborations]]
 flag = "🇯🇵"
 institution = "Kitasato University"
-contact = "Takeda Group"
-description = "Active collaboration on TADF-based bioimaging probes and applications in medical diagnostics."
+contact = "Prof. Go Watanabe"
+description = "Molecular dynamics of quinine salts"
 
 [[collaborations]]
 flag = "🇬🇧"
-institution = "University of York"
-contact = "Dr Paul McGonigal"
+institution = "University of Oxford"
+contact = "Prof. Paul McGonigal"
 description = "Molecular design and synthesis expertise. Joint work on aggregation-induced emission systems."
 
 [[active_projects]]
@@ -179,17 +169,12 @@ period = "2022 - Present"
 funding = "PhD Project (Will)"
 description = "Alternative synthetic routes for preparation of chalcogenide perovskite materials for optoelectronic applications."
 
-[[past_projects]]
-title = "Rupturing Aromaticity in AIE"
-period = "2019 - 2022"
-status = "Completed"
-description = "Design principles for controlling photocyclization-induced quenching in aggregation-induced emitters. Published in Nature Chemistry."
 
 [[past_projects]]
 title = "Homoconjugation in TADF"
 period = "2020 - 2022"
 status = "Completed"
-description = "Simultaneous enhancement of TADF and photoluminescence quantum yield via homoconjugation. Collaboration with Durham."
+description = "Simultaneous enhancement of TADF and photoluminescence quantum yield via homoconjugation. Collaboration with Loughborough and Edinburgh"
 
 [[past_projects]]
 title = "Quaternisation Control"
@@ -201,38 +186,20 @@ description = "From phosphorescence to delayed fluorescence in one step via quat
 title = "JST ASPIRE International Collaboration"
 period = "2023 - 2026"
 source = "Japan Science & Technology Agency"
-description = "Multi-year international collaboration program with Osaka University on advanced TADF systems and device applications."
-
-[[current_funding]]
-title = "Vice-Chancellor's Senior Fellowship"
-period = "2021 - Present"
-source = "Northumbria University"
-description = "Senior research position recognizing excellence in organic photonics research and leadership in TADF studies."
-
-[[current_funding]]
-title = "PhD Studentships"
-period = "Various"
-source = "University & External"
-description = "Currently supporting 3 PhD students through university scholarships and collaborative funding arrangements."
-
-[[past_funding]]
-title = "EPSRC Postdoctoral Fellowship"
-period = "2015 - 2018"
-amount = "£250K"
-description = "Research associate positions on PHEBE and HyperOLED projects at Durham University."
+description = "Multi-year international collaboration program with University of Osaka on advanced TADF systems and device applications."
 
 [[past_funding]]
 title = "Royal Society Research Grant"
-period = "2019 - 2020"
-amount = "£15K"
-description = "Equipment funding for advanced spectroscopy capabilities."
+period = ""
+amount = ""
+description = ""
 
 [[team_summary]]
 icon = "👨‍🔬"
 title = "Principal Investigator"
 content = """
 **Dr Marc Etherington**  
-Vice-Chancellor's Senior Fellow
+Assistant Professor
 
 Spectroscopist specializing in organic photonics, TADF materials, and photophysical chemistry.
 """
