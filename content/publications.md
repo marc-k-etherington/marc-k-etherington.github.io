@@ -22,6 +22,14 @@ type = "publications"
     <span class="pub-stat-number">3</span>
     <span class="pub-stat-label">Nature Family</span>
   </div>
+  <div class="pub-stat">
+    <span class="pub-stat-number">3</span>
+    <span class="pub-stat-label">Angewandte Chemie</span>
+  </div>
+    <div class="pub-stat">
+    <span class="pub-stat-number">1</span>
+    <span class="pub-stat-label">JACS</span>
+  </div>
 </div>
 
 <!-- Publication Key -->
