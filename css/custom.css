@@ -2148,3 +2148,1136 @@ div.alert-secondary {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets and Mobile (992px) */
+@media (max-width: 992px) {
+  .hero-hamburger {
+    display: block !important;
+    width: 100%;
+    padding: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    box-shadow: 3px 3px 0 #333;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.1s ease;
+  }
+
+  .hero-hamburger:hover {
+    box-shadow: 4px 4px 0 #333;
+    transform: translate(-1px, -1px);
+  }
+
+  .hero-hamburger:active {
+    box-shadow: 1px 1px 0 #333;
+    transform: translate(2px, 2px);
+  }
+
+  .hero-hamburger::after {
+    content: "☰ Menu";
+  }
+
+  .hero-menu-toggle:checked ~ .hero-hamburger::after {
+    content: "✕ Close";
+  }
+
+  .hero-buttons {
+    display: none;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  .hero-menu-toggle:checked ~ .hero-buttons {
+    display: flex !important;
+  }
+
+  .hero-buttons .paper-btn {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .news-content {
+    gap: 1.2rem;
+  }
+
+  .news-thumbnail {
+    width: 150px !important;
+    height: 110px !important;
+    max-width: 150px !important;
+    max-height: 110px !important;
+  }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  /* Hero */
+  .welcome-hero {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-hero-compact {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-title-compact {
+    font-size: 1.4rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+
+  /* Social media */
+  .social-float-compact {
+    right: 0.5rem;
+    bottom: 1rem;
+    padding: 0.4rem;
+    gap: 0.4rem;
+  }
+
+  .social-float-compact a {
+    width: 35px;
+    height: 35px;
+    padding: 0.25rem;
+  }
+
+  /* News */
+  .news-feed > h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .news-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .news-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .news-thumbnail-wrapper {
+    width: 100%;
+  }
+
+  .news-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 300px !important;
+  }
+
+  .news-text h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .news-text p {
+    font-size: 0.95rem !important;
+  }
+
+  .news-text time {
+    font-size: 0.85rem !important;
+  }
+
+  /* Group */
+  .member-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .member-photo {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .page-title {
+    font-size: 2rem !important;
+  }
+
+  .section-header {
+    font-size: 1.5rem !important;
+  }
+
+  .member-name {
+    font-size: 1.3rem !important;
+  }
+
+  .member-title {
+    font-size: 1rem !important;
+  }
+
+  .member-details p {
+    font-size: 0.9rem !important;
+  }
+
+  .member-bio {
+    font-size: 0.95rem !important;
+  }
+
+  /* Marc page */
+  .profile-header-marc {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .profile-photo-marc img {
+    width: 180px;
+    height: 225px;
+  }
+
+  .profile-name-marc {
+    font-size: 2rem !important;
+  }
+
+  .profile-title-marc {
+    font-size: 1.1rem !important;
+  }
+
+  .profile-contact-marc {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem !important;
+  }
+
+  .research-vision-marc h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .research-vision-marc p {
+    font-size: 0.95rem !important;
+  }
+
+  .stats-grid-marc {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .stat-card-marc {
+    padding: 1rem;
+  }
+
+  .stat-number-marc {
+    font-size: 1.5rem !important;
+  }
+
+  .stat-label-marc {
+    font-size: 0.85rem !important;
+  }
+
+  .roles-section-marc h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .roles-grid-marc,
+  .cta-grid-marc {
+    grid-template-columns: 1fr;
+  }
+
+  .role-card-marc h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .role-card-marc p {
+    font-size: 0.9rem !important;
+  }
+
+  .expertise-section-marc h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .expertise-tags-marc {
+    gap: 0.5rem;
+  }
+
+  .expertise-tag-marc {
+    font-size: 0.9rem !important;
+    padding: 0.6rem 1rem;
+  }
+
+  .bio-section-marc {
+    padding: 1.5rem;
+  }
+
+  .bio-section-marc h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .bio-section-marc p {
+    font-size: 0.95rem !important;
+  }
+
+  .cta-box-marc h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .cta-box-marc p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Publications */
+  .pub-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .pub-stat-number {
+    font-size: 2rem !important;
+  }
+
+  .pub-stat-label {
+    font-size: 0.85rem !important;
+  }
+
+  .pub-filters {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+    font-size: 0.95rem !important;
+  }
+
+  .pub-key h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .key-items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .key-item {
+    font-size: 0.9rem !important;
+  }
+
+  .collapsible summary,
+  details summary {
+    font-size: 1rem !important;
+  }
+
+  .alert-primary img {
+    float: none !important;
+    display: block !important;
+    margin: 1rem auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Seminars */
+  .seminar-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .seminar-stat-number {
+    font-size: 2rem !important;
+  }
+
+  .seminar-stat-label {
+    font-size: 0.85rem !important;
+  }
+
+  .seminar-filters {
+    flex-direction: column;
+  }
+
+  .seminar-filters .filter-btn {
+    width: 100%;
+  }
+
+  .seminar-key h3 {
+    font-size: 1.2rem !important;
+  }
+
+  /* Join Us */
+  .recruiting-banner {
+    padding: 1.5rem;
+  }
+
+  .recruiting-banner h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .recruiting-banner p {
+    font-size: 1.1rem !important;
+  }
+
+  .why-join {
+    padding: 1.5rem;
+  }
+
+  .why-join h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .why-join li {
+    font-size: 0.95rem !important;
+  }
+
+  .audience-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .audience-icon {
+    font-size: 2.5rem !important;
+  }
+
+  .audience-title {
+    font-size: 1.2rem !important;
+  }
+
+  .audience-subtitle {
+    font-size: 0.85rem !important;
+  }
+
+  .process-timeline {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+
+  .process-step {
+    margin-bottom: 1.5rem;
+  }
+
+  .process-label {
+    font-size: 0.9rem !important;
+  }
+
+  .opportunities {
+    grid-template-columns: 1fr;
+  }
+
+  .opportunity-card h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .opportunity-card p,
+  .opportunity-card li {
+    font-size: 0.9rem !important;
+  }
+
+  .student-success {
+    grid-template-columns: 1fr;
+  }
+
+  .success-card h4 {
+    font-size: 1rem !important;
+  }
+
+  .success-card p {
+    font-size: 0.9rem !important;
+  }
+
+  .funding-list {
+    grid-template-columns: 1fr;
+  }
+
+  .funding-info {
+    padding: 1.5rem;
+  }
+
+  .funding-info h3 {
+    font-size: 1.3rem !important;
+  }
+
+  .funding-item {
+    font-size: 0.9rem !important;
+  }
+
+  .opportunities-key {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .faq-question {
+    font-size: 1rem !important;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem !important;
+  }
+
+  .contact-cta {
+    padding: 1.5rem;
+  }
+
+  .contact-cta h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .contact-cta p {
+    font-size: 1rem !important;
+  }
+
+  .email-btn {
+    font-size: 1.1rem !important;
+    padding: 0.9rem 1.8rem;
+  }
+
+  /* Gallery */
+  .gallery-hero {
+    padding-bottom: 100px;
+    transform: rotate(0deg);
+    margin: 1.5rem auto 2rem auto;
+  }
+
+  .gallery-hero-caption {
+    font-size: 1.1rem !important;
+  }
+
+  .intro {
+    font-size: 1rem !important;
+  }
+
+  .gallery-filter-btn {
+    font-size: 0.95rem !important;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .scrapbook {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .polaroid {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .polaroid-caption {
+    font-size: 1rem !important;
+  }
+
+  .scrapbook-container {
+    padding: 2rem 1rem !important;
+  }
+
+  .sticky-note {
+    width: 150px;
+    min-height: 140px;
+    font-size: 1rem !important;
+  }
+
+  .business-card {
+    font-size: 0.85rem !important;
+  }
+
+  .business-card strong {
+    font-size: 1rem !important;
+  }
+
+  /* Research page */
+  .research-tab-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .research-tab-btn {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+    margin-bottom: 0;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem !important;
+  }
+
+  .research-tab-btn.active {
+    padding-bottom: 0.75rem;
+  }
+
+  .research-tab-container {
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+
+  .research-intro {
+    font-size: 1rem !important;
+  }
+
+  .research-tab-content h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .research-tab-content h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .research-tab-content p {
+    font-size: 0.95rem !important;
+  }
+
+  .research-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .research-stat-number {
+    font-size: 1.6rem !important;
+  }
+
+  .research-stat-label {
+    font-size: 0.85rem !important;
+  }
+
+  .research-mission {
+    font-size: 1rem !important;
+  }
+
+  .research-theme-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-theme-card-image {
+    height: 150px;
+    font-size: 2.5rem !important;
+  }
+
+  .research-theme-card-title {
+    font-size: 1.1rem !important;
+  }
+
+  .research-theme-card-description {
+    font-size: 0.9rem !important;
+  }
+
+  .research-theme-card-meta-item {
+    font-size: 0.85rem !important;
+  }
+
+  .research-summary-content {
+    grid-template-columns: 1fr;
+  }
+
+  .research-summary-card h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .research-summary-card p {
+    font-size: 0.9rem !important;
+  }
+
+  .research-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-project-card h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .research-project-meta {
+    font-size: 0.85rem !important;
+  }
+
+  .research-project-description {
+    font-size: 0.9rem !important;
+  }
+
+  .research-capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-capability-icon {
+    font-size: 2rem !important;
+  }
+
+  .research-capability-title {
+    font-size: 1.1rem !important;
+  }
+
+  .research-capability-description {
+    font-size: 0.9rem !important;
+  }
+
+  .research-nav-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .research-nav-card-icon {
+    font-size: 2.5rem !important;
+  }
+
+  .research-nav-card-title {
+    font-size: 1.1rem !important;
+  }
+
+  .research-nav-card-subtitle {
+    font-size: 0.85rem !important;
+  }
+
+  .research-link-btn {
+    font-size: 0.95rem !important;
+  }
+
+  .research-toggle-btn {
+    font-size: 0.9rem !important;
+  }
+
+  .back-to-top {
+    bottom: 4rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem !important;
+  }
+}
+
+/* Small mobile (480px) */
+@media (max-width: 480px) {
+  /* Hero */
+  .hero-title {
+    font-size: 1.6rem !important;
+  }
+
+  .hero-title-compact {
+    font-size: 1.3rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem !important;
+  }
+
+  /* News */
+  .news-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .news-text h2 {
+    font-size: 1.1rem !important;
+  }
+
+  .news-text p {
+    font-size: 0.9rem !important;
+  }
+
+  .news-text time {
+    font-size: 0.85rem !important;
+  }
+
+  /* Group */
+  .page-title {
+    font-size: 1.8rem !important;
+  }
+
+  .section-header {
+    font-size: 1.3rem !important;
+  }
+
+  .member-name {
+    font-size: 1.2rem !important;
+  }
+
+  .member-title {
+    font-size: 0.95rem !important;
+  }
+
+  .member-details p {
+    font-size: 0.9rem !important;
+  }
+
+  .member-bio {
+    font-size: 0.9rem !important;
+  }
+
+  /* Marc page */
+  .profile-name-marc {
+    font-size: 1.8rem !important;
+  }
+
+  .profile-title-marc {
+    font-size: 1rem !important;
+  }
+
+  .research-vision-marc h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .research-vision-marc p {
+    font-size: 0.9rem !important;
+  }
+
+  .stat-number-marc {
+    font-size: 1.3rem !important;
+  }
+
+  .roles-section-marc h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .role-card-marc h3 {
+    font-size: 1rem !important;
+  }
+
+  .role-card-marc p {
+    font-size: 0.85rem !important;
+  }
+
+  .expertise-section-marc h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .expertise-tag-marc {
+    font-size: 0.85rem !important;
+  }
+
+  .bio-section-marc h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .bio-section-marc p {
+    font-size: 0.9rem !important;
+  }
+
+  .cta-box-marc h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .cta-box-marc p {
+    font-size: 0.85rem !important;
+  }
+
+  /* Publications */
+  .pub-stat-number {
+    font-size: 1.8rem !important;
+  }
+
+  .pub-key h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .key-item {
+    font-size: 0.85rem !important;
+  }
+
+  .filter-btn {
+    font-size: 0.9rem !important;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .badge {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.8rem !important;
+  }
+
+  .collapsible summary,
+  details summary {
+    font-size: 0.95rem !important;
+  }
+
+  .alert-primary,
+  div.alert-primary {
+    padding: 1rem !important;
+  }
+
+  .color-secondary {
+    font-size: 0.85rem !important;
+  }
+
+  /* Seminars */
+  .seminar-stat-number {
+    font-size: 1.8rem !important;
+  }
+
+  .seminar-key h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .alert-danger,
+  .alert-secondary {
+    padding: 0.9rem 1.2rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Join Us */
+  .recruiting-banner h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .recruiting-banner p {
+    font-size: 1rem !important;
+  }
+
+  .why-join h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .why-join li {
+    font-size: 0.9rem !important;
+  }
+
+  .audience-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-icon {
+    font-size: 2.2rem !important;
+  }
+
+  .audience-title {
+    font-size: 1.1rem !important;
+  }
+
+  .audience-subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .process-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem !important;
+  }
+
+  .process-label {
+    font-size: 0.85rem !important;
+  }
+
+  .opportunity-card h3 {
+    font-size: 1rem !important;
+  }
+
+  .opportunity-card p,
+  .opportunity-card li {
+    font-size: 0.85rem !important;
+  }
+
+  .opportunity-btn {
+    font-size: 0.85rem !important;
+  }
+
+  .success-icon {
+    font-size: 1.8rem !important;
+  }
+
+  .success-card h4 {
+    font-size: 0.95rem !important;
+  }
+
+  .success-card p {
+    font-size: 0.85rem !important;
+  }
+
+  .funding-info h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .funding-item {
+    font-size: 0.85rem !important;
+  }
+
+  .info-box {
+    font-size: 0.9rem !important;
+    padding: 1.2rem;
+  }
+
+  .faq-question {
+    font-size: 0.95rem !important;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem !important;
+  }
+
+  .contact-cta h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .contact-cta p {
+    font-size: 0.95rem !important;
+  }
+
+  .email-btn {
+    font-size: 1rem !important;
+    padding: 0.85rem 1.5rem;
+  }
+
+  /* Gallery */
+  .gallery-hero-caption {
+    font-size: 0.95rem !important;
+  }
+
+  .intro {
+    font-size: 0.95rem !important;
+  }
+
+  .gallery-filter-btn {
+    font-size: 0.9rem !important;
+    padding: 0.65rem 1.1rem;
+  }
+
+  .polaroid {
+    padding-bottom: 100px;
+  }
+
+  .polaroid-caption {
+    font-size: 0.95rem !important;
+  }
+
+  .sticky-note {
+    font-size: 0.95rem !important;
+  }
+
+  .business-card {
+    font-size: 0.8rem !important;
+  }
+
+  .business-card strong {
+    font-size: 0.95rem !important;
+  }
+
+  /* Research page */
+  .research-tab-btn {
+    font-size: 0.85rem !important;
+    padding: 0.7rem 1.1rem;
+  }
+
+  .research-tab-container {
+    padding: 1rem;
+  }
+
+  .research-intro {
+    font-size: 0.95rem !important;
+  }
+
+  .research-tab-content h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .research-tab-content h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .research-tab-content p {
+    font-size: 0.9rem !important;
+  }
+
+  .research-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .research-stat-number {
+    font-size: 1.4rem !important;
+  }
+
+  .research-stat-label {
+    font-size: 0.8rem !important;
+  }
+
+  .research-mission {
+    font-size: 0.95rem !important;
+  }
+
+  .research-theme-card-image {
+    height: 120px;
+    font-size: 2rem !important;
+  }
+
+  .research-theme-card-title {
+    font-size: 1rem !important;
+  }
+
+  .research-theme-card-description {
+    font-size: 0.85rem !important;
+  }
+
+  .research-theme-card-meta-item {
+    font-size: 0.8rem !important;
+  }
+
+  .research-summary-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .research-summary-card {
+    padding: 1.2rem;
+  }
+
+  .research-summary-card h3 {
+    font-size: 1rem !important;
+  }
+
+  .research-summary-card p {
+    font-size: 0.85rem !important;
+  }
+
+  .research-project-card h3 {
+    font-size: 1rem !important;
+  }
+
+  .research-project-meta {
+    font-size: 0.8rem !important;
+  }
+
+  .research-project-description {
+    font-size: 0.85rem !important;
+  }
+
+  .research-capability-icon {
+    font-size: 1.8rem !important;
+  }
+
+  .research-capability-title {
+    font-size: 1rem !important;
+  }
+
+  .research-capability-description {
+    font-size: 0.85rem !important;
+  }
+
+  .research-nav-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .research-nav-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .research-nav-card-icon {
+    font-size: 2.2rem !important;
+  }
+
+  .research-nav-card-title {
+    font-size: 1rem !important;
+  }
+
+  .research-nav-card-subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .research-link-btn {
+    font-size: 0.9rem !important;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .research-toggle-btn {
+    font-size: 0.85rem !important;
+    padding: 0.55rem 1.1rem;
+  }
+
+  .back-to-top {
+    font-size: 0.95rem !important;
+    padding: 0.5rem 0.7rem;
+  }
+}
