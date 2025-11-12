@@ -1,0 +1,327 @@
+
+{{ define "main" }}
+
+{{ partial "hero-banner.html" . }}
+
+<h1>{{ .Title }}</h1>
+
+<p class="research-intro">
+    {{ .Params.intro | default "The Etherington Lab advances organic photonics through fundamental photophysical understanding of thermally activated delayed fluorescence (TADF) materials, charge transfer states, and light-emitting molecular systems." }}
+</p>
+
+<!-- Tab Navigation -->
+<div class="research-tab-nav">
+    <button class="research-tab-btn active" onclick="showResearchTab('overview')">📋 Overview</button>
+    <button class="research-tab-btn" onclick="showResearchTab('themes')">🔬 Research Themes</button>
+    <button class="research-tab-btn" onclick="showResearchTab('publications')">🏆 Publications</button>
+    <button class="research-tab-btn" onclick="showResearchTab('seminars')">🎤 Seminars</button>
+    <button class="research-tab-btn" onclick="showResearchTab('capabilities')">🛠️ Capabilities</button>
+    <button class="research-tab-btn" onclick="showResearchTab('projects')">📊 Projects</button>
+    <button class="research-tab-btn" onclick="showResearchTab('funding')">💰 Funding</button>
+    <button class="research-tab-btn" onclick="showResearchTab('team')">🎓 Team</button>
+    <button class="research-tab-btn" onclick="showResearchTab('opportunities')">💼 Opportunities</button>
+</div>
+
+<!-- Tab Content Container -->
+<div class="research-tab-container">
+
+<!-- Overview Tab -->
+<div id="research-tab-overview" class="research-tab-content active">
+    <h2>At a Glance</h2>
+    
+    <div class="research-stats-grid">
+        {{ range .Params.stats }}
+        <div class="research-stat-card">
+            <span class="research-stat-number">{{ .number }}</span>
+            <span class="research-stat-label">{{ .label }}</span>
+        </div>
+        {{ end }}
+    </div>
+    
+    <h2>Our Research Mission</h2>
+    <div class="research-mission">
+        {{ .Params.mission | markdownify }}
+    </div>
+    
+    <h2>Research Impact</h2>
+    <div class="research-summary-content">
+        {{ range .Params.impact }}
+        <div class="research-summary-card">
+            <h3>{{ .icon }} {{ .title }}</h3>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<!-- Research Themes Tab -->
+<div id="research-tab-themes" class="research-tab-content">
+    <h2>Research Themes</h2>
+    
+    <div class="research-theme-grid">
+        {{ range .Params.themes }}
+        <div class="research-theme-card">
+            <div class="research-theme-card-image">{{ .icon }}</div>
+            <div class="research-theme-card-content">
+                <div class="research-theme-card-title">{{ .title }}</div>
+                <p class="research-theme-card-description">{{ .description }}</p>
+                <div class="research-theme-card-meta">
+                    <div class="research-theme-card-meta-item"><strong>Key Techniques:</strong> {{ .techniques }}</div>
+                    <div class="research-theme-card-meta-item"><strong>Recent Work:</strong> {{ .recent_work }}</div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<!-- Publications Tab -->
+<div id="research-tab-publications" class="research-tab-content">
+    <h2>Featured Publications</h2>
+    
+    <div class="research-summary-section">
+        <div class="research-summary-content">
+            {{ range .Params.featured_publications }}
+            <div class="research-summary-card">
+                <h3>{{ .journal }} ({{ .year }})</h3>
+                <p><strong>{{ .title }}</strong></p>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+        
+        <div class="research-link-btn-center">
+            <a href="/publications/" class="research-link-btn">View All Publications →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Seminars Tab -->
+<div id="research-tab-seminars" class="research-tab-content">
+    <h2>Recent Seminars & Talks</h2>
+    
+    <div class="research-summary-section orange">
+        <div class="research-summary-content">
+            {{ range .Params.recent_seminars }}
+            <div class="research-summary-card">
+                <h3>{{ .icon }} {{ .title }}</h3>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+        
+        <div class="research-link-btn-center">
+            <a href="/seminars/" class="research-link-btn orange">View All Seminars →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Capabilities Tab -->
+<div id="research-tab-capabilities" class="research-tab-content">
+    <h2>Research Capabilities</h2>
+    
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #555;">
+        State-of-the-art facilities and unique expertise in organic photonics characterization
+    </p>
+    
+    <div class="research-capabilities-grid">
+        {{ range .Params.capabilities }}
+        <div class="research-capability-item">
+            <div class="research-capability-icon">{{ .icon }}</div>
+            <div class="research-capability-title">{{ .title }}</div>
+            <p class="research-capability-description">{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+    
+    <h2>International Collaborations</h2>
+    
+    <div class="research-summary-content">
+        {{ range .Params.collaborations }}
+        <div class="research-summary-card">
+            <h3>{{ .flag }} {{ .institution }}</h3>
+            <p><strong>{{ .contact }}</strong></p>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<!-- Projects Tab -->
+<div id="research-tab-projects" class="research-tab-content">
+    <h2>Research Projects</h2>
+    
+    <button class="research-toggle-btn" onclick="toggleResearchProjects()">Show Past Projects</button>
+    
+    <div id="research-active-projects">
+        <h3 style="color: #008B8B; font-size: 1.5rem; margin-bottom: 1.5rem;">Active Projects</h3>
+        
+        <div class="research-project-grid">
+            {{ range .Params.active_projects }}
+            <div class="research-project-card">
+                <h3>{{ .title }}</h3>
+                <div class="research-project-meta">{{ .period }} | {{ .funding }}</div>
+                <p class="research-project-description">{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    
+    <div id="research-past-projects" class="research-toggleable-content">
+        <h3 style="color: #666; font-size: 1.5rem; margin: 2rem 0 1.5rem 0;">Past Projects</h3>
+        
+        <div class="research-project-grid">
+            {{ range .Params.past_projects }}
+            <div class="research-project-card past">
+                <h3>{{ .title }}</h3>
+                <div class="research-project-meta">{{ .period }} | {{ .status }}</div>
+                <p class="research-project-description">{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<!-- Funding Tab -->
+<div id="research-tab-funding" class="research-tab-content">
+    <h2>Research Funding</h2>
+    
+    <button class="research-toggle-btn" onclick="toggleResearchFunding()">Show Funding History</button>
+    
+    <div id="research-current-funding">
+        <h3 style="color: #FF8C42; font-size: 1.5rem; margin-bottom: 1.5rem;">Current Funding</h3>
+        
+        <div class="research-project-grid">
+            {{ range .Params.current_funding }}
+            <div class="research-project-card funding">
+                <h3>{{ .title }}</h3>
+                <div class="research-project-meta">{{ .period }} | {{ .source }}</div>
+                <p class="research-project-description">{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    
+    <div id="research-past-funding" class="research-toggleable-content">
+        <h3 style="color: #666; font-size: 1.5rem; margin: 2rem 0 1.5rem 0;">Funding History</h3>
+        
+        <div class="research-project-grid">
+            {{ range .Params.past_funding }}
+            <div class="research-project-card past">
+                <h3>{{ .title }}</h3>
+                <div class="research-project-meta">{{ .period }} | {{ .amount }}</div>
+                <p class="research-project-description">{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<!-- Team Tab -->
+<div id="research-tab-team" class="research-tab-content">
+    <h2>Meet the Team</h2>
+    
+    <div class="research-summary-section">
+        <div class="research-summary-content">
+            {{ range .Params.team_summary }}
+            <div class="research-summary-card">
+                <h3>{{ .icon }} {{ .title }}</h3>
+                {{ .content | markdownify }}
+            </div>
+            {{ end }}
+        </div>
+        
+        <div class="research-link-btn-center">
+            <a href="/group/" class="research-link-btn">Meet the Full Team →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Opportunities Tab -->
+<div id="research-tab-opportunities" class="research-tab-content">
+    <h2>Join Our Research Group</h2>
+    
+    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem; color: #555;">
+        Select your interest below to explore opportunities
+    </p>
+    
+    <div class="research-nav-cards">
+        {{ range .Params.opportunities }}
+        <a href="{{ .link }}" class="research-nav-card">
+            <div class="research-nav-card-icon">{{ .icon }}</div>
+            <div class="research-nav-card-title">{{ .title }}</div>
+            <div class="research-nav-card-subtitle">{{ .subtitle }}</div>
+        </a>
+        {{ end }}
+    </div>
+</div>
+
+</div>
+
+<button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
+
+<div class="social-float-compact">
+  <a href="https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/" target="_blank" rel="noopener" title="LinkedIn">
+    <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
+  </a>
+  <a href="https://bsky.app/profile/mketherington.bsky.social" target="_blank" rel="noopener" title="Bluesky">
+    <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
+  </a>
+  <a href="https://www.researchgate.net/profile/Marc-Etherington?ev=hdr_xprf" target="_blank" rel="noopener" title="ResearchGate">
+    <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
+  </a>
+  <a href="https://scholar.google.co.uk/citations?user=3dgABIQAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">
+    <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
+  </a>
+</div>
+
+<script>
+function showResearchTab(tabName) {
+    document.querySelectorAll('.research-tab-content').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    document.querySelectorAll('.research-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    const selectedTab = document.getElementById('research-tab-' + tabName);
+    if (selectedTab) {
+        selectedTab.classList.add('active');
+    }
+    
+    event.target.classList.add('active');
+}
+
+function toggleResearchProjects() {
+    const pastProjects = document.getElementById('research-past-projects');
+    const btn = event.target;
+    
+    if (pastProjects.classList.contains('active')) {
+        pastProjects.classList.remove('active');
+        btn.textContent = 'Show Past Projects';
+        btn.classList.remove('active');
+    } else {
+        pastProjects.classList.add('active');
+        btn.textContent = 'Hide Past Projects';
+        btn.classList.add('active');
+    }
+}
+
+function toggleResearchFunding() {
+    const pastFunding = document.getElementById('research-past-funding');
+    const btn = event.target;
+    
+    if (pastFunding.classList.contains('active')) {
+        pastFunding.classList.remove('active');
+        btn.textContent = 'Show Funding History';
+        btn.classList.remove('active');
+    } else {
+        pastFunding.classList.add('active');
+        btn.textContent = 'Hide Funding History';
+        btn.classList.add('active');
+    }
+}
+</script>
+
+{{ end }}
