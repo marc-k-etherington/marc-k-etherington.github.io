@@ -1756,39 +1756,54 @@ div.alert-secondary {
 
 .research-tab-nav {
   display: flex;
-  gap: 0.25rem;
+  gap: 0;
   margin: 2rem 0 0 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
-  align-items: flex-end; /* This aligns tabs to the bottom when wrapping */
+  overflow-x: auto;
+  padding-bottom: 2px;
 }
 
 .research-tab-btn {
   background: white;
   border: 2px solid #333;
   border-bottom: none;
-  padding: 0.6rem 1rem; /* Reduced from 0.75rem 1.25rem */
+  padding: 0.75rem 1rem;
   cursor: pointer;
   font-family: 'Neucha', cursive;
-  font-size: 0.85rem; /* Reduced from 0.95rem */
+  font-size: 0.9rem;
   font-weight: bold;
   transition: all 0.1s ease;
   color: #333;
   position: relative;
   border-radius: 8px 8px 0 0;
   margin-bottom: -2px;
+  margin-left: -8px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.research-tab-btn:first-child {
+  margin-left: 0;
 }
 
 .research-tab-btn:hover {
   background: #f5f5f5;
+  z-index: 10;
 }
 
 .research-tab-btn.active {
   background: #008B8B;
   color: white;
   border-color: #008B8B;
-  z-index: 2;
-  padding-bottom: calc(0.6rem + 2px); /* Match the reduced padding */
+  z-index: 20;
+  padding-bottom: calc(0.75rem + 2px);
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.research-tab-btn.active:first-child {
+  margin-left: 0;
 }
 
 .research-tab-container {
