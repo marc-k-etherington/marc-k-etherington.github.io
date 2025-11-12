@@ -489,6 +489,13 @@ nav.split-nav {
   cursor: not-allowed;
 }
 
+/* Fix for pagination active button */
+.pagination .paper-btn.active {
+  background: var(--color-teal) !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-teal) !important;
+}
+
 .page-title {
   font-size: 2.5rem;
   margin: 0 0 var(--spacing-lg) 0;
