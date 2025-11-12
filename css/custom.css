@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Indie+Flower&display=swap');
+
+
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
   --color-teal: #008B8B;
@@ -24,7 +27,7 @@
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
-  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-base: 'Neucha', cursive;
   --font-family-handwriting: 'Indie Flower', 'Neucha', cursive;
   --font-family-display: 'Neucha', cursive;
   --transition-fast: 0.1s ease;
