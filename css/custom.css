@@ -1,5 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Indie+Flower&display=swap');
 
+/* ===== FALLBACKS FOR LOGICAL PROPERTIES ===== */
+/* These provide compatibility for browsers that don't support logical properties */
+
+.welcome-hero-compact {
+  border-top: 5px solid #008B8B;
+}
+
+.section-header,
+.roles-section-marc h2,
+.expertise-section-marc h2,
+.bio-section-marc h2 {
+  border-bottom: 3px solid #008B8B;
+  padding-bottom: 0.5rem;
+}
+
+.news-item {
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 2rem;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.where-now,
+.alert-primary,
+div.alert-primary,
+.alert-danger,
+div.alert-danger,
+.alert-secondary,
+div.alert-secondary,
+.success-card,
+.funding-item,
+.info-box {
+  border-left: 4px solid;
+}
+
+.alert-primary,
+div.alert-primary {
+  border-left-width: 6px;
+  border-left-color: #008B8B;
+}
+
+.alert-primary.corresponding {
+  border-left-width: 8px;
+  border-left-color: #FF8C42;
+}
+
+.alert-danger,
+div.alert-danger {
+  border-left-width: 8px;
+  border-left-color: #FF8C42;
+}
+
+.alert-secondary,
+div.alert-secondary {
+  border-left-width: 6px;
+  border-left-color: #008B8B;
+}
+
+.success-card {
+  border-left-width: 6px;
+  border-left-color: #FF8C42;
+}
+
+.funding-item {
+  border-left-width: 4px;
+  border-left-color: #008B8B;
+}
+
+.info-box {
+  border-left-width: 5px;
+  border-left-color: #FF8C42;
+}
+
+.where-now {
+  border-left-width: 4px;
+  border-left-color: #FF8C42;
+}
+
+.research-theme-card-image {
+  border-bottom: 4px solid #FF8C42;
+}
+
+.research-project-card {
+  border-left: 8px solid #008B8B;
+}
+
+.research-project-card.past {
+  border-left-color: #999;
+}
+
+.research-project-card.funding {
+  border-left-color: #FF8C42;
+}
+
+.opportunity-card.unfunded {
+  border-left: 8px solid #FF8C42;
+}
+
+.opportunity-card.funded {
+  border-left: 8px solid #008B8B;
+}
+
+.opportunity-card.available {
+  border-left: 8px solid #28a745;
+}
+
+.pi-card {
+  border: 3px solid #008B8B;
+}
+
+/* Spacing fallbacks for critical elements */
+.hero-content,
+.research-intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-float-compact {
+  right: 1rem;
+  bottom: 1.5rem;
+}
+
+.back-to-top {
+  bottom: 5rem;
+  right: 1rem;
+}
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
@@ -320,6 +448,45 @@ nav.split-nav {
   margin-block-end: 0.75rem;
   line-height: 1.6;
   color: var(--color-black);
+}
+
+/* ===== PAGINATION BUTTONS ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  margin: var(--spacing-lg) 0;
+  flex-wrap: wrap;
+}
+
+.pagination a,
+.pagination span {
+  background: var(--color-white);
+  border: var(--border-thin);
+  box-shadow: var(--shadow-paper);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: bold;
+  display: inline-block;
+  transition: all var(--transition-fast);
+}
+
+.pagination a:hover {
+  box-shadow: var(--shadow-paper-hover);
+  transform: translate(-1px, -1px);
+}
+
+.pagination .active,
+.pagination span.active {
+  background: var(--color-teal);
+  color: var(--color-white);
+  border-color: var(--color-teal);
+}
+
+.pagination .disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .page-title {
