@@ -1,5 +1,3 @@
-# FILE 1: content/research.md
-# ==========================
 +++
 title = "Research"
 date = "2025-01-15"
