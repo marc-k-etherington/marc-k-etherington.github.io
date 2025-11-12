@@ -1,4 +1,3 @@
-
 {{ define "main" }}
 
 {{ partial "hero-banner.html" . }}
@@ -13,13 +12,9 @@
 <div class="research-tab-nav">
     <button class="research-tab-btn active" onclick="showResearchTab('overview')">📋 Overview</button>
     <button class="research-tab-btn" onclick="showResearchTab('themes')">🔬 Research Themes</button>
-    <button class="research-tab-btn" onclick="showResearchTab('publications')">🏆 Publications</button>
-    <button class="research-tab-btn" onclick="showResearchTab('seminars')">🎤 Seminars</button>
-    <button class="research-tab-btn" onclick="showResearchTab('capabilities')">🛠️ Capabilities</button>
-    <button class="research-tab-btn" onclick="showResearchTab('projects')">📊 Projects</button>
-    <button class="research-tab-btn" onclick="showResearchTab('funding')">💰 Funding</button>
-    <button class="research-tab-btn" onclick="showResearchTab('team')">🎓 Team</button>
-    <button class="research-tab-btn" onclick="showResearchTab('opportunities')">💼 Opportunities</button>
+    <button class="research-tab-btn" onclick="showResearchTab('impact')">🏆 Publications & Impact</button>
+    <button class="research-tab-btn" onclick="showResearchTab('projects')">📊 Projects & Funding</button>
+    <button class="research-tab-btn" onclick="showResearchTab('people')">🎓 Team & Opportunities</button>
 </div>
 
 <!-- Tab Content Container -->
@@ -43,81 +38,6 @@
         {{ .Params.mission | markdownify }}
     </div>
     
-    <h2>Research Impact</h2>
-    <div class="research-summary-content">
-        {{ range .Params.impact }}
-        <div class="research-summary-card">
-            <h3>{{ .icon }} {{ .title }}</h3>
-            <p>{{ .description }}</p>
-        </div>
-        {{ end }}
-    </div>
-</div>
-
-<!-- Research Themes Tab -->
-<div id="research-tab-themes" class="research-tab-content">
-    <h2>Research Themes</h2>
-    
-    <div class="research-theme-grid">
-        {{ range .Params.themes }}
-        <div class="research-theme-card">
-            <div class="research-theme-card-image">{{ .icon }}</div>
-            <div class="research-theme-card-content">
-                <div class="research-theme-card-title">{{ .title }}</div>
-                <p class="research-theme-card-description">{{ .description }}</p>
-                <div class="research-theme-card-meta">
-                    <div class="research-theme-card-meta-item"><strong>Key Techniques:</strong> {{ .techniques }}</div>
-                    <div class="research-theme-card-meta-item"><strong>Recent Work:</strong> {{ .recent_work }}</div>
-                </div>
-            </div>
-        </div>
-        {{ end }}
-    </div>
-</div>
-
-<!-- Publications Tab -->
-<div id="research-tab-publications" class="research-tab-content">
-    <h2>Featured Publications</h2>
-    
-    <div class="research-summary-section">
-        <div class="research-summary-content">
-            {{ range .Params.featured_publications }}
-            <div class="research-summary-card">
-                <h3>{{ .journal }} ({{ .year }})</h3>
-                <p><strong>{{ .title }}</strong></p>
-                <p>{{ .description }}</p>
-            </div>
-            {{ end }}
-        </div>
-        
-        <div class="research-link-btn-center">
-            <a href="/publications/" class="research-link-btn">View All Publications →</a>
-        </div>
-    </div>
-</div>
-
-<!-- Seminars Tab -->
-<div id="research-tab-seminars" class="research-tab-content">
-    <h2>Recent Seminars & Talks</h2>
-    
-    <div class="research-summary-section orange">
-        <div class="research-summary-content">
-            {{ range .Params.recent_seminars }}
-            <div class="research-summary-card">
-                <h3>{{ .icon }} {{ .title }}</h3>
-                <p>{{ .description }}</p>
-            </div>
-            {{ end }}
-        </div>
-        
-        <div class="research-link-btn-center">
-            <a href="/seminars/" class="research-link-btn orange">View All Seminars →</a>
-        </div>
-    </div>
-</div>
-
-<!-- Capabilities Tab -->
-<div id="research-tab-capabilities" class="research-tab-content">
     <h2>Research Capabilities</h2>
     
     <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #555;">
@@ -147,7 +67,77 @@
     </div>
 </div>
 
-<!-- Projects Tab -->
+<!-- Research Themes Tab -->
+<div id="research-tab-themes" class="research-tab-content">
+    <h2>Research Themes</h2>
+    
+    <div class="research-theme-grid">
+        {{ range .Params.themes }}
+        <div class="research-theme-card">
+            <div class="research-theme-card-image">{{ .icon }}</div>
+            <div class="research-theme-card-content">
+                <div class="research-theme-card-title">{{ .title }}</div>
+                <p class="research-theme-card-description">{{ .description }}</p>
+                <div class="research-theme-card-meta">
+                    <div class="research-theme-card-meta-item"><strong>Key Techniques:</strong> {{ .techniques }}</div>
+                    <div class="research-theme-card-meta-item"><strong>Recent Work:</strong> {{ .recent_work }}</div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<!-- Publications & Impact Tab -->
+<div id="research-tab-impact" class="research-tab-content">
+    <h2>Featured Publications</h2>
+    
+    <div class="research-summary-section">
+        <div class="research-summary-content">
+            {{ range .Params.featured_publications }}
+            <div class="research-summary-card">
+                <h3>{{ .journal }} ({{ .year }})</h3>
+                <p><strong>{{ .title }}</strong></p>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+        
+        <div class="research-link-btn-center">
+            <a href="/publications/" class="research-link-btn">View All Publications →</a>
+        </div>
+    </div>
+    
+    <h2>Recent Seminars & Talks</h2>
+    
+    <div class="research-summary-section orange">
+        <div class="research-summary-content">
+            {{ range .Params.recent_seminars }}
+            <div class="research-summary-card">
+                <h3>{{ .icon }} {{ .title }}</h3>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+        
+        <div class="research-link-btn-center">
+            <a href="/seminars/" class="research-link-btn orange">View All Seminars →</a>
+        </div>
+    </div>
+    
+    <h2>Research Impact</h2>
+    
+    <div class="research-summary-content">
+        {{ range .Params.impact }}
+        <div class="research-summary-card">
+            <h3>{{ .icon }} {{ .title }}</h3>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<!-- Projects & Funding Tab -->
 <div id="research-tab-projects" class="research-tab-content">
     <h2>Research Projects</h2>
     
@@ -180,11 +170,8 @@
             {{ end }}
         </div>
     </div>
-</div>
-
-<!-- Funding Tab -->
-<div id="research-tab-funding" class="research-tab-content">
-    <h2>Research Funding</h2>
+    
+    <h2 style="margin-top: 3rem;">Research Funding</h2>
     
     <button class="research-toggle-btn" onclick="toggleResearchFunding()">Show Funding History</button>
     
@@ -217,8 +204,8 @@
     </div>
 </div>
 
-<!-- Team Tab -->
-<div id="research-tab-team" class="research-tab-content">
+<!-- Team & Opportunities Tab -->
+<div id="research-tab-people" class="research-tab-content">
     <h2>Meet the Team</h2>
     
     <div class="research-summary-section">
@@ -235,10 +222,7 @@
             <a href="/group/" class="research-link-btn">Meet the Full Team →</a>
         </div>
     </div>
-</div>
-
-<!-- Opportunities Tab -->
-<div id="research-tab-opportunities" class="research-tab-content">
+    
     <h2>Join Our Research Group</h2>
     
     <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem; color: #555;">
