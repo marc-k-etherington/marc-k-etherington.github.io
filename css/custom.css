@@ -88,7 +88,8 @@ nav.split-nav {
 
 .welcome-hero-compact {
   padding: var(--spacing-lg);
-  border-block-start: var(--border-extra-thick) var(--color-teal);
+  border-top: 5px solid var(--color-teal);
+  border-block-start: 5px solid var(--color-teal);
 }
 
 .hero-content {
