@@ -37,44 +37,7 @@
 {{ end }}
 {{ template "partials/pagination.html" . }}
 
-/* ===== PAGINATION BUTTONS ===== */
-.pagination {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-xs);
-  margin: var(--spacing-lg) 0;
-  flex-wrap: wrap;
-}
 
-.pagination a,
-.pagination span {
-  background: var(--color-white);
-  border: var(--border-thin);
-  box-shadow: var(--shadow-paper);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  text-decoration: none;
-  color: var(--color-black);
-  font-weight: bold;
-  display: inline-block;
-  transition: all var(--transition-fast);
-}
-
-.pagination a:hover {
-  box-shadow: var(--shadow-paper-hover);
-  transform: translate(-1px, -1px);
-}
-
-.pagination .active,
-.pagination span.active {
-  background: var(--color-teal);
-  color: var(--color-white);
-  border-color: var(--color-teal);
-}
-
-.pagination .disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
 
 <!-- Back to Top Button -->
 <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
