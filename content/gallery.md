@@ -48,7 +48,7 @@ decoration = "taped"
 link = ""
 
 [[photos]]
-image = "/images/gallery/Ichiran.jpeg"
+image = "/images/gallery/Ichiran.jpg"
 caption = "October 2025 - Ramen after a seminar at Kyushu University🍜"
 categories = ["conferences", "social", "travel"]
 decoration = "pinned"
