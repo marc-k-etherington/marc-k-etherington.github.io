@@ -12,23 +12,23 @@ We investigate the fundamental photophysics of organic light-emitting materials,
 """
 
 [[stats]]
-number = "15+"
+number = "30"
 label = "Publications"
 
 [[stats]]
-number = "500+"
+number = "2700+"
 label = "Citations"
 
 [[stats]]
-number = "£500K+"
+number = "£200K+"
 label = "Funding Secured"
 
 [[stats]]
-number = "4"
+number = "X"
 label = "Countries"
 
 [[stats]]
-number = "10+"
+number = "X"
 label = "Collaborations"
 
 [[stats]]
