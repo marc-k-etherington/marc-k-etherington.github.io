@@ -3283,3 +3283,24 @@ div.alert-secondary {
     padding: 0.5rem 0.7rem;
   }
 }
+
+/* ===== PAGINATION ACTIVE BUTTON - FINAL FIX ===== */
+a.paper-btn.active,
+.paper-btn.active {
+  background: #008B8B !important;
+  color: white !important;
+  border: 2px solid #008B8B !important;
+  border-color: #008B8B !important;
+}
+
+a.paper-btn.active:hover,
+.paper-btn.active:hover {
+  background: #006666 !important;
+  color: white !important;
+}
+
+/* Disabled pagination buttons */
+.paper-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
