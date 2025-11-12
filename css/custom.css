@@ -111,9 +111,10 @@ input[type="checkbox"].hero-menu-toggle {
   transform: translate(-1px, -1px);
 }
 
-.hero-buttons .paper-btn:active {
-  box-shadow: 1px 1px 0 #333;
-  transform: translate(2px, 2px);
+.hero-buttons .paper-btn.active {
+  background-color: #008B8B !important;
+  color: white !important;
+  border-color: #008B8B !important;
 }
 
 .hero-buttons .paper-btn.active {
