@@ -1760,6 +1760,7 @@ div.alert-secondary {
   margin: 2rem 0 0 0;
   flex-wrap: wrap;
   position: relative;
+  align-items: flex-end; /* This aligns tabs to the bottom when wrapping */
 }
 
 .research-tab-btn {
