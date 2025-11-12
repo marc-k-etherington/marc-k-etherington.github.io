@@ -55,15 +55,15 @@ decoration = "pinned"
 link = ""
 
 [[photos]]
-image = "/images/gallery/Kyoto_Yakitori.jpeg"
-caption = "October 2025 - Yakitori in Kyoto!"
+image = "/images/gallery/Hiroshima_Okonomiyaki.jpeg"
+caption = "October 2025 - Soul food in Hiroshima "
 categories = ["social", "travel"]
 decoration = "taped"
 link = ""
 
 [[photos]]
-image = "/images/gallery/Hiroshima_Okonomiyaki.jpeg"
-caption = "October 2025 - Soul food in Hiroshima "
+image = "/images/gallery/Kyoto_Yakitori.jpeg"
+caption = "October 2025 - Yakitori in Kyoto!"
 categories = ["social", "travel"]
 decoration = "pinned"
 link = ""
