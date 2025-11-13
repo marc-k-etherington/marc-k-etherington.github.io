@@ -1788,7 +1788,7 @@ div.alert-secondary {
 
 .research-tab-btn:hover {
   background: #f5f5f5;
-  z-index: 10;
+  z-index: 30;
 }
 
 .research-tab-btn.active {
