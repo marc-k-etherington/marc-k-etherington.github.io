@@ -1975,7 +1975,7 @@ div.alert-secondary {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background: #008B8B;
-  color: white;
+  color: white; !important; 
   text-decoration: none;
   border: 2px solid #333;
   box-shadow: 3px 3px 0 #333;
@@ -1987,18 +1987,19 @@ div.alert-secondary {
 
 .research-link-btn:hover {
   background: #006666;
-  color: white;
+  color: white; !important; 
   transform: translate(-1px, -1px);
   box-shadow: 4px 4px 0 #333;
 }
 
 .research-link-btn.orange {
   background: #FF8C42;
+  color: white; !important; 
 }
 
 .research-link-btn.orange:hover {
   background: #ff7a28;
-  color: white;
+  color: white; !important; 
 }
 
 .research-link-btn-center {
