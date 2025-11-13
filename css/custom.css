@@ -1760,7 +1760,6 @@ div.alert-secondary {
   margin: 2rem 0 0 0;
   flex-wrap: nowrap;
   position: relative;
-  overflow-x: auto;
   padding-bottom: 2px;
 }
 
