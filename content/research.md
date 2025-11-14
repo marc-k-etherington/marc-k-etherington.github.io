@@ -100,7 +100,7 @@ description = "Presented latest work on charge transfer and TADF in the Departme
 [[recent_seminars]]
 icon = "🏆"
 title = "Kitasato University - Japan (2025)"
-description = ""Presented latest work on charge transfer and TADF for Prof. Watanabe's group at Kitasato University"
+description = "Presented latest work on charge transfer and TADF for Prof. Watanabe's group at Kitasato University"
 
 [[capabilities]]
 icon = "🔬"
