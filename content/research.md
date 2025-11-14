@@ -51,35 +51,35 @@ icon = "🔬"
 title = "Thermally Activated Delayed Fluorescence (TADF)"
 description = "Investigating the fundamental photophysics of TADF materials for next-generation OLEDs and novel light-emitting applications. Our work focuses on understanding spin-vibronic coupling and optimizing reverse intersystem crossing rates."
 techniques = "Time-resolved spectroscopy, Low-temperature photoluminescence"
-recent_work = "Overcoming Dexter transfer in hyperfluorescent materials (Nature Materials, 2024)<br> Collaboration: University of Cambridge (UK), University of Oxford (UK)"
+recent_work = "Suppression of Dexter transfer by covalent encapsulation for efficient matrix-free narrowband deep blue hyperfluorescent OLEDs (Nature Materials, 2024)"
 
 [[themes]]
 icon = "⚡"
 title = "Charge Transfer States & Molecular Design"
 description = "Exploring the relationship between molecular architecture and charge transfer state properties. We design novel donor-acceptor systems to control energy gaps and emission characteristics for targeted applications."
 techniques = "Organic synthesis, Photophysical characterization"
-recent_work = "Through-space CT in N-quinolyl systems (Journal of Physical Chemistry B, 2024)"
+recent_work = "A Modular Approach to Tuning Emissive N-Quinolyl Through-Space Charge Transfer States Using sp3-Scaffolds (The Journal of Physical Chemistry B, 2024)"
 
 [[themes]]
 icon = "📊"
 title = "Singlet-Triplet Energy Gaps"
 description = "Developing spectroscopic approaches to accurately measure ΔEST in organic emitters. Understanding these energy gaps is crucial for designing efficient TADF materials and predicting device performance."
 techniques = "Steady-state spectroscopy, Time-resolved Emission Spectra (TRES), Low-temperature photoluminescence"
-recent_work = "Collaboration: Queen Mary University London (UK), Kuwait University (Kuwait)"
+recent_work = ""
 
 [[themes]]
 icon = "🧬"
 title = "Bioimaging Applications"
 description = "Applying our fundamental understanding of organic emitters to develop new materials for biological imaging. Collaborating with the Hudson group and the Takeda group as part of a JST-funded ASPIRE grant to create TADF-based probes with enhanced imaging capabilities."
 techniques = "Photoluminescence spectroscopy, Biocompatibility testing"
-recent_work = "Collaboration: University of Osaka (Japan), University of British Columbia (Canada), Technical University Denmark (Denmark), Kitasato University (Japan) "
+recent_work = "JST ASPIRE Grant"
 
 
 [[featured_publications]]
 journal = "J. Phys. Chem. B"
 year = "2024"
-title = ""
-description = ""
+title = "A Modular Approach to Tuning Emissive N-Quinolyl Through-Space Charge Transfer States Using sp3-Scaffolds"
+description = "Fundamental structure-property relationships regarding the N-aryl distance required for charge transfer"
 
 [[featured_publications]]
 journal = "J. Mater. Chem. C"
