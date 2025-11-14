@@ -84,50 +84,50 @@ description = "Fundamental structure-property relationships regarding the N-aryl
 [[featured_publications]]
 journal = "J. Mater. Chem. C"
 year = "2022"
-title = "From phosphorescence to delayed fluorescence"
+title = "From phosphorescence to delayed fluorescence in one step: tuning photophysical properties by quaternisation of an sp2-hybridised nitrogen atom"
 description = "Breakthrough in tuning photophysical properties through molecular modification."
 
 [[recent_seminars]]
 icon = "🎤"
-title = "Newcastle University (2024)"
-description = "Presented latest work on charge transfer and TADF at Newcastle University Chemistry seminar series."
+title = "Kyushu Univerity - Japan (2024)"
+description = "Presented latest work on charge transfer and TADF for Prof. Adachi's group at OPERA and Prof. Albrecht's group at Kyushu University."
 
 [[recent_seminars]]
 icon = "✈️"
-title = "ICEL 2024, Kyoto"
-description = "Ruth Pollard presented research on N-quinolyl charge transfer systems at the International Conference on Electroluminescence."
+title = "University of Osaka - Japan (2025)"
+description = "Presented latest work on charge transfer and TADF in the Department of Chemistry at the University of Osaka."
 
 [[recent_seminars]]
 icon = "🏆"
-title = "RSC PPG ECM (2024)"
-description = "Ruth Pollard won poster prize at Royal Society of Chemistry Photophysics Group Early Career Meeting in Sheffield."
+title = "Kitasato University - Japan (2025)"
+description = ""Presented latest work on charge transfer and TADF for Prof. Watanabe's group at Kitasato University"
 
 [[capabilities]]
 icon = "🔬"
 title = "Advanced Spectroscopy"
-description = "Fluorolog-QM system with time-resolved capabilities, steady-state measurements, fluorescence lifetime analysis"
+description = "Fluorolog-QM system with time-resolved capabilities (TCSPC), steady-state measurements and photoluminescecne quantum yield (PLQY)"
 
 [[capabilities]]
 icon = "❄️"
 title = "Cryogenic Systems"
-description = "Low-temperature spectroscopy to liquid helium temperatures. Unique capability for ΔEST measurements and dual emission studies"
+description = "Low-temperature cryostat for spectroscopy to liquid nitrogen temperatures."
 
 [[capabilities]]
 icon = "📐"
 title = "Photophysical Characterization"
-description = "Complete photophysical package: ΔEST, quantum yields, excited state kinetics, emission/absorption spectra"
+description = "Complete photophysical package: ΔEST, PLQYs, excited state kinetics, emission/absorption spectra"
 
 [[collaborations]]
 flag = "🇬🇧"
 institution = "Durham University"
 contact = "Prof. Andy Monkman"
-description = "Long-standing collaboration on TADF materials and photophysics. Joint publications in Nature Chemistry, JACS, Angew Chem."
+description = "Long-standing collaboration on TADF materials and photophysics. Joint publications in Nature Communcations, JACS and Angewandte Chemie."
 
 [[collaborations]]
 flag = "🇯🇵"
 institution = "University of Osaka"
 contact = "Dr Youhei Takeda"
-description = "International collaboration funded by Japan Science and Technology Agency on advanced TADF systems."
+description = "International collaboration funded by Japan Science and Technology Agency on advanced TADF systems for bioimaging"
 
 [[collaborations]]
 flag = "🇯🇵"
@@ -139,31 +139,31 @@ description = "Molecular dynamics of quinine salts"
 flag = "🇬🇧"
 institution = "University of Oxford"
 contact = "Prof. Paul McGonigal"
-description = "Molecular design and synthesis expertise. Joint work on aggregation-induced emission systems."
+description = "Molecular design and synthesis expertise. Joint work on aggregation-induced emission systems with publications in JACS, Angewandte Chemie and Chemical Science."
 
 [[active_projects]]
-title = "Dual Emission in TADF Systems"
-period = "2023 - Present"
+title = "TADF systems for bioimaging applications"
+period = "2025 - Present"
 funding = "JST ASPIRE"
 description = "Investigating dibenzophenazine-based emitters showing both local and charge transfer emission. Understanding mechanisms for bioimaging applications."
 
 [[active_projects]]
-title = "Cage Linker Systems for CT"
+title = "Cage Linker Systems for charge transfer, room-temperature phosphorescence and TADF"
 period = "2023 - Present"
-funding = "PhD Project (Aidan)"
+funding = "PhD Project (Aidan Matthews)"
 description = "Designing caged-chromophore systems to understand fundamentals of charge transfer for OLED applications."
 
-[[active_projects]]
+[[past_projects]]
 title = "Through-Space CT in N-Quinolyl"
-period = "2021 - Present"
-funding = "PhD Project (Ruth)"
+period = "2021 - 2025"
+funding = "PhD Project (Ruth Pollard)"
 description = "Modular approach to tuning emissive through-space charge transfer states using sp3-scaffolds."
 
 [[active_projects]]
-title = "Chalcogenide Perovskites"
+title = "Solid-state synthesis for pure and doped BaS for optoelectronic applications"
 period = "2022 - Present"
-funding = "PhD Project (Will)"
-description = "Alternative synthetic routes for preparation of chalcogenide perovskite materials for optoelectronic applications."
+funding = "PhD Project (Will Tetlow)"
+description = "Greener and alternative synthetic routes for preparation of chalcogenide perovskite materials for optoelectronic applications."
 
 
 [[past_projects]]
