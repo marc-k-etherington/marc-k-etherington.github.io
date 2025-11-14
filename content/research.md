@@ -24,12 +24,8 @@ number = "£200K+"
 label = "Funding Secured"
 
 [[stats]]
-number = "X"
-label = "Countries"
-
-[[stats]]
-number = "X"
-label = "Collaborations"
+number = "X ()"
+label = "Collaborations (Countries)"
 
 [[stats]]
 number = "3"
@@ -38,45 +34,45 @@ label = "Active PhDs"
 [[impact]]
 icon = "💡"
 title = "Energy-Efficient Displays"
-description = "TADF materials enable OLED technology with improved efficiency and colour quality for smartphones, TVs, and flexible displays."
+description = "TADF materials enable OLED technology with improved efficiency for smartphones, TVs, and flexible displays."
 
 [[impact]]
 icon = "🏥"
 title = "Medical Imaging"
-description = "Developing organic emitters for biological imaging applications, enabling visualization of cellular processes and disease markers."
+description = "Developing organic emitters for biological imaging applications to enable visualization of cellular processes and disease markers."
 
 [[impact]]
 icon = "🌱"
 title = "Sustainable Materials"
-description = "Purely organic light-emitting materials as alternatives to precious metal-based systems, reducing environmental impact."
+description = "Purely organic light-emitting materials are alternatives to precious metal-based systems, reducing environmental impact."
 
 [[themes]]
 icon = "🔬"
 title = "Thermally Activated Delayed Fluorescence (TADF)"
-description = "Investigating the fundamental photophysics of TADF materials for next-generation organic light-emitting diodes. Our work focuses on understanding spin-vibronic coupling mechanisms and optimizing reverse intersystem crossing rates."
-techniques = "Time-resolved spectroscopy, Low-temperature measurements"
-recent_work = "Overcoming Dexter transfer in hyperfluorescent materials (Nature Materials, 2024)"
+description = "Investigating the fundamental photophysics of TADF materials for next-generation OLEDs and novel light-emitting applications. Our work focuses on understanding spin-vibronic coupling and optimizing reverse intersystem crossing rates."
+techniques = "Time-resolved spectroscopy, Low-temperature photoluminescence"
+recent_work = "Overcoming Dexter transfer in hyperfluorescent materials (Nature Materials, 2024)<br> Collaboration: University of Cambridge (UK), University of Oxford (UK)"
 
 [[themes]]
 icon = "⚡"
 title = "Charge Transfer States & Molecular Design"
 description = "Exploring the relationship between molecular architecture and charge transfer state properties. We design novel donor-acceptor systems to control energy gaps and emission characteristics for targeted applications."
-techniques = "Photophysical characterization, Computational modeling"
+techniques = "Organic synthesis, Photophysical characterization"
 recent_work = "Through-space CT in N-quinolyl systems (Journal of Physical Chemistry B, 2024)"
 
 [[themes]]
 icon = "📊"
 title = "Singlet-Triplet Energy Gaps"
-description = "Developing advanced spectroscopic methods to accurately measure ΔEST in organic emitters. Understanding these energy gaps is crucial for designing efficient TADF materials and predicting device performance."
-techniques = "Cryogenic spectroscopy, Dual emission analysis"
-recent_work = ""
+description = "Developing spectroscopic approaches to accurately measure ΔEST in organic emitters. Understanding these energy gaps is crucial for designing efficient TADF materials and predicting device performance."
+techniques = "Steady-state spectroscopy, Time-resolved Emission Spectra (TRES), Low-temperature photoluminescence"
+recent_work = "Collaboration: Queen Mary University London (UK), Kuwait University (Kuwait)"
 
 [[themes]]
 icon = "🧬"
 title = "Bioimaging Applications"
-description = "Applying our fundamental understanding of organic emitters to develop new materials for biological imaging. Collaborating with the Takeda group to create TADF-based probes with enhanced imaging capabilities."
+description = "Applying our fundamental understanding of organic emitters to develop new materials for biological imaging. Collaborating with the Hudson group and the Takeda group as part of a JST-funded ASPIRE grant to create TADF-based probes with enhanced imaging capabilities."
 techniques = "Photoluminescence spectroscopy, Biocompatibility testing"
-recent_work = "Collaboration: University of Osaka (Japan)"
+recent_work = "Collaboration: University of Osaka (Japan), University of British Columbia (Canada), Technical University Denmark (Denmark), Kitasato University (Japan) "
 
 
 [[featured_publications]]
