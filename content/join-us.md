@@ -94,8 +94,8 @@ date = "2025-01-11"
   <h2>Postdoc Opportunities</h2>
   
   <div class="opportunities">
-    <div class="opportunity-card funded">
-      <h3 id="aphid">💡 Research Fellow in Photoluminescence Spectroscopy</h3>
+    <div class="opportunity-card funded" id="aphid">
+      <h3>💡 Research Fellow in Photoluminescence Spectroscopy</h3>
       <p>We're recruiting for a Royal Society-funded UK-Brazil collaboration developing pesticide sensors using aggregation-induced delayed fluorescence. This 3-year position splits time between Northumbria University and Universidade Federal de Santa Catarina, with a fully-funded 9-month UK secondment.</p>
       <a href="/pdf/Research_Fellow_APHiD_ICAO_R1_241050.pdf" target="_blank" rel="noopener" class="research-link-btn">
   Job Description →
