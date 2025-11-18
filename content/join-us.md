@@ -100,7 +100,7 @@ date = "2025-01-11"
       <a href="/pdf/Research_Fellow_APHiD_ICAO_R1_241050.pdf" target="_blank" rel="noopener" class="research-link-btn">
   Job Description →
 </a><br>
-      <p>To express interest in the role, click the button below and then click join us to send me an email. Please quote the job reference from the PDF at the top of the email.</p>
+      <p>To express interest in the role, click the button below and then click 'Email Marc' to send me an email. Please quote the job reference from the PDF at the top of the email.</p>
       <a href="#contact" class="opportunity-btn">Express Interest →</a>
     </div>
   </div>
