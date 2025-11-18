@@ -104,6 +104,7 @@ date = "2025-01-11"
        <a href="mailto:marc.k.etherington@northumbria.ac.uk" class="email-btn">📧 Email Marc</a>
     </div>
 </div>
+</div>
 
 <!-- Fellowship Tab -->
 <div class="tab-content" id="tab-fellowship">
