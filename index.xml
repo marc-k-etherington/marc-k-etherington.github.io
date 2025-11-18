@@ -8,9 +8,9 @@
 &lt;div class="why-join"&gt;
  &lt;h2&gt;Why Join Us?&lt;/h2&gt;
  &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;World-leading expertise&lt;/strong&gt; in TADF mechanisms and spin-vibronic coupling (Nature Communications, 500+ citations)&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;International collaborations&lt;/strong&gt; with Durham, Osaka and Kitasato Universities&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;State-of-the-art facilities&lt;/strong&gt; including Fluorolog-QM spectroscopy and low-temperature systems&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;World-leading expertise&lt;/strong&gt; in TADF mechanisms and spin-vibronic coupling (Nature Communications, 900+ citations)&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;International collaborations&lt;/strong&gt; with the University of Osaka, University of British Columbia, Technical University Dresden, Technical University Denmark and Kitasato Universities&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;State-of-the-art facilities&lt;/strong&gt; including HORIBA Fluorolog-QM spectroscopy, including TCSPC and Oxford Instruments cryostat for low-temperature measurements&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Joint supervision&lt;/strong&gt; with Dr Jon Knowles - synthetic and spectroscopic expertise combined&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Student success&lt;/strong&gt; - publish in high-impact journals and win poster prizes&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;International conferences&lt;/strong&gt; - present at meetings in Japan, Europe, and beyond&lt;/li&gt;
@@ -78,8 +78,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_d318cdb642c9763ebddf6ef52474417c" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_d318cdb642c9763ebddf6ef52474417c"&gt;
+ &lt;input id="collapsible_1cbd3e6d14562dfc326e479df747c4b8" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_1cbd3e6d14562dfc326e479df747c4b8"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -150,8 +150,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_dcc81e674742f24fb3e657d69d31d4bc" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_dcc81e674742f24fb3e657d69d31d4bc"&gt;
+ &lt;input id="collapsible_fe34cb45177628cd1d6bc64d4de2f379" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_fe34cb45177628cd1d6bc64d4de2f379"&gt;
  Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
