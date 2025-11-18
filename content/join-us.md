@@ -95,15 +95,14 @@ date = "2025-01-11"
   
   <div class="opportunities">
     <div class="opportunity-card funded">
-      <h3>💡 Research Fellow in Photoluminescence Spectroscopy</h3>
-      <p>There is a fully-funded opportunity to work on a Royal Society-funded project titled Aggregation-induced delayed fluorescence in Pesticide and Herbicide Detection (APHiD) for the Brazilian Agricultural Industry’. The post will be based at Universidade Federal de Santa Catarina (Florianópolis, Brazil), but a 9-month secondment based at Northumbria University (Newcastle upon Tyne, UK) is required. There is a rolling deadline and the position will be filled when a suitable candidate is found.</p>
+      <h3 id="aphid">💡 Research Fellow in Photoluminescence Spectroscopy</h3>
+      <p>We're recruiting for a Royal Society-funded UK-Brazil collaboration developing pesticide sensors using aggregation-induced delayed fluorescence. This 3-year position splits time between Northumbria University and Universidade Federal de Santa Catarina, with a fully-funded 9-month UK secondment.</p>
       <a href="/pdf/Research_Fellow_APHiD_ICAO_R1_241050.pdf" target="_blank" rel="noopener" class="research-link-btn">
   Job Description →
 </a><br>
-      <p>To express interest in the role, click the button below and then click 'Email Marc' to send me an email. Please quote the job reference from the PDF at the top of the email.</p>
-      <a href="#contact" class="opportunity-btn">Express Interest →</a>
+      <p>To apply:</strong> Send your CV and cover letter to me by email with the subject 'Research Fellow in Photoluminescence Spectroscopy' via the button below</p>
+       <a href="mailto:marc.k.etherington@northumbria.ac.uk" class="email-btn">📧 Email Marc</a>
     </div>
-  </div>
 </div>
 
 <!-- Fellowship Tab -->
