@@ -48,6 +48,20 @@ function showTab(tabName) {
     selectedCard.classList.add('active');
   }
 }
+
+// On page load, check if there's a hash and show appropriate tab
+window.addEventListener('DOMContentLoaded', function() {
+  const hash = window.location.hash;
+  
+  if (hash === '#aphid') {
+    showTab('postdoc');
+    // Small delay to ensure tab is visible before scrolling
+    setTimeout(function() {
+      document.getElementById('aphid').scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  }
+});
+</script>
 </script>
 
 {{ end }}
