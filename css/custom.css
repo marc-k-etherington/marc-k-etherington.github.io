@@ -2005,6 +2005,7 @@ div.alert-secondary {
 .research-link-btn-center {
   text-align: center;
   margin-top: 1.5rem;
+  color: white; !important; 
 }
 
 .research-toggle-btn {
@@ -2028,7 +2029,7 @@ div.alert-secondary {
 
 .research-toggle-btn.active {
   background: #008B8B;
-  color: white;
+  color: white; !important; 
 }
 
 .research-toggleable-content {
@@ -2847,6 +2848,7 @@ div.alert-secondary {
 
   .research-link-btn {
     font-size: 0.95rem !important;
+    color: white; !important; 
   }
 
   .research-toggle-btn {
@@ -3286,6 +3288,7 @@ div.alert-secondary {
   .research-link-btn {
     font-size: 0.9rem !important;
     padding: 0.7rem 1.3rem;
+    color: white; !important; 
   }
 
   .research-toggle-btn {
