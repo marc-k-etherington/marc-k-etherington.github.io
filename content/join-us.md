@@ -16,9 +16,9 @@ date = "2025-01-11"
 <div class="why-join">
   <h2>Why Join Us?</h2>
   <ul>
-    <li><strong>World-leading expertise</strong> in TADF mechanisms and spin-vibronic coupling (Nature Communications, 500+ citations)</li>
-    <li><strong>International collaborations</strong> with Durham, Osaka and Kitasato Universities</li>
-    <li><strong>State-of-the-art facilities</strong> including Fluorolog-QM spectroscopy and low-temperature systems</li>
+    <li><strong>World-leading expertise</strong> in TADF mechanisms and spin-vibronic coupling (Nature Communications, 900+ citations)</li>
+    <li><strong>International collaborations</strong> with the University of Osaka, University of British Columbia, Technical University Dresden, Technical University Denmark and Kitasato Universities</li>
+    <li><strong>State-of-the-art facilities</strong> including HORIBA Fluorolog-QM spectroscopy, including TCSPC and Oxford Instruments cryostat for low-temperature measurements</li>
     <li><strong>Joint supervision</strong> with Dr Jon Knowles - synthetic and spectroscopic expertise combined</li>
     <li><strong>Student success</strong> - publish in high-impact journals and win poster prizes</li>
     <li><strong>International conferences</strong> - present at meetings in Japan, Europe, and beyond</li>
@@ -94,9 +94,12 @@ date = "2025-01-11"
   <h2>Postdoc Opportunities</h2>
   
   <div class="opportunities">
-    <div class="opportunity-card none-available">
-      <h3>💼 No Current PDRA Positions</h3>
-      <p>We don't currently have funded postdoc positions. However, if you're interested in future opportunities or have your own fellowship funding, please get in touch!</p>
+    <div class="opportunity-card funded">
+      <h3>💡 Research Fellow in Photoluminescence Spectroscopy</h3>
+      <p>There is a fully-funded opportunity to work on a Royal Society-funded project titled Aggregation-induced delayed fluorescence in Pesticide and Herbicide Detection (APHiD) for the Brazilian Agricultural Industry’. The post will be based at Universidade Federal de Santa Catarina (Florianópolis, Brazil), but a 9-month secondment based at Northumbria University (Newcastle upon Tyne, UK) is required.</p>
+      <a href="/pdf/Research_Fellow_APHiD_ICAO_R1_241050.pdf" target="_blank" rel="noopener" class="research-link-btn">
+  Job Description →
+</a>
       <a href="#contact" class="opportunity-btn">Express Interest →</a>
     </div>
   </div>
@@ -137,7 +140,7 @@ date = "2025-01-11"
         <li>Low-temperature spectroscopy studies</li>
         <li>Charge-transfer state analysis</li>
       </ul>
-      <p><strong>Contact:</strong> Speak to Marc or your course coordinator</p>
+      <p><strong>Contact:</strong> Speak to Marc, your programme lead, or your module tutor</p>
     </div>
   </div>
 </div>
@@ -149,10 +152,10 @@ date = "2025-01-11"
   <div class="opportunities">
     <div class="opportunity-card unfunded">
       <h3>🌍 Collaborative Visits</h3>
-      <p>We welcome visiting researchers. Recent visitors from Osaka, Kitasato, and Kyushu Universities.</p>
+      <p>We welcome visiting researchers.</p>
       <p><strong>Duration:</strong> 1-4 weeks (flexible)</p>
       <p><strong>Activities:</strong> Joint experiments, data analysis, collaborative writing, group meetings</p>
-      <p><strong>Funding:</strong> Visitors arrange own funding (e.g., JST ASPIRE, university exchanges)</p>
+      <p><strong>Funding:</strong> Visitors arrange own funding (e.g., JST ASPIRE, RSC)</p>
       <a href="#contact" class="opportunity-btn">Propose a Visit →</a>
     </div>
   </div>
@@ -165,7 +168,7 @@ date = "2025-01-11"
   <div class="success-card">
     <div class="success-icon">🏆</div>
     <h4>Ruth Pollard - Poster Prize</h4>
-    <p>Won at RSC Photophysics Group ECM (2024). First publication in JPCB on quinoline TADF systems.</p>
+    <p>Won at RSC Photophysics Group ECM (2024).</p>
   </div>
 
   <div class="success-card">
@@ -195,7 +198,7 @@ date = "2025-01-11"
 
   <div class="funding-item">
   <strong>PDRA/Fellowship Funding</strong>
-  <span>CSC, Commonwealth, country-specific schemes</span>
+  <span>Leverhulme, 1851, Royal Society</span>
   </div>
 
   <div class="funding-item">
