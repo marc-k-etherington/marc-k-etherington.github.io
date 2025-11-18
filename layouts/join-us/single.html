@@ -53,15 +53,25 @@ function showTab(tabName) {
 window.addEventListener('DOMContentLoaded', function() {
   const hash = window.location.hash;
   
-  if (hash === '#aphid') {
-    showTab('postdoc');
-    // Small delay to ensure tab is visible before scrolling
-    setTimeout(function() {
-      document.getElementById('aphid').scrollIntoView({ behavior: 'smooth' });
-    }, 100);
+  if (hash) {
+    // Find the element with the hash ID
+    const targetElement = document.querySelector(hash);
+    
+    if (targetElement) {
+      // Find which tab contains this element
+      const parentTab = targetElement.closest('.tab-content');
+      
+      if (parentTab) {
+        // Extract tab name from the parent tab ID (e.g., 'tab-postdoc' -> 'postdoc')
+        const tabName = parentTab.id.replace('tab-', '');
+        showTab(tabName);
+        
+        // Small delay to ensure tab is visible before scrolling
+        setTimeout(function() {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
   }
 });
 </script>
-</script>
-
-{{ end }}
