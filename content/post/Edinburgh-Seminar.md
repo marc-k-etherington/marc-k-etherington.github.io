@@ -1,8 +1,8 @@
 ---
 title: Marc gives a seminar at the University of Edinburgh
 author: Marc Etherington
-date: 2025-05-12
-show_date: 2025-05-12
+date: 2025-05-9
+show_date: 2025-05-9
 tags: [group]
 summary: Marc highlights some of the groups' most recent research at a seminar at the University of Edinburgh
 show_summary: true
