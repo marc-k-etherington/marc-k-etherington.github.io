@@ -1,10 +1,10 @@
 ---
-title: Marc and Aidan attend the ASPIRE Project Kick-Off Meeting in Osaka.
+title: Marc and Aidan attend the ASPIRE Project Meeting in Osaka.
 author: Marc Etherington
 date: 2025-05-29
 show_date: 2025-05-29
 tags: [group]
-summary: Marc and Aidan travel to Japan to take part in the JST ASPIRE Project Kick-Off Meeting
+summary: Marc and Aidan travel to Japan to take part in the JST ASPIRE Project Meeting
 show_summary: true
 ---
 
