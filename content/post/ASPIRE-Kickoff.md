@@ -13,6 +13,6 @@ Marc and Aidan visited the University of Osaka in Japan to take part in the Kick
 
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ASPIRE_Kickoff_Marc.jpg?raw=true" width="500" height="auto">
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ASPIRE_Kickoff_All.jpg?raw=true" width="500" height="auto">
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ASPIRE_Kickoff_All.png?raw=true" width="500" height="auto">
 
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Kirip_Truman.jpg?raw=true" width="500" height="auto">
