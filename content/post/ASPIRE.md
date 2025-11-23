@@ -1,8 +1,8 @@
 ---
 title: Everyone passes Annual Progression!
 author: Marc Etherington
-date: 2024-09-23
-show_date: 2024-09-23
+date: 2025-09-23
+show_date: 2025-09-23
 tags: [group]
 summary: To celebrate everyone passing this year's annual progression I gifted them their very own Hatch-branded Keep Cup
 show_summary: true
