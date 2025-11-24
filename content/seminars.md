@@ -5,7 +5,6 @@ date = "2023-02-07"
 author = "Marc Etherington"
 type = "seminars"
 +++
-<h2>Seminars</h2>
 
 <!-- Seminar Stats -->
 <div class="seminar-stats">
