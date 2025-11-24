@@ -1,5 +1,6 @@
 
 +++
+title = "Seminars"
 date = "2023-02-07"
 author = "Marc Etherington"
 type = "seminars"
