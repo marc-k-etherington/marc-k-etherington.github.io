@@ -1,4 +1,5 @@
 +++
+title = 'Publications'
 date = "2023-02-07"
 author = "Marc Etherington"
 type = "publications"
