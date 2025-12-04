@@ -62,7 +62,7 @@ type = "publications"
 
 {{< alert "primary" >}}
 {{< collapsible "Highly soluble cyclic dibenzophenazine heterodimer enabled by a tetra-functionalized building block" >}}
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg" alt="TOC" width="250" height="auto" style="float:right">
+<img src="[https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg?Expires=1767830535&Signature=Ruz3Ls1cCtxCXdZPEvoL5NLqV568THVR0Xd1C8rlp71hVlmKuXOit2U1oBYBSQ-8DaD6~BM-40y0IEgdnICPOwaw1sb8cHYJlrUXxm3MNlsd6pG5-I~AyQqizudNn3QdkriObw3NxynoRyrASDDJASF924bw4pvIqHHRgrRtuWJhZc1CmiUFhGjBrYYBwJTwG4Z2aAwGOgM9e6I46t~ySdcU~NJvvXK8xhOPgRFb4zrYZlX5Ri7urNz15OASTlXdPyx7YNM5FMGVHG7OdE6wjEgjKHI47yNtvJozGRB3wznKGfg7ops-orYrIoYTlUAg35IdpmeOPiXVOpCG7UmAjA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)" alt="TOC" width="250" height="auto" style="float:right">
 
 
 [Highly soluble cyclic dibenzophenazine heterodimer enabled by a tetra-functionalized building block](https://academic.oup.com/chemlett/article/54/12/upaf216/8342757)
