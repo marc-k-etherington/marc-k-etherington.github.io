@@ -77,8 +77,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_91dc4eb2fe43d47d7d5712664b3cc68f" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_91dc4eb2fe43d47d7d5712664b3cc68f"&gt;
+ &lt;input id="collapsible_cbe264646de7db751f718c4f29d43d3c" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_cbe264646de7db751f718c4f29d43d3c"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -149,8 +149,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_e7219f5fb24c46dc8476d337cddbe416" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_e7219f5fb24c46dc8476d337cddbe416"&gt;
+ &lt;input id="collapsible_f7d114f74cb576c6284649dede2c33bd" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_f7d114f74cb576c6284649dede2c33bd"&gt;
  Highly soluble cyclic dibenzophenazine heterodimer enabled by a tetra-functionalized building block
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
