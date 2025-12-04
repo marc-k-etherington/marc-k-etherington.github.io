@@ -59,7 +59,25 @@ type = "publications"
 <h4>**Click on the name of the paper to expand**</h4>
 
 <h3>{{< badge >}}2025{{< /badge >}}</h3>
-  
+
+{{< alert "primary" >}}
+{{< collapsible "Highly soluble cyclic dibenzophenazine heterodimer enabled by a tetra-functionalized building block" >}}
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Highly soluble cyclic dibenzophenazine heterodimer enabled by a tetra-functionalized building block](https://academic.oup.com/chemlett/article/54/12/upaf216/8342757)
+
+Naohiro Namba, Fumiya Ogura, **Marc K. Etherington**, Satoshi Minakata* & Youhei Takeda*
+
+{{< color "secondary" >}}
+Chemistry Letters, 54, 12, 2025
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/chemle/upaf216" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
 {{< alert "primary" >}}
 {{< collapsible "Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers" >}}
 <img src="https://onlinelibrary.wiley.com/cms/asset/58b409f8-6dd5-4ce2-a336-3f06035ef497/anie70198-gra-0001-m.png" alt="TOC" width="250" height="auto" style="float:right">
@@ -67,7 +85,7 @@ type = "publications"
 
 [Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202516629)
 
-Rebecca J. Salthouse, Jacob L. Elholm, Irene Cortellazzi, Helen Hölzel, Pedro Ferreira, Lorette Fernandez, **Marc K. Etherington**, & Kasper Moth-Poulsen*
+Rebecca J. Salthouse, Jacob L. Elholm, Irene Cortellazzi, Helen Hölzel, Pedro Ferreira, Lorette Fernandez, **Marc K. Etherington** & Kasper Moth-Poulsen*
 
 {{< color "secondary" >}}
 Angewandte Chemie, e16629, 2025
