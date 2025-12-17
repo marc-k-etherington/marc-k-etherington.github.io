@@ -62,7 +62,7 @@ type = "publications"
 
 {{< alert "primary" "corresponding">}}
 {{< collapsible "Reduced temperature solid-state synthesis of barium sulfide: a greener alternative" >}}
-<img src="/images/BaS_TOC.jpeg" alt="TOC" width="250" height="auto" style="float:right">
+<img src="/content/images/BaS_TOC.jpeg" alt="TOC" width="250" height="auto" style="float:right">
 
 
 [Reduced temperature solid-state synthesis of barium sulfide: a greener alternative](https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b)
