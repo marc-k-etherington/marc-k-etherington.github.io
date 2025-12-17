@@ -60,6 +60,26 @@ type = "publications"
 
 <h3>{{< badge >}}2025{{< /badge >}}</h3>
 
+{{< alert "primary" "corresponding">}}
+{{< collapsible "Reduced temperature solid-state synthesis of barium sulfide: a greener alternative" >}}
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg?Expires=1767830535&Signature=Ruz3Ls1cCtxCXdZPEvoL5NLqV568THVR0Xd1C8rlp71hVlmKuXOit2U1oBYBSQ-8DaD6~BM-40y0IEgdnICPOwaw1sb8cHYJlrUXxm3MNlsd6pG5-I~AyQqizudNn3QdkriObw3NxynoRyrASDDJASF924bw4pvIqHHRgrRtuWJhZc1CmiUFhGjBrYYBwJTwG4Z2aAwGOgM9e6I46t~ySdcU~NJvvXK8xhOPgRFb4zrYZlX5Ri7urNz15OASTlXdPyx7YNM5FMGVHG7OdE6wjEgjKHI47yNtvJozGRB3wznKGfg7ops-orYrIoYTlUAg35IdpmeOPiXVOpCG7UmAjA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" alt="TOC" width="250" height="auto" style="float:right">
+
+
+[Reduced temperature solid-state synthesis of barium sulfide: a greener alternative](https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b)
+
+William D. Tetlow, Oliver S. Hutter, **Marc K. Etherington***, & Giulia Longo*
+
+{{< color "secondary" >}}
+RSC Advances, 15, 50446-50456
+{{< /color >}}
+<br>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/D5RA07445B" class="center"></div>
+
+{{< /collapsible >}}
+{{< /alert >}}
+
+<h3>{{< badge >}}2025{{< /badge >}}</h3>
+
 {{< alert "primary" >}}
 {{< collapsible "Highly soluble cyclic dibenzophenazine heterodimer enabled by a tetra-functionalized building block" >}}
 <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg?Expires=1767830535&Signature=Ruz3Ls1cCtxCXdZPEvoL5NLqV568THVR0Xd1C8rlp71hVlmKuXOit2U1oBYBSQ-8DaD6~BM-40y0IEgdnICPOwaw1sb8cHYJlrUXxm3MNlsd6pG5-I~AyQqizudNn3QdkriObw3NxynoRyrASDDJASF924bw4pvIqHHRgrRtuWJhZc1CmiUFhGjBrYYBwJTwG4Z2aAwGOgM9e6I46t~ySdcU~NJvvXK8xhOPgRFb4zrYZlX5Ri7urNz15OASTlXdPyx7YNM5FMGVHG7OdE6wjEgjKHI47yNtvJozGRB3wznKGfg7ops-orYrIoYTlUAg35IdpmeOPiXVOpCG7UmAjA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" alt="TOC" width="250" height="auto" style="float:right">
