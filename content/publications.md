@@ -62,7 +62,7 @@ type = "publications"
 
 {{< alert "primary" "corresponding">}}
 {{< collapsible "Reduced temperature solid-state synthesis of barium sulfide: a greener alternative" >}}
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg?Expires=1767830535&Signature=Ruz3Ls1cCtxCXdZPEvoL5NLqV568THVR0Xd1C8rlp71hVlmKuXOit2U1oBYBSQ-8DaD6~BM-40y0IEgdnICPOwaw1sb8cHYJlrUXxm3MNlsd6pG5-I~AyQqizudNn3QdkriObw3NxynoRyrASDDJASF924bw4pvIqHHRgrRtuWJhZc1CmiUFhGjBrYYBwJTwG4Z2aAwGOgM9e6I46t~ySdcU~NJvvXK8xhOPgRFb4zrYZlX5Ri7urNz15OASTlXdPyx7YNM5FMGVHG7OdE6wjEgjKHI47yNtvJozGRB3wznKGfg7ops-orYrIoYTlUAg35IdpmeOPiXVOpCG7UmAjA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" alt="TOC" width="250" height="auto" style="float:right">
+<img src="/images/BaS_TOC.jpeg" alt="TOC" width="250" height="auto" style="float:right">
 
 
 [Reduced temperature solid-state synthesis of barium sulfide: a greener alternative](https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b)
