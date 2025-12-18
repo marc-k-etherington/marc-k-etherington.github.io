@@ -62,7 +62,7 @@ type = "publications"
 
 {{< alert "primary" "corresponding">}}
 {{< collapsible "Reduced temperature solid-state synthesis of barium sulfide: a greener alternative" >}}
-<img src=""https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/BaS_TOC.jpeg?raw=true"" alt="TOC" width="250" height="auto" style="float:right">
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/BaS_TOC.jpg?raw=true" alt="TOC" width="250" height="auto" style="float:right">
 
 
 [Reduced temperature solid-state synthesis of barium sulfide: a greener alternative](https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b)
