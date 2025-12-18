@@ -6,6 +6,34 @@ hero_image = "/images/gallery/japan-pagoda-fuji.jpg"
 hero_caption = "Mount Fuji & Chureito Pagoda - Research visit to Japan 🗻"
 
 [[photos]]
+image = "/images/gallery/Axis.jpeg"
+caption = "December 2025 - Cheers 🍻"
+category = "social"
+decoration = "taped"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Pink_Lane.jpeg"
+caption = "December 2025 - A trip down Pink Lane ☕"
+category = "social"
+decoration = "pinned"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Dakwala.jpeg"
+caption = "December 2025 - The Knowles-Etherington Group Christmas Lunch 🍛"
+category = "social"
+decoration = "taped"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Vermouth_Xmas.jpeg"
+caption = "December 2025 - A Christmas Aperitif"
+category = "social"
+decoration = "pinned"
+link = ""
+
+[[photos]]
 image = "/images/gallery/Dr_Wani.jpeg"
 caption = "November 2025 - Dr Wani is my new desk buddy 🐊"
 category = "lab"
