@@ -3330,7 +3330,7 @@ css/* Hero Logo Styles */
 }
 
 .hero-logo img {
-  max-width: 250px;  /* Half of 500px */
+  max-width: 500px;  /* Half of 500px */
   width: 100%;
   height: auto;
   display: block;
@@ -3344,7 +3344,7 @@ css/* Hero Logo Styles */
 }
 
 .hero-logo-compact img {
-  max-width: 150px;  /* Half of 300px */
+  max-width: 300px;  /* Half of 300px */
   width: 100%;
   height: auto;
   display: block;
@@ -3361,20 +3361,20 @@ css/* Hero Logo Styles */
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-logo img {
-    max-width: 175px;  /* Half of 350px */
+    max-width: 300px;  /* Half of 350px */
   }
   
   .hero-logo-compact img {
-    max-width: 100px;  /* Half of 200px */
+    max-width: 200px;  /* Half of 200px */
   }
 }
 
 @media (max-width: 480px) {
   .hero-logo img {
-    max-width: 140px;  /* Half of 280px */
+    max-width: 280px;  /* Half of 280px */
   }
   
   .hero-logo-compact img {
-    max-width: 75px;  /* Half of 150px */
+    max-width: 150px;  /* Half of 150px */
   }
 }
