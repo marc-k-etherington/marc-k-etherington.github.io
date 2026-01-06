@@ -1,16 +1,12 @@
-<section class="welcome-hero {{ if not .IsHome }}welcome-hero-compact{{ end }}">
+html<section class="welcome-hero {{ if not .IsHome }}welcome-hero-compact{{ end }}">
   <div class="hero-content">
     {{ if .IsHome }}
       <!-- Full hero for homepage -->
-      <div class="hero-logo">
-        <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/Transparent_Black_logo.png?raw=true" alt="The Etherington Lab - Where molecules come to light">
-      </div>
+      <h1 class="hero-title">Welcome to The Etherington Lab!</h1>
       <p class="hero-subtitle">Advancing organic photonics, TADF materials, and photophysical chemistry at Northumbria University</p>
     {{ else }}
       <!-- Compact hero for other pages -->
-      <div class="hero-logo-compact">
-        <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/Transparent_Black_logo.png?raw=true" alt="The Etherington Lab">
-      </div>
+      <h1 class="hero-title-compact">Welcome to The Etherington Lab!</h1>
     {{ end }}
     
     <div class="hero-nav-wrapper">
