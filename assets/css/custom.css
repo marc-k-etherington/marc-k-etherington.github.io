@@ -3322,3 +3322,57 @@ a.paper-btn.active:hover,
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* Hero Logo Styles */
+.hero-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-logo img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-logo-compact {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hero-logo-compact img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adjust subtitle spacing */
+.hero-subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-logo img {
+    max-width: 350px;
+  }
+  
+  .hero-logo-compact img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-logo img {
+    max-width: 280px;
+  }
+  
+  .hero-logo-compact img {
+    max-width: 150px;
+  }
+}
