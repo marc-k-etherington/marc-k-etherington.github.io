@@ -3323,18 +3323,19 @@ a.paper-btn.active:hover,
   cursor: not-allowed;
 }
 
-/* Hero Logo Styles */
+css/* Hero Logo Styles */
 .hero-logo {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
 .hero-logo img {
-  max-width: 500px;
+  max-width: 250px;  /* Half of 500px */
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  border: none;  /* Remove border */
 }
 
 .hero-logo-compact {
@@ -3343,11 +3344,12 @@ a.paper-btn.active:hover,
 }
 
 .hero-logo-compact img {
-  max-width: 300px;
+  max-width: 150px;  /* Half of 300px */
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  border: none;  /* Remove border */
 }
 
 /* Adjust subtitle spacing */
@@ -3359,20 +3361,20 @@ a.paper-btn.active:hover,
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-logo img {
-    max-width: 350px;
+    max-width: 175px;  /* Half of 350px */
   }
   
   .hero-logo-compact img {
-    max-width: 200px;
+    max-width: 100px;  /* Half of 200px */
   }
 }
 
 @media (max-width: 480px) {
   .hero-logo img {
-    max-width: 280px;
+    max-width: 140px;  /* Half of 280px */
   }
   
   .hero-logo-compact img {
-    max-width: 150px;
+    max-width: 75px;  /* Half of 150px */
   }
 }
