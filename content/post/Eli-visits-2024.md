@@ -9,4 +9,4 @@ show_summary: true
 ---
 It was great to host Prof. Eli Zysman-Colman from St. Andrews at Northumbria University and to hear him speak at Newcastle University on the latest research from his group. Later that evening we were joined by Prof. Andy Monkman and his wife, Mayra, for a meal at Blackfriars.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Eli_visit_2024.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Eli_visit_2024.jpg" width="500" height="auto">
