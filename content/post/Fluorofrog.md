@@ -9,4 +9,4 @@ show_summary: true
 ---
 It is always important to have fun as you do science and today we re-named the Fluorolog-QM to Flint the Fluorofrog with his very own logo. Thanks to Will for the artwork.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Fluorofrog.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Fluorofrog.jpg" width="500" height="auto">
