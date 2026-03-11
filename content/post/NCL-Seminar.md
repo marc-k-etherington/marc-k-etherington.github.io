@@ -9,5 +9,5 @@ show_summary: true
 ---
 It was a privilege this week to speak at the Department of Chemistry at Newcastle University on the group's latest work. 
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Marc_NCL_Advert.jpg?raw=true" width="500" height="auto">
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Marc_NCL_Seminar.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Marc_NCL_Advert.jpg" width="500" height="auto">
+<img src="/post/images/Marc_NCL_Seminar.jpg" width="500" height="auto">
