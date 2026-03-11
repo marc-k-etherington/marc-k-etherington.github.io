@@ -9,4 +9,4 @@ show_summary: true
 ---
 It was great to see everyone pass their annual progression. This means we have another year of fun science ahead of us! Well done Team!
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/AP_Hatch.jpg?raw=true" width="500" height="auto">
+<img src="post/images/AP_Hatch.jpg" width="500" height="auto">
