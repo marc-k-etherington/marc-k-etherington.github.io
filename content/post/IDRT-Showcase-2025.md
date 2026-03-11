@@ -9,5 +9,5 @@ show_summary: true
 ---
 It's always a pleasure to show off the great research surrounding Energy topics at Northumbria and the Interdisciplinary Research Theme (IDRT) Showcase is just that opportunity.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Neil_IDRT_2025.jpg?raw=true" width="500" height="auto">
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/IDRT_2025.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Neil_IDRT_2025.jpg" width="500" height="auto">
+<img src="/post/images/IDRT_2025.jpg" width="500" height="auto">
