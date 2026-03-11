@@ -11,4 +11,4 @@ Marc gave a seminar at the University of Edinburgh hosted by Dr Cate Anstoter an
 
 <img src="/post/images/Edinburgh_Seminar.jpg" width="500" height="auto">
 
-<img src="/content/post/images/Holyrood_Parkrun.jpg" width="500" height="auto">
+<img src="/post/images/Holyrood_Parkrun.jpg" width="500" height="auto">
