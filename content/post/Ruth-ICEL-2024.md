@@ -9,5 +9,5 @@ show_summary: true
 ---
 Ruth talks about her most recent work exploring how single chromophore materials can exhibit charge transfer at the 14th International Conference on Electroluminescence and Optoelectronic Devices (ICEL) in Kyoto, Japan (https://icel2024.kuicr.kyoto-u.ac.jp/).
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Ruth_ICEL_Talk.jpg?raw=true" width="500" height="auto">
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Kyoto_Temple.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Ruth_ICEL_Talk.jpg" width="500" height="auto">
+<img src="/post/images/Kyoto_Temple.jpg" width="500" height="auto">
