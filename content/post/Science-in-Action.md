@@ -9,4 +9,4 @@ show_summary: true
 ---
 It was a pleasure to be interviewed for HORIBA's latest blog on Science in Action. In this article, I discuss how my research group is using fluorescence spectroscopy to develop novel light-emitting materials for applications as diverse as organic light-emitting diodes (OLEDs) and biosensing. Read more at [horiba.link/light-emitting](https://horiba.link/light-emitting)
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/HORIBA_SIA.jpg?raw=true" width="250" height="auto">
+<img src="/post/images/HORIBA_SIA.jpg" width="250" height="auto">
