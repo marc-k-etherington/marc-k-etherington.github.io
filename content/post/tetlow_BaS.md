@@ -21,4 +21,4 @@ This work opens exciting possibilities for sustainable production of chalcogenid
 Tetlow, W.D., Hutter, O.S., **Etherington, M.K.***, Longo, G.* *RSC Advances*, 15, 50446-50456, 2025
 DOI: 10.1039/D5RA07445B
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/BaS_TOC.jpeg?raw=true" width="500" height="auto">
+<img src="/post/images/BaS_TOC.jpeg" width="500" height="auto">
