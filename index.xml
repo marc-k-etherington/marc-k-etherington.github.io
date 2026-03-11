@@ -77,8 +77,8 @@
 
 
 &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_38e26d764791d6cfdb547dc213fc4b4e" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_38e26d764791d6cfdb547dc213fc4b4e"&gt;
+ &lt;input id="collapsible_b2ef2c4dc47935dde4661bd76481fc73" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_b2ef2c4dc47935dde4661bd76481fc73"&gt;
  Ruth Pollard
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
@@ -149,8 +149,8 @@ Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in
 &lt;/span&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary corresponding "&gt;
  &lt;div class="collapsible"&gt;
- &lt;input id="collapsible_e5b12768d24ec7d9f4c4d33f67bcd641" type="checkbox" name="collapsible"&gt;
- &lt;label for="collapsible_e5b12768d24ec7d9f4c4d33f67bcd641"&gt;
+ &lt;input id="collapsible_92e73f86f3c741d25ecd764c446bdbd1" type="checkbox" name="collapsible"&gt;
+ &lt;label for="collapsible_92e73f86f3c741d25ecd764c446bdbd1"&gt;
  Reduced temperature solid-state synthesis of barium sulfide: a greener alternative
  &lt;/label&gt;
  &lt;div class="collapsible-body"&gt;
