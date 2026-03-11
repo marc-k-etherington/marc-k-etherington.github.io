@@ -9,4 +9,4 @@ show_summary: true
 ---
 It was great to welcome Will Tetlow to the group as a PhD student after changing supervisor from Dr Giulia Longo who has taken up a new position in Spain. One of his first activities as a member of the group was to present work from his research secondment in the group of Dr Jonathan Scragg at Uppsala University.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Will_2024.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Will_2024.jpg" width="500" height="auto">
