@@ -9,5 +9,5 @@ show_summary: true
 ---
 It was great to welcome Dr Silvia Motti to the department and university to hear about the latest work from her research group. This coincided with Enrichment Week so we had good turnout from staff, PhD students and undegraduate students. We even had chance to get to the pub afterwards and meet up with colleagues from Durham University.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Silvia_Motti_Seminar.jpg?raw=true" width="500" height="auto">
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Silvia_Motti_Pub.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Silvia_Motti_Seminar.jpg" width="500" height="auto">
+<img src="/post/images/Silvia_Motti_Pub.jpg" width="500" height="auto">
