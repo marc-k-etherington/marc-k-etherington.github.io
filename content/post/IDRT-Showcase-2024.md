@@ -9,4 +9,4 @@ show_summary: true
 ---
 It is always a pleasure to represent the Energy Futures Network and demonstrate to the rest of the University all of the great research that has been going on in our area. Energy Futures is a collection of close to 60 academic staff with research interests in this area and provides a truly collaborative platform that spans faculties and across the wider University.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/IDRT_Showcase_2024.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/IDRT_Showcase_2024.jpg" width="500" height="auto">
