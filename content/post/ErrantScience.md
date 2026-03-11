@@ -9,5 +9,5 @@ show_summary: true
 ---
 It was great to host ErrantScience for a day of workshops on science communication and storytelling through cartoons. This is an important part of science communication and it was beneficial for the Energy Futures Network who attended.
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ErrantScience.jpg?raw=true" width="500" height="auto">
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ErrantScience_Cartoons.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/ErrantScience.jpg" width="500" height="auto">
+<img src="/post/images/ErrantScience_Cartoons.jpg" width="500" height="auto">
