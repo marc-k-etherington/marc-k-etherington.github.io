@@ -17,5 +17,5 @@ This work exemplifies the strength of UK-Japan partnerships through the JST ASPI
 Namba, N., Ogura, F., **Etherington, M.K.**, Minakata, S., Takeda, Y. *Chemistry Letters*, 54, 12, 2025
 DOI: 10.1093/chemle/upaf216 (Open Access)
 
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/chemlett/54/12/10.1093_chemle_upaf216/1/m_upaf216_ga.jpeg?Expires=1767830535&Signature=Ruz3Ls1cCtxCXdZPEvoL5NLqV568THVR0Xd1C8rlp71hVlmKuXOit2U1oBYBSQ-8DaD6~BM-40y0IEgdnICPOwaw1sb8cHYJlrUXxm3MNlsd6pG5-I~AyQqizudNn3QdkriObw3NxynoRyrASDDJASF924bw4pvIqHHRgrRtuWJhZc1CmiUFhGjBrYYBwJTwG4Z2aAwGOgM9e6I46t~ySdcU~NJvvXK8xhOPgRFb4zrYZlX5Ri7urNz15OASTlXdPyx7YNM5FMGVHG7OdE6wjEgjKHI47yNtvJozGRB3wznKGfg7ops-orYrIoYTlUAg35IdpmeOPiXVOpCG7UmAjA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="500" height="auto">
+<img src="post/images/Namba_CL.jpeg" width="500" height="auto">
 
