@@ -9,4 +9,4 @@ show_summary: true
 ---
 Great result for Ruth who has had her first work published in a scientific journal. This is the payoff from some dedicated work on this project. You can read more at https://pubs.acs.org/doi/10.1021/acs.jpcb.4c05220
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Ruth_JPCB.png?raw=true" width="500" height="auto">
+<img src="/post/images/Ruth_JPCB.png" width="500" height="auto">
