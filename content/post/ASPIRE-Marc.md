@@ -9,4 +9,4 @@ show_summary: true
 ---
 
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ASPIRE_Marc.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/ASPIRE_Marc.jpg" width="500" height="auto">
