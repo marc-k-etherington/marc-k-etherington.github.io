@@ -9,12 +9,12 @@ show_summary: true
 ---
 
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ASPIRE_Kickoff_AM.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/ASPIRE_Kickoff_AM.jpg" width="500" height="auto">
 
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ASPIRE_Kickoff_Marc.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/ASPIRE_Kickoff_Marc.jpg" width="500" height="auto">
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/ASPIRE_Kickoff_All.png?raw=true" width="500" height="auto">
+<img src="/post/images/ASPIRE_Kickoff_All.png" width="500" height="auto">
 
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/post/images/Kirip_Truman.jpg?raw=true" width="500" height="auto">
+<img src="/post/images/Kirip_Truman.jpg" width="500" height="auto">
 
