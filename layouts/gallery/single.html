@@ -15,24 +15,22 @@
   {{ end }}
 </div>
 {{ end }}
+
 <p class="intro">{{ .Params.subtitle | default "Moments from the lab, conferences, and adventures" }}</p>
 
 <!-- Filter Buttons -->
 <div class="gallery-filters">
-  <button class="gallery-filter-btn active" onclick="filterGallery('all')">All Photos</button>
-  <button class="gallery-filter-btn" onclick="filterGallery('lab')">Lab Life</button>
-  <button class="gallery-filter-btn" onclick="filterGallery('conferences')">Conferences</button>
-  <button class="gallery-filter-btn" onclick="filterGallery('social')">Social</button>
-  <button class="gallery-filter-btn" onclick="filterGallery('travel')">Travel</button>
+  <button class="gallery-filter-btn active" onclick="filterGallery('all', event)">All Photos</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('lab', event)">Lab Life</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('conferences', event)">Conferences</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('social', event)">Social</button>
+  <button class="gallery-filter-btn" onclick="filterGallery('travel', event)">Travel</button>
 </div>
 
-<!-- Travel Filter Instagram Banner (Hidden by default) -->
-<div id="travel-instagram-banner" class="travel-banner" style="display: none; text-align: center; margin: 1.5rem auto; padding: 1.5rem; background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 12px; max-width: 700px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <p style="color: white; font-size: 1.1rem; margin: 0 0 0.8rem 0; font-weight: 500;">
-    ✈️ Love travel photos from conferences and research visits?
-  </p>
-  <a href="https://www.instagram.com/mketherington" target="_blank" rel="noopener" 
-     style="display: inline-block; background: white; color: #E1306C; padding: 0.7rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">
+<!-- Travel Filter Instagram Banner (hidden by default, shown by JS) -->
+<div id="travel-instagram-banner" class="travel-banner" style="display: none;">
+  <p>✈️ Love travel photos from conferences and research visits?</p>
+  <a href="https://www.instagram.com/mketherington" target="_blank" rel="noopener">
     Follow @mketherington on Instagram →
   </a>
 </div>
@@ -40,53 +38,82 @@
 <!-- Corkboard Container -->
 <div class="scrapbook-container">
   <div class="scrapbook" id="scrapbook-grid">
-    
-    {{ $photos := .Params.photos }}
-    {{ $decorativeFrequency := 4 }}
-    
+
+    {{- $photos := .Params.photos }}
+    {{- $decorativeFrequency := 4 }}
+
+    {{- $stickyColors := slice
+      "linear-gradient(135deg, #ffeb3b 0%, #ffd700 100%)"
+      "linear-gradient(135deg, #a8e6cf 0%, #7bc9a3 100%)"
+      "linear-gradient(135deg, #ffb3ba 0%, #ff8a9a 100%)"
+      "linear-gradient(135deg, #ffd4a3 0%, #ffb347 100%)"
+    -}}
+    {{- $stickyLabels := slice
+      "TADF Research<br>⚡"
+      "Beyond the<br>single molecule<br>📚"
+      "Nature Comms<br>2016 &amp; 2017<br>🌟"
+      "Spin-vibronic<br>coupling<br>⚗️"
+    -}}
+
+    {{- $stickyColors2 := slice
+      "linear-gradient(135deg, #c5e1a5 0%, #aed581 100%)"
+      "linear-gradient(135deg, #e1bee7 0%, #ce93d8 100%)"
+      "linear-gradient(135deg, #ffccbc 0%, #ffab91 100%)"
+    -}}
+    {{- $stickyLabels2 := slice
+      "Low temp<br>measurements<br>📉"
+      "Conference<br>season!<br>✈️"
+      "New results!<br>🎉"
+    -}}
+
+    {{- $icons := slice "🧪" "🔬" "⚗️" "💡" "📊" "🎯" "📐" -}}
+
     {{ range $index, $photo := $photos }}
-      
+
       <!-- Insert decorative item every 4th position -->
       {{ if and (gt $index 0) (eq (mod $index $decorativeFrequency) 0) }}
         {{ $decorType := mod (div $index $decorativeFrequency) 4 }}
-        
+
         {{ if eq $decorType 0 }}
-          <!-- Sticky Note -->
+          <!-- Sticky Note (type A) -->
           <div class="decorative-item">
-            <div class="sticky-note" style="--rotation: {{ sub 0 (mod $index 15) }}deg; background: {{ index (slice "linear-gradient(135deg, #ffeb3b 0%, #ffd700 100%)" "linear-gradient(135deg, #a8e6cf 0%, #7bc9a3 100%)" "linear-gradient(135deg, #ffb3ba 0%, #ff8a9a 100%)" "linear-gradient(135deg, #ffd4a3 0%, #ffb347 100%)") (mod $index 4) }};">
-              {{ index (slice "TADF Research\n⚡" "Beyond the\nsingle molecule\n📚" "Nature Comms\n2016 & 2017\n🌟" "Spin-vibronic\ncoupling\n⚗️") (mod $index 4) }}
+            <div class="sticky-note" style="--rotation: {{ mul -1 (mod $index 15) }}deg; background: {{ index $stickyColors (mod $index 4) | safeCSS }};">
+              {{ index $stickyLabels (mod $index 4) | safeHTML }}
             </div>
           </div>
+
         {{ else if eq $decorType 1 }}
-          <!-- Icon -->
+          <!-- Science Icon -->
           <div class="decorative-item">
             <div class="cork-item" style="--rotation: {{ mod $index 30 }}deg;">
-              {{ index (slice "🧪" "🔬" "⚗️" "💡" "📊" "🎯" "📐") (mod $index 7) }}
+              {{ index $icons (mod $index 7) }}
             </div>
           </div>
+
         {{ else if eq $decorType 2 }}
           <!-- Business Card -->
           <div class="decorative-item">
-            <div class="business-card" style="--rotation: {{ sub 0 (mod $index 12) }}deg;">
+            <div class="business-card" style="--rotation: {{ mul -1 (mod $index 12) }}deg;">
               <strong>The Etherington Lab</strong>
-              Organic Photonics & TADF<br>
+              Organic Photonics &amp; TADF<br>
               Northumbria University<br>
               Newcastle upon Tyne<br>
               🔬 Spectroscopy • Photophysics
             </div>
           </div>
+
         {{ else }}
-          <!-- Another sticky note -->
+          <!-- Sticky Note (type B) -->
           <div class="decorative-item">
-            <div class="sticky-note" style="--rotation: {{ mod $index 20 }}deg; background: {{ index (slice "linear-gradient(135deg, #c5e1a5 0%, #aed581 100%)" "linear-gradient(135deg, #e1bee7 0%, #ce93d8 100%)" "linear-gradient(135deg, #ffccbc 0%, #ffab91 100%)") (mod $index 3) }};">
-              {{ index (slice "Low temp\nmeasurements\n📉" "Conference\nseason!\n✈️" "New results!\n🎉") (mod $index 3) }}
+            <div class="sticky-note" style="--rotation: {{ mod $index 20 }}deg; background: {{ index $stickyColors2 (mod $index 3) | safeCSS }};">
+              {{ index $stickyLabels2 (mod $index 3) | safeHTML }}
             </div>
           </div>
+
         {{ end }}
       {{ end }}
-      
+
       <!-- Photo Polaroid -->
-      <!-- Handle both single category (string) and multiple categories (array) -->
       {{ $categoryData := "" }}
       {{ if reflect.IsSlice $photo.categories }}
         {{ $categoryData = delimit $photo.categories "," }}
@@ -95,7 +122,7 @@
       {{ else if $photo.categories }}
         {{ $categoryData = $photo.categories }}
       {{ end }}
-      
+
       {{ if $photo.link }}
         <a href="{{ $photo.link }}" class="polaroid clickable {{ $photo.decoration }}" data-category="{{ $categoryData }}">
           <img src="{{ $photo.image }}" alt="{{ $photo.caption }}" class="polaroid-photo">
@@ -107,17 +134,11 @@
           <div class="polaroid-caption">{{ $photo.caption }}</div>
         </div>
       {{ end }}
-      
+
     {{ end }}
-    
+
   </div>
 </div>
-
-<!-- Instagram Link -->
-<p class="gallery-note" style="text-align: center; margin: 3rem auto 2rem; max-width: 600px; color: #666; font-size: 0.95rem;">
-  Looking for more travel photos from conferences and research visits? 
-  <a href="https://www.instagram.com/mketherington" target="_blank" rel="noopener" style="color: #E1306C; text-decoration: none; font-weight: 500;">Follow me on Instagram →</a>
-</p>
 
 <!-- Back to Top Button -->
 <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
@@ -139,36 +160,25 @@
 </div>
 
 <script>
-function filterGallery(category) {
+function filterGallery(category, event) {
   const polaroids = document.querySelectorAll('.polaroid');
   const decoratives = document.querySelectorAll('.decorative-item');
   const buttons = document.querySelectorAll('.gallery-filter-btn');
   const travelBanner = document.getElementById('travel-instagram-banner');
-  
-  // Update active button
+
   buttons.forEach(btn => btn.classList.remove('active'));
   event.target.classList.add('active');
-  
-  // Show/hide polaroids
+
   polaroids.forEach(polaroid => {
     const categoryData = polaroid.getAttribute('data-category');
-    
-    // Handle both single category and multiple categories (comma-separated)
     const photoCategories = categoryData ? categoryData.split(',').map(c => c.trim()) : [];
-    
-    if (category === 'all' || photoCategories.includes(category)) {
-      polaroid.style.display = 'block';
-    } else {
-      polaroid.style.display = 'none';
-    }
+    polaroid.style.display = (category === 'all' || photoCategories.includes(category)) ? 'block' : 'none';
   });
-  
-  // Show decorative items only when "all" is selected
+
   decoratives.forEach(item => {
     item.style.display = category === 'all' ? 'flex' : 'none';
   });
-  
-  // Show Instagram banner only when "travel" filter is active
+
   if (travelBanner) {
     travelBanner.style.display = category === 'travel' ? 'block' : 'none';
   }
