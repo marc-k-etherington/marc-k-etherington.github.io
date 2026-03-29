@@ -13,4 +13,4 @@ Beyond the science, we made the most of the trip by connecting over coffee, enjo
 
 Watch this space for what comes next! 👀
 
-<img src="/post/images/Springboard.jpg" width="500" height="auto">
+<img src="/post/images/Springboard.JPG" width="500" height="auto">
