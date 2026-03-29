@@ -6,6 +6,48 @@ hero_image = "/images/gallery/japan-pagoda-fuji.jpg"
 hero_caption = "Mount Fuji & Chureito Pagoda - Research visit to Japan 🗻"
 
 [[photos]]
+image = "/images/gallery/Aidan_Poster_Prize.jpg"
+caption = "March 2026 - Aidan wins a poster prize"
+category = "conferences"
+decoration = "taped"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Flying_Hyem.jpeg"
+caption = "March 2026 - Returning to the Toon"
+category = "travel"
+decoration = "pinned"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Lohrmanns.jpeg"
+caption = "March 2026 - Lohrmanns: A spin-out from TU Dresden 🍺"
+category = "travel"
+decoration = "taped"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Fahrgarten.jpeg"
+caption = "March 2026 - Fährgarten on the Elbe 🍺"
+category = "travel"
+decoration = "pinned"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Springboard.JPG"
+caption = "March 2026 - Springboard Meeting at TU Dresden"
+categories = ["conferences", "travel"]
+decoration = "taped"
+link = ""
+
+[[photos]]
+image = "/images/gallery/Raman_1974.jpeg"
+caption = "March 2026 - Germany or Japan? 🍜"
+category = "travel"
+decoration = "pinned"
+link = ""
+
+[[photos]]
 image = "/images/gallery/Axis.jpeg"
 caption = "December 2025 - Cheers 🍻"
 category = "social"
