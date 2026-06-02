@@ -95,14 +95,8 @@ date = "2025-01-11"
   
   <div class="opportunities">
     <div class="opportunity-card funded" id="aphid">
-      <h3>💡 Research Fellow in Photoluminescence Spectroscopy</h3>
-      <p>We're recruiting for a Royal Society-funded UK-Brazil collaboration developing pesticide sensors using aggregation-induced delayed fluorescence. This 3-year position splits time between Northumbria University and Universidade Federal de Santa Catarina, with a fully-funded 9-month UK secondment.</p>
-      <a href="/pdf/Research_Fellow_APHiD_ICAO_R1_241050.pdf" target="_blank" rel="noopener" class="research-link-btn">
-  Job Description →
-</a><br>
-      <p>To apply:</strong> Send your CV and cover letter to me by email with the subject 'Research Fellow in Photoluminescence Spectroscopy' via the button below</p>
-       <a href="mailto:marc.k.etherington@northumbria.ac.uk" class="email-btn">📧 Email Marc</a>
-    </div>
+      <h3>There are currently no funded PDRA opportunites in our lab</h3>
+      </div>
 </div>
 </div>
 
