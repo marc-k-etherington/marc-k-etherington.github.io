@@ -95,7 +95,7 @@ date = "2025-01-11"
   
   <div class="opportunities">
     <div class="opportunity-card unfunded" id="aphid">
-      <h3>There are currently no funded PDRA opportunites in our lab</h3>
+      <h3>There are currently no funded PDRA opportunities in our lab</h3>
       </div>
 </div>
 </div>
