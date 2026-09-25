@@ -57,6 +57,10 @@ Will started his undergraduate in Physics in 2019 at Northumbria University obta
 
 <h3>Past Members</h3>
 
+
+
+{{< collapsible "Click to Expand" >}}
+
 {{< collapsible "Ruth Pollard" >}}
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right">
 
@@ -77,8 +81,6 @@ Will started his undergraduate in Physics in 2019 at Northumbria University obta
 <br>
 Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018. In 2019, she began an MPhil under Dr Cucinotta looking at inorganic light-emitting materials in plasmonic nanosystems. Ruth joined the group in 2021 studying organic materials for LEDs working as a joint student with Dr Jon Knowles. Ruth sings in multiple choirs in her spare time, and enjoys travelling and spending time with her friends. Ruth graduated in Summer 2026 and now lives in Canada.
 {{< /collapsible >}}
-
-{{< collapsible "Click to Expand" >}}
 
 {{< collapsible "Oliver M. Rigby" >}}
 <img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Oliver_Profile.jpg?raw=true" alt="Oliver Rigby" width="250" height="auto" style="float:right">
