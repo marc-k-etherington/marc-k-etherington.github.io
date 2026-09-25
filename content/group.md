@@ -10,26 +10,7 @@ author = "Marc Etherington"
 
 <h3>PhD Students</h3>
 
-{{< collapsible "Ruth Pollard" >}}
-<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right">
 
-
-<b>Name:</b> Ruth Pollard
-<br>
-<b>Job Title:</b> PhD student
-<br>
-<b>Department:</b> Mathematics, Physics and Electrical Engineering
-<br>
-<b>Office:</b> Ellison D-Block 111
-<br>
-<b>Email:</b> ruth.pollard 'at' northumbria.ac.uk
-<br>
-<br>
-
-<b>Bio:</b>
-<br>
-Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018. In 2019, she began an MPhil under Dr Cucinotta looking at inorganic light-emitting materials in plasmonic nanosystems. Ruth joined the group in 2021 studying organic materials for LEDs working as a joint student with Dr Jon Knowles. Ruth sings in multiple choirs in her spare time, and enjoys travelling and spending time with her friends. 
-{{< /collapsible >}}
 
 
 
@@ -76,6 +57,26 @@ Will started his undergraduate in Physics in 2019 at Northumbria University obta
 
 <h3>Past Members</h3>
 
+{{< collapsible "Ruth Pollard" >}}
+<img src="https://github.com/marc-k-etherington/marc-k-etherington.github.io/blob/main/content/images/group/Ruth_Profile.jpg?raw=true" alt="Ruth Pollard" width="250" height="auto" style="float:right">
+
+
+<b>Name:</b> Ruth Pollard
+<br>
+<b>Job Title:</b> PhD student
+<br>
+<b>Department:</b> Mathematics, Physics and Electrical Engineering
+<br>
+<b>Office:</b> Ellison D-Block 111
+<br>
+<b>Email:</b> ruth.pollard 'at' northumbria.ac.uk
+<br>
+<br>
+
+<b>Bio:</b>
+<br>
+Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018. In 2019, she began an MPhil under Dr Cucinotta looking at inorganic light-emitting materials in plasmonic nanosystems. Ruth joined the group in 2021 studying organic materials for LEDs working as a joint student with Dr Jon Knowles. Ruth sings in multiple choirs in her spare time, and enjoys travelling and spending time with her friends. Ruth graduated in Summer 2026 and now lives in Canada.
+{{< /collapsible >}}
 
 {{< collapsible "Click to Expand" >}}
 
