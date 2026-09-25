@@ -77,8 +77,8 @@
 
 
 &lt;div class="collapsible">
- &lt;input id="collapsible_dd21b67b47f46d748c21e435dfcce693" type="checkbox" name="collapsible">
- &lt;label for="collapsible_dd21b67b47f46d748c21e435dfcce693">
+ &lt;input id="collapsible_e654bfd7d9fd6148367ccbc41224ed73" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_e654bfd7d9fd6148367ccbc41224ed73">
  Aidan Matthews
  &lt;/label>
  &lt;div class="collapsible-body">
@@ -149,8 +149,8 @@ Aidan completed his MChem at Northumbria University in 2022. He began working as
 &lt;/span>&lt;/h3>
 &lt;div class="alert alert-primary corresponding ">
  &lt;div class="collapsible">
- &lt;input id="collapsible_e529dfb4c834c7fd64b7c63e621dd174" type="checkbox" name="collapsible">
- &lt;label for="collapsible_e529dfb4c834c7fd64b7c63e621dd174">
+ &lt;input id="collapsible_fb661b427ce7d374f5dc946dec3d1824" type="checkbox" name="collapsible">
+ &lt;label for="collapsible_fb661b427ce7d374f5dc946dec3d1824">
  Reduced temperature solid-state synthesis of barium sulfide: a greener alternative
  &lt;/label>
  &lt;div class="collapsible-body">
