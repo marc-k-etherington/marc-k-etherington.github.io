@@ -1,7 +1,7 @@
 ---
-title: Hector Graduates his PhD
+title: Hector Miranda-Salinas Graduates his PhD!
 author: Marc Etherington
-date: 2026-007-07
+date: 2026-07-07
 show_date: 2026-07-07
 tags: [group]
 summary: My good friend and former colleague becomes Dr Hector Miranda-Salinas
