@@ -1,61 +1,36 @@
 {{ define "main" }}
-{{ partial "analytics.html" . }}
-{{ partial "hero-banner.html" . }}
-
-<!-- News Section -->
 <h2>News</h2>
-{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-{{ range $paginator.Pages.ByPublishDate.Reverse }}
+{{/* News = your normal posts + any job advert with `announce: true` */}}
+{{ $news := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $ads := where (where site.RegularPages "Section" "vacancies") "Params.announce" true }}
+{{ $paginator := .Paginate (union $news $ads).ByPublishDate.Reverse }}
+
+{{ range $paginator.Pages }}
+  {{ $p := . }}
   <div class="news-item">
     <div class="news-content">
-      {{ $content := .Content }}
-      {{ $imageRegex := `<img[^>]+src="([^"]+)"` }}
-      {{ if findRE $imageRegex $content 1 }}
-        {{ $imgTag := index (findRE $imageRegex $content 1) 0 }}
-        {{ $imgSrc := replaceRE `<img[^>]+src="([^"]+)".*` "$1" $imgTag }}
-        <div class="news-thumbnail-wrapper">
-          <img src="{{ $imgSrc }}" alt="{{ .Title }}" class="news-thumbnail" loading="lazy">
-        </div>
+      {{/* Thumbnail: `thumbnail:` in front matter if set (optimised), otherwise the first image in the post */}}
+      {{ $thumb := "" }}
+      {{ with .Params.thumbnail }}
+        {{ $thumb = partial "img.html" (dict "src" . "alt" $p.Title "class" "news-thumbnail" "sizes" "(max-width: 768px) 100vw, 180px" "page" $p) }}
+      {{ else }}
+        {{ with findRE `<img[^>]+src="([^"]+)"` .Content 1 }}
+          {{ $src := replaceRE `<img[^>]+src="([^"]+)".*` "$1" (index . 0) }}
+          {{ $thumb = partial "img.html" (dict "src" $src "alt" "" "class" "news-thumbnail" "sizes" "(max-width: 768px) 100vw, 180px") }}
+        {{ end }}
       {{ end }}
-      
+      {{ with $thumb }}<div class="news-thumbnail-wrapper">{{ . }}</div>{{ end }}
+
       <div class="news-text">
         <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
-          <a href="{{ .RelPermalink }}">
-            {{ .Title }}
-          </a>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h2>
-        {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
-        <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
-        <br>
-        <br>
-        {{ if ne .Params.show_summary false }}
-          {{ .Summary }}
-        {{ end }}
+        <strong>Publish date: </strong>{{ .PublishDate.Format (site.Params.dateFormat | default "Jan 2, 2006") }}
+        <br><br>
+        {{ if ne .Params.show_summary false }}{{ .Summary }}{{ end }}
       </div>
     </div>
   </div>
 {{ end }}
 {{ template "partials/pagination.html" . }}
-
-
-
-<!-- Back to Top Button -->
-<button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
-
-<!-- Floating Social Media -->
-<div class="social-float-compact">
-  <a href="https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/?skipRedirect=true" target="_blank" rel="noopener" title="LinkedIn">
-    <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
-  </a>
-  <a href="https://bsky.app/profile/mketherington.bsky.social" target="_blank" rel="noopener" title="Bluesky">
-    <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
-  </a>
-  <a href="https://www.researchgate.net/profile/Marc-Etherington?ev=hdr_xprf" target="_blank" rel="noopener" title="ResearchGate">
-    <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
-  </a>
-  <a href="https://scholar.google.co.uk/citations?user=3dgABIQAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">
-    <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
-  </a>
-</div>
-
 {{ end }}

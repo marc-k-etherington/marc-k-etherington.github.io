@@ -1,0 +1,4 @@
+# Built by GitHub Actions on every deploy; should not be committed
+public/
+resources/_gen/
+.hugo_build.lock

@@ -1,0 +1,9 @@
+# =============================================================================
+# The only figures that can't be counted automatically. Each one appears on
+# several pages; change it here once.
+# (Publications, seminars, PhD students and collaborations are counted for you.)
+# =============================================================================
+
+citations: "2,700+"
+citations_checked: "Nov 2025"     # shown under the citation count
+funding: "£200K+"

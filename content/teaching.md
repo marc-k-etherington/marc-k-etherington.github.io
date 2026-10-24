@@ -1,7 +1,6 @@
-+++
-title = "Teaching"
-date = "2023-02-07"
-author = "Marc Etherington"
-+++
-
-This page will be populated soon. Check out the publications page as that is going to be populated first.
+---
+title: "Teaching"
+type: teaching
+description: "Physics modules and student projects led by Dr Marc Etherington at Northumbria University"
+# Everything on this page is edited in data/teaching.yaml
+---

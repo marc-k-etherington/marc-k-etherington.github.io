@@ -1,0 +1,32 @@
+# =============================================================================
+# TEACHING: modules, past student projects and resources.
+# =============================================================================
+
+intro: "I teach across the physics programmes at Northumbria and supervise student research projects in organic photophysics."
+
+modules:
+  - code: KD4015
+    title: "Module title here"
+    level: "Level 4"
+    semester: "Semester 1"
+    role: "Module leader"
+    description: "One or two sentences on what students learn."
+    topics: [Topic one, Topic two]
+
+  - code: KD5083
+    title: "Module title here"
+    level: "Level 5"
+    semester: "Semester 2"
+    role: "Module leader"
+    description: "One or two sentences on what students learn."
+    topics: [Topic one, Topic two]
+
+# Open undergraduate and masters projects appear automatically from job adverts
+# with position_type: undergraduate or masters.
+projects_intro: "Final-year and masters students can join the lab for spectroscopy-based research projects."
+
+past_projects:
+  - { title: "Example project title", level: "MPhys", year: 2025, outcome: "Optional one-line outcome." }
+
+resources:
+  - { icon: "📖", title: "Reading list", description: "Recommended texts for photophysics.", link: "" }

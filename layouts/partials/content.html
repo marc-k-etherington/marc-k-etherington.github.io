@@ -1,0 +1,18 @@
+{{/* Renders page content with every image optimised, without editing any posts:
+     - images on this site written as <img src="/..." width="500"> are swapped for
+       resized WebP versions (the width and any float style are kept)
+     - any other image (external sites) gets lazy loading */}}
+{{ $c := string .Content }}
+{{ $page := . }}
+{{ range uniq (findRE `<img src="/[^"]+"[^>]*>` $c) }}
+  {{ $tag := . }}
+  {{ $src := replaceRE `^<img src="([^"]+)".*$` "$1" $tag }}
+  {{ $alt := "" }}{{ with findRESubmatch `alt="([^"]*)"` $tag 1 }}{{ $alt = index (index . 0) 1 }}{{ end }}
+  {{ $w := "" }}{{ with findRESubmatch `width="(\d+)"` $tag 1 }}{{ $w = index (index . 0) 1 }}{{ end }}
+  {{ $style := "" }}{{ with findRESubmatch `style="([^"]*)"` $tag 1 }}{{ $style = index (index . 0) 1 }}{{ end }}
+  {{ if $w }}{{ $style = printf "width:%spx;max-width:100%%;height:auto;%s" $w $style }}{{ end }}
+  {{ $sizes := cond (ne $w "") (printf "(max-width: 600px) 100vw, %spx" $w) "(max-width: 768px) 100vw, 800px" }}
+  {{ $new := partial "img.html" (dict "src" $src "alt" $alt "style" $style "sizes" $sizes "page" $page) }}
+  {{ $c = replace $c $tag (string $new) }}
+{{ end }}
+{{ $c | replaceRE `<img src=` `<img loading="lazy" decoding="async" src=` | safeHTML }}

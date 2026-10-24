@@ -16,7 +16,7 @@ date = "2025-01-11"
 <div class="why-join">
   <h2>Why Join Us?</h2>
   <ul>
-    <li><strong>World-leading expertise</strong> in TADF mechanisms and spin-vibronic coupling (Nature Communications, 900+ citations)</li>
+    <li><strong>World-leading expertise</strong> in TADF mechanisms and spin-vibronic coupling (Nature Communications, 950+ citations)</li>
     <li><strong>International collaborations</strong> with the University of Osaka, University of British Columbia, Technical University Dresden, Technical University Denmark and Kitasato Universities</li>
     <li><strong>State-of-the-art facilities</strong> including HORIBA Fluorolog-QM spectroscopy, including TCSPC and Oxford Instruments cryostat for low-temperature measurements</li>
     <li><strong>Joint supervision</strong> with Dr Jon Knowles - synthetic and spectroscopic expertise combined</li>
@@ -77,8 +77,10 @@ date = "2025-01-11"
   <h2>PhD Opportunities</h2>
   
   <div class="info-box">
-    <strong>💡 Funding Status:</strong> We don't currently have dedicated PhD funding, but we actively support strong candidates in applying for competitive scholarships. Contact us to discuss funding options!
+    <strong>💡 Funding Status:</strong> We actively support strong candidates in applying for competitive scholarships. Contact us to discuss funding options!
   </div>
+
+{{< vacancies type="phd" >}}
 
   <div class="opportunities">
     <div class="opportunity-card unfunded">
@@ -94,10 +96,8 @@ date = "2025-01-11"
   <h2>Postdoc Opportunities</h2>
   
   <div class="opportunities">
-    <div class="opportunity-card unfunded" id="aphid">
-      <h3>There are currently no funded PDRA opportunities in our lab</h3>
-      </div>
-</div>
+{{< vacancies type="postdoc" empty="There are currently no funded PDRA opportunities in our lab. Fellowship applicants are always welcome, see the Fellowships tab." >}}
+  </div>
 </div>
 
 <!-- Fellowship Tab -->
@@ -138,6 +138,9 @@ date = "2025-01-11"
       <p><strong>Contact:</strong> Speak to Marc, your programme lead, or your module tutor</p>
     </div>
   </div>
+
+{{< vacancies type="masters" >}}
+{{< vacancies type="undergraduate" >}}
 </div>
 
 <!-- Visitors Tab -->

@@ -1,0 +1,63 @@
+{{/* One team member card. Uses the .member-card styles already in custom.css */}}
+{{ $m := . }}
+{{ $alumni := eq $m.status "alumni" }}
+
+<article class="member-card{{ if $alumni }} past-member-card{{ end }}" id="{{ $m.name | urlize }}">
+  {{ with $m.photo }}
+    {{ partial "img.html" (dict "src" . "alt" $m.name "class" "member-photo" "sizes" "(max-width: 768px) 100vw, 180px") }}
+  {{ else }}
+    {{ $parts := split $m.name " " }}
+    <div class="member-photo member-photo--initials" aria-hidden="true">
+      {{- substr (index $parts 0) 0 1 }}{{ substr (index $parts (sub (len $parts) 1)) 0 1 -}}
+    </div>
+  {{ end }}
+
+  <div class="member-info">
+    <h3 class="member-name">{{ $m.name }}</h3>
+    <p class="member-title">{{ $m.title }}{{ with $m.period }} | {{ . }}{{ end }}</p>
+
+    {{/* PhD progress, current students only */}}
+    {{ if and (not $alumni) (eq $m.role "phd") $m.start }}
+      {{ $years := $m.years | default 4 }}
+      {{ $days := div ((now.Sub (time.AsTime $m.start)).Hours) 24 }}
+      {{ $total := mul 365.25 $years }}
+      {{ $pct := math.Min 100 (math.Max 0 (mul 100 (div $days $total))) }}
+      {{ $year := math.Floor (add (div $days 365.25) 1) }}
+      <div class="phd-progress">
+        <span class="phd-progress-label">
+          {{- if ge $days $total }}Writing up{{ else }}Year {{ int $year }} of {{ $years }}{{ end -}}
+        </span>
+        <div class="phd-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ int $pct }}" aria-label="PhD progress">
+          <div class="phd-progress-fill" style="width: {{ int $pct }}%"></div>
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="member-details">
+      {{ with $m.project }}<p><strong>Project:</strong> {{ . }}{{ if not $alumni }} (<a href="/research/#projects">see Research</a>){{ end }}</p>{{ end }}
+      {{ with $m.office }}<p><strong>Office:</strong> {{ . }}</p>{{ end }}
+      {{ with $m.email }}<p><strong>Email:</strong> {{ . }}</p>{{ end }}
+    </div>
+
+    {{ with $m.topics }}
+    <div class="expertise-tags-marc compact">{{ range . }}<span class="expertise-tag-marc">{{ . }}</span>{{ end }}</div>
+    {{ end }}
+
+    {{ if or $m.bio $m.papers }}
+    <details class="member-more">
+      <summary>{{ if $m.bio }}Read bio{{ else }}Publications{{ end }}</summary>
+      {{ with $m.bio }}<div class="member-bio">{{ . | markdownify }}</div>{{ end }}
+      {{ with $m.papers }}
+        <p class="member-papers-title"><strong>Selected papers</strong></p>
+        <ul class="member-papers">
+          {{ range . }}<li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>{{ end }}
+        </ul>
+      {{ end }}
+    </details>
+    {{ end }}
+
+    {{ if and $alumni $m.where_now }}
+    <div class="where-now"><strong>Where now:</strong> {{ $m.where_now }}</div>
+    {{ end }}
+  </div>
+</article>

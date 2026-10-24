@@ -1,180 +1,94 @@
 {{ define "main" }}
-{{ partial "analytics.html" . }}
-{{ partial "hero-banner.html" . }}
-
-<!-- Profile Header -->
 <div class="profile-header-marc">
   <div class="profile-photo-marc">
-    <img src="{{ .Params.photo }}" alt="Dr. {{ .Title }}">
+    {{ partial "img.html" (dict "src" .Params.photo "alt" (printf "Dr %s" .Title) "sizes" "(max-width: 768px) 60vw, 300px" "eager" true "page" .) }}
   </div>
   <div class="profile-info-marc">
     <h1 class="profile-name-marc">Dr {{ .Title }}</h1>
     <p class="profile-title-marc">{{ .Params.job_title }} of Molecular Photophysics |<br>School of Engineering, Physics and Mathematics |<br> Northumbria University</p>
     <div class="profile-contact-marc">
       <a href="mailto:{{ .Params.email }}" class="contact-btn primary">✉️ Email</a>
-      <a href="{{ .Params.scholar_url }}" target="_blank" class="contact-btn">📚 Google Scholar</a>
-      <a href="{{ .Params.orcid_url }}" target="_blank" class="contact-btn">🔬 ORCID</a>
-      <a href="{{ .Params.researchgate_url }}" target="_blank" class="contact-btn">📊 ResearchGate</a>
+      <a href="{{ .Params.scholar_url }}" target="_blank" rel="noopener" class="contact-btn">📚 Google Scholar</a>
+      <a href="{{ .Params.orcid_url }}" target="_blank" rel="noopener" class="contact-btn">🔬 ORCID</a>
+      <a href="{{ .Params.researchgate_url }}" target="_blank" rel="noopener" class="contact-btn">📊 ResearchGate</a>
     </div>
   </div>
 </div>
 
-<!-- Research Vision -->
 <div class="research-vision-marc">
   <h2>Research Vision</h2>
-  <p>
-    I reveal the fundamental photophysical mechanisms behind thermally activated delayed fluorescence - specifically the spin-vibronic coupling that enables efficient reverse intersystem crossing, and how molecular interactions beyond the single molecule affect real-world performance in devices and applications.
-  </p>
+  <p>I reveal the fundamental photophysical mechanisms behind thermally activated delayed fluorescence, specifically the spin-vibronic coupling that enables efficient reverse intersystem crossing, and how molecular interactions beyond the single molecule affect real-world performance in devices and applications.</p>
 </div>
 
-<!-- Stats -->
+{{/* Stats now come from front matter, e.g.
+     stats:
+       - { icon: "📄", number: "30", label: "Publications" } */}}
 <div class="stats-grid-marc">
+  {{ range .Params.stats }}
   <div class="stat-card-marc">
-    <div class="stat-icon-marc">📄</div>
-    <div class="stat-number-marc">30</div>
-    <div class="stat-label-marc">Publications</div>
+    <div class="stat-icon-marc">{{ .icon }}</div>
+    <div class="stat-number-marc">{{ partial "stat-number.html" .number }}</div>
+    <div class="stat-label-marc">{{ .label }}</div>
   </div>
-
-  <div class="stat-card-marc">
-    <div class="stat-icon-marc">📈</div>
-    <div class="stat-number-marc">2,700+</div>
-    <div class="stat-label-marc">Citations</div>
-  </div>
-
-  <div class="stat-card-marc">
-    <div class="stat-icon-marc">🎓</div>
-    <div class="stat-number-marc">3</div>
-    <div class="stat-label-marc">PhD Students</div>
-  </div>
+  {{ end }}
 </div>
 
-<!-- Current Roles -->
+{{/* Roles from front matter:
+     roles:
+       - { icon: "🏛️", title: "Assistant Professor", place: "Northumbria University<br>School of ...", period: "Since 2020 (promoted 2022)" } */}}
 <div class="roles-section-marc">
-  <h2>Current Roles & Affiliations</h2>
+  <h2>Current Roles &amp; Affiliations</h2>
   <div class="roles-grid-marc">
+    {{ range .Params.roles }}
     <div class="role-card-marc">
-      <h3>🏛️ Assistant Professor</h3>
-      <p>Northumbria University<br>School of Engineering, Physics and Mathematics<br><em>Since 2020 (promoted 2022)</em></p>
+      <h3>{{ .icon }} {{ .title }}</h3>
+      <p>{{ .place | safeHTML }}{{ with .period }}<br><em>{{ . }}</em>{{ end }}</p>
     </div>
-
-    <div class="role-card-marc">
-      <h3>🎓 Junior Research Fellow</h3>
-      <p>Hatfield College, Durham University<br><em>Since 2017</em></p>
-    </div>
-
-    <div class="role-card-marc">
-      <h3>⚡ Energy Futures Network Lead</h3>
-      <p>Northumbria University<br>Interdisciplinary Carbon Net Zero initiative</p>
-    </div>
-
-    <div class="role-card-marc">
-      <h3>🤝 Academic Visitor</h3>
-      <p>Durham University<br>Collaboration with Prof. Andy Monkman<br><em>Since 2020</em></p>
-    </div>
-
-     <div class="role-card-marc">
-      <h3>🤝 Academic Visitor</h3>
-      <p>University of Osaka<br>Collaboration with Dr Youhei Takeda<br><em>August 2025 to October 2025</em></p>
-    </div>
+    {{ end }}
   </div>
 </div>
-   
- 
 
-
-
-
-<!-- Research Expertise -->
 <div class="expertise-section-marc">
   <h2>Research Expertise</h2>
   <div class="expertise-tags-marc">
-    <span class="expertise-tag-marc highlight">Spin-Vibronic Coupling</span>
-    <span class="expertise-tag-marc highlight">TADF Mechanisms</span>
-    <span class="expertise-tag-marc">Time-Resolved Spectroscopy</span>
-    <span class="expertise-tag-marc">Molecular Photophysics</span>
-    <span class="expertise-tag-marc">Charge-Transfer States</span>
-    <span class="expertise-tag-marc">Dimer Emission</span>
-    <span class="expertise-tag-marc">Through-Space CT</span>
-    <span class="expertise-tag-marc">N-Alkylation</span>
-    <span class="expertise-tag-marc">Organic LEDs</span>
-    <span class="expertise-tag-marc">Bioimaging</span>
+    {{ range .Params.expertise_highlight }}<span class="expertise-tag-marc highlight">{{ . }}</span>{{ end }}
+    {{ range .Params.expertise }}<span class="expertise-tag-marc">{{ . }}</span>{{ end }}
   </div>
 </div>
 
-<!-- Academic Journey -->
 <div class="bio-section-marc">
   <h2>Academic Journey</h2>
-  {{ .Content }}
+  {{ partial "content.html" . }}
 </div>
 
-<!-- Major Breakthroughs -->
 <div class="roles-section-marc">
   <h2>Major Research Breakthroughs</h2>
   <div class="roles-grid-marc">
-    <div class="role-card-marc breakthrough-card" style="border-left: 8px solid #FF8C42;">
-      <h3 style="color: #FF8C42;">⚡ Spin-Vibronic Coupling (2016)</h3>
-      <p><strong>Nature Communications</strong><br>Discovered the second-order vibronic mechanism that enables TADF. Cited 950+ times. Established resonance of energy levels as key design criterion.</p>
+    {{ range $i, $b := .Params.breakthroughs }}
+    <div class="role-card-marc breakthrough-card {{ cond (eq (mod $i 2) 0) "accent-orange" "accent-teal" }}">
+      <h3>{{ $b.icon }} {{ $b.title }} ({{ $b.year }})</h3>
+      <p><strong>{{ $b.journal }}</strong><br>{{ $b.description }}</p>
     </div>
-
-    <div class="role-card-marc breakthrough-card" style="border-left: 8px solid #008B8B;">
-      <h3 style="color: #008B8B;">💡 Dimers and Aggregates (2019)</h3>
-      <p><strong>JPCC</strong><br>Revealed how molecular dimers affect solid-state emission. Shifted field focus from isolated molecules to real-world interactions.</p>
-    </div>
-
-    <div class="role-card-marc breakthrough-card" style="border-left: 8px solid #FF8C42;">
-      <h3 style="color: #FF8C42;">📚 TADF: Beyond the Single Molecule (2020)</h3>
-      <p><strong>Frontiers (Sole Author)</strong><br>Established framework for studying intermolecular interactions and solid-state effects in TADF materials.</p>
-    </div>
+    {{ end }}
   </div>
 </div>
 
-<!-- Call to Action -->
 <div class="cta-grid-marc">
   <div class="cta-box-marc">
     <h3>🎓 Prospective Students</h3>
-    <p>Interested in joining the group? We're looking for motivated PhD students and PDRAs to work on exciting projects involving light-emitting materials and their applications.</p>
+    {{ $n := len (partialCached "func/open-vacancies.html" "" "all") }}
+    <p>{{ if gt $n 0 }}We currently have {{ $n }} open position{{ if gt $n 1 }}s{{ end }}. {{ end }}Interested in joining the group? We're looking for motivated PhD students and PDRAs to work on projects involving light-emitting materials and their applications.</p>
     <a href="/join-us" class="cta-btn-marc">Learn More</a>
   </div>
-
   <div class="cta-box-marc">
     <h3>🤝 Collaborators</h3>
     <p>Want to collaborate on photophysics research? Explore our current projects and expertise.</p>
     <a href="/research" class="cta-btn-marc">View Research</a>
   </div>
-
   <div class="cta-box-marc">
     <h3>📚 Publications</h3>
     <p>Browse our complete publication record spanning the fundamentals of organic molecule spectroscopy.</p>
     <a href="/publications" class="cta-btn-marc">See Publications</a>
   </div>
 </div>
-
-<!-- Back to Top Button -->
-<button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
-
-
-<!-- Floating Social Media -->
-<div class="social-float-compact">
-  {{ if .Params.linkedin_url }}
-  <a href="{{ .Params.linkedin_url }}" target="_blank" rel="noopener" title="LinkedIn">
-    <img src="/images/LinkedIn.jpg" alt="LinkedIn" class="social-icon">
-  </a>
-  {{ end }}
-  {{ if .Params.bluesky_url }}
-  <a href="{{ .Params.bluesky_url }}" target="_blank" rel="noopener" title="Bluesky">
-    <img src="/images/BlueSky_Logo.png" alt="Bluesky" class="social-icon">
-  </a>
-  {{ end }}
-  {{ if .Params.researchgate_url }}
-  <a href="{{ .Params.researchgate_url }}" target="_blank" rel="noopener" title="ResearchGate">
-    <img src="/images/Researchgate.png" alt="ResearchGate" class="social-icon">
-  </a>
-  {{ end }}
-  {{ if .Params.scholar_url }}
-  <a href="{{ .Params.scholar_url }}" target="_blank" rel="noopener" title="Google Scholar">
-    <img src="/images/Google_Scholar.png" alt="Google Scholar" class="social-icon">
-  </a>
-  {{ end }}
-</div>
-
 {{ end }}

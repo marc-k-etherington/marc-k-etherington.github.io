@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $team := site.Data.team }}
+{{ $current := where $team.members "status" "current" }}
+{{ $alumni := where $team.members "status" "alumni" }}
+
+{{ partial "page-title.html" . }}
+{{ with .Params.intro }}<p class="research-intro">{{ . | markdownify }}</p>{{ end }}
+
+{{ with .Params.group_photo }}
+  {{ partial "img.html" (dict "src" . "alt" ($.Params.group_photo_alt | default "The Etherington Lab") "class" "group-photo" "sizes" "(max-width: 850px) 100vw, 800px" "eager" true "page" $) }}
+{{ end }}
+
+<div class="pub-filters">
+  <button class="filter-btn active" onclick="filterTeam('all', this)">Everyone</button>
+  <button class="filter-btn" onclick="filterTeam('current', this)">Current team ({{ add (len $current) 1 }})</button>
+  <button class="filter-btn" onclick="filterTeam('alumni', this)">Alumni ({{ len $alumni }})</button>
+</div>
+
+<section data-team-section="current">
+  <h2 class="section-header">Current team</h2>
+
+  {{ with $team.pi }}
+  <article class="member-card pi-card">
+    {{ partial "img.html" (dict "src" .photo "alt" .name "class" "member-photo" "sizes" "(max-width: 768px) 100vw, 180px") }}
+    <div class="member-info">
+      <h3 class="member-name">{{ .name }}</h3>
+      <p class="member-title">{{ .title }}</p>
+      {{ with .summary }}<p class="member-bio">{{ . }}</p>{{ end }}
+      {{ with .topics }}<div class="expertise-tags-marc compact">{{ range . }}<span class="expertise-tag-marc highlight">{{ . }}</span>{{ end }}</div>{{ end }}
+      <p class="member-actions"><a class="cta-btn-marc" href="{{ .profile }}">Full profile</a></p>
+    </div>
+  </article>
+  {{ end }}
+
+  {{ range $current }}{{ partial "member-card.html" . }}{{ end }}
+</section>
+
+{{ with $alumni }}
+<section data-team-section="alumni">
+  <h2 class="section-header">Alumni</h2>
+  {{ range . }}{{ partial "member-card.html" . }}{{ end }}
+</section>
+{{ end }}
+
+{{ partial "content.html" . }}
+
+{{ $open := partialCached "func/open-vacancies.html" "" "all" }}
+<div class="contact-cta">
+  <h2>Want to join the team?</h2>
+  <p>{{ with $open }}We have {{ len . }} open position{{ if gt (len .) 1 }}s{{ end }} right now. {{ end }}PhD, postdoc, fellowship and student project enquiries are always welcome.</p>
+  <a href="/join-us/" class="email-btn">Explore opportunities</a>
+</div>
+{{ end }}

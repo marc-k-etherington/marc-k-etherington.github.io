@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Layered ON TOP of your existing stylesheet. Desktop look is unchanged;
+   this fixes overflow on phones/tablets and adds the shared bits the new
+   templates need. Colours match the existing teal / burnt orange palette.
+   ========================================================================== */
+
+:root {
+  --teal: #008B8B;
+  --orange: #FF8C42;
+  --ink: #333;
+  --muted: #555;
+  --gutter: clamp(0.75rem, 4vw, 2rem);
+}
+
+/* ---------- 1. Overflow guards (the "text bursting out" problem) ---------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+img, video, svg, iframe { max-width: 100%; height: auto; }
+
+/* Long words, URLs, emails and DOIs wrap instead of pushing the page wider */
+main :where(h1, h2, h3, h4, p, li, a, span, td, th, dd, figcaption, strong, em) {
+  overflow-wrap: break-word;
+}
+main :where(p, li) { hyphens: auto; }
+
+/* Grid and flex children default to min-width:auto, which is the most common
+   cause of cards refusing to shrink below their content on phones */
+main :where(div, article, section, li, a) { min-width: 0; }
+
+/* Tables and code scroll inside themselves rather than widening the page */
+main table { display: block; overflow-x: auto; max-width: 100%; }
+main pre { overflow-x: auto; max-width: 100%; }
+
+/* ---------- 2. Group page (scoped by the body class from baseof) ---------- */
+.page-group main :where(div, section, article) { max-width: 100%; }
+.page-group main :where(h1, h2, h3, p, span, a, li) { overflow-wrap: anywhere; }
+.page-group main [style*="white-space: nowrap"],
+.page-group main :where(.nowrap) { white-space: normal; }
+
+/* Floated images written in markdown (Group page photos, the Lego photo):
+   beside the text on desktop, stacked above it on phones so the text keeps its width */
+@media (max-width: 600px) {
+  main img[style*="float"] {
+    float: none !important;
+    display: block;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto 1rem !important;
+  }
+}
+
+/* {{< img >}} shortcode */
+.md-img { display: block; margin: 0 0 1rem; }
+.md-img img { display: block; width: var(--md-img-w, 100%); max-width: 100%; height: auto; }
+.md-img--right { float: right; margin: 0 0 1rem 1.25rem; max-width: 50%; }
+.md-img--left  { float: left;  margin: 0 1.25rem 1rem 0; max-width: 50%; }
+@media (max-width: 600px) {
+  .md-img--right, .md-img--left { float: none; margin: 0 auto 1rem; max-width: 100%; }
+  .md-img img { margin-inline: auto; }
+}
+
+/* ---------- 3. Collapse multi-column grids to one column on phones ------- */
+@media (max-width: 600px) {
+  .research-stats-grid,
+  .research-capabilities-grid,
+  .research-theme-grid,
+  .research-project-grid,
+  .research-summary-content,
+  .research-nav-cards,
+  .roles-grid-marc,
+  .cta-grid-marc {
+    grid-template-columns: 1fr !important;
+  }
+  .stats-grid-marc { grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)) !important; }
+
+}
+
+/* ---------- 4. Post typography (moved out of the post template) ---------- */
+@media (max-width: 768px) {
+  .type-post main h1 { font-size: 1.8rem; line-height: 1.2; }
+  .type-post main h2 { font-size: 1.4rem; }
+  .type-post main p  { font-size: 1rem; }
+}
+@media (max-width: 480px) {
+  .type-post main h1 { font-size: 1.5rem; }
+}
+
+/* ---------- 5. Replacements for inline styles removed from templates ---- */
+.research-lede { font-size: 1.1rem; margin-bottom: 2rem; color: var(--muted); }
+.research-lede.centred { text-align: center; }
+.research-subhead { font-size: 1.5rem; margin: 2rem 0 1.5rem; }
+.research-subhead.teal { color: var(--teal); margin-top: 0; }
+.research-subhead.orange { color: var(--orange); margin-top: 0; }
+.research-subhead.muted { color: #666; }
+.research-spaced { margin-top: 3rem; }
+
+.breakthrough-card.accent-orange { border-left: 8px solid var(--orange); }
+.breakthrough-card.accent-orange h3 { color: var(--orange); }
+.breakthrough-card.accent-teal { border-left: 8px solid var(--teal); }
+.breakthrough-card.accent-teal h3 { color: var(--teal); }
+
+/* ---------- 6. Vacancies ---------- */
+.hiring-badge {
+  display: inline-block;
+  min-width: 1.4em;
+  padding: 0 0.4em;
+  margin-left: 0.3em;
+  border-radius: 1em;
+  background: var(--orange);
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.vacancy-list { list-style: none; padding: 0; margin: 1rem 0 2rem; display: grid; gap: 1rem; }
+.vacancy-card {
+  background: #fff;
+  border-left: 6px solid var(--teal);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.vacancy-card.vacancy-postdoc { border-left-color: var(--orange); }
+.vacancy-title { font-size: 1.2rem; font-weight: bold; color: var(--teal); text-decoration: none; }
+.vacancy-title:hover { text-decoration: underline; }
+.vacancy-meta { display: block; color: var(--muted); font-size: 0.95rem; margin-top: 0.25rem; }
+.vacancy-card p { margin: 0.5rem 0 0; }
+.vacancy-empty { color: var(--muted); font-style: italic; }
+
+/* ---------- 7. Teaching ---------- */
+.module-code {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0 0.4em;
+  margin-right: 0.3em;
+  font-size: 0.85em;
+}
+
+/* ---------- 8. Accessibility baseline ---------- */
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* ---------- 9. Group page (extends the .member-card styles in custom.css) ---------- */
+.member-photo--initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f7f7;
+  color: var(--teal);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.expertise-tags-marc.compact { gap: 0.5rem; margin: 0.75rem 0; }
+.expertise-tags-marc.compact .expertise-tag-marc {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.7rem;
+  box-shadow: 2px 2px 0 #333;
+}
+
+.member-actions { margin: 1rem 0 0; }
+
+.phd-progress { margin: -0.5rem 0 1rem; max-width: 320px; }
+.phd-progress-label { display: block; font-size: 0.9rem; color: var(--muted); margin-bottom: 0.3rem; }
+.phd-progress-track {
+  height: 14px;
+  background: #fff;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #333;
+}
+.phd-progress-fill { height: 100%; background: var(--teal); }
+
+.member-more { margin-top: 0.75rem; }
+.member-more .member-bio { margin-top: 0.5rem; }
+.member-papers-title { margin: 1rem 0 0.25rem; }
+.member-papers { margin: 0; padding-left: 1.25rem; }
+.member-papers li { margin-bottom: 0.3rem; }
+
+@media (max-width: 768px) {
+  .member-photo--initials { height: 160px; max-height: 160px; }
+  .phd-progress { max-width: none; }
+}
+
+/* ---------- 10. Publications hint ---------- */
+.pub-hint { text-align: center; color: var(--muted); font-style: italic; }
+
+/* ---------- 11. Gallery: show the whole photo (no cropping) ---------- */
+/* Each polaroid takes its photo's own shape. Very tall photos are capped and
+   shrunk to fit inside the frame rather than cut off. */
+.scrapbook { align-items: start; }
+.polaroid-photo {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: 26rem;
+  object-fit: contain;
+  background: #fff;
+}
+/* Optional per photo in data/gallery.yaml: crop: true brings back the classic
+   4:3 crop, with focus: top / bottom / left / right choosing what stays in view */
+.polaroid--crop .polaroid-photo { aspect-ratio: 4 / 3; height: auto; max-height: none; object-fit: cover; }

@@ -1,0 +1,2 @@
+{{/* Author list with Marc's name bolded automatically (keeps the * for corresponding) */}}
+{{ replaceRE `(Marc K\.? Etherington\*?)` "**$1**" . | markdownify }}

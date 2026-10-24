@@ -1,0 +1,31 @@
+{{/* Usage: {{ partial "vacancies-list.html" (dict "type" "phd" "limit" 3 "empty" "No positions open right now.") }}
+     All keys optional. */}}
+{{ $type := .type | default "" }}
+{{ $limit := .limit | default 0 | int }}
+{{ $items := partialCached "func/open-vacancies.html" $type $type }}
+{{ if gt $limit 0 }}{{ $items = first $limit $items }}{{ end }}
+
+{{ $labels := dict
+  "phd" "PhD studentship"
+  "postdoc" "Postdoctoral position"
+  "masters" "Masters project"
+  "undergraduate" "Undergraduate project"
+  "visiting" "Visiting researcher"
+}}
+
+{{ with $items }}
+<ul class="vacancy-list">
+  {{ range . }}
+  <li class="vacancy-card vacancy-{{ .Params.position_type }}">
+    <a class="vacancy-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span class="vacancy-meta">
+      {{- index $labels .Params.position_type | default (.Params.position_type | humanize) -}}
+      {{- with .Params.closing_date }} | Closes {{ (time.AsTime .).Format "2 January 2006" }}{{ end -}}
+    </span>
+    {{ with .Params.summary }}<p>{{ . | markdownify }}</p>{{ end }}
+  </li>
+  {{ end }}
+</ul>
+{{ else }}
+  {{ with $.empty }}<p class="vacancy-empty">{{ . | markdownify }}</p>{{ end }}
+{{ end }}

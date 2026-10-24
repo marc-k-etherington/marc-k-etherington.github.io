@@ -3,8 +3,11 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # Set a branch name to trigger deployment
-  pull_request:
+      - main            # publish when you commit to main
+  pull_request:          # test-build (no publish) when you open a pull request
+  schedule:
+    - cron: "0 5 * * *"  # rebuild every morning so closed job adverts disappear
+  workflow_dispatch:     # adds a "Run workflow" button on the Actions tab
 
 jobs:
   deploy:
@@ -16,8 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
 
       - name: Install Hugo
         env:
@@ -27,8 +30,16 @@ jobs:
             https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
             && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
+      # Keeps the optimised images between builds: first build ~2 min, then seconds
+      - name: Cache processed images
+        uses: actions/cache@v4
+        with:
+          path: resources/_gen
+          key: hugo-images-${{ hashFiles('content/**/*.jpg', 'content/**/*.jpeg', 'content/**/*.png', 'content/**/*.JPG', 'static/**/*.jpg', 'static/**/*.jpeg', 'static/**/*.png', 'static/**/*.JPG') }}
+          restore-keys: hugo-images-
+
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --cleanDestinationDir
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
