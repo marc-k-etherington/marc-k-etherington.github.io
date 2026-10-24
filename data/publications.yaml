@@ -16,8 +16,9 @@
 #   featured: "One-line description"     # optional: shows it on the Research page
 #
 # Automatic: an asterisk after your name (Etherington*) marks you as corresponding
-# author; journals starting "Nature" count as Nature family; your name is bolded.
-# To bold a student, wrap their name in **double asterisks**.
+# author; journals starting "Nature" count as Nature family; your name and the
+# names of group members (from data/team.yaml) are bolded, and each paper appears
+# on the Group page card of every member who co-authored it.
 # =============================================================================
 
 papers:
@@ -80,7 +81,7 @@ papers:
 
   - title: "A Modular Approach to Tuning Emissive *N*-Quinolyl Through-Space Charge Transfer States Using sp<sup>3</sup>-Scaffolds"
     year: 2024
-    authors: "Joseph O. Watson, **Ruth M. Pollard**, Mark T. Sims, Marc K. Etherington* & Jonathan P. Knowles*"
+    authors: "Joseph O. Watson, Ruth M. Pollard, Mark T. Sims, Marc K. Etherington* & Jonathan P. Knowles*"
     journal: "Journal of Physical Chemistry B, 128, 11208–11215, 2024"
     url: https://pubs.acs.org/doi/10.1021/acs.jpcb.4c05220
     doi: 10.1021/acs.jpcb.4c05220

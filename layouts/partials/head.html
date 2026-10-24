@@ -15,15 +15,22 @@
     <meta name="description" content="{{ $summary | truncate 160 }}">
   {{ end }}
 
-  <!-- Your favicons (files live in themes/papercss-hugo-theme/static) -->
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" media="(prefers-color-scheme: light)">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" media="(prefers-color-scheme: dark)">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png">
+  <!-- Favicons: the lab logo (files in static/) -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Link previews on LinkedIn, Bluesky, Teams etc. show the logo -->
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ "images/logo/og-image.png" | absURL }}">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

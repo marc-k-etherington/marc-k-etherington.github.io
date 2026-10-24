@@ -211,3 +211,34 @@ main pre { overflow-x: auto; max-width: 100%; }
   main > h1 { font-size: clamp(2.2rem, 10.5vw, 4rem); line-height: 1.15; }
 }
 main > h1 { overflow-wrap: normal; }
+
+/* ---------- 13. Country flags on Windows ---------- */
+/* Windows has no flag emoji (it shows "GB", "JP"). These rules add flag
+   drawings to the site's existing fonts, used ONLY for flag characters, so the
+   78 KB file downloads only on pages that contain a flag.
+   Flag artwork: Twemoji by Twitter, CC-BY 4.0 (https://github.com/twitter/twemoji),
+   packaged by Talkyard's country-flag-emoji-polyfill (MIT). */
+@font-face { font-family: "Neucha";          src: url("/fonts/TwemojiCountryFlags.woff2") format("woff2"); unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E007F; font-display: swap; }
+@font-face { font-family: "Patrick Hand SC"; src: url("/fonts/TwemojiCountryFlags.woff2") format("woff2"); unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E007F; font-display: swap; }
+@font-face { font-family: "Indie Flower";    src: url("/fonts/TwemojiCountryFlags.woff2") format("woff2"); unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E007F; font-display: swap; }
+
+/* ---------- 14. Member paper lists ---------- */
+.member-paper-meta { color: var(--muted); font-size: 0.9em; white-space: nowrap; }
+
+/* ---------- 15. Lab logo in the hero ---------- */
+.hero-logo { margin: 0 0 1rem; line-height: 0; }
+.hero-logo-img { width: min(440px, 80%); height: auto; margin: 0 auto; }
+.hero-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none !important;
+}
+.hero-brand .hero-title-compact { margin: 0; }
+.hero-brand-mark { width: 64px; height: auto; flex-shrink: 0; transition: transform 0.2s ease; }
+.hero-brand:hover .hero-brand-mark { transform: rotate(-8deg) scale(1.05); }
+@media (max-width: 480px) {
+  .hero-brand { gap: 0.5rem; }
+  .hero-brand-mark { width: 44px; }
+}

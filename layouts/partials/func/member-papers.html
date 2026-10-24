@@ -1,0 +1,11 @@
+{{/* Papers in data/publications.yaml co-authored by this team member (context: the member) */}}
+{{ $out := slice }}
+{{ with .author_name }}
+  {{ $re := printf `\b%s\b` . }}
+  {{ range site.Data.publications.papers }}
+    {{ if findRE $re .authors 1 }}{{ $out = $out | append . }}{{ end }}
+  {{ end }}
+{{ else }}
+  {{ $out = .papers | default slice }}
+{{ end }}
+{{ return $out }}
