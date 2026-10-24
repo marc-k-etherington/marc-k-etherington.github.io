@@ -17,8 +17,8 @@ date = "2025-01-11"
   <h2>Why Join Us?</h2>
   <ul>
     <li><strong>World-leading expertise</strong> in TADF mechanisms and spin-vibronic coupling (Nature Communications, 950+ citations)</li>
-    <li><strong>International collaborations</strong> with the University of Osaka, University of British Columbia, Technical University Dresden, Technical University Denmark and Kitasato Universities</li>
-    <li><strong>State-of-the-art facilities</strong> including HORIBA Fluorolog-QM spectroscopy, including TCSPC and Oxford Instruments cryostat for low-temperature measurements</li>
+    <li><strong>International collaborations</strong> with {{< collaborator-list >}}</li>
+    <li><strong>State-of-the-art facilities</strong> {{< facilities-list >}}</li>
     <li><strong>Joint supervision</strong> with Dr Jon Knowles - synthetic and spectroscopic expertise combined</li>
     <li><strong>Student success</strong> - publish in high-impact journals and win poster prizes</li>
     <li><strong>International conferences</strong> - present at meetings in Japan, Europe, and beyond</li>
@@ -154,6 +154,7 @@ date = "2025-01-11"
       <p><strong>Duration:</strong> 1-4 weeks (flexible)</p>
       <p><strong>Activities:</strong> Joint experiments, data analysis, collaborative writing, group meetings</p>
       <p><strong>Funding:</strong> Visitors arrange own funding (e.g., JST ASPIRE, RSC)</p>
+      {{< recent-visitors >}}
       <a href="#contact" class="opportunity-btn">Propose a Visit →</a>
     </div>
   </div>
@@ -162,25 +163,7 @@ date = "2025-01-11"
 <!-- Student Success Stories -->
 <h2>Student Success</h2>
 
-<div class="student-success">
-  <div class="success-card">
-    <div class="success-icon">🏆</div>
-    <h4>Ruth Pollard - Poster Prize</h4>
-    <p>Won at RSC Photophysics Group ECM (2024).</p>
-  </div>
-
-  <div class="success-card">
-    <div class="success-icon">🇯🇵</div>
-    <h4>International Conferences</h4>
-    <p>Ruth presented at ICEL 2024 in Kyoto, Japan. Students regularly present internationally.</p>
-  </div>
-
-  <div class="success-card">
-    <div class="success-icon">📚</div>
-    <h4>High-Quality Publications</h4>
-    <p>Group publishes in JPCB, JMC, and collaborates on Nature-level research.</p>
-  </div>
-</div>
+{{< student-success >}}
 
 <!-- Funding Information -->
 <h2 id="funding">Funding Opportunities</h2>

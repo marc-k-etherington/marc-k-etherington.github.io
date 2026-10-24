@@ -1,0 +1,94 @@
+# =============================================================================
+# GRANTS AND FUNDING: newest at the top. Current or past is worked out from the
+# end year. Tag with themes; link projects to a grant with `funding: <id>` in
+# data/projects.yaml.
+#
+# WHO HOLDS IT: leave `holder` out for your own grants (then `role` says PI or
+# Co-I). For funding held by a group member (travel grants, fellowships,
+# student awards), add `holder: Surname`: it is listed separately as funding
+# won by group members, shown on their Group card, and kept out of your total.
+#
+# - id: short-name                 # used to link projects to this grant
+#   title: "Grant title"
+#   funder: "Funder name"
+#   start: 2026
+#   end: 2028
+#   role: PI                       # your grants: PI or Co-I
+#   amount_gbp: 50000              # optional; leave out to keep it private
+#   holder: Surname                # only for funding held by a group member
+#   collaborators: [takeda]        # optional: ids from data/collaborators.yaml
+#   themes: [tadf]
+#   description: "One sentence."
+#
+# Funding total: while data/metrics.yaml has a `funding:` figure, that is shown.
+# Once every grant has amount_gbp, delete that line and the total is calculated.
+# =============================================================================
+
+grants:
+
+  - id: british-council
+    title: "British Council Springboard: collaboration with TU Dresden"
+    funder: "British Council"
+    start: 2025                        # CHECK
+    end: 2026                          # CHECK
+    role: PI                           # CHECK
+    collaborators: [reineke]
+    themes: []                         # CHECK
+    description: "A consortium with the teams of Sebastian Reineke, Sebastian Schellhammer and Christina Dornack at TU Dresden, with PRUUVE GmbH and HORIBA UK."
+
+  - id: wolfson
+    title: "Wolfson Foundation: TCSPC upgrade for the Fluorolog-QM"
+    funder: "Wolfson Foundation"
+    start: 2024                        # CHECK
+    end: 2024                          # CHECK
+    role: PI                           # CHECK
+    themes: [tadf, gap]
+    description: "Time-correlated single photon counting, adding fluorescence lifetime measurements to the Fluorolog-QM."
+
+  - id: ghosts
+    title: "GHOSTS: green and halogen-free solvents for TADF spectroscopy"
+    funder: "Royal Society of Chemistry (Sustainable Laboratories Grant)"
+    start: 2024
+    end: 2024                      # CHECK
+    role: PI                       # CHECK
+    amount_gbp: 10000
+    themes: [tadf]
+    description: "Exploring green, halogen-free solvents for TADF spectroscopy to improve laboratory practice."
+
+  - id: rsc-rcg-pollard
+    title: "RSC Researcher Collaborations Grant: visit to the Hudson Lab, University of British Columbia"
+    funder: "Royal Society of Chemistry"
+    start: 2024
+    end: 2024
+    holder: Pollard
+    collaborators: [hudson]
+    themes: [bio]
+    description: "A 3-month visit to Dr Zac Hudson's group to explore Ruth's materials as polymer dots for biosensing."
+
+  - id: aspire
+    title: "JST ASPIRE International Collaboration"
+    funder: "Japan Science and Technology Agency"
+    start: 2023
+    end: 2026
+    role: PI                       # CHECK
+    collaborators: [takeda]
+    themes: [bio]
+    description: "Multi-year international collaboration with the University of Osaka on advanced TADF systems and their applications."
+
+  - id: caged-excitement
+    title: "Caged Excitement"
+    funder: "Northumbria University (internal fund)"
+    start: 2023
+    end: 2023
+    role: PI                       # CHECK
+    themes: [ct]
+    description: "A 3-month research assistant post, jointly with the Knowles group."
+
+  - id: royal-society
+    title: "Royal Society Research Grant"
+    funder: "The Royal Society"
+    start: 2020                    # CHECK: year
+    end: 2021                      # CHECK: year
+    role: PI                       # CHECK
+    themes: []                     # CHECK
+    description: ""

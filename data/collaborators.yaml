@@ -1,0 +1,75 @@
+# =============================================================================
+# COLLABORATORS: one entry per person (not institution), so the history stays
+# with them when they move. When someone changes institution, update
+# `institution` and `country`, and add the old one to `previously`.
+#
+# - id: surname                      # short id: used by visits and grants
+#   name: "Prof. First Last"
+#   author_name: "First M. Last"     # exactly as in your author lists; joint
+#                                    # papers are then found automatically
+#   institution: "Current University"
+#   country: Japan                   # sets the flag and the country count
+#   previously: ["Old University"]   # optional
+#   since: 2020                      # optional
+#   description: "One sentence on the collaboration."
+#
+# Linked automatically: joint papers (author_name), grants (collaborators: [id]
+# in data/grants.yaml), visits both ways (data/team.yaml and data/visits.yaml),
+# and your talks at their current or previous institutions.
+# =============================================================================
+
+collaborators:
+
+  - id: monkman
+    name: "Prof. Andy Monkman"
+    author_name: "Andrew P. Monkman"
+    institution: "Durham University"
+    country: UK
+    since: 2013
+    description: "Long-standing collaboration on TADF materials and photophysics. Joint publications in Nature Communications, JACS and Angewandte Chemie."
+
+  - id: takeda
+    name: "Dr Youhei Takeda"
+    author_name: "Youhei Takeda"
+    institution: "The University of Osaka"
+    country: Japan
+    since: 2023
+    description: "International collaboration funded by Japan Science and Technology Agency on advanced TADF systems for bioimaging"
+
+  - id: watanabe
+    name: "Prof. Go Watanabe"
+    author_name: "Go Watanabe"
+    institution: "Kitasato University"
+    country: Japan
+    description: "Molecular dynamics of quinine salts"
+
+  - id: mcgonigal
+    name: "Prof. Paul McGonigal"
+    author_name: "Paul R. McGonigal"
+    institution: "University of Oxford"
+    country: UK
+    previously: ["Durham University", "University of York"]
+    since: 2017
+    description: "Molecular design and synthesis expertise. Joint work on aggregation-induced emission systems with publications in JACS, Angewandte Chemie and Chemical Science."
+
+  - id: hudson
+    name: "Dr Zac Hudson"
+    author_name: "Zachary M. Hudson"   # CHECK: as it appears in author lists
+    institution: "University of British Columbia"
+    country: Canada
+    since: 2024
+    description: "Polymer dots for biosensing; Ruth Pollard's three-month research visit to the Hudson Lab."
+
+  - id: reineke
+    name: "Sebastian Reineke"           # CHECK: title (Prof./Dr)
+    author_name: "Sebastian Reineke"
+    institution: "Technical University Dresden"
+    country: Germany
+    description: "British Council Springboard consortium with the teams of Sebastian Reineke, Sebastian Schellhammer and Christina Dornack."
+
+  - id: dtu
+    name: ""                          # CHECK: contact
+    author_name: ""
+    institution: "Technical University of Denmark"
+    country: Denmark
+    description: ""                   # CHECK

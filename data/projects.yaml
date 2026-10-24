@@ -1,0 +1,75 @@
+# =============================================================================
+# PROJECTS: newest at the top. People are listed by surname (author_name in
+# data/team.yaml) and link to their Group page card, which links back here.
+#
+# - id: short-name
+#   title: "Project title"
+#   people: [Surname]
+#   start: 2026
+#   end: 2029                      # optional
+#   funding: grant-id              # a grant id from data/grants.yaml, or plain
+#                                  # text such as "PhD project"
+#   themes: [tadf]
+#   description: "One or two sentences."
+#
+# A project shows as Past once its end year has passed, or once all its people
+# (other than visitors) have moved to alumni in data/team.yaml.
+# =============================================================================
+
+projects:
+
+  - id: aspire-bioimaging
+    title: "TADF systems for bioimaging applications"
+    people: [Aota]                 # CHECK
+    start: 2025
+    funding: aspire
+    themes: [bio, ct]
+    description: "Investigating dibenzophenazine-based emitters showing both local and charge transfer emission, and the mechanisms behind them, for bioimaging applications."
+
+  - id: cage-linkers
+    title: "Cage linker systems for charge transfer, room-temperature phosphorescence and TADF"
+    people: [Matthews]
+    start: 2023
+    funding: "PhD project"
+    themes: [ct, tadf]
+    description: "Designing caged-chromophore systems to understand the fundamentals of charge transfer for OLED applications."
+
+  - id: bas
+    title: "Solid-state synthesis of pure and doped BaS for optoelectronic applications"
+    people: [Tetlow]
+    start: 2022
+    funding: "PhD project"
+    themes: []
+    description: "Greener, alternative synthetic routes to chalcogenide perovskite materials for optoelectronic applications."
+
+  - id: caged-excitement
+    title: "Caged Excitement"
+    people: [Hogg]
+    start: 2023
+    end: 2023
+    funding: caged-excitement
+    themes: [ct]
+    description: "The research assistant project that laid the groundwork for the cage linker systems."
+
+  - id: through-space-ct
+    title: "Through-space charge transfer in N-quinolyl systems"
+    people: [Pollard]
+    start: 2021
+    end: 2025
+    funding: "PhD project"
+    themes: [ct, tadf]
+    description: "A modular approach to tuning emissive through-space charge transfer states using sp3 scaffolds."
+
+  - id: homoconjugation
+    title: "Homoconjugation in TADF"
+    start: 2020
+    end: 2022
+    themes: [tadf]
+    description: "Simultaneous enhancement of TADF and photoluminescence quantum yield via homoconjugation. Collaboration with Loughborough and Edinburgh."
+
+  - id: quaternisation
+    title: "Quaternisation control"
+    start: 2019
+    end: 2022
+    themes: [tadf, ct]
+    description: "From phosphorescence to delayed fluorescence in one step via quaternisation of an sp2-hybridised nitrogen."

@@ -1,0 +1,4 @@
+{{/* "current" or "past" for a grant (context: the grant): current until its end year has passed */}}
+{{ $current := true }}
+{{ with .end }}{{ if lt (int .) now.Year }}{{ $current = false }}{{ end }}{{ end }}
+{{ return (cond $current "current" "past") }}

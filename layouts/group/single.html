@@ -1,7 +1,13 @@
 {{ define "main" }}
 {{ $team := site.Data.team }}
-{{ $current := where $team.members "status" "current" }}
-{{ $alumni := where $team.members "status" "alumni" }}
+{{/* Sections are worked out from status and, for visitors, their visit dates */}}
+{{ $current := slice }}{{ $visitors := slice }}{{ $alumni := slice }}
+{{ range $team.members }}
+  {{ $st := partial "func/member-status.html" . }}
+  {{ if or (eq $st "current") (eq $st "visitor-current") }}{{ $current = $current | append . }}
+  {{ else if eq $st "visitor-past" }}{{ $visitors = $visitors | append . }}
+  {{ else }}{{ $alumni = $alumni | append . }}{{ end }}
+{{ end }}
 
 {{ partial "page-title.html" . }}
 {{ with .Params.intro }}<p class="research-intro">{{ . | markdownify }}</p>{{ end }}
@@ -13,6 +19,7 @@
 <div class="pub-filters">
   <button class="filter-btn active" onclick="filterTeam('all', this)">Everyone</button>
   <button class="filter-btn" onclick="filterTeam('current', this)">Current team ({{ add (len $current) 1 }})</button>
+  {{ with $visitors }}<button class="filter-btn" onclick="filterTeam('visitors', this)">Visitors ({{ len . }})</button>{{ end }}
   <button class="filter-btn" onclick="filterTeam('alumni', this)">Alumni ({{ len $alumni }})</button>
 </div>
 
@@ -34,6 +41,14 @@
 
   {{ range $current }}{{ partial "member-card.html" . }}{{ end }}
 </section>
+
+{{ with $visitors }}
+<section data-team-section="visitors">
+  <h2 class="section-header">Visitors</h2>
+  <p class="section-intro">Researchers who have spent time working with us in Newcastle.</p>
+  {{ range sort . "visit_start" "desc" }}{{ partial "member-card.html" . }}{{ end }}
+</section>
+{{ end }}
 
 {{ with $alumni }}
 <section data-team-section="alumni">

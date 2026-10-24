@@ -1,0 +1,42 @@
+# =============================================================================
+# FACILITIES: one entry per instrument. Shown on the Research page Overview,
+# linked to the grant that paid for it, the themes it serves and its news posts.
+#
+# - id: short-name
+#   name: "Make Model"
+#   category: Spectroscopy             # groups the cards
+#   capabilities: [What it measures, Another measurement]
+#   year: 2021                         # installed
+#   funding: grant-id                  # a grant id (links to it), or plain text
+#   upgrades:                          # optional: later additions and who paid
+#     - { name: "Module name", year: 2024, funding: grant-id }
+#   themes: [tadf]
+#   photo: /post/images/My_Photo.jpg   # optional; landscape works best
+#   icon: "🔬"                         # shown when there is no photo
+#   focus: top                         # optional: which part of the photo stays in view
+#   posts: [2024-My-News-Post]         # optional: news post file names (without .md)
+#   access_via: collaborator-id        # ONLY for kit in a collaborator's lab
+# =============================================================================
+
+equipment:
+
+  - id: fluorolog
+    name: "HORIBA Fluorolog-QM"
+    category: Spectroscopy
+    capabilities: [Steady-state emission and excitation, Photoluminescence quantum yield (PLQY), Fluorescence lifetimes (TCSPC)]
+    year: 2021
+    funding: ""                        # CHECK: grant id or e.g. "Vice-Chancellor's Senior Fellowship start-up"
+    upgrades:
+      - { name: "Time-correlated single photon counting (TCSPC)", year: 2024, funding: wolfson }
+    themes: [tadf, ct, gap]
+    photo: /post/images/Fluorolog_TCSPC.jpg
+    posts: [fluorolog-QM, 2024-Fluorolog-TCSPC, 2023-Fluorolog-second-birthday]
+
+  - id: cryostat
+    name: "Oxford Instruments cryostat"
+    category: Low-temperature spectroscopy
+    icon: "❄️"
+    capabilities: [Photoluminescence down to liquid nitrogen temperature (77 K), Singlet-triplet gap measurements]
+    year: 2021                         # CHECK
+    funding: ""                        # CHECK
+    themes: [gap, tadf]

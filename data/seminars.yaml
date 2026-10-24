@@ -11,9 +11,32 @@
 #   venue: "University of Somewhere"
 #   country: UK
 #   online: true             # optional: only for webinars
+#   speaker: Surname         # optional: a group member's talk (leave out for yours)
+#   award: "Poster prize"    # optional
+#
+# type can be invited, contributed or poster. Talks by group members appear on
+# their Group page card and in Join Us "Student Success" (if they have an award).
+# The totals at the top of the Seminars page count your own talks only.
 # =============================================================================
 
 talks:
+
+  - title: "A new approach to donor-acceptor chromophores for TADF"
+    year: 2026
+    type: poster
+    speaker: Matthews
+    event: "RSC Organic Chemistry Regional Meeting"
+    venue: "Newcastle University"
+    country: UK
+    award: "Poster prize"
+
+  - title: "New fabrication techniques for BaS powders and thin films (two posters)"
+    year: 2026
+    type: poster
+    speaker: Tetlow
+    event: "PVSAT26"
+    venue: "Newcastle University"
+    country: UK
 
   - title: "A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission"
     year: 2025
@@ -66,6 +89,31 @@ talks:
     venue: "TU Dresden"
     country: Germany
 
+  - title: "Charge transfer in single-chromophore materials"
+    year: 2024
+    type: contributed
+    speaker: Pollard
+    event: "14th International Conference on Electroluminescence and Optoelectronic Devices (ICEL 2024)"
+    venue: "Kyoto"
+    country: Japan
+
+  - title: "Carbazole-pyridinium systems"
+    year: 2024
+    type: poster
+    speaker: Pollard
+    event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2024"
+    venue: "University of Sheffield"
+    country: UK
+    award: "Poster prize"
+
+  - title: "Light-emitting materials from sp2-hybridised nitrogen atoms"
+    year: 2024
+    type: contributed
+    speaker: Pollard
+    event: "1st Template-Designed Organic Electronics & Beyond (TIDE) conference"
+    venue: "Cologne"
+    country: Germany
+
   - title: "A modular approach to tuning emissive N-aryl through-space charge transfer states"
     year: 2023
     type: contributed
@@ -78,6 +126,37 @@ talks:
     type: contributed
     event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2023"
     venue: "University of Strathclyde"
+    country: UK
+
+  - title: "Methylation of nitrogen atoms and its impact on photophysics"
+    year: 2023
+    type: contributed
+    speaker: Pollard
+    event: "CDT Week 2023"
+    country: UK
+
+  - title: "Methylation of carbazole-pyridinium systems for blue TADF (flash talk and poster)"
+    year: 2023
+    type: contributed
+    speaker: Pollard
+    event: "Optical Probes 2023"
+    venue: "Como"
+    country: Italy
+
+  - title: "Methylation of carbazole-pyridinium systems for blue TADF"
+    year: 2023
+    type: poster
+    speaker: Pollard
+    event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2023"
+    venue: "University of Strathclyde"
+    country: UK
+
+  - title: "Carbazole-pyridinium salts"
+    year: 2023
+    type: contributed
+    speaker: Pollard
+    event: "Faculty of Engineering and Environment PGR Conference 2023"
+    venue: "Northumbria University"
     country: UK
 
   - title: "From phosphorescence to delayed fluorescence in one step"

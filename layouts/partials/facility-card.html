@@ -1,0 +1,27 @@
+{{/* One instrument (context: an entry from data/equipment.yaml) */}}
+{{ $e := . }}
+<div class="facility-card" id="equip-{{ $e.id }}">
+  {{ with $e.photo }}
+    <div class="facility-photo">{{ partial "img.html" (dict "src" . "alt" $e.name "class" "facility-img no-border" "style" (cond (ne ($e.focus | default "") "") (printf "object-position: %s" ($e.focus | default "center")) "") "sizes" "(max-width: 768px) 100vw, 420px") }}</div>
+  {{ else }}
+    <div class="facility-icon">{{ $e.icon | default "🔬" }}</div>
+  {{ end }}
+  <div class="facility-body">
+    <h3 class="facility-name">{{ $e.name }}</h3>
+    <div class="research-project-meta">{{ $e.category }}{{ with $e.year }} | in use since {{ . }}{{ end }}</div>
+    {{ with $e.access_via }}{{ range first 1 (where site.Data.collaborators.collaborators "id" .) }}
+      <p class="facility-line">🤝 Available through <a href="#collab-{{ .id }}">{{ .name | default .institution }}</a> ({{ .institution }})</p>
+    {{ end }}{{ end }}
+    {{ with $e.capabilities }}<ul class="facility-caps">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+    {{ with $e.funding }}{{ $g := where site.Data.grants.grants "id" . }}
+      <p class="facility-line">💷 Funded by {{ with $g }}{{ range first 1 . }}<a href="#grant-{{ .id }}">{{ .title }}</a>{{ end }}{{ else }}{{ . }}{{ end }}</p>
+    {{ end }}
+    {{ range $e.upgrades }}{{ $u := . }}
+      <p class="facility-line">⬆️ {{ $u.name }}{{ with $u.year }} ({{ . }}){{ end }}{{ with $u.funding }}{{ $g := where site.Data.grants.grants "id" . }}: funded by {{ with $g }}{{ range first 1 . }}<a href="#grant-{{ .id }}">{{ .funder }}</a>{{ end }}{{ else }}{{ . }}{{ end }}{{ end }}</p>
+    {{ end }}
+    {{ with $e.posts }}
+      <p class="facility-line">📰 {{ range $i, $n := . }}{{ with site.GetPage (printf "/post/%s" $n) }}{{ if $i }} · {{ end }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}</p>
+    {{ end }}
+    {{ partial "theme-chips.html" $e.themes }}
+  </div>
+</div>

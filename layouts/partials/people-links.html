@@ -1,0 +1,10 @@
+{{/* Surnames -> linked full names (to their Group page card). Context: a list of surnames */}}
+{{- $out := slice -}}
+{{- range . -}}
+  {{- $s := . -}}{{- $found := false -}}
+  {{- range first 1 (where site.Data.team.members "author_name" $s) -}}
+    {{- $out = $out | append (printf `<a href="/group/#%s">%s</a>` (.name | urlize) .name) -}}{{- $found = true -}}
+  {{- end -}}
+  {{- if not $found -}}{{- $out = $out | append $s -}}{{- end -}}
+{{- end -}}
+{{- delimit $out ", " " and " | safeHTML -}}

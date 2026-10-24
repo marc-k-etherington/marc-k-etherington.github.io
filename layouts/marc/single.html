@@ -36,6 +36,22 @@
 {{/* Roles from front matter:
      roles:
        - { icon: "🏛️", title: "Assistant Professor", place: "Northumbria University<br>School of ...", period: "Since 2020 (promoted 2022)" } */}}
+{{/* Funding summary from data/grants.yaml (Marc's own grants only) */}}
+{{ $s := partialCached "func/stats.html" "stats" }}
+{{ $mine := slice }}{{ range site.Data.grants.grants }}{{ if not .holder }}{{ $mine = $mine | append . }}{{ end }}{{ end }}
+{{ with $mine }}
+{{ $current := slice }}{{ range . }}{{ if eq (partial "func/grant-status.html" .) "current" }}{{ $current = $current | append . }}{{ end }}{{ end }}
+<div class="funding-summary-marc">
+  <div class="funding-summary-figures">
+    <div><span class="stat-number-marc">{{ len . }}</span><span class="stat-label-marc">Grants as PI or Co-I</span></div>
+    {{ with $s.funding }}<div><span class="stat-number-marc">{{ . }}</span><span class="stat-label-marc">Funding secured</span></div>{{ end }}
+    {{ with $s.student_grants }}<div><span class="stat-number-marc">{{ . }}</span><span class="stat-label-marc">Won by group members</span></div>{{ end }}
+  </div>
+  {{ with $current }}<p class="funding-summary-current"><strong>Current funding:</strong> {{ range $i, $g := . }}{{ if $i }}; {{ end }}{{ $g.funder }}{{ end }}</p>{{ end }}
+  <a href="/research/#projects" class="cta-btn-marc">View funding →</a>
+</div>
+{{ end }}
+
 <div class="roles-section-marc">
   <h2>Current Roles &amp; Affiliations</h2>
   <div class="roles-grid-marc">

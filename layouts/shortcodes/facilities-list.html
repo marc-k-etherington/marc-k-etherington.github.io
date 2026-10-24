@@ -1,0 +1,7 @@
+{{/* Inline description of the lab's instruments (from data/equipment.yaml) */}}
+{{- $items := slice -}}
+{{- range site.Data.equipment.equipment -}}{{- if not .access_via -}}
+  {{- $u := slice }}{{ range .upgrades }}{{ $u = $u | append .name }}{{ end -}}
+  {{- $items = $items | append (printf "<a href=\"/research/#equip-%s\">%s</a>%s" .id .name (cond (gt (len $u) 0) (printf " with %s" (delimit $u ", ")) "")) -}}
+{{- end -}}{{- end -}}
+{{- with $items }}including {{ delimit . ", " " and " | safeHTML }}{{ end -}}

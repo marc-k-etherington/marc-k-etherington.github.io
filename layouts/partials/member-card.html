@@ -1,7 +1,18 @@
 {{/* One team member card. Uses the .member-card styles already in custom.css */}}
 {{ $m := . }}
-{{ $alumni := eq $m.status "alumni" }}
+{{ $st := partial "func/member-status.html" $m }}
+{{ $alumni := or (eq $st "alumni") (eq $st "visitor-past") }}
+{{ $visitor := eq $m.role "visitor" }}
 {{ $papers := partial "func/member-papers.html" $m }}
+{{ $sur := $m.author_name | default "" }}
+{{ $projects := slice }}{{ $talks := slice }}{{ $grants := slice }}
+{{ if $sur }}
+  {{ range site.Data.projects.projects }}{{ if in .people $sur }}{{ $projects = $projects | append . }}{{ end }}{{ end }}
+  {{ $talks = where site.Data.seminars.talks "speaker" $sur }}
+  {{ $grants = where site.Data.grants.grants "holder" $sur }}
+{{ end }}
+{{ $prizes := where $talks "award" "!=" nil }}
+{{ $away := slice }}{{ if $sur }}{{ $away = where site.Data.visits.visits "person" $sur }}{{ end }}
 
 <article class="member-card{{ if $alumni }} past-member-card{{ end }}" id="{{ $m.name | urlize }}">
   {{ with $m.photo }}
@@ -15,7 +26,12 @@
 
   <div class="member-info">
     <h3 class="member-name">{{ $m.name }}</h3>
+    {{ if $visitor }}
+    <p class="member-title">{{ $m.type | default "Visiting researcher" }}{{ with $m.visit_start }} | {{ (time.AsTime .).Format "January 2006" }}{{ end }}{{ with $m.visit_end }} to {{ (time.AsTime .).Format "January 2006" }}{{ end }}</p>
+    <p class="visitor-badge">{{ partial "func/flag.html" ($m.country | default "") }} {{ if eq $st "visitor-current" }}Visiting from{{ else }}From{{ end }} {{ $m.home }}</p>
+    {{ else }}
     <p class="member-title">{{ $m.title }}{{ with $m.period }} | {{ . }}{{ end }}</p>
+    {{ end }}
 
     {{/* PhD progress, current students only */}}
     {{ if and (not $alumni) (eq $m.role "phd") $m.start }}
@@ -35,19 +51,33 @@
     {{ end }}
 
     <div class="member-details">
-      {{ with $m.project }}<p><strong>Project:</strong> {{ . }}{{ if not $alumni }} (<a href="/research/#projects">see Research</a>){{ end }}</p>{{ end }}
+      {{ with $projects }}
+        <p><strong>Project{{ if gt (len .) 1 }}s{{ end }}:</strong> {{ range $i, $p := . }}{{ if $i }}; {{ end }}<a href="/research/#project-{{ $p.id }}">{{ $p.title }}</a>{{ end }}</p>
+      {{ else }}{{ with $m.project }}<p><strong>Project:</strong> {{ . }}</p>{{ end }}{{ end }}
       {{ with $m.office }}<p><strong>Office:</strong> {{ . }}</p>{{ end }}
       {{ with $m.email }}<p><strong>Email:</strong> {{ . }}</p>{{ end }}
       {{ with $papers }}<p><strong>Publications:</strong> {{ len . }} paper{{ if gt (len .) 1 }}s{{ end }} with the group</p>{{ end }}
+      {{ with $talks }}<p><strong>Talks &amp; posters:</strong> {{ len . }}{{ with $prizes }} · 🏆 {{ len . }} prize{{ if gt (len .) 1 }}s{{ end }}{{ end }}</p>{{ end }}
+      {{ if $visitor }}
+        {{ with $m.host }}{{ range first 1 (where site.Data.collaborators.collaborators "id" .) }}<p><strong>Hosted through:</strong> collaboration with <a href="/research/#collab-{{ .id }}">{{ .name }}</a></p>{{ end }}{{ end }}
+      {{ end }}
+      {{/* Funding for this person: a grant id (linked) or plain text such as a studentship */}}
+      {{ with $m.funding }}
+        {{ $g := where site.Data.grants.grants "id" . }}
+        <p><strong>Funded by:</strong> {{ with $g }}{{ range first 1 . }}<a href="/research/#grant-{{ .id }}">{{ .title }}</a>{{ end }}{{ else }}{{ . }}{{ end }}</p>
+      {{ end }}
+      {{ with $away }}<p><strong>Research visit{{ if gt (len .) 1 }}s{{ end }}:</strong> {{ range $i, $v := . }}{{ if $i }}; {{ end }}{{ range first 1 (where site.Data.collaborators.collaborators "id" $v.host) }}{{ with .name }}{{ . }}, {{ end }}{{ .institution }}{{ end }} ({{ (time.AsTime $v.start).Year }}){{ end }}</p>{{ end }}
+      {{ with $grants }}<p><strong>Grants won:</strong> {{ range $i, $g := . }}{{ if $i }}; {{ end }}{{ index (split $g.title ":") 0 }} ({{ $g.start }}){{ end }}</p>{{ end }}
     </div>
 
     {{ with $m.topics }}
     <div class="expertise-tags-marc compact">{{ range . }}<span class="expertise-tag-marc">{{ . }}</span>{{ end }}</div>
     {{ end }}
 
-    {{ if or $m.bio $papers }}
+    {{ if or $m.bio $papers $talks }}
     <details class="member-more">
-      <summary>{{ if and $m.bio $papers }}Read bio and papers{{ else if $m.bio }}Read bio{{ else }}Papers{{ end }}</summary>
+      {{ $parts := slice }}{{ if $m.bio }}{{ $parts = $parts | append "bio" }}{{ end }}{{ if $papers }}{{ $parts = $parts | append "papers" }}{{ end }}{{ if $talks }}{{ $parts = $parts | append "talks" }}{{ end }}
+      <summary>Read {{ delimit $parts ", " " and " }}</summary>
       {{ with $m.bio }}<div class="member-bio">{{ . | markdownify }}</div>{{ end }}
       {{ with $papers }}
         <p class="member-papers-title"><strong>Papers ({{ len . }})</strong></p>
@@ -55,6 +85,14 @@
           {{ range $p := . }}
           <li><a href="{{ $p.url }}" target="_blank" rel="noopener">{{ $p.title | markdownify }}</a>
             {{- with $p.journal }} <span class="member-paper-meta">({{ index (split . ",") 0 }}{{ with $p.year }}, {{ . }}{{ end }})</span>{{ end }}</li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ with $talks }}
+        <p class="member-papers-title"><strong>Talks &amp; posters ({{ len . }})</strong></p>
+        <ul class="member-papers">
+          {{ range $t := . }}
+          <li>{{ $t.title | markdownify }} <span class="member-paper-meta">({{ with $t.event }}{{ . }}, {{ end }}{{ $t.year }}{{ if eq $t.type "poster" }}, poster{{ end }})</span>{{ with $t.award }} <span class="talk-award">🏆 {{ . }}</span>{{ end }}</li>
           {{ end }}
         </ul>
       {{ end }}

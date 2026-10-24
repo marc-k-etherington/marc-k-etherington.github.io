@@ -1,0 +1,9 @@
+{{/* "current", "alumni", "visitor-current" or "visitor-past" (context: a team member).
+     Visitors are current from before their visit until the day after visit_end. */}}
+{{ $m := . }}
+{{ $out := cond (eq $m.status "alumni") "alumni" "current" }}
+{{ if eq $m.role "visitor" }}
+  {{ $out = "visitor-current" }}
+  {{ with $m.visit_end }}{{ if not (((time.AsTime .).AddDate 0 0 1).After now) }}{{ $out = "visitor-past" }}{{ end }}{{ end }}
+{{ end }}
+{{ return $out }}
