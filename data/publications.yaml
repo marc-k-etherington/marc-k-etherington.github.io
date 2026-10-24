@@ -12,6 +12,7 @@
 #   url: https://doi.org/...
 #   doi: 10.xxxx/xxxxx
 #   image: /post/images/My_TOC.jpg      # optional: put the TOC graphic in content/post/images
+#   themes: [tadf, ct]                   # research themes (ids in data/themes.yaml)
 #   review: true                         # optional: only for review articles
 #   featured: "One-line description"     # optional: shows it on the Research page
 #
@@ -30,7 +31,8 @@ papers:
     url: https://pubs.rsc.org/cp/article/28/36/22280/1297214/Intramolecular-hydrogen-bonding-enforced-by
     doi: 10.1039/d6cp02608g
     image: "/post/images/AIE_CBZ_TOC.jpeg"
-    
+    themes: []
+
   - title: "Homoconjugation-induced enhancements of photophysical properties in donor–acceptor triptycenes arise from interplay between intramolecular charge transfer and exciton states"
     year: 2026
     authors: "Stefan Warrington, Hristo Ivov Gonev, Gary S. Nichol, Eleanor M. Dodd, Simon J. Coles, Thomas J. Penfold, Marc K. Etherington, Tracey M. Clarke* & Iain A. Wright"
@@ -38,7 +40,8 @@ papers:
     url: https://pubs.rsc.org/sc/article/17/30/14590/1264795/Homoconjugation-induced-enhancements-of
     doi: 10.1039/d6sc01073c
     image: "/post/images/Warrington_TOC.jpeg"
-    
+    themes: [ct]
+
   - title: "Singlet–triplet gaps for evaluating thermally activated delayed fluorescence: which one is the (b)EST?"
     year: 2026
     authors: "Ali Shuaib*, Lubna Salah, Antonio Prlj, Narendran Rajendran, Marc K. Etherington, Ahmed Abdel Nazeer, Carlito S. Ponseca Jr, Andrew P. Monkman, Andrew Danos* & Saad Makhseed*"
@@ -46,7 +49,8 @@ papers:
     url: https://pubs.rsc.org/tc/article/14/11/4353/919225/Singlet-triplet-gaps-for-evaluating-thermally
     doi: 10.1039/d5tc03735b
     image: "/post/images/BEST_TOC.jpeg"
-    
+    themes: [tadf, gap]
+
   - title: "Reduced temperature solid-state synthesis of barium sulfide: a greener alternative"
     year: 2025
     authors: "William D. Tetlow, Oliver S. Hutter, Marc K. Etherington* & Giulia Longo*"
@@ -54,6 +58,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b
     doi: 10.1039/D5RA07445B
     image: "/post/images/BaS_TOC.jpeg"
+    themes: []
 
   - title: "Highly soluble cyclic dibenzophenazine heterodimer enabled by a tetra-functionalized building block"
     year: 2025
@@ -62,6 +67,7 @@ papers:
     url: https://academic.oup.com/chemlett/article/54/12/upaf216/8342757
     doi: 10.1093/chemle/upaf216
     image: "/post/images/Namba_CL.jpeg"
+    themes: [ct, bio]
 
   - title: "Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers"
     year: 2025
@@ -70,6 +76,7 @@ papers:
     url: https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202516629
     doi: 10.1002/anie.202516629
     image: "https://onlinelibrary.wiley.com/cms/asset/58b409f8-6dd5-4ce2-a336-3f06035ef497/anie70198-gra-0001-m.png"
+    themes: []
 
   - title: "Counterion-Mediated Luminophore Dimerization"
     year: 2025
@@ -78,6 +85,7 @@ papers:
     url: https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202505433
     doi: 10.1002/anie.202505433
     image: "https://onlinelibrary.wiley.com/cms/asset/6a79812f-7c31-4e1b-a62a-bec31ae33e27/anie202505433-gra-0001-m.png"
+    themes: []
 
   - title: "A Modular Approach to Tuning Emissive *N*-Quinolyl Through-Space Charge Transfer States Using sp<sup>3</sup>-Scaffolds"
     year: 2024
@@ -87,6 +95,7 @@ papers:
     doi: 10.1021/acs.jpcb.4c05220
     image: "/post/images/Ruth_JPCB.png"
     featured: "Fundamental structure-property relationships regarding the N-aryl distance required for charge transfer."
+    themes: [ct]
 
   - title: "Dinuclear platinum(ii) complexes featuring rigidly linked Pt(*NCN*)X units: the effect of X = SCN− in favouring low-energy, excimer-like luminescence"
     year: 2024
@@ -95,6 +104,7 @@ papers:
     url: https://pubs.rsc.org/en/Content/ArticleLanding/2024/NJ/D4NJ03357D
     doi: 10.1039/D4NJ03357D
     image: "/post/images/Pt_NCN_Paper.jpg"
+    themes: []
 
   - title: "Suppression of Dexter transfer by covalent encapsulation for efficient matrix-free narrowband deep blue hyperfluorescent OLEDs"
     year: 2024
@@ -103,6 +113,7 @@ papers:
     url: https://www.nature.com/articles/s41563-024-01812-4
     doi: 10.1038/s41563-024-01812-4
     image: "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41563-024-01812-4/MediaObjects/41563_2024_1812_Fig1_HTML.png?as=webp"
+    themes: [tadf]
 
   - title: "Covalently linked pyrene antennas for optically dense yet aggregation-resistant light-harvesting systems"
     year: 2023
@@ -111,6 +122,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2023/cp/d3cp02586a
     doi: 10.1039/D3CP02586A
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D3CP02586A&imageInfo.ImageIdentifier.Year=2023"
+    themes: []
 
   - title: "A comparison of ZnO nanowires grown using hexamethylenetetramine and ammonium hydroxide on Al:ZnO nanoparticle seed layer"
     year: 2023
@@ -119,6 +131,7 @@ papers:
     url: https://link.springer.com/article/10.1007/s10854-023-10992-9
     doi: 10.1007/s10854-023-10992-9
     image: "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs10854-023-10992-9/MediaObjects/10854_2023_10992_Fig1_HTML.png?as=webp"
+    themes: []
 
   - title: "Oxidation State Tuning of Room Temperature Phosphorescence and Delayed Fluorescence in Phenothiazine and Phenothiazine-5,5-dioxide Dimers"
     year: 2023
@@ -127,6 +140,7 @@ papers:
     url: https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/chem.202300428
     doi: 10.1002/chem.202300428
     image: "https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/882d9a52-8c0d-4b96-8bb5-4889265450da/chem202300428-toc-0001-m.jpg"
+    themes: [tadf]
 
   - title: "Extended Conjugation Attenuates the Quenching of Aggregation-Induced Emitters by Photocyclization Pathways"
     year: 2022
@@ -135,6 +149,7 @@ papers:
     url: https://onlinelibrary.wiley.com/doi/10.1002/anie.202202193
     doi: 10.1002/anie.202202193
     image: "https://onlinelibrary.wiley.com/cms/asset/6a036eef-242f-4d99-aed0-893e2a1c1730/anie202202193-toc-0001-m.jpg"
+    themes: []
 
   - title: "From phosphorescence to delayed fluorescence in one step: tuning photophysical properties by quaternisation of an sp 2-hybridised nitrogen atom"
     year: 2022
@@ -144,6 +159,7 @@ papers:
     doi: 10.1039/d2tc01737g
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2TC01737G&imageInfo.ImageIdentifier.Year=2022"
     featured: "Breakthrough in tuning photophysical properties through molecular modification."
+    themes: [tadf, ct]
 
   - title: "Dominant dimer emission provides colour stability for red thermally activated delayed fluorescence emitter"
     year: 2022
@@ -152,6 +168,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2022/TC/D1TC04913E
     doi: 10.1039/d1tc04913e
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D1TC04913E&imageInfo.ImageIdentifier.Year=2022"
+    themes: [tadf]
 
   - title: "Simultaneous enhancement of thermally activated delayed fluorescence and photoluminescence quantum yield via homoconjugation"
     year: 2022
@@ -160,6 +177,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2022/TC/D2TC00460G
     doi: 10.1039/d2tc00460g
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2TC00460G&imageInfo.ImageIdentifier.Year=2022"
+    themes: [tadf, ct]
 
   - title: "Suppressing dimer formation by increasing conformational freedom in multi-carbazole thermally activated delayed fluorescence emitters"
     year: 2021
@@ -168,6 +186,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2021/TC/D0TC04222F
     doi: 10.1039/d0tc04222f
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D0TC04222F&imageInfo.ImageIdentifier.Year=2021"
+    themes: [tadf]
 
   - title: "Thermally Activated Delayed Fluorescence: Beyond the Single Molecule"
     year: 2020
@@ -177,6 +196,7 @@ papers:
     doi: 10.3389/fchem.2020.00716
     image: "https://www.frontiersin.org/files/Articles/558615/fchem-08-00716-HTML-r1/image_m/fchem-08-00716-g001.jpg"
     review: true
+    themes: [tadf]
 
   - title: "Modulation of charge transfer by N-alkylation to control photoluminescence energy and quantum yield"
     year: 2020
@@ -185,6 +205,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2020/SC/D0SC02460K
     doi: 10.1039/d0sc02460k
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D0SC02460K&imageInfo.ImageIdentifier.Year=2020"
+    themes: [ct]
 
   - title: "Investigation of Thermally Activated Delayed Fluorescence from a Donor–Acceptor Compound with Time-Resolved Fluorescence and Density Functional Theory Applying an Optimally Tuned Range-Separated Hybrid Functional"
     year: 2020
@@ -193,6 +214,7 @@ papers:
     url: https://pubs.acs.org/doi/abs/10.1021/acs.jpca.9b11083
     doi: 10.1021/acs.jpca.9b11083
     image: "https://pubs.acs.org/cms/10.1021/acs.jpca.9b11083/asset/images/medium/jp9b11083_0016.gif"
+    themes: [tadf, ct]
 
   - title: "Homoconjugation enhances the photophysical and electrochemical properties of a new 3D intramolecular charge transfer iptycene displaying deep blue emission"
     year: 2019
@@ -201,6 +223,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2019/tc/c9tc03255j
     doi: 10.1039/c9tc03255j
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C9TC03255J&imageInfo.ImageIdentifier.Year=2019"
+    themes: [ct]
 
   - title: "Revealing resonance effects and intramolecular dipole interactions in the positional isomers of benzonitrile-core thermally activated delayed fluorescence materials"
     year: 2019
@@ -209,6 +232,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2019/TC/C9TC02742D
     doi: 10.1039/c9tc02742d
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C9TC02742D&imageInfo.ImageIdentifier.Year=2019"
+    themes: [tadf, gap]
 
   - title: "Intramolecular Dimerization Quenching of Delayed Emission in Asymmetric D–D′–A TADF Emitters"
     year: 2019
@@ -217,6 +241,7 @@ papers:
     url: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.9b01900
     doi: 10.1021/acs.jpcc.9b01900
     image: "https://pubs.acs.org/cms/10.1021/acs.jpcc.9b01900/asset/images/medium/jp-2019-01900p_0012.gif"
+    themes: [tadf, ct]
 
   - title: "Persistent Dimer Emission in Thermally Activated Delayed Fluorescence Materials"
     year: 2019
@@ -225,6 +250,7 @@ papers:
     url: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.9b01458
     doi: 10.1021/acs.jpcc.9b01458
     image: "https://pubs.acs.org/cms/10.1021/acs.jpcc.9b01458/asset/images/medium/jp-2019-01458c_0008.gif"
+    themes: [tadf]
 
   - title: "Thermally Activated Delayed Fluorescence Mediated through the Upper Triplet State Manifold in Non-Charge-Transfer Star-Shaped Triphenylamine–Carbazole Molecules"
     year: 2018
@@ -233,6 +259,7 @@ papers:
     url: https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.8b07610
     doi: 10.1021/acs.jpcc.8b07610
     image: "https://pubs.acs.org/cms/10.1021/acs.jpcc.8b07610/asset/images/medium/jp-2018-07610u_0006.gif"
+    themes: [tadf, gap]
 
   - title: "Triphenylamine disubstituted naphthalene diimide: elucidation of excited states involved in TADF and application in near-infrared organic light emitting diodes"
     year: 2018
@@ -241,6 +268,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2018/tc/c8tc02936a/
     doi: 10.1039/c8tc02936a
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C8TC02936A&imageInfo.ImageIdentifier.Year=2018"
+    themes: [tadf]
 
   - title: "Chemical and conformational control of the energy gaps involved in the thermally activated delayed fluorescence mechanism"
     year: 2018
@@ -250,6 +278,7 @@ papers:
     doi: 10.1039/c8tc00991k
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C8TC00991K&imageInfo.ImageIdentifier.Year=2018"
     review: true
+    themes: [tadf, gap]
 
   - title: "Excited-State Aromatic Interactions in the Aggregation-Induced Emission of Molecular Rotors"
     year: 2017
@@ -258,6 +287,7 @@ papers:
     url: https://pubs.acs.org/doi/full/10.1021/jacs.7b08570
     doi: 10.1021/jacs.7b08570
     image: "https://pubs.acs.org/cms/10.1021/jacs.7b08570/asset/images/medium/ja-2017-08570t_0009.gif"
+    themes: []
 
   - title: "Fluorescence and Phosphorescence Anisotropy from Oriented Films of Thermally Activated Delayed Fluorescence Emitters"
     year: 2017
@@ -266,6 +296,7 @@ papers:
     url: https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.7b00729
     doi: 10.1021/acs.jpclett.7b00729
     image: "https://pubs.acs.org/cms/10.1021/acs.jpclett.7b00729/asset/images/medium/jz-2017-00729u_0006.gif"
+    themes: [tadf]
 
   - title: "The contributions of molecular vibrations and higher triplet levels to the intersystem crossing mechanism in metal-free organic emitters"
     year: 2017
@@ -274,6 +305,7 @@ papers:
     url: https://pubs.rsc.org/en/content/articlelanding/2017/TC/C7TC01958K
     doi: 10.1039/c7tc01958k
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C7TC01958K&imageInfo.ImageIdentifier.Year=2017"
+    themes: [gap]
 
   - title: "Regio- and conformational isomerization critical to design of efficient thermally-activated delayed fluorescence emitters"
     year: 2017
@@ -282,6 +314,7 @@ papers:
     url: https://www.nature.com/articles/ncomms14987
     doi: 10.1038/ncomms14987
     image: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms14987/MediaObjects/41467_2017_Article_BFncomms14987_Fig1_HTML.jpg?as=webp"
+    themes: [tadf, gap]
 
   - title: "Revealing the spin–vibronic coupling mechanism of thermally activated delayed fluorescence"
     year: 2016
@@ -290,6 +323,7 @@ papers:
     url: https://www.nature.com/articles/ncomms13680
     doi: 10.1038/ncomms13680
     image: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms13680/MediaObjects/41467_2016_Article_BFncomms13680_Fig1_HTML.jpg?as=webp"
+    themes: [tadf, gap]
 
   - title: "Recombination pathways in polymer:fullerene photovoltaics observed through spin polarization measurements"
     year: 2014
@@ -297,6 +331,7 @@ papers:
     journal: "Applied Physics Letters, 104, 063304, 2014"
     url: https://aip.scitation.org/doi/abs/10.1063/1.4865203
     doi: 10.1063/1.4865203
+    themes: []
     # image: the old graphic needed a Durham login; add a local copy here
 
   - title: "Ultrahigh Efficiency Fluorescent Single and Bi-Layer Organic Light Emitting Diodes: The Key Role of Triplet Fusion"
@@ -305,4 +340,5 @@ papers:
     journal: "Advanced Functional Materials, 23, 6, 739-746, 2013"
     url: https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201201750
     doi: 10.1002/adfm.201201750
+    themes: [tadf]
     # image: the old graphic needed a Durham login; add a local copy here

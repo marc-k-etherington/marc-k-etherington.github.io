@@ -1,0 +1,10 @@
+{{/* Country name -> flag emoji (context: country name). Add a country here if one is missing. */}}
+{{ $flags := dict
+  "UK" "🇬🇧" "United Kingdom" "🇬🇧" "Ireland" "🇮🇪" "Japan" "🇯🇵" "Canada" "🇨🇦" "USA" "🇺🇸" "United States" "🇺🇸"
+  "Germany" "🇩🇪" "Denmark" "🇩🇰" "France" "🇫🇷" "Italy" "🇮🇹" "Spain" "🇪🇸" "Portugal" "🇵🇹" "Netherlands" "🇳🇱"
+  "Belgium" "🇧🇪" "Switzerland" "🇨🇭" "Austria" "🇦🇹" "Sweden" "🇸🇪" "Norway" "🇳🇴" "Finland" "🇫🇮" "Poland" "🇵🇱"
+  "Lithuania" "🇱🇹" "Czech Republic" "🇨🇿" "Greece" "🇬🇷" "China" "🇨🇳" "Hong Kong" "🇭🇰" "Taiwan" "🇹🇼"
+  "South Korea" "🇰🇷" "Korea" "🇰🇷" "Singapore" "🇸🇬" "Malaysia" "🇲🇾" "India" "🇮🇳" "Australia" "🇦🇺"
+  "New Zealand" "🇳🇿" "Kuwait" "🇰🇼" "Israel" "🇮🇱" "Brazil" "🇧🇷" "Mexico" "🇲🇽" "South Africa" "🇿🇦"
+}}
+{{ return (index $flags . | default "🌍") }}

@@ -1,7 +1,0 @@
-{{/* Same markup as the theme's collapsible shortcode, usable from layouts.
-     Usage: partial "collapsible.html" (dict "summary" "..." "body" "..." "id" "unique-id") */}}
-<div class="collapsible">
-  <input id="collapsible-{{ .id }}" type="checkbox" name="collapsible">
-  <label for="collapsible-{{ .id }}">{{ .summary }}</label>
-  <div class="collapsible-body">{{ .body }}</div>
-</div>

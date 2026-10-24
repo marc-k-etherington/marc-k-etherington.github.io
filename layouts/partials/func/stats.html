@@ -12,12 +12,28 @@
   {{ if .review }}{{ $reviews = add $reviews 1 }}{{ end }}
 {{ end }}
 
-{{ $countries := slice }}{{ range $talks }}{{ $countries = $countries | append .country }}{{ end }}
+{{/* Seminar counts are Marc's own talks; group members' talks are counted separately */}}
+{{ $own := slice }}{{ $group := 0 }}
+{{ range $talks }}{{ if .speaker }}{{ $group = add $group 1 }}{{ else }}{{ $own = $own | append . }}{{ end }}{{ end }}
+{{ $countries := slice }}{{ range $own }}{{ $countries = $countries | append .country }}{{ end }}
+{{ $invited := 0 }}{{ range $own }}{{ if eq .type "invited" }}{{ $invited = add $invited 1 }}{{ end }}{{ end }}
 
-{{ $collab := 0 }}{{ $flags := slice }}
-{{ with site.GetPage "/research" }}{{ with .Params.collaborations }}
-  {{ $collab = len . }}{{ range . }}{{ $flags = $flags | append .flag }}{{ end }}
-{{ end }}{{ end }}
+{{/* Funding: the figure in data/metrics.yaml if present, otherwise the total of amount_gbp */}}
+{{ $sum := 0 }}{{ $studentSum := 0 }}{{ $studentGrants := 0 }}
+{{ range site.Data.grants.grants }}
+  {{ if .holder }}{{ $studentGrants = add $studentGrants 1 }}{{ with .amount_gbp }}{{ $studentSum = add $studentSum (int .) }}{{ end }}
+  {{ else }}{{ with .amount_gbp }}{{ $sum = add $sum (int .) }}{{ end }}{{ end }}
+{{ end }}
+{{ $funding := site.Data.metrics.funding | default "" }}
+{{ if and (not $funding) (gt $sum 0) }}
+  {{ $funding = cond (ge $sum 1000000) (printf "£%.1fM" (div (float $sum) 1000000)) (printf "£%dK" (div $sum 1000)) }}
+{{ end }}
+{{ $currentGrants := 0 }}{{ range site.Data.grants.grants }}{{ if and (not .holder) (eq (partial "func/grant-status.html" .) "current") }}{{ $currentGrants = add $currentGrants 1 }}{{ end }}{{ end }}
+{{ $activeProjects := 0 }}{{ range site.Data.projects.projects }}{{ if eq (partial "func/project-status.html" .) "active" }}{{ $activeProjects = add $activeProjects 1 }}{{ end }}{{ end }}
+
+{{ $people := site.Data.collaborators.collaborators | default slice }}
+{{ $ccountries := slice }}{{ range $people }}{{ with .country }}{{ $ccountries = $ccountries | append . }}{{ end }}{{ end }}
+{{ $visitors := where site.Data.team.members "role" "visitor" }}
 
 {{ return dict
   "publications"   (len $pubs)
@@ -26,11 +42,22 @@
   "jacs"           $jacs
   "corresponding"  $corresponding
   "reviews"        $reviews
-  "seminars"       (len $talks)
-  "invited"        (len (where $talks "type" "invited"))
+  "seminars"       (len $own)
+  "invited"        $invited
+  "group_talks"    $group
+  "awards"         (len (partial "func/awards.html" .))
+  "grants"         (sub (len (site.Data.grants.grants | default slice)) $studentGrants)
+  "student_grants" $studentGrants
+  "student_funding" (cond (gt $studentSum 0) (printf "£%dK" (div $studentSum 1000)) "")
+  "current_grants" $currentGrants
+  "projects"       $activeProjects
   "countries"      (len (uniq $countries))
   "phd"            (partialCached "func/phd-count.html" "phd")
-  "collaborations" (printf "%d (%d)" $collab (len (uniq $flags)))
+  "collaborations" (printf "%d (%d)" (len $people) (len (uniq $ccountries)))
+  "collaborators"  (len $people)
+  "collab_countries" (len (uniq $ccountries))
+  "visitors"       (len $visitors)
+  "visits_out"     (len (site.Data.visits.visits | default slice))
   "citations"      (site.Data.metrics.citations | default "")
-  "funding"        (site.Data.metrics.funding | default "")
+  "funding"        $funding
 }}

@@ -35,6 +35,7 @@ function toggleSection(btn) {
 /* Hide year headings (h3) that have nothing visible beneath them after filtering */
 function tidyYearHeadings(isItem) {
   document.querySelectorAll('main h3').forEach(year => {
+    if (!year.querySelector('.badge')) return;   // only year headings, not "Seminar Key" etc.
     let next = year.nextElementSibling, anyVisible = false;
     while (next && next.tagName !== 'H3') {
       if (isItem(next) && next.style.display !== 'none') { anyVisible = true; break; }
@@ -51,7 +52,12 @@ function setActiveButton(button, selector) {
 
 /* Publications (unchanged API: filterPubs('nature', this)) */
 function filterPubs(category, button) {
-  setActiveButton(button, '.filter-btn');
+  if (button) {
+    setActiveButton(button, '.filter-btn');
+    const sel = document.getElementById('collab-filter'); if (sel) sel.value = '';
+  } else {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  }
   document.querySelectorAll('.alert-primary').forEach(pub => {
     pub.style.display = (category === 'all' || pub.classList.contains(category)) ? '' : 'none';
   });
@@ -60,16 +66,25 @@ function filterPubs(category, button) {
 
 /* Seminars (unchanged API: filterSeminars('invited', this)) */
 function filterSeminars(category, button) {
-  setActiveButton(button, '.filter-btn');
+  if (button) setActiveButton(button, '.filter-btn');
   document.querySelectorAll('.alert-danger, .alert-secondary').forEach(s => {
+    const group = s.classList.contains('group-talk');
     const show =
       category === 'all' ||
-      (category === 'invited' && s.classList.contains('alert-danger')) ||
-      (category === 'contributed' && s.classList.contains('alert-secondary')) ||
-      (category === 'international' && s.classList.contains('international'));
+      (category === 'mine' && !group) ||
+      (category === 'invited' && s.classList.contains('alert-danger') && !group) ||
+      (category === 'contributed' && s.classList.contains('alert-secondary') && !group) ||
+      (category === 'international' && s.classList.contains('international') && !group) ||
+      (category === 'group' && group);
     s.style.display = show ? '' : 'none';
   });
   tidyYearHeadings(el => el.classList && (el.classList.contains('alert-danger') || el.classList.contains('alert-secondary')));
+  const note = document.querySelector('.group-talks-note');
+  if (note) note.style.display = (category === 'mine') ? '' : 'none';
+}
+/* Seminars page opens on Marc's own talks */
+if (document.querySelector('.seminar-list[data-default-filter]')) {
+  filterSeminars('mine', document.querySelector('[data-filter-sem="mine"]'));
 }
 
 /* Gallery (now called as filterGallery('lab', this)) */
@@ -122,3 +137,36 @@ if (location.hash) {
     setTimeout(() => tabBtn.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
   }
 }
+
+/* Deep links to a filter, e.g. /publications/#theme-tadf or #with-monkman */
+if (location.hash.startsWith('#with-')) {
+  const sel = document.getElementById('collab-filter');
+  if (sel && [...sel.options].some(o => o.value === location.hash.slice(1))) {
+    sel.value = location.hash.slice(1); filterPubs(sel.value, null);
+    setTimeout(() => sel.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+  }
+}
+if (location.hash) {
+  const f = document.querySelector('[data-filter="' + CSS.escape(location.hash.slice(1)) + '"]');
+  if (f) { f.click(); setTimeout(() => f.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100); }
+}
+
+/* Links to anything inside a tab (e.g. /research/#grant-aspire, or #equip-fluorolog from
+   another tab) open that tab first, then scroll to it */
+function revealInTab(id) {
+  const el = id && document.getElementById(id);
+  const panel = el && el.closest('[data-tab-panel]');
+  if (!panel) return false;
+  const root = panel.closest('[data-tabs]');
+  const btn = root && root.querySelector('[data-tab="' + panel.dataset.tabPanel + '"]');
+  if (btn && !panel.classList.contains('active')) switchTab(btn);
+  setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+  return true;
+}
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (a && revealInTab(decodeURIComponent(a.getAttribute('href').slice(1)))) {
+    e.preventDefault(); history.replaceState(null, '', a.getAttribute('href'));
+  }
+});
+if (location.hash) revealInTab(decodeURIComponent(location.hash.slice(1)));

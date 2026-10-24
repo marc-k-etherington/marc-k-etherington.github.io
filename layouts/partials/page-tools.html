@@ -1,9 +1,0 @@
-<button type="button" class="back-to-top" data-back-to-top aria-label="Back to top">↑ Top</button>
-
-<div class="social-float-compact" role="navigation" aria-label="Social profiles">
-  {{ range site.Data.social }}
-  <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
-    <img src="{{ .icon }}" alt="{{ .name }}" class="social-icon" width="40" height="40" loading="lazy" decoding="async">
-  </a>
-  {{ end }}
-</div>

@@ -1,0 +1,24 @@
+{{/* One collaborator card (context: the collaborator) */}}
+{{ $c := . }}
+{{ $l := partial "func/collaborator.html" $c }}
+{{ $nVisits := add (len $l.visitors) (len $l.visits) }}
+<div class="research-summary-card collab-card" id="collab-{{ $c.id }}">
+  <h3>{{ partial "func/flag.html" $c.country }} {{ with $c.name }}{{ . }}{{ else }}{{ $c.institution }}{{ end }}</h3>
+  <p><strong>{{ if $c.name }}{{ $c.institution }}{{ else }}{{ $c.country }}{{ end }}</strong>{{ with $c.previously }}<br><span class="collab-previously">Previously {{ delimit . ", " " and " }}</span>{{ end }}</p>
+  {{ with $c.description }}<p>{{ . }}</p>{{ end }}
+  {{ $bits := slice }}
+  {{ with $l.papers }}{{ $bits = $bits | append (printf "%d joint paper%s" (len .) (cond (eq (len .) 1) "" "s")) }}{{ end }}
+  {{ with $l.grants }}{{ $bits = $bits | append (printf "%d grant%s" (len .) (cond (eq (len .) 1) "" "s")) }}{{ end }}
+  {{ if $nVisits }}{{ $bits = $bits | append (printf "%d visit%s" $nVisits (cond (eq $nVisits 1) "" "s")) }}{{ end }}
+  {{ with $l.talks }}{{ $bits = $bits | append (printf "%d seminar%s there" (len .) (cond (eq (len .) 1) "" "s")) }}{{ end }}
+  {{ with $bits }}<p class="theme-counts">{{ delimit . " · " }}</p>{{ end }}
+  {{ if or $l.visitors $l.visits $l.grants (where site.Data.equipment.equipment "access_via" $c.id) }}
+  <ul class="collab-links">
+    {{ range $l.grants }}<li>💷 <a href="#grant-{{ .id }}">{{ .title }}</a></li>{{ end }}
+    {{ range where site.Data.equipment.equipment "access_via" $c.id }}<li>🔬 <a href="#equip-{{ .id }}">{{ .name }}</a> (used in their lab)</li>{{ end }}
+    {{ range $l.visitors }}<li>🛬 {{ partial "person-name.html" .author_name }} visited us{{ with .visit_start }} ({{ (time.AsTime .).Year }}){{ end }}</li>{{ end }}
+    {{ range $l.visits }}<li>🛫 {{ partial "person-name.html" .person }} visited{{ with .start }} ({{ (time.AsTime .).Year }}){{ end }}</li>{{ end }}
+  </ul>
+  {{ end }}
+  {{ with $l.papers }}<a class="research-link-btn" href="/publications/#with-{{ $c.id }}">View joint papers →</a>{{ end }}
+</div>

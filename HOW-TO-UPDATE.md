@@ -6,8 +6,14 @@ open positions) is calculated automatically when the site rebuilds.
 
 ```
 data/                         ← lists: edit these files, add a new entry at the TOP
-├── publications.yaml         papers
-├── seminars.yaml             talks
+├── publications.yaml         papers (tag each with its themes)
+├── seminars.yaml             talks and posters, yours and the group's
+├── grants.yaml               grants and funding
+├── projects.yaml             projects (who works on them, which grant pays)
+├── themes.yaml               the research themes (rarely changes)
+├── collaborators.yaml        collaborators, one entry per person
+├── visits.yaml               group members' visits to other labs
+├── equipment.yaml            facilities: instruments, what paid for them, photos
 ├── team.yaml                 people (current and alumni)
 ├── teaching.yaml             modules, student projects, resources
 ├── gallery.yaml              photos
@@ -39,14 +45,18 @@ Keep the two-space indents exactly as in the example.
     url: https://doi.org/10.xxxx/xxxxx
     doi: 10.xxxx/xxxxx
     image: /post/images/My_TOC.jpg
+    themes: [tadf, ct]
 ```
+Theme ids: `tadf`, `ct` (charge transfer), `gap` (singlet-triplet gaps), `bio` (bioimaging).
+Leave `themes: []` for papers outside the themes.
 Your name and group members' names are bolded for you, and the paper appears on each
 co-author's Group page card. Put `*` after your name and it counts as corresponding author.
 A journal starting "Nature" counts as Nature family. Add `review: true` for reviews and
 `featured: "one-line description"` to show it on the Research page.
 
 **Updates:** Publications list, all its counts and filters, publication count on the Marc
-and Research pages, Research featured papers, group members' paper lists and counts.
+and Research pages, Research featured papers, group members' paper lists and counts, the
+theme's paper count and "Latest Paper" on the Research page.
 
 ## New talk → `data/seminars.yaml`
 
@@ -59,13 +69,117 @@ and Research pages, Research featured papers, group members' paper lists and cou
 ```
 Add `event: "Conference name"` for conferences and `online: true` for webinars.
 
+**A student's talk or poster:** the same block plus `speaker: Surname`, `type: poster` for
+posters, and `award: "Poster prize"` if they win something. It appears on their Group card,
+under the Seminars "Group Members" filter, and (with an award) in Join Us "Student Success"
+and Research "Recent Achievements". Your own totals at the top of Seminars are unaffected.
+
 **Updates:** Seminars list, total / invited / countries counts, International filter,
 Research "Recent Seminars" (latest three invited talks).
 
+## New grant → `data/grants.yaml`
+
+```yaml
+  - id: short-name
+    title: "Grant title"
+    funder: "Funder"
+    start: 2026
+    end: 2028
+    role: PI
+    amount_gbp: 50000          # optional; leave out to keep it private
+    themes: [bio]
+    description: "One sentence."
+```
+**Your grants:** leave out `holder`, and set `role:` to PI or Co-I. They move from Current
+Funding to Funding History after their end year, and count towards your funding total.
+
+**Funding held by a group member** (travel grant, fellowship, award): add `holder: Surname`
+and leave out `role`. It's listed under "Funding Won by Group Members", appears on their
+Group card and in Join Us "Student Success", and is kept out of your total.
+
+## New project → `data/projects.yaml`
+
+```yaml
+  - id: short-name
+    title: "Project title"
+    people: [Surname]
+    start: 2026
+    funding: grant-id          # or plain text such as "PhD project"
+    themes: [ct]
+    description: "One or two sentences."
+```
+It links to each person's Group card (and back), shows under its grant, and counts towards
+its themes. It becomes "Past" after its `end` year, or once its people move to alumni.
+
+## New collaborator → `data/collaborators.yaml`
+
+```yaml
+  - id: surname
+    name: "Prof. First Last"
+    author_name: "First M. Last"     # exactly as in your author lists
+    institution: "Their University"
+    country: Germany
+    description: "One sentence on the collaboration."
+```
+Joint papers are found automatically. Link a grant with `collaborators: [surname]` in
+`grants.yaml`. **When they move:** change `institution` and `country`, and add the old one
+to `previously: ["Old University"]`; everything stays linked to them.
+
+## A visitor coming to us → `data/team.yaml`
+
+```yaml
+  - name: First Last
+    author_name: Last
+    role: visitor
+    type: Visiting PhD student       # or Visiting researcher, Visiting professor...
+    home: Their University
+    country: Japan
+    host: takeda                     # collaborator id (optional)
+    visit_start: 2027-04-01
+    visit_end: 2027-06-30
+    funding: aspire                  # grant id (optional)
+```
+They appear in Current team (labelled "Visiting from...") during the visit and move to
+Visitors afterwards by themselves. Their visit also shows on the collaborator's card, the
+grant, and the Join Us Visitors tab. Check visitors are happy to be listed with a photo.
+
+## A group member visiting another lab → `data/visits.yaml`
+
+```yaml
+  - person: Matthews                 # or Etherington for your own visits
+    host: takeda
+    start: 2027-01-10
+    end: 2027-03-31
+    funding: aspire                  # optional
+    purpose: "One line."
+```
+Shows on their Group card, the collaborator's card and the grant.
+
+## New instrument or upgrade → `data/equipment.yaml`
+
+```yaml
+  - id: short-name
+    name: "Make Model"
+    category: Spectroscopy
+    capabilities: [What it measures, Another measurement]
+    year: 2027
+    funding: grant-id                # or plain text, e.g. "Start-up funds"
+    themes: [tadf]
+    photo: /post/images/My_Photo.jpg # optional; landscape works best
+    posts: [2027-My-News-Post]       # optional: news post file names
+```
+An upgrade to an existing instrument: add under it
+`upgrades: [ { name: "Module", year: 2027, funding: grant-id } ]`.
+Kit you use in a collaborator's lab: add `access_via: collaborator-id`.
+It appears on the Research Overview, on the grant that paid for it, on its themes' cards,
+and in the Join Us facilities line.
+
 ## New team member → `data/team.yaml`
 
-Copy an existing person's block, including `author_name` (their surname) so their papers
-are found automatically. When someone leaves, change `status: current` to
+Copy an existing person's block, including `author_name` (their surname): their papers,
+talks, prizes, grants and projects are then found automatically. Add `funding:` for how
+their PhD or post is funded: a grant id (e.g. `aspire`) links to that grant, or plain text
+(e.g. `"ReNU CDT studentship"`). It shows on their card and isn't counted in any total. When someone leaves, change `status: current` to
 `status: alumni` and add `period:` and `where_now:`.
 
 **Updates:** Group page, Research team cards, PhD student counts, PhD progress bars.

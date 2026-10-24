@@ -1,0 +1,6 @@
+{{/* Surname (or Etherington) -> full name, linked to their card (context: surname) */}}
+{{- if eq . "Etherington" -}}<a href="/marc-etherington/">Marc Etherington</a>
+{{- else -}}{{- $s := . -}}{{- $f := false -}}
+  {{- range first 1 (where site.Data.team.members "author_name" $s) -}}<a href="/group/#{{ .name | urlize }}">{{ .name }}</a>{{- $f = true -}}{{- end -}}
+  {{- if not $f }}{{ $s }}{{ end -}}
+{{- end -}}

@@ -1,8 +1,0 @@
-{{/* In any markdown file:
-     {{< vacancies >}}
-     {{< vacancies type="phd" limit="2" empty="No PhD positions are open right now." >}} */}}
-{{ partial "vacancies-list.html" (dict
-  "type"  (.Get "type")
-  "limit" (.Get "limit" | default 0 | int)
-  "empty" (.Get "empty")
-) }}

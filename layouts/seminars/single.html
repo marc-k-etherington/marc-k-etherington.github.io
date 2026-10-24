@@ -4,9 +4,10 @@
 {{ partial "page-title.html" . }}
 
 <div class="seminar-stats">
-  <div class="seminar-stat"><span class="seminar-stat-number">{{ $s.seminars }}</span><span class="seminar-stat-label">Total Seminars</span></div>
+  <div class="seminar-stat"><span class="seminar-stat-number">{{ $s.seminars }}</span><span class="seminar-stat-label">Seminars by Marc</span></div>
   <div class="seminar-stat"><span class="seminar-stat-number">{{ $s.invited }}</span><span class="seminar-stat-label">Invited Talks</span></div>
   <div class="seminar-stat"><span class="seminar-stat-number">{{ $s.countries }}</span><span class="seminar-stat-label">Countries</span></div>
+  {{ if $s.group_talks }}<div class="seminar-stat"><span class="seminar-stat-number">{{ $s.group_talks }}</span><span class="seminar-stat-label">Talks &amp; Posters by Group Members</span></div>{{ end }}
 </div>
 
 <div class="seminar-key">
@@ -14,24 +15,43 @@
   <div class="key-items">
     <div class="key-item"><div class="key-box" style="border-left: 8px solid #FF8C42; background: #fff5eb;"></div><span>Invited Talk</span></div>
     <div class="key-item"><div class="key-box" style="border-left: 6px solid #008B8B; background: #e0f7f7;"></div><span>Contributed Talk</span></div>
+    {{ if $s.group_talks }}<div class="key-item"><div class="key-box group-talk-key"></div><span>Group Member Talk or Poster</span></div>{{ end }}
   </div>
 </div>
 
+{{ if $s.group_talks }}
+<p class="group-talks-note">Showing Marc's talks. <button type="button" class="link-button" onclick="filterSeminars('group', document.querySelector('[data-filter-sem=group]'))">Plus {{ $s.group_talks }} talks and posters by group members →</button></p>
+{{ end }}
+
 <div class="seminar-filters">
-  <button class="filter-btn active" onclick="filterSeminars('all', this)">All Seminars</button>
+  <button class="filter-btn active" data-filter-sem="mine" onclick="filterSeminars('mine', this)">Marc's Talks</button>
   <button class="filter-btn" onclick="filterSeminars('invited', this)">Invited Talks</button>
   <button class="filter-btn" onclick="filterSeminars('contributed', this)">Contributed Talks</button>
   <button class="filter-btn" onclick="filterSeminars('international', this)">International</button>
+  {{ if $s.group_talks }}<button class="filter-btn" data-filter-sem="group" onclick="filterSeminars('group', this)">Group Members</button>{{ end }}
+  <button class="filter-btn" data-filter-sem="all" onclick="filterSeminars('all', this)">Everything</button>
 </div>
 
 {{ $years := slice }}{{ range $talks }}{{ $years = $years | append .year }}{{ end }}
+<div class="seminar-list" data-default-filter="mine">
 {{ range $y := sort (uniq $years) "value" "desc" }}
   <h3><span class="badge">{{ $y }}</span></h3>
-  {{ range where $talks "year" $y }}
-  <div class="alert {{ if eq .type "invited" }}alert-danger{{ else }}alert-secondary{{ end }}{{ if ne .country "UK" }} international{{ end }}">
-    <p><strong>{{ .title | markdownify }}</strong> -
-      {{- with .event }} {{ . | markdownify }},{{ end }} <em>{{ .venue }}</em> ({{ .country }}){{ if .online }} - WEBINAR{{ end }}</p>
-  </div>
+  {{ range $t := where $talks "year" $y }}
+    {{ $classes := slice (cond (eq .type "invited") "alert-danger" "alert-secondary") }}
+    {{ if ne .country "UK" }}{{ $classes = $classes | append "international" }}{{ end }}
+    {{ if .speaker }}{{ $classes = $classes | append "group-talk" }}{{ end }}
+    <div class="alert {{ delimit $classes " " }}">
+      <p><strong>{{ .title | markdownify }}</strong> -
+        {{- with $t.event }} {{ . | markdownify }}{{ if $t.venue }},{{ end }}{{ end }}{{ with .venue }} <em>{{ . }}</em>{{ end }} ({{ .country }}){{ if .online }} - WEBINAR{{ end }}</p>
+      {{ if or .speaker .award }}
+      <p class="talk-extra">
+        {{- with .speaker }}🎓 {{ partial "people-links.html" (slice .) }}{{ end -}}
+        {{- if eq .type "poster" }} · Poster{{ end -}}
+        {{- with .award }} · <span class="talk-award">🏆 {{ . }}</span>{{ end -}}
+      </p>
+      {{ end }}
+    </div>
   {{ end }}
 {{ end }}
+</div>
 {{ end }}

@@ -1,9 +1,0 @@
-{{ define "main" }}
-<article class="post">
-  {{ partial "page-title.html" . }}
-  <p class="post-date"><strong>Publish date: </strong>
-    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format (site.Params.dateFormat | default "Jan 2, 2006") }}</time>
-  </p>
-  {{ partial "content.html" . }}
-</article>
-{{ end }}

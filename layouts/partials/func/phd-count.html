@@ -1,4 +1,0 @@
-{{/* Number of current PhD students in data/team.yaml */}}
-{{ $n := 0 }}
-{{ range site.Data.team.members }}{{ if and (eq .status "current") (eq .role "phd") }}{{ $n = add $n 1 }}{{ end }}{{ end }}
-{{ return $n }}

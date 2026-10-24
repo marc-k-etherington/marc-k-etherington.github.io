@@ -1,6 +1,0 @@
-{{/* Any stat can say number = "auto:publications" (or phd, seminars, invited, countries,
-     nature, corresponding, collaborations, citations, funding) instead of a typed figure */}}
-{{- $n := string . -}}
-{{- if hasPrefix $n "auto:" -}}
-  {{- index (partialCached "func/stats.html" "stats") (strings.TrimPrefix "auto:" $n) -}}
-{{- else -}}{{ . }}{{- end -}}

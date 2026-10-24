@@ -1,7 +1,0 @@
-{{/* In markdown:  {{< img src="/images/group/Aidan_Matthews_Photo.png" alt="Aidan Matthews" float="right" width="250" >}}
-     float="right|left" floats beside text on desktop and stacks above it on phones. */}}
-{{ $float := .Get "float" }}
-{{ $w := .Get "width" }}
-<span class="md-img{{ with $float }} md-img--{{ . }}{{ end }}"{{ with $w }} style="--md-img-w: {{ . }}px"{{ end }}>
-  {{ partial "img.html" (dict "src" (.Get "src") "alt" (.Get "alt") "sizes" (cond (ne $w "") (printf "%spx" $w) "(max-width: 768px) 100vw, 800px") "page" .Page) }}
-</span>

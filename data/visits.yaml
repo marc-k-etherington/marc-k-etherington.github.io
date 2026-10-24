@@ -1,0 +1,42 @@
+# =============================================================================
+# OUTGOING VISITS: group members visiting other labs (visitors coming to us are
+# in data/team.yaml with role: visitor). Each visit appears on the person's
+# Group card (or the Marc page), on the collaborator's card and on the grant.
+#
+# - person: Surname                  # author_name from data/team.yaml, or Etherington
+#   host: collaborator-id            # from data/collaborators.yaml
+#   start: 2026-01-15
+#   end: 2026-04-15
+#   funding: grant-id                # optional
+#   purpose: "One line."             # optional
+# =============================================================================
+
+visits:
+
+  - person: Etherington
+    host: takeda
+    start: 2025-08-01
+    end: 2025-10-31
+    funding: ""                      # CHECK: grant id, if any
+    purpose: "Sabbatical research visit."
+
+  - person: Pollard
+    host: hudson
+    start: 2024-09-01                # CHECK: dates
+    end: 2024-11-30                  # CHECK
+    funding: rsc-rcg-pollard
+    purpose: "Exploring her materials as polymer dots for biosensing."
+
+  - person: Etherington
+    host: reineke
+    start: 2026-03-23                # CHECK
+    end: 2026-03-24                  # CHECK
+    funding: british-council
+    purpose: "Springboard consortium meeting, with Aidan Matthews."
+
+  - person: Matthews
+    host: reineke
+    start: 2026-03-23                # CHECK
+    end: 2026-03-24                  # CHECK
+    funding: british-council
+    purpose: "Springboard consortium meeting."
