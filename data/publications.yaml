@@ -22,9 +22,33 @@
 
 papers:
 
+  - title: "Intramolecular hydrogen bonding enforced by crystal packing and vice versa in nitrophenyl-, nitropyridyl-, and nitropyrimidyl-bearing carbazoles"
+    year: 2026
+    authors: "Jai-Ram Mistry, Patrick J. Kimber, Ruth M. Pollard, Glen Masterson, Lingyu Yang, Chloe R. Antonen, Stephanie Montanaro, Stefan Warrington, Simon J. Teat, Mark R. J. Elsegood, Felix Plasser, Marc K. Etherington & Iain A. Wright*"
+    journal: "Physical Chemistry Chemical Physics, 28, 22280-22288"
+    url: https://pubs.rsc.org/cp/article/28/36/22280/1297214/Intramolecular-hydrogen-bonding-enforced-by
+    doi: 10.1039/d6cp02608g
+    image: "/post/images/AIE_CBZ_TOC.jpeg"
+    
+  - title: "Homoconjugation-induced enhancements of photophysical properties in donor–acceptor triptycenes arise from interplay between intramolecular charge transfer and exciton states"
+    year: 2026
+    authors: "Stefan Warrington, Hristo Ivov Gonev, Gary S. Nichol, Eleanor M. Dodd, Simon J. Coles, Thomas J. Penfold, Marc K. Etherington, Tracey M. Clarke* & Iain A. Wright"
+    journal: "Chemical Science, 17, 14590-14602"
+    url: https://pubs.rsc.org/sc/article/17/30/14590/1264795/Homoconjugation-induced-enhancements-of
+    doi: 10.1039/d6sc01073c
+    image: "/post/images/Warrington_TOC.jpeg"
+    
+  - title: "Singlet–triplet gaps for evaluating thermally activated delayed fluorescence: which one is the (b)EST?"
+    year: 2026
+    authors: "Ali Shuaib*, Lubna Salah, Antonio Prlj, Narendran Rajendran, Marc K. Etherington, Ahmed Abdel Nazeer, Carlito S. Ponseca Jr, Andrew P. Monkman, Andrew Danos* & Saad Makhseed*"
+    journal: "Journal of Materials Chemistry C, 14, 4353-4361"
+    url: https://pubs.rsc.org/tc/article/14/11/4353/919225/Singlet-triplet-gaps-for-evaluating-thermally
+    doi: 10.1039/d5tc03735b
+    image: "/post/images/BEST_TOC.jpeg"
+    
   - title: "Reduced temperature solid-state synthesis of barium sulfide: a greener alternative"
     year: 2025
-    authors: "William D. Tetlow, Oliver S. Hutter, Marc K. Etherington*, & Giulia Longo*"
+    authors: "William D. Tetlow, Oliver S. Hutter, Marc K. Etherington* & Giulia Longo*"
     journal: "RSC Advances, 15, 50446-50456"
     url: https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b
     doi: 10.1039/D5RA07445B
