@@ -205,3 +205,9 @@ main pre { overflow-x: auto; max-width: 100%; }
 /* Optional per photo in data/gallery.yaml: crop: true brings back the classic
    4:3 crop, with focus: top / bottom / left / right choosing what stays in view */
 .polaroid--crop .polaroid-photo { aspect-ratio: 4 / 3; height: auto; max-height: none; object-fit: cover; }
+
+/* ---------- 12. Page headings scale down on phones so words never split ---------- */
+@media (max-width: 768px) {
+  main > h1 { font-size: clamp(2.2rem, 10.5vw, 4rem); line-height: 1.15; }
+}
+main > h1 { overflow-wrap: normal; }
