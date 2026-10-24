@@ -1,0 +1,13 @@
+# One source of truth for the floating social bar on every page.
+- name: LinkedIn
+  url: https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/
+  icon: /images/LinkedIn.jpg
+- name: Bluesky
+  url: https://bsky.app/profile/mketherington.bsky.social
+  icon: /images/BlueSky_Logo.png
+- name: ResearchGate
+  url: https://www.researchgate.net/profile/Marc-Etherington
+  icon: /images/Researchgate.png
+- name: Google Scholar
+  url: https://scholar.google.co.uk/citations?user=3dgABIQAAAAJ&hl=en
+  icon: /images/Google_Scholar.png

@@ -1,0 +1,98 @@
+# ============================================================================
+# One list for the whole team. Feeds: the Group page, the Research page team
+# summary, and any stat set to "auto:phd" (Research "Active PhDs", Marc page).
+#
+# To add someone: copy a block and fill it in.
+# When someone leaves: change status to alumni, add `left` and `where_now`.
+# PhD progress bars are calculated from `start` and `years` at each build.
+# ============================================================================
+
+pi:
+  name: Dr Marc Etherington
+  title: Assistant Professor and Principal Investigator
+  photo: /images/group/TOT_Marc.jpg
+  profile: /marc-etherington/
+  summary: Spectroscopist specialising in organic photonics, TADF materials and photophysical chemistry.
+  topics: [Spin-vibronic coupling, TADF mechanisms, Time-resolved spectroscopy]
+
+members:
+
+  - name: Aidan Matthews
+    status: current            # current | alumni
+    role: phd                  # phd | postdoc | ra | masters | undergraduate | visitor
+    title: PhD student
+    photo: /images/group/Aidan_Matthews_Photo.png
+    office: Ellison D-Block 111
+    email: aidan3.matthews 'at' northumbria.ac.uk
+    start: 2023-10-01          # CHECK: start date of PhD
+    years: 4                   # CHECK: funded length of PhD
+    project: Caged-chromophore systems for charge transfer, room-temperature phosphorescence and TADF
+    topics: [Caged chromophores, Charge transfer, OLEDs]
+    bio: >
+      Aidan completed his MChem at Northumbria University in 2022. He began working as a
+      research assistant for Dr Valery Kozhevnikov of Northumbria University synthesising
+      luminescent rhenium(I) complexes for bioorthogonal click reactions. Aidan joined the
+      group in 2023 designing caged-chromophore systems for potential OLED use. Outside of
+      the laboratory, Aidan is an avid musician, with radio play on BBC Radio 1.
+
+  - name: Will Tetlow
+    status: current
+    role: phd
+    title: PhD student
+    photo: /images/group/will_photo.png
+    office: Ellison D-Block 111
+    email: will.tetlow 'at' northumbria.ac.uk
+    start: 2022-10-01
+    years: 4                   # CHECK
+    project: Greener solid-state synthesis of pure and doped BaS for optoelectronic applications
+    topics: [Chalcogenide perovskites, Solid-state synthesis]
+    papers:
+      - title: "Reduced temperature solid-state synthesis of barium sulfide (RSC Advances, 2025)"
+        url: https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b
+    bio: >
+      Will started his undergraduate degree in Physics in 2019 at Northumbria University,
+      obtaining a first-class BSc in 2022. He started his PhD in the group of Dr Giulia Longo
+      at Northumbria in October 2022 on alternative synthetic routes to chalcogenide
+      perovskites, then transferred to the group in summer 2024 when Giulia returned to Spain.
+      Will likes painting and graphic design in his spare time.
+
+  - name: Ruth Pollard
+    status: alumni
+    role: phd
+    title: PhD student
+    photo: /images/group/Ruth_Profile.jpg
+    period: 2021 to 2026
+    project: Tuning emissive N-quinolyl through-space charge transfer states using sp3 scaffolds
+    topics: [Through-space charge transfer, TADF]
+    papers:
+      - title: "A Modular Approach to Tuning Emissive N-Quinolyl Through-Space Charge Transfer States (J. Phys. Chem. B, 2024)"
+        url: https://pubs.acs.org/doi/10.1021/acs.jpcb.4c05220
+    where_now: Completed her PhD in 2026 and now lives in Canada.
+    bio: >
+      Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018.
+      In 2019 she began an MPhil under Dr Cucinotta looking at inorganic light-emitting
+      materials in plasmonic nanosystems, then joined the group in 2021 as a joint student
+      with Dr Jon Knowles, studying organic materials for LEDs. Ruth sings in multiple choirs
+      and enjoys travelling and spending time with her friends.
+
+  - name: Oliver M. Rigby
+    status: alumni
+    role: ra
+    title: Research Associate
+    photo: /images/group/Oliver_Profile.jpg
+    period: ""                 # CHECK: e.g. 2024 to 2025
+    where_now: ""              # add where Oliver is now
+    bio: >
+      Oliver moved to the North East for his PhD at Durham University, completed in 2024,
+      on ferroelectric-inspired minerals for photovoltaics including bournonite, with
+      specialisms in electron microscopy, optical characterisation, Raman spectroscopy and
+      solution syntheses. At Northumbria he worked with Prof. Neil Beattie and Prof. Vincent
+      Barrioz on life cycle assessments of CZTSe and Si, and on Sb2S3 nanorods. In his spare
+      time he enjoys fell running and climbing.
+
+  - name: Chris Hogg
+    status: alumni
+    role: ra
+    title: Research Assistant
+    period: May to August 2023
+    where_now: Joined Dr Paul McGonigal's group at the University of York.

@@ -1,0 +1,36 @@
+{{/* Every count on the site, calculated once per build from the data files.
+     Use anywhere as a stat number "auto:<name>" or in markdown as {{< stat "<name>" >}}. */}}
+{{ $pubs := site.Data.publications.papers | default slice }}
+{{ $talks := site.Data.seminars.talks | default slice }}
+
+{{ $nature := 0 }}{{ $angewandte := 0 }}{{ $jacs := 0 }}{{ $corresponding := 0 }}{{ $reviews := 0 }}
+{{ range $pubs }}
+  {{ if hasPrefix .journal "Nature" }}{{ $nature = add $nature 1 }}{{ end }}
+  {{ if in .journal "Angewandte" }}{{ $angewandte = add $angewandte 1 }}{{ end }}
+  {{ if in .journal "American Chemical Society" }}{{ $jacs = add $jacs 1 }}{{ end }}
+  {{ if in .authors "Etherington*" }}{{ $corresponding = add $corresponding 1 }}{{ end }}
+  {{ if .review }}{{ $reviews = add $reviews 1 }}{{ end }}
+{{ end }}
+
+{{ $countries := slice }}{{ range $talks }}{{ $countries = $countries | append .country }}{{ end }}
+
+{{ $collab := 0 }}{{ $flags := slice }}
+{{ with site.GetPage "/research" }}{{ with .Params.collaborations }}
+  {{ $collab = len . }}{{ range . }}{{ $flags = $flags | append .flag }}{{ end }}
+{{ end }}{{ end }}
+
+{{ return dict
+  "publications"   (len $pubs)
+  "nature"         $nature
+  "angewandte"     $angewandte
+  "jacs"           $jacs
+  "corresponding"  $corresponding
+  "reviews"        $reviews
+  "seminars"       (len $talks)
+  "invited"        (len (where $talks "type" "invited"))
+  "countries"      (len (uniq $countries))
+  "phd"            (partialCached "func/phd-count.html" "phd")
+  "collaborations" (printf "%d (%d)" $collab (len (uniq $flags)))
+  "citations"      (site.Data.metrics.citations | default "")
+  "funding"        (site.Data.metrics.funding | default "")
+}}

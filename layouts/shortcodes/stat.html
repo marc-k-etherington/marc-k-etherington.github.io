@@ -1,0 +1,2 @@
+{{/* In any markdown: {{< stat "publications" >}} prints the live count */}}
+{{- index (partialCached "func/stats.html" "stats") (.Get 0) -}}

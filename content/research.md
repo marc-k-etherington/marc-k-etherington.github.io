@@ -11,24 +11,25 @@ mission = """
 We investigate the fundamental photophysics of organic light-emitting materials, with a particular focus on thermally activated delayed fluorescence (TADF). Our research spans from molecular design principles to device applications, combining advanced spectroscopy, computational modeling, and synthesis. We aim to understand and control excited state dynamics to enable next-generation technologies in displays, lighting, and bioimaging.
 """
 
+# Numbers marked auto: are counted from the data files; see data/metrics.yaml for citations and funding
 [[stats]]
-number = "30"
+number = "auto:publications"
 label = "Publications"
 
 [[stats]]
-number = "2700+"
+number = "auto:citations"
 label = "Citations"
 
 [[stats]]
-number = "£200K+"
+number = "auto:funding"
 label = "Funding Secured"
 
 [[stats]]
-number = "X ()"
+number = "auto:collaborations"
 label = "Collaborations (Countries)"
 
 [[stats]]
-number = "3"
+number = "auto:phd"
 label = "Active PhDs"
 
 [[impact]]
@@ -75,32 +76,9 @@ techniques = "Photoluminescence spectroscopy, Biocompatibility testing"
 recent_work = "JST ASPIRE Grant"
 
 
-[[featured_publications]]
-journal = "J. Phys. Chem. B"
-year = "2024"
-title = "A Modular Approach to Tuning Emissive N-Quinolyl Through-Space Charge Transfer States Using sp3-Scaffolds"
-description = "Fundamental structure-property relationships regarding the N-aryl distance required for charge transfer"
 
-[[featured_publications]]
-journal = "J. Mater. Chem. C"
-year = "2022"
-title = "From phosphorescence to delayed fluorescence in one step: tuning photophysical properties by quaternisation of an sp2-hybridised nitrogen atom"
-description = "Breakthrough in tuning photophysical properties through molecular modification."
 
-[[recent_seminars]]
-icon = "🎤"
-title = "Kyushu Univerity - Japan (2024)"
-description = "Presented latest work on charge transfer and TADF for Prof. Adachi's group at OPERA and Prof. Albrecht's group at Kyushu University."
-
-[[recent_seminars]]
-icon = "✈️"
-title = "University of Osaka - Japan (2025)"
-description = "Presented latest work on charge transfer and TADF in the Department of Chemistry at the University of Osaka."
-
-[[recent_seminars]]
-icon = "🏆"
-title = "Kitasato University - Japan (2025)"
-description = "Presented latest work on charge transfer and TADF for Prof. Watanabe's group at Kitasato University"
+# Featured publications and recent seminars are now automatic (data/publications.yaml, data/seminars.yaml)
 
 [[capabilities]]
 icon = "🔬"
@@ -189,25 +167,6 @@ title = "Royal Society Research Grant"
 period = ""
 amount = ""
 description = ""
-
-[[team_summary]]
-icon = "👨‍🔬"
-title = "Principal Investigator"
-content = """
-**Dr Marc Etherington**  
-Assistant Professor
-
-Spectroscopist specializing in organic photonics, TADF materials, and photophysical chemistry.
-"""
-
-[[team_summary]]
-icon = "🎓"
-title = "PhD Students (3)"
-content = """
-**Ruth Pollard** - N-quinolyl charge transfer systems  
-**Aidan Matthews** - Cage linker systems  
-**Will Tetlow** - Chalcogenide perovskites
-"""
 
 [[team_summary]]
 icon = "🏆"

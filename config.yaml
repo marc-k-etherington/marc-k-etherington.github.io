@@ -95,3 +95,15 @@ markup:
   tableOfContents:
     endLevel: 6
     startLevel: 2
+
+# --- Added: lets Hugo optimise images where they already live (no files need moving) ---
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: content/images
+      target: assets/images
+    - source: content/post/images
+      target: assets/post/images
+    - source: static/post/images
+      target: assets/post/images

@@ -1,0 +1,206 @@
+# =============================================================================
+# SEMINARS AND TALKS: newest at the top. Updates the Seminars page, its filters
+# and counts (total, invited, countries) and Research "Recent Seminars".
+#
+# To add a talk, copy this block to the top of the list:
+#
+# - title: "Talk title"
+#   year: 2026
+#   type: invited            # invited | contributed
+#   event: "Conference name" # optional: leave out for departmental seminars
+#   venue: "University of Somewhere"
+#   country: UK
+#   online: true             # optional: only for webinars
+# =============================================================================
+
+talks:
+
+  - title: "A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission"
+    year: 2025
+    type: invited
+    venue: "Kyushu University"
+    country: Japan
+
+  - title: "A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission"
+    year: 2025
+    type: invited
+    venue: "University of Osaka"
+    country: Japan
+
+  - title: "A Glowing Legacy: How Quinine Inspires Single-Chromophore Emitters with Delayed Emission"
+    year: 2025
+    type: invited
+    venue: "Kitasato University"
+    country: Japan
+
+  - title: "Tuning the chromophore of an N-aryl scaffold for thermally activated delayed fluorescence"
+    year: 2025
+    type: contributed
+    event: "Optical Probes 2025"
+    venue: "Fukuoka"
+    country: Japan
+
+  - title: "Quinine: Is this the _tonic_ for a new class of thermally activated delayed fluorescence (TADF) emitters?"
+    year: 2025
+    type: invited
+    venue: "University of Edinburgh"
+    country: UK
+
+  - title: "Lone pair interactions, charge transfer and the pathways towards thermally activated delayed fluorescence (TADF)"
+    year: 2024
+    type: invited
+    venue: "Newcastle University"
+    country: UK
+
+  - title: "From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence"
+    year: 2024
+    type: contributed
+    event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2024"
+    venue: "University of Sheffield"
+    country: UK
+
+  - title: "From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence"
+    year: 2024
+    type: contributed
+    event: "International Conference on the Science and Technology of Synthetic Electronic Materials"
+    venue: "TU Dresden"
+    country: Germany
+
+  - title: "A modular approach to tuning emissive N-aryl through-space charge transfer states"
+    year: 2023
+    type: contributed
+    event: "Optical Probes 2023"
+    venue: "Como"
+    country: Italy
+
+  - title: "A modular approach to tuning emissive N-aryl through-space charge transfer states"
+    year: 2023
+    type: contributed
+    event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2023"
+    venue: "University of Strathclyde"
+    country: UK
+
+  - title: "From phosphorescence to delayed fluorescence in one step"
+    year: 2022
+    type: contributed
+    event: "13th International Conference of Electroluminescence and Optoelectronic Devices"
+    venue: "Chelsea Football Club"
+    country: UK
+
+  - title: "Intermolecular interactions in thermally activated delayed fluorescence emitters"
+    year: 2022
+    type: invited
+    event: "SPIE"
+    venue: "San Diego Convention Center"
+    country: USA
+
+  - title: "Modulation of charge transfer by _N_-alkylation to control photoluminescence energy and quantum yield"
+    year: 2022
+    type: contributed
+    event: "International Conference on the Science and Technology of Synthetic Metals"
+    venue: "University of Glasgow"
+    country: UK
+
+  - title: "Thermally activated delayed fluorescence: Beyond the single molecule"
+    year: 2021
+    type: invited
+    event: "6th International TADF Workshop"
+    venue: "Kyushu University"
+    country: Japan
+    online: true
+
+  - title: "Thermally activated delayed fluorescence: Beyond the single molecule"
+    year: 2021
+    type: invited
+    event: "NECEM Photophysics for Energy Materials Conference"
+    venue: "Newcastle University"
+    country: UK
+    online: true
+
+  - title: "Capturing tonic water's blue glow for photonic applications"
+    year: 2020
+    type: invited
+    event: "Natural Sciences Hour"
+    venue: "University of York"
+    country: UK
+    online: true
+
+  - title: "Capturing tonic water's blue glow for photonic applications"
+    year: 2020
+    type: invited
+    event: "North East Centre for Energy Materials (NECEM)"
+    venue: "Newcastle University"
+    country: UK
+    online: true
+
+  - title: "Modulation of charge transfer by _N_-alkylation to control photoluminescence energy and quantum yield"
+    year: 2020
+    type: invited
+    event: "Durham Energy Institute"
+    venue: "Durham University"
+    country: UK
+    online: true
+
+  - title: "Controlling charge transfer in tonic water and looking at thermally activated delayed fluorescence beyond the single molecule"
+    year: 2020
+    type: invited
+    event: "Department of Physics"
+    venue: "University of Sheffield"
+    country: UK
+    online: true
+
+  - title: "Persistent dimer emission in thermally activated delayed fluorescence materials"
+    year: 2019
+    type: contributed
+    event: "Optical Probes"
+    venue: "Vilnius"
+    country: Lithuania
+
+  - title: "Persistent dimer emission in thermally activated delayed fluorescence materials"
+    year: 2019
+    type: invited
+    event: "Department of Chemistry"
+    venue: "University of Edinburgh"
+    country: UK
+
+  - title: "Excited-state aromatic interactions in the aggregation-induced emission of molecular rotors"
+    year: 2018
+    type: contributed
+    event: "WOREN"
+    venue: "Wisla"
+    country: Poland
+
+  - title: "Photoinduced absorption meets thermally activated delayed fluorescence: When slow and (quasi-)steady wins the race"
+    year: 2017
+    type: contributed
+    event: "Optical Probes"
+    venue: "Quebec City"
+    country: Canada
+
+  - title: "Spin-orbit charge transfer mechanism in a thermally activated delayed fluorescence molecule"
+    year: 2016
+    type: contributed
+    event: "MQD Workshop"
+    venue: "University of York"
+    country: UK
+
+  - title: "Hetero triplet fusion in acene-based organic light-emitting diodes"
+    year: 2015
+    type: contributed
+    event: "Optical Probes"
+    venue: "Hong Kong University of Science and Technology"
+    country: China
+
+  - title: "Magnetic field effects on the photocurrent of polymer:fullerene solar cells"
+    year: 2014
+    type: contributed
+    event: "SpinOS"
+    venue: "Himeji"
+    country: Japan
+
+  - title: "Recombination pathways in organic photovoltaics observed through spin polarization measurements"
+    year: 2014
+    type: contributed
+    event: "Fall MRS"
+    venue: "Boston"
+    country: USA
