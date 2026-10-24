@@ -5,6 +5,9 @@
 # To add someone: copy a block and fill it in.
 # When someone leaves: change status to alumni, add `left` and `where_now`.
 # PhD progress bars are calculated from `start` and `years` at each build.
+# Each person's papers are found automatically in data/publications.yaml using
+# `author_name` (their surname). If a collaborator ever shares the surname, write
+# the name exactly as it appears in author lists instead, e.g. "Ruth M. Pollard".
 # ============================================================================
 
 pi:
@@ -18,6 +21,7 @@ pi:
 members:
 
   - name: Aidan Matthews
+    author_name: Matthews   # as it appears in author lists; papers are found automatically
     status: current            # current | alumni
     role: phd                  # phd | postdoc | ra | masters | undergraduate | visitor
     title: PhD student
@@ -36,6 +40,7 @@ members:
       the laboratory, Aidan is an avid musician, with radio play on BBC Radio 1.
 
   - name: Will Tetlow
+    author_name: Tetlow   # as it appears in author lists; papers are found automatically
     status: current
     role: phd
     title: PhD student
@@ -46,9 +51,6 @@ members:
     years: 4                   # CHECK
     project: Greener solid-state synthesis of pure and doped BaS for optoelectronic applications
     topics: [Chalcogenide perovskites, Solid-state synthesis]
-    papers:
-      - title: "Reduced temperature solid-state synthesis of barium sulfide (RSC Advances, 2025)"
-        url: https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra07445b
     bio: >
       Will started his undergraduate degree in Physics in 2019 at Northumbria University,
       obtaining a first-class BSc in 2022. He started his PhD in the group of Dr Giulia Longo
@@ -57,6 +59,7 @@ members:
       Will likes painting and graphic design in his spare time.
 
   - name: Ruth Pollard
+    author_name: Pollard   # as it appears in author lists; papers are found automatically
     status: alumni
     role: phd
     title: PhD student
@@ -64,9 +67,6 @@ members:
     period: 2021 to 2026
     project: Tuning emissive N-quinolyl through-space charge transfer states using sp3 scaffolds
     topics: [Through-space charge transfer, TADF]
-    papers:
-      - title: "A Modular Approach to Tuning Emissive N-Quinolyl Through-Space Charge Transfer States (J. Phys. Chem. B, 2024)"
-        url: https://pubs.acs.org/doi/10.1021/acs.jpcb.4c05220
     where_now: Completed her PhD in 2026 and now lives in Canada.
     bio: >
       Ruth grew up in the Cotswolds and completed her MChem at Newcastle University in 2018.
@@ -76,6 +76,7 @@ members:
       and enjoys travelling and spending time with her friends.
 
   - name: Oliver M. Rigby
+    author_name: Rigby   # as it appears in author lists; papers are found automatically
     status: alumni
     role: ra
     title: Research Associate
@@ -91,6 +92,7 @@ members:
       time he enjoys fell running and climbing.
 
   - name: Chris Hogg
+    author_name: Hogg   # as it appears in author lists; papers are found automatically
     status: alumni
     role: ra
     title: Research Assistant

@@ -16,11 +16,16 @@
 <section class="welcome-hero {{ if not .IsHome }}welcome-hero-compact{{ end }}">
   <div class="hero-content">
     {{ if .IsHome }}
-      <h1 class="hero-title">Welcome to The Etherington Lab!</h1>
+      <h1 class="hero-logo">
+        {{ partial "img.html" (dict "src" "/images/logo/logo-full.png" "alt" "The Etherington Lab: where molecules come to light" "class" "hero-logo-img no-border" "sizes" "(max-width: 600px) 80vw, 440px" "eager" true "quality" 90) }}
+      </h1>
       <p class="hero-subtitle">Advancing organic photonics, TADF materials, and photophysical chemistry at Northumbria University</p>
     {{ else }}
       {{/* Not an h1 on inner pages, so each page has exactly one h1 (its own title) */}}
-      <p class="hero-title-compact">Welcome to The Etherington Lab!</p>
+      <a href="/" class="hero-brand" aria-label="The Etherington Lab, home page">
+        {{ partial "img.html" (dict "src" "/images/logo/logo-mark.png" "alt" "" "class" "hero-brand-mark no-border" "sizes" "64px" "eager" true "quality" 90) }}
+        <span class="hero-title-compact">Welcome to The Etherington Lab!</span>
+      </a>
     {{ end }}
 
     <div class="hero-nav-wrapper" role="navigation" aria-label="Main">

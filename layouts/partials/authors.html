@@ -1,2 +1,8 @@
-{{/* Author list with Marc's name bolded automatically (keeps the * for corresponding) */}}
-{{ replaceRE `(Marc K\.? Etherington\*?)` "**$1**" . | markdownify }}
+{{/* Author list with Marc and every group member (data/team.yaml author_name) bolded automatically */}}
+{{ $a := replaceRE `(Marc K\.? Etherington\*?)` "**$1**" . }}
+{{ range site.Data.team.members }}
+  {{ with .author_name }}
+    {{ $a = replaceRE (printf `([A-Z][^,&*]*?\b%s\b\*?)` .) "**$1**" $a }}
+  {{ end }}
+{{ end }}
+{{ $a | markdownify }}

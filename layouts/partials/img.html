@@ -11,6 +11,7 @@
 {{ $sizes := .sizes | default "(max-width: 768px) 100vw, 800px" }}
 {{ $eager := .eager | default false }}
 {{ $style := .style | default "" }}
+{{ $q := .quality | default 75 }}
 
 {{ $img := false }}
 {{ with .page }}{{ with .Resources.Get $src }}{{ $img = . }}{{ end }}{{ end }}
@@ -22,12 +23,12 @@
   {{ $srcset := slice }}
   {{ range slice 400 800 1200 1600 }}
     {{ if le . $img.Width }}
-      {{ $r := $img.Resize (printf "%dx webp q75" .) }}
+      {{ $r := $img.Resize (printf "%dx webp q%d" . $q) }}
       {{ $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) }}
     {{ end }}
   {{ end }}
   {{ $w := cond (gt $img.Width 1200) 1200 $img.Width }}
-  {{ $fallback := $img.Resize (printf "%dx webp q75" $w) }}
+  {{ $fallback := $img.Resize (printf "%dx webp q%d" $w $q) }}
   <img alt="{{ $alt }}" src="{{ $fallback.RelPermalink }}"
        {{ with $srcset }}{{ printf "srcset=%q" (delimit . ", ") | safeHTMLAttr }} sizes="{{ $sizes }}"{{ end }}
        width="{{ $fallback.Width }}" height="{{ $fallback.Height }}"

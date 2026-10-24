@@ -1,6 +1,7 @@
 {{/* One team member card. Uses the .member-card styles already in custom.css */}}
 {{ $m := . }}
 {{ $alumni := eq $m.status "alumni" }}
+{{ $papers := partial "func/member-papers.html" $m }}
 
 <article class="member-card{{ if $alumni }} past-member-card{{ end }}" id="{{ $m.name | urlize }}">
   {{ with $m.photo }}
@@ -37,20 +38,24 @@
       {{ with $m.project }}<p><strong>Project:</strong> {{ . }}{{ if not $alumni }} (<a href="/research/#projects">see Research</a>){{ end }}</p>{{ end }}
       {{ with $m.office }}<p><strong>Office:</strong> {{ . }}</p>{{ end }}
       {{ with $m.email }}<p><strong>Email:</strong> {{ . }}</p>{{ end }}
+      {{ with $papers }}<p><strong>Publications:</strong> {{ len . }} paper{{ if gt (len .) 1 }}s{{ end }} with the group</p>{{ end }}
     </div>
 
     {{ with $m.topics }}
     <div class="expertise-tags-marc compact">{{ range . }}<span class="expertise-tag-marc">{{ . }}</span>{{ end }}</div>
     {{ end }}
 
-    {{ if or $m.bio $m.papers }}
+    {{ if or $m.bio $papers }}
     <details class="member-more">
-      <summary>{{ if $m.bio }}Read bio{{ else }}Publications{{ end }}</summary>
+      <summary>{{ if and $m.bio $papers }}Read bio and papers{{ else if $m.bio }}Read bio{{ else }}Papers{{ end }}</summary>
       {{ with $m.bio }}<div class="member-bio">{{ . | markdownify }}</div>{{ end }}
-      {{ with $m.papers }}
-        <p class="member-papers-title"><strong>Selected papers</strong></p>
+      {{ with $papers }}
+        <p class="member-papers-title"><strong>Papers ({{ len . }})</strong></p>
         <ul class="member-papers">
-          {{ range . }}<li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>{{ end }}
+          {{ range $p := . }}
+          <li><a href="{{ $p.url }}" target="_blank" rel="noopener">{{ $p.title | markdownify }}</a>
+            {{- with $p.journal }} <span class="member-paper-meta">({{ index (split . ",") 0 }}{{ with $p.year }}, {{ . }}{{ end }})</span>{{ end }}</li>
+          {{ end }}
         </ul>
       {{ end }}
     </details>

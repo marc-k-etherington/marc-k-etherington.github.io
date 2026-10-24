@@ -34,18 +34,19 @@ Keep the two-space indents exactly as in the example.
 ```yaml
   - title: "Paper title"
     year: 2026
-    authors: "First Author, **Student Name**, Marc K. Etherington* & Other Author*"
+    authors: "First Author, Student Name, Marc K. Etherington* & Other Author*"
     journal: "Journal Name, 12, 345-356"
     url: https://doi.org/10.xxxx/xxxxx
     doi: 10.xxxx/xxxxx
     image: /post/images/My_TOC.jpg
 ```
-Your name is bolded for you. Put `*` after it and it counts as corresponding author.
+Your name and group members' names are bolded for you, and the paper appears on each
+co-author's Group page card. Put `*` after your name and it counts as corresponding author.
 A journal starting "Nature" counts as Nature family. Add `review: true` for reviews and
 `featured: "one-line description"` to show it on the Research page.
 
 **Updates:** Publications list, all its counts and filters, publication count on the Marc
-and Research pages, Research featured papers.
+and Research pages, Research featured papers, group members' paper lists and counts.
 
 ## New talk → `data/seminars.yaml`
 
@@ -63,7 +64,8 @@ Research "Recent Seminars" (latest three invited talks).
 
 ## New team member → `data/team.yaml`
 
-Copy an existing person's block. When someone leaves, change `status: current` to
+Copy an existing person's block, including `author_name` (their surname) so their papers
+are found automatically. When someone leaves, change `status: current` to
 `status: alumni` and add `period:` and `where_now:`.
 
 **Updates:** Group page, Research team cards, PhD student counts, PhD progress bars.
