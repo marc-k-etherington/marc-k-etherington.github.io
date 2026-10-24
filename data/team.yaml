@@ -25,7 +25,7 @@ members:
     office: Ellison D-Block 111
     email: aidan3.matthews 'at' northumbria.ac.uk
     start: 2023-10-01          # CHECK: start date of PhD
-    years: 4                   # CHECK: funded length of PhD
+    years: 3                   # CHECK: funded length of PhD
     project: Caged-chromophore systems for charge transfer, room-temperature phosphorescence and TADF
     topics: [Caged chromophores, Charge transfer, OLEDs]
     bio: >
@@ -95,4 +95,4 @@ members:
     role: ra
     title: Research Assistant
     period: May to August 2023
-    where_now: Joined Dr Paul McGonigal's group at the University of York.
+    where_now: Joined Prof. Paul McGonigal's group at the University of York, before following that group to the University of Oxford.
