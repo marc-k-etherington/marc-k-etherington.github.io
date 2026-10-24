@@ -5,6 +5,13 @@
 # To add someone: copy a block and fill it in.
 # When someone leaves: change status to alumni, add `left` and `where_now`.
 # PhD progress bars are calculated from `start` and `years` at each build.
+# PhD funding: `funding:` on a person shows on their card as "Funded by...".
+# Use a grant id from data/grants.yaml (it then links to the grant), or plain
+# text such as "ReNU CDT studentship". It is not counted in any funding total.
+# Visitors: role: visitor, plus type, home, country, host, visit_start and
+# visit_end. They show in Current team during the visit, then under Visitors.
+# Projects are listed in data/projects.yaml (people: [Surname]) and appear on
+# the person's card automatically, as do their talks, prizes and own grants.
 # Each person's papers are found automatically in data/publications.yaml using
 # `author_name` (their surname). If a collaborator ever shares the surname, write
 # the name exactly as it appears in author lists instead, e.g. "Ruth M. Pollard".
@@ -22,6 +29,7 @@ members:
 
   - name: Aidan Matthews
     author_name: Matthews   # as it appears in author lists; papers are found automatically
+    funding: ""                    # CHECK: e.g. "Northumbria University studentship"
     status: current            # current | alumni
     role: phd                  # phd | postdoc | ra | masters | undergraduate | visitor
     title: PhD student
@@ -30,7 +38,6 @@ members:
     email: aidan3.matthews 'at' northumbria.ac.uk
     start: 2023-10-01          # CHECK: start date of PhD
     years: 3                   # CHECK: funded length of PhD
-    project: Caged-chromophore systems for charge transfer, room-temperature phosphorescence and TADF
     topics: [Caged chromophores, Charge transfer, OLEDs]
     bio: >
       Aidan completed his MChem at Northumbria University in 2022. He began working as a
@@ -41,6 +48,7 @@ members:
 
   - name: Will Tetlow
     author_name: Tetlow   # as it appears in author lists; papers are found automatically
+    funding: "ReNU CDT studentship"
     status: current
     role: phd
     title: PhD student
@@ -49,7 +57,6 @@ members:
     email: will.tetlow 'at' northumbria.ac.uk
     start: 2022-10-01
     years: 4                   # CHECK
-    project: Greener solid-state synthesis of pure and doped BaS for optoelectronic applications
     topics: [Chalcogenide perovskites, Solid-state synthesis]
     bio: >
       Will started his undergraduate degree in Physics in 2019 at Northumbria University,
@@ -58,14 +65,29 @@ members:
       perovskites, then transferred to the group in summer 2024 when Giulia returned to Spain.
       Will likes painting and graphic design in his spare time.
 
+  - name: Nae Aota
+    author_name: Aota   # as it appears in author lists; papers are found automatically
+    role: visitor                  # visitors move from Current team to Visitors after visit_end
+    type: Visiting PhD student
+    home: The University of Osaka
+    country: Japan
+    host: takeda                   # collaborator id (data/collaborators.yaml)
+    visit_start: 2026-05-22
+    visit_end: 2026-08-31          # CHECK
+    funding: aspire                # grant id (data/grants.yaml)
+    bio: >
+      Nae joined us from the group of Dr Youhei Takeda at the University of Osaka for a
+      visit of just over three months, supported by the JST ASPIRE grant, taking on some
+      of the novel chemistry that we do in the group.
+
   - name: Ruth Pollard
     author_name: Pollard   # as it appears in author lists; papers are found automatically
+    funding: ""                    # CHECK
     status: alumni
     role: phd
     title: PhD student
     photo: /images/group/Ruth_Profile.jpg
     period: 2021 to 2026
-    project: Tuning emissive N-quinolyl through-space charge transfer states using sp3 scaffolds
     topics: [Through-space charge transfer, TADF]
     where_now: Completed her PhD in 2026 and now lives in Canada.
     bio: >

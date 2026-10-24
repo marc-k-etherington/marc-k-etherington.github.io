@@ -1,0 +1,35 @@
+{{/* Join Us "Student Success": built from data/seminars.yaml (speaker, award),
+     data/grants.yaml (holder) and data/publications.yaml. Nothing to edit here. */}}
+{{ $s := partialCached "func/stats.html" "stats" }}
+{{ $awards := partial "func/awards.html" . }}
+{{ $talks := where site.Data.seminars.talks "speaker" "!=" nil }}
+{{ $intl := where $talks "country" "!=" "UK" }}
+{{ $countries := slice }}{{ range $intl }}{{ $countries = $countries | append .country }}{{ end }}{{ $countries = uniq $countries }}
+{{ $surnames := slice }}{{ range site.Data.team.members }}{{ with .author_name }}{{ $surnames = $surnames | append . }}{{ end }}{{ end }}
+{{ $studentPapers := 0 }}
+{{ range site.Data.publications.papers }}{{ $a := .authors }}{{ $hit := false }}{{ range $surnames }}{{ if findRE (printf `\b%s\b` .) $a 1 }}{{ $hit = true }}{{ end }}{{ end }}{{ if $hit }}{{ $studentPapers = add $studentPapers 1 }}{{ end }}{{ end }}
+
+<div class="student-success">
+  {{ range first 3 $awards }}
+  <div class="success-card">
+    <div class="success-icon">{{ .icon }}</div>
+    <h4>{{ .name }}: {{ .what }}</h4>
+    <p>{{ with .where }}{{ . }}{{ end }}{{ with .year }} ({{ . }}){{ end }}</p>
+  </div>
+  {{ end }}
+
+  {{ with $intl }}
+  <div class="success-card">
+    <div class="success-icon">✈️</div>
+    <h4>International Conferences</h4>
+    <p>Group members have given {{ len $talks }} talks and posters, including in {{ delimit $countries ", " " and " }}.
+      {{- range first 1 . }} Most recently: {{ $n := .speaker }}{{ range first 1 (where site.Data.team.members "author_name" .speaker) }}{{ $n = .name }}{{ end }}{{ $n }} at {{ .event | default .venue }} ({{ .year }}).{{ end }}</p>
+  </div>
+  {{ end }}
+
+  <div class="success-card">
+    <div class="success-icon">📚</div>
+    <h4>Publishing Together</h4>
+    <p>{{ $studentPapers }} of the group's {{ $s.publications }} papers are co-authored by group members, alongside {{ $s.nature }} Nature-family papers.</p>
+  </div>
+</div>

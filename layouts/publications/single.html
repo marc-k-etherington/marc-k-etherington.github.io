@@ -27,6 +27,24 @@
   <button class="filter-btn" onclick="filterPubs('nature', this)">Nature Family</button>
   {{ if $s.reviews }}<button class="filter-btn" onclick="filterPubs('review', this)">Reviews</button>{{ end }}
 </div>
+{{/* Collaborators with at least one joint paper, for the "With collaborator" menu */}}
+{{ $collabs := slice }}
+{{ range $c := site.Data.collaborators.collaborators }}{{ if $c.author_name }}{{ $n := 0 }}{{ range $papers }}{{ if in .authors $c.author_name }}{{ $n = add $n 1 }}{{ end }}{{ end }}{{ if $n }}{{ $collabs = $collabs | append $c }}{{ end }}{{ end }}{{ end }}
+{{ with site.Data.themes.themes }}
+<div class="pub-filters theme-filters">
+  <span class="theme-filters-label">By research theme:</span>
+  {{ range . }}<button class="filter-btn" data-filter="theme-{{ .id }}" onclick="filterPubs('theme-{{ .id }}', this)">{{ .icon }} {{ .title }}</button>{{ end }}
+</div>
+{{ end }}
+{{ with $collabs }}
+<div class="pub-filters theme-filters">
+  <label class="theme-filters-label" for="collab-filter">With collaborator:</label>
+  <select id="collab-filter" class="collab-select" onchange="filterPubs(this.value || 'all', null)">
+    <option value="">Anyone</option>
+    {{ range . }}<option value="with-{{ .id }}">{{ .name }} ({{ .institution }})</option>{{ end }}
+  </select>
+</div>
+{{ end }}
 
 <p class="pub-hint">Click on a paper's title to expand it.</p>
 
@@ -38,6 +56,8 @@
     {{ if in $p.authors "Etherington*" }}{{ $classes = $classes | append "corresponding" }}{{ end }}
     {{ if hasPrefix $p.journal "Nature" }}{{ $classes = $classes | append "nature" }}{{ end }}
     {{ if $p.review }}{{ $classes = $classes | append "review" }}{{ end }}
+    {{ range $p.themes }}{{ $classes = $classes | append (printf "theme-%s" .) }}{{ end }}
+    {{ range $collabs }}{{ if in $p.authors .author_name }}{{ $classes = $classes | append (printf "with-%s" .id) }}{{ end }}{{ end }}
     {{ $body := "" }}
     {{ with $p.image }}{{ $body = partial "img.html" (dict "src" . "alt" "Table of contents graphic" "style" "float:right;width:250px" "sizes" "250px") }}{{ end }}
     {{ $body = printf "%s<p><a href=\"%s\" target=\"_blank\" rel=\"noopener\">%s</a></p>%s<div class=\"text-secondary\"><p>%s</p></div>" $body ($p.url | htmlEscape) ($p.title | markdownify) (partial "authors.html" $p.authors) ($p.journal | htmlEscape) }}

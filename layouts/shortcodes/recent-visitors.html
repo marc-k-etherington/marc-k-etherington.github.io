@@ -1,0 +1,10 @@
+{{/* Past and current visitors from data/team.yaml (role: visitor), newest first */}}
+{{ $v := where site.Data.team.members "role" "visitor" }}
+{{ with $v }}
+<p><strong>Recent visitors:</strong></p>
+<ul>
+  {{ range sort . "visit_start" "desc" }}
+  <li>{{ partial "func/flag.html" (.country | default "") }} <a href="/group/#{{ .name | urlize }}">{{ .name }}</a>, {{ .type | default "Visiting researcher" }}, {{ .home }}{{ with .visit_start }} ({{ (time.AsTime .).Year }}){{ end }}</li>
+  {{ end }}
+</ul>
+{{ end }}

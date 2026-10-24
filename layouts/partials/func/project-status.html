@@ -1,0 +1,18 @@
+{{/* "active" or "past" for a project (context: the project).
+     Past once its end year has passed, or once all its people (other than visitors) are alumni. */}}
+{{ $p := . }}
+{{ $past := false }}
+{{ with $p.end }}{{ if lt (int .) now.Year }}{{ $past = true }}{{ end }}{{ end }}
+{{ if not $past }}
+  {{ $core := 0 }}{{ $gone := 0 }}
+  {{ range $p.people }}
+    {{ range where site.Data.team.members "author_name" . }}
+      {{ if ne .role "visitor" }}
+        {{ $core = add $core 1 }}
+        {{ if eq .status "alumni" }}{{ $gone = add $gone 1 }}{{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if and (gt $core 0) (eq $core $gone) }}{{ $past = true }}{{ end }}
+{{ end }}
+{{ return (cond $past "past" "active") }}

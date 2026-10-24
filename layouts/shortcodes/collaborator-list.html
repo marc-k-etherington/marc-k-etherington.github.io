@@ -1,0 +1,6 @@
+{{/* Inline list of collaborating institutions, international first (from data/collaborators.yaml) */}}
+{{- $all := site.Data.collaborators.collaborators | default slice -}}
+{{- $names := slice -}}
+{{- range where $all "country" "!=" "UK" }}{{ $names = $names | append (strings.TrimPrefix "The " .institution) }}{{ end -}}
+{{- range where $all "country" "UK" }}{{ $names = $names | append (strings.TrimPrefix "The " .institution) }}{{ end -}}
+{{- delimit (uniq $names) ", " " and " -}}

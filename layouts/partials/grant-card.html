@@ -1,0 +1,32 @@
+{{/* One grant card (context: the grant) */}}
+{{ $g := . }}
+{{ $status := partial "func/grant-status.html" $g }}
+{{ $projects := where site.Data.projects.projects "funding" $g.id }}
+<div class="research-project-card {{ if $g.holder }}student-funding{{ else if eq $status "past" }}past{{ else }}funding{{ end }}" id="grant-{{ $g.id }}">
+  <h3>{{ $g.title }}</h3>
+  <div class="research-project-meta">
+    {{- $g.start }}{{ if and $g.end (ne $g.end $g.start) }} to {{ $g.end }}{{ end }} | {{ $g.funder -}}
+    {{- if not $g.holder }}{{ with $g.role }} | {{ . }}{{ end }}{{ end -}}
+    {{- with $g.amount_gbp }} | £{{ lang.FormatNumber 0 . }}{{ end -}}
+  </div>
+  {{ with $g.holder }}<p class="project-people">🎓 Held by {{ partial "people-links.html" (slice .) }}</p>{{ end }}
+  {{ with $g.description }}<p class="research-project-description">{{ . }}</p>{{ end }}
+  {{ with $g.collaborators }}<p class="grant-projects">With: {{ range $i, $id := . }}{{ if $i }}, {{ end }}{{ range first 1 (where site.Data.collaborators.collaborators "id" $id) }}<a href="#collab-{{ .id }}">{{ .name | default .institution }}</a> ({{ .institution }}){{ end }}{{ end }}</p>{{ end }}
+  {{ $sv := slice }}
+  {{ $funded := slice }}
+  {{ range where site.Data.team.members "funding" $g.id }}
+    {{ if eq .role "visitor" }}{{ $y := 0 }}{{ with .visit_start }}{{ $y = (time.AsTime .).Year }}{{ end }}{{ $sv = $sv | append (dict "who" .author_name "year" $y) }}
+    {{ else }}{{ $funded = $funded | append .author_name }}{{ end }}
+  {{ end }}
+  {{ with $funded }}<p class="grant-projects">Funds: {{ partial "people-links.html" . }}</p>{{ end }}
+  {{ range where site.Data.visits.visits "funding" $g.id }}{{ $sv = $sv | append (dict "who" .person "year" (time.AsTime .start).Year) }}{{ end }}
+  {{ with $sv }}<p class="grant-projects">Visits supported: {{ range $i, $v := . }}{{ if $i }}, {{ end }}{{ partial "person-name.html" $v.who }}{{ with $v.year }} ({{ . }}){{ end }}{{ end }}</p>{{ end }}
+  {{ $kit := slice }}
+  {{ range site.Data.equipment.equipment }}{{ $e := . }}
+    {{ if eq $e.funding $g.id }}{{ $kit = $kit | append $e.name }}{{ end }}
+    {{ range $e.upgrades }}{{ if eq .funding $g.id }}{{ $kit = $kit | append (printf "%s (%s)" .name $e.name) }}{{ end }}{{ end }}
+  {{ end }}
+  {{ with $kit }}<p class="grant-projects">Equipment: {{ delimit . "; " }}</p>{{ end }}
+  {{ with $projects }}<p class="grant-projects">Supports: {{ range $i, $p := . }}{{ if $i }}, {{ end }}<a href="#project-{{ $p.id }}">{{ $p.title }}</a>{{ end }}</p>{{ end }}
+  {{ partial "theme-chips.html" $g.themes }}
+</div>
