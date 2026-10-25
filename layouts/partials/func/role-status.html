@@ -1,0 +1,4 @@
+{{/* "current" or "past" for a career role (context: the role): current until the day after its end date */}}
+{{ $out := "current" }}
+{{ with .end }}{{ if not (((time.AsTime .).AddDate 0 0 1).After now) }}{{ $out = "past" }}{{ end }}{{ end }}
+{{ return $out }}

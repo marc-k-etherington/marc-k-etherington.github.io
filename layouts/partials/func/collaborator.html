@@ -5,6 +5,7 @@
 {{ $grants := slice }}{{ range site.Data.grants.grants }}{{ if in .collaborators $c.id }}{{ $grants = $grants | append . }}{{ end }}{{ end }}
 {{ $in := where site.Data.team.members "host" $c.id }}
 {{ $out := where site.Data.visits.visits "host" $c.id }}
+{{ range where site.Data.career.roles "host" $c.id }}{{ if eq .type "visiting" }}{{ $out = $out | append (dict "person" "Etherington" "start" .start) }}{{ end }}{{ end }}
 {{ $talks := slice }}
 {{ with $c.institution }}{{ $inst := strings.TrimPrefix "The " . }}{{ range site.Data.seminars.talks }}{{ if and (not .speaker) (or (in (.venue | default "") $inst) (in (.event | default "") $inst)) }}{{ $talks = $talks | append . }}{{ end }}{{ end }}{{ end }}
 {{ return dict "papers" $papers "grants" $grants "visitors" $in "visits" $out "talks" $talks }}

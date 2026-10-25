@@ -44,7 +44,8 @@
 <div class="funding-summary-marc">
   <div class="funding-summary-figures">
     <div><span class="stat-number-marc">{{ len . }}</span><span class="stat-label-marc">Grants as PI or Co-I</span></div>
-    {{ with $s.funding }}<div><span class="stat-number-marc">{{ . }}</span><span class="stat-label-marc">Funding secured</span></div>{{ end }}
+    {{ with $s.funding }}<div><span class="stat-number-marc">{{ . }}</span><span class="stat-label-marc">Funding secured as PI</span></div>{{ end }}
+    {{ with $s.funding_coi }}<div><span class="stat-number-marc">{{ . }}</span><span class="stat-label-marc">As Co-I</span></div>{{ end }}
     {{ with $s.student_grants }}<div><span class="stat-number-marc">{{ . }}</span><span class="stat-label-marc">Won by group members</span></div>{{ end }}
   </div>
   {{ with $current }}<p class="funding-summary-current"><strong>Current funding:</strong> {{ range $i, $g := . }}{{ if $i }}; {{ end }}{{ $g.funder }}{{ end }}</p>{{ end }}
@@ -54,14 +55,11 @@
 
 <div class="roles-section-marc">
   <h2>Current Roles &amp; Affiliations</h2>
+  {{/* From data/career.yaml: roles without a past end date */}}
   <div class="roles-grid-marc">
-    {{ range .Params.roles }}
-    <div class="role-card-marc">
-      <h3>{{ .icon }} {{ .title }}</h3>
-      <p>{{ .place | safeHTML }}{{ with .period }}<br><em>{{ . }}</em>{{ end }}</p>
-    </div>
-    {{ end }}
+    {{ range site.Data.career.roles }}{{ if and (eq (partial "func/role-status.html" .) "current") (ne .type "service") }}{{ partial "role-card.html" . }}{{ end }}{{ end }}
   </div>
+  <p class="career-more"><a class="cta-btn-marc" href="/career/">Full career, service &amp; supervision →</a> <a class="research-link-btn" href="/cv/">📄 Printable CV</a></p>
 </div>
 
 <div class="expertise-section-marc">

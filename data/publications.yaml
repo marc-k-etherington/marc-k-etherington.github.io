@@ -15,6 +15,7 @@
 #   themes: [tadf, ct]                   # research themes (ids in data/themes.yaml)
 #   review: true                         # optional: only for review articles
 #   featured: "One-line description"     # optional: shows it on the Research page
+#   significance: "Why it matters."      # optional: shown with the paper and on your CV
 #
 # Automatic: an asterisk after your name (Etherington*) marks you as corresponding
 # author; journals starting "Nature" count as Nature family; your name and the
@@ -160,6 +161,7 @@ papers:
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2TC01737G&imageInfo.ImageIdentifier.Year=2022"
     featured: "Breakthrough in tuning photophysical properties through molecular modification."
     themes: [tadf, ct]
+    significance: "First demonstration of N-alkylation imbuing TADF in molecules that originally showed room-temperature phosphorescence."
 
   - title: "Dominant dimer emission provides colour stability for red thermally activated delayed fluorescence emitter"
     year: 2022
@@ -178,6 +180,7 @@ papers:
     doi: 10.1039/d2tc00460g
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2TC00460G&imageInfo.ImageIdentifier.Year=2022"
     themes: [tadf, ct]
+    significance: "Demonstrated that homoconjugation can significantly affect delayed emission processes as well as the photoluminescence quantum yield."
 
   - title: "Suppressing dimer formation by increasing conformational freedom in multi-carbazole thermally activated delayed fluorescence emitters"
     year: 2021
@@ -206,6 +209,7 @@ papers:
     doi: 10.1039/d0sc02460k
     image: "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D0SC02460K&imageInfo.ImageIdentifier.Year=2020"
     themes: [ct]
+    significance: "Showed how N-alkylation enhances the fluorescence yield of quinine-based compounds, opening a pathway to new emitters for displays."
 
   - title: "Investigation of Thermally Activated Delayed Fluorescence from a Donor–Acceptor Compound with Time-Resolved Fluorescence and Density Functional Theory Applying an Optimally Tuned Range-Separated Hybrid Functional"
     year: 2020
@@ -251,6 +255,7 @@ papers:
     doi: 10.1021/acs.jpcc.9b01458
     image: "https://pubs.acs.org/cms/10.1021/acs.jpcc.9b01458/asset/images/medium/jp-2019-01458c_0008.gif"
     themes: [tadf]
+    significance: "Showed how dimer formation in TADF compounds affects colour purity and the TADF process in OLEDs, of significant interest to industry."
 
   - title: "Thermally Activated Delayed Fluorescence Mediated through the Upper Triplet State Manifold in Non-Charge-Transfer Star-Shaped Triphenylamine–Carbazole Molecules"
     year: 2018
@@ -288,6 +293,7 @@ papers:
     doi: 10.1021/jacs.7b08570
     image: "https://pubs.acs.org/cms/10.1021/jacs.7b08570/asset/images/medium/ja-2017-08570t_0009.gif"
     themes: []
+    significance: "Demonstrated that simple molecules can have significant and unexpected intra- and intermolecular interactions that completely change their emissive behaviour."
 
   - title: "Fluorescence and Phosphorescence Anisotropy from Oriented Films of Thermally Activated Delayed Fluorescence Emitters"
     year: 2017
@@ -315,6 +321,7 @@ papers:
     doi: 10.1038/ncomms14987
     image: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms14987/MediaObjects/41467_2017_Article_BFncomms14987_Fig1_HTML.jpg?as=webp"
     themes: [tadf, gap]
+    significance: "Showed the significance of conformation for the TADF mechanism: one conformer displays TADF and the other does not, severely affecting device performance."
 
   - title: "Revealing the spin–vibronic coupling mechanism of thermally activated delayed fluorescence"
     year: 2016
@@ -324,6 +331,7 @@ papers:
     doi: 10.1038/ncomms13680
     image: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fncomms13680/MediaObjects/41467_2016_Article_BFncomms13680_Fig1_HTML.jpg?as=webp"
     themes: [tadf, gap]
+    significance: "The first experimental evidence of the spin-vibronic coupling mechanism and its influence on TADF."
 
   - title: "Recombination pathways in polymer:fullerene photovoltaics observed through spin polarization measurements"
     year: 2014

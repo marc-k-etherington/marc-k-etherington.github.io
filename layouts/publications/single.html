@@ -61,6 +61,7 @@
     {{ $body := "" }}
     {{ with $p.image }}{{ $body = partial "img.html" (dict "src" . "alt" "Table of contents graphic" "style" "float:right;width:250px" "sizes" "250px") }}{{ end }}
     {{ $body = printf "%s<p><a href=\"%s\" target=\"_blank\" rel=\"noopener\">%s</a></p>%s<div class=\"text-secondary\"><p>%s</p></div>" $body ($p.url | htmlEscape) ($p.title | markdownify) (partial "authors.html" $p.authors) ($p.journal | htmlEscape) }}
+    {{ with $p.significance }}{{ $body = printf "%s<p class=\"pub-significance\"><strong>Why it matters:</strong> %s</p>" $body (. | htmlEscape) }}{{ end }}
     {{ with $p.doi }}{{ $body = printf "%s<div class=\"altmetric-embed center\" data-badge-type=\"donut\" data-doi=\"%s\"></div>" $body . }}{{ end }}
     <div class="alert alert-primary {{ delimit $classes " " }}">
       {{ partial "collapsible.html" (dict "summary" ($p.title | markdownify) "body" ($body | safeHTML) "id" (printf "%d-%d" $y $j)) }}

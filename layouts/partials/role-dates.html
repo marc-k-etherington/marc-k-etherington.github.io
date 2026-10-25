@@ -1,0 +1,6 @@
+{{- /* "Nov 2022 to present", "Jan 2020 to Oct 2022", or "Jun 2019" for a single month (context: role) */ -}}
+{{- $s := time.AsTime .start -}}
+{{- if .end -}}
+  {{- $e := time.AsTime .end -}}
+  {{- if eq ($s.Format "Jan 2006") ($e.Format "Jan 2006") }}{{ $s.Format "Jan 2006" }}{{ else }}{{ $s.Format "Jan 2006" }} to {{ $e.Format "Jan 2006" }}{{ end -}}
+{{- else }}{{ $s.Format "Jan 2006" }} to present{{ end -}}

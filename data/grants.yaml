@@ -26,16 +26,6 @@
 
 grants:
 
-  - id: british-council-springboard
-    title: "British Council Springboard: Collaboration with TU Dresden"
-    funder: "British Council"
-    start: 2025                        # CHECK
-    end: 2026                          # CHECK
-    role: PI                           # CHECK
-    collaborators: [Reineke]
-    themes: []                         # CHECK
-    description: "A consortium with the teams of Sebastian Reineke, Sebastian Schellhammer and Christina Dornack at TU Dresden, with PRUUVE GmbH and HORIBA UK."
-
   - id: gbsf-matthews
     title: "Visit to the Takeda Lab, University of Osaka"
     funder: "Great Britain Sasakawa Foundation"
@@ -46,6 +36,16 @@ grants:
     themes: [bio]
     description: "A 3-month visit to Dr Youhei Takeda's group to undertake synthesis of caged donor-acceptor molecules"
 
+  - id: british-council-springboard
+    title: "British Council Springboard: Collaboration with TU Dresden"
+    funder: "British Council"
+    start: 2025                        # CHECK
+    end: 2026                          # CHECK
+    role: PI                           # CHECK
+    collaborators: [Reineke]
+    themes: []                         # CHECK
+    description: "A consortium with the teams of Sebastian Reineke, Sebastian Schellhammer and Christina Dornack at TU Dresden, with PRUUVE GmbH and HORIBA UK."
+
   - id: gbsf-pollard
     title: "Visit to the Takeda Lab, University of Osaka"
     funder: "Great Britain Sasakawa Foundation"
@@ -55,6 +55,37 @@ grants:
     collaborators: [Takeda]
     themes: [bio]
     description: "A 3-month visit to Dr Youhei Takeda's group to undertake synthesis and photophysical characterisation of TADF molecules"
+
+  - id: rsc-rcg-pollard
+    title: "RSC Researcher Collaborations Grant: Visit to the Hudson Lab, University of British Columbia"
+    funder: "Royal Society of Chemistry"
+    start: 2025
+    end: 2025
+    holder: Ruth M. Pollard
+    collaborators: [Hudson]
+    themes: [bio]
+    description: "A 3-month visit to Prof. Zac Hudson's group to explore Ruth's materials as polymer dots for biosensing."
+
+  - id: royal-society
+    title: "Seeing (Infra)Red: pushing Pt(II) complexes towards bright near-infrared emission"
+    funder: "The Royal Society (Research Grants)"
+    start: 2025
+    end: 2026                          # CHECK
+    role: PI
+    amount_gbp: 29947
+    themes: [tadf]
+    description: "A near-infrared detector for the Fluorolog-QM, to measure new NIR emitters synthesised in the group, using homoconjugation and molecular interactions."
+
+  - id: aphid
+    title: "APHiD: aggregation-induced delayed fluorescence in pesticide and herbicide detection"
+    funder: "The Royal Society (International Science Partnership Fund, International Collaboration Awards)"
+    start: 2024
+    end: 2027                          # CHECK
+    role: PI
+    amount_gbp: 212255
+    collaborators: [Furini]
+    themes: [bio]
+    description: "A 3-year project with Dr Leonardo Furini (Universidade Federal de Santa Catarina) using aggregation-induced emitters as probes for pesticides and herbicides early in the food chain, for the Brazilian agricultural industry."
 
   - id: wolfson
     title: "Wolfson Foundation: TCSPC upgrade for the Fluorolog-QM"
@@ -75,19 +106,10 @@ grants:
     themes: [tadf]
     description: "Exploring green, halogen-free solvents for TADF spectroscopy to improve laboratory practice."
 
-  - id: rsc-rcg-pollard
-    title: "RSC Researcher Collaborations Grant: Visit to the Hudson Lab, University of British Columbia"
-    funder: "Royal Society of Chemistry"
-    start: 2025
-    end: 2025
-    holder: Ruth M. Pollard
-    collaborators: [Hudson]
-    themes: [bio]
-    description: "A 3-month visit to Prof. Zac Hudson's group to explore Ruth's materials as polymer dots for biosensing."
-
   - id: aspire-takeda-1
     title: "JST ASPIRE International Collaboration"
     funder: "Japan Science and Technology Agency"
+    amount_gbp: 467000               # equivalent; you are Co-I, so not in your PI total
     start: 2024
     end: 2027
     role: Co-I                       # CHECK
@@ -96,19 +118,41 @@ grants:
     description: "Multi-year international collaboration with the University of Osaka on advanced TADF systems and their applications."
 
   - id: caged-excitement
-    title: "Caged Excitement"
-    funder: "Northumbria University (internal fund)"
+    title: "Caged Excitement (Northumbria University Internal Seed Fund)"
+    funder: "Northumbria University"
     start: 2023
     end: 2023
-    role: PI                       # CHECK
+    role: PI
+    amount_gbp: 9483
     themes: [ct]
-    description: "A 3-month research assistant post, jointly with the Knowles group."
+    description: "Preliminary work, with Dr Jonathan Knowles as Co-I, including a 3-month research assistant post; it fed into an EPSRC responsive-mode application."
 
-  - id: royal-society
-    title: "Royal Society Research Grant"
-    funder: "The Royal Society"
-    start: 2020                    # CHECK: year
-    end: 2021                      # CHECK: year
-    role: PI                       # CHECK
-    themes: []                     # CHECK
-    description: ""
+  - id: seed-2022
+    title: "Northumbria University Internal Seed Fund"
+    funder: "Northumbria University"
+    start: 2022
+    end: 2022
+    role: Co-I
+    amount_gbp: 9436
+    themes: [ct]
+    description: "With Dr Jonathan Knowles as PI; preliminary work towards an EPSRC responsive-mode application."
+
+  - id: fluorotonix
+    title: "Fluorotonix: fluorescent and functional photonic salts inspired by tonic water"
+    funder: "Royal Society of Chemistry (Research Fund)"
+    start: 2021
+    end: 2021
+    role: PI
+    amount_gbp: 4000
+    themes: [ct]
+    description: "Consumables to explore the factors that affect quinolinium salt fluorophores with potential as fluorescence standards."
+
+  - id: iaa-starna
+    title: "Quinine-based fluorescence standards (Research Impact Fund and EPSRC IAA)"
+    funder: "Durham University and EPSRC Impact Acceleration Account"
+    start: 2019
+    end: 2019
+    role: PI                           # CHECK
+    amount_gbp: 12000
+    themes: [ct]
+    description: "A 3-month research assistant and consumables to develop quinine-based compounds towards impact with Starna Scientific Ltd."

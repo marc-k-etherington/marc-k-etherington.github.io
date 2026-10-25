@@ -52,6 +52,7 @@ members:
     status: current
     role: phd
     title: PhD student
+    joined: 2024                   # joined the group (PhD started 2022 with Dr Giulia Longo)
     photo: /images/group/will_photo.png
     office: Ellison D-Block 111
     email: will.tetlow 'at' northumbria.ac.uk
@@ -74,7 +75,7 @@ members:
     host: Takeda                   # collaborator id (data/collaborators.yaml)
     visit_start: 2026-05-22
     visit_end: 2026-08-31          # CHECK
-    funding: aspire                # grant id (data/grants.yaml)
+    funding: aspire-takeda-1                # grant id (data/grants.yaml)
     bio: >
       Nae joined us from the group of Dr Youhei Takeda at the University of Osaka for a
       visit of just over three months, supported by the JST ASPIRE grant, taking on some

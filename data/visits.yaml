@@ -1,5 +1,6 @@
 # =============================================================================
-# OUTGOING VISITS: group members visiting other labs (visitors coming to us are
+# OUTGOING VISITS: group members visiting other labs (your own titled visiting
+# positions, such as the 2025 Osaka sabbatical, are in data/career.yaml) (visitors coming to us are
 # in data/team.yaml with role: visitor). Each visit appears on the person's
 # Group card (or the Marc page), on the collaborator's card and on the grant.
 #
@@ -7,18 +8,12 @@
 #   host: collaborator-id            # from data/collaborators.yaml
 #   start: 2026-01-15
 #   end: 2026-04-15
-#   funding: grant-id                # optional
+#   funding: grant-id                # optional; several: [grant-id, "JSPS Fellowship"]
 #   purpose: "One line."             # optional
 # =============================================================================
 
 visits:
 
-  - person: Etherington
-    host: Takeda
-    start: 2025-08-01
-    end: 2025-10-31
-    funding: aspire-takeda-1                      
-    purpose: "Sabbatical research visit."
 
   - person: Ruth M. Pollard
     host: Hudson
@@ -31,14 +26,14 @@ visits:
     host: Takeda
     start: 2025-09-26                # CHECK: dates
     end: 2025-12-18                  # CHECK
-    funding: aspire-takeda-1
+    funding: [gbsf-pollard, aspire-takeda-1]   # CHECK: remove one if it didn't fund this visit
     purpose: "Synthesis and photophysical characterisation of TADF molecules"
 
   - person: Aidan E. Matthews
     host: Takeda
     start: 2026-04-13              # CHECK: dates
     end: 2026-07-01                # CHECK
-    funding: aspire-takeda-1
+    funding: [gbsf-matthews, aspire-takeda-1]  # CHECK: remove one if it didn't fund this visit
     purpose: "Synthesis of new caged donor-acceptor systems for TADF applications"
 
   - person: Etherington

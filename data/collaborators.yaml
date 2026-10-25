@@ -85,3 +85,20 @@ collaborators:
     previously: ["Loughborough University"]
     since: 2018
     description: "Long-time collaboration on homoconjugation and TADF systems" 
+
+  - id: Furini
+    name: "Dr Leonardo Furini"
+    author_name: "Leonardo Furini"
+    institution: "Universidade Federal de Santa Catarina"
+    country: Brazil
+    since: 2024
+    description: "Royal Society ISPF-funded APHiD collaboration on aggregation-induced emitters for pesticide and herbicide detection."
+
+  - id: Makhseed
+    name: "Prof. Saad Makhseed"
+    author_name: "Saad Makhseed"
+    institution: "Kuwait University"
+    country: Kuwait
+    since: 2019
+    description: "Multi-carbazole TADF emitters and light-harvesting systems; time-resolved fluorescence set up during a 2019 visit."
+

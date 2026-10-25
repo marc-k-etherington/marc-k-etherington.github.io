@@ -1,0 +1,9 @@
+{{/* One role (context: role from data/career.yaml) */}}
+{{ $r := . }}
+<div class="role-card-marc career-role career-{{ $r.type }}">
+  <h3>{{ $r.title }}</h3>
+  <p>{{ $r.organisation }}{{ with $r.unit }}<br>{{ . }}{{ end }}<br><em>{{ partial "role-dates.html" $r }}</em></p>
+  {{ with $r.host }}{{ range first 1 (where site.Data.collaborators.collaborators "id" .) }}<p class="facility-line">🤝 Hosted by <a href="/research/#collab-{{ .id }}">{{ .name }}</a></p>{{ end }}{{ end }}
+  {{ with partial "func/as-list.html" $r.funding }}<p class="facility-line">💷 Funded by {{ partial "funding-names.html" (dict "f" . "short" true) }}</p>{{ end }}
+  {{ with $r.note }}<p class="career-note">{{ . }}</p>{{ end }}
+</div>
