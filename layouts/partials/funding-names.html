@@ -1,0 +1,8 @@
+{{/* Funding list -> "Grant title and Other funder", grants linked (context: dict "f" value "short" bool) */}}
+{{- $parts := slice -}}
+{{- range partial "func/as-list.html" .f -}}
+  {{- $id := . -}}{{- $g := where site.Data.grants.grants "id" $id -}}
+  {{- with $g -}}{{- range first 1 . -}}{{- $parts = $parts | append (printf `<a href="/research/#grant-%s">%s</a>` .id (cond (eq $.short true) .funder .title)) -}}{{- end -}}
+  {{- else -}}{{- $parts = $parts | append (string $id) -}}{{- end -}}
+{{- end -}}
+{{- delimit $parts ", " " and " | safeHTML -}}

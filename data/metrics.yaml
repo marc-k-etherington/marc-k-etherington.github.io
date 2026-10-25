@@ -6,4 +6,5 @@
 
 citations: "3,000+"
 citations_checked: "Oct 2026"     # shown under the citation count
-funding: "£200K+"
+# funding: is now calculated from amount_gbp in data/grants.yaml (your grants as PI).
+# Add a line here (e.g. funding: "£300K+") only if you want to override it.

@@ -2,7 +2,7 @@
 {{ $a := replaceRE `(Marc K\.? Etherington\*?)` "**$1**" . }}
 {{ range site.Data.team.members }}
   {{ with .author_name }}
-    {{ $a = replaceRE (printf `([A-Z][^,&*]*?\b%s\b\*?)` .) "**$1**" $a }}
+    {{ $a = replaceRE (printf `((?:[A-Z][^,&*]*?\s)?\b%s\b\*?)` .) "**$1**" $a }}
   {{ end }}
 {{ end }}
 {{ $a | markdownify }}

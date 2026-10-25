@@ -12,6 +12,11 @@ researchgate_url = "https://www.researchgate.net/profile/Marc-Etherington"
 linkedin_url = "https://www.linkedin.com/in/marc-kenneth-etherington-32aa5876/?isSelfProfile=true"
 bluesky_url = "https://bsky.app/profile/mketherington.bsky.social"
 
+# Research Expertise tags (top-level keys must come before any [[...]] blocks)
+# Roles are now in data/career.yaml
+expertise_highlight = ["Spin-Vibronic Coupling", "TADF Mechanisms"]
+expertise = ["Time-Resolved Spectroscopy", "Molecular Photophysics", "Charge-Transfer States", "Dimer Emission", "Through-Space CT", "N-Alkylation", "Organic LEDs", "Bioimaging"]
+
 [[stats]]
 icon = "📄"
 number = "auto:publications"
@@ -24,34 +29,6 @@ label = "Citations"
 icon = "🎓"
 number = "auto:phd"
 label = "PhD Students"
-
-[[roles]]
-icon = "🏛️"
-title = "Assistant Professor"
-place = "Northumbria University<br>School of Engineering, Physics and Mathematics"
-period = "Since 2020 (promoted 2022)"
-[[roles]]
-icon = "🎓"
-title = "Junior Research Fellow"
-place = "Hatfield College, Durham University"
-period = "Since 2017"
-[[roles]]
-icon = "⚡"
-title = "Energy Futures Network Lead"
-place = "Northumbria University<br>Interdisciplinary Carbon Net Zero initiative"
-[[roles]]
-icon = "🤝"
-title = "Academic Visitor"
-place = "Durham University<br>Collaboration with Prof. Andy Monkman"
-period = "Since 2020"
-[[roles]]
-icon = "🤝"
-title = "Academic Visitor"
-place = "The University of Osaka<br>Collaboration with Dr Youhei Takeda"
-period = "August 2025 to October 2025"
-
-expertise_highlight = ["Spin-Vibronic Coupling", "TADF Mechanisms"]
-expertise = ["Time-Resolved Spectroscopy", "Molecular Photophysics", "Charge-Transfer States", "Dimer Emission", "Through-Space CT", "N-Alkylation", "Organic LEDs", "Bioimaging"]
 
 [[breakthroughs]]
 icon = "⚡"

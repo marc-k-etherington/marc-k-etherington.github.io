@@ -1,0 +1,189 @@
+# =============================================================================
+# CAREER: feeds the Career page, the roles on your profile page and the
+# printable CV. Newest first within each section. Dates decide what's current:
+# a role with no `end` (or an end in the future) is current.
+#
+# roles:  type is position | fellowship | visiting | service
+#   - type: position
+#     title: "Associate Professor"
+#     organisation: "Northumbria University"
+#     unit: "School of Engineering, Physics and Mathematics"   # optional
+#     start: 2027-09-01
+#     end: 2030-08-31                  # leave out while current
+#     host: Takeda                     # visiting roles: collaborator id (optional)
+#     funding: grant-id                # optional; several: [a, b]
+#     note: "One line."                # optional
+# =============================================================================
+
+roles:
+
+  - type: position
+    title: "Assistant Professor"
+    organisation: "Northumbria University"
+    unit: "School of Engineering, Physics and Mathematics"
+    start: 2022-11-01
+
+  - type: visiting
+    title: "Academic Visitor"
+    organisation: "The University of Osaka"
+    host: Takeda
+    start: 2025-08-01
+    end: 2025-10-31
+    funding: aspire-takeda-1
+    note: "Sabbatical research visit to the Takeda group."
+
+  - type: service
+    title: "Energy Futures Network Lead"
+    organisation: "Northumbria University"
+    start: 2023-10-01
+    note: "Leading an inter-faculty community of around 60 academics; member of the University Interdisciplinary Research Themes committee."
+
+  - type: service
+    title: "Departmental Social Media Lead"
+    organisation: "Northumbria University"
+    start: 2023-11-01
+
+  - type: service
+    title: "First-Year Physics Tutor"
+    organisation: "Northumbria University"
+    start: 2022-09-01
+
+  - type: service
+    title: "Departmental Induction Lead"
+    organisation: "Northumbria University"
+    start: 2022-04-01
+
+  - type: service
+    title: "Energy Futures Bulletin co-editor"
+    organisation: "Northumbria University"
+    start: 2021-06-01
+    end: 2023-10-31
+    note: "Quarterly newsletter of the Energy Futures research theme, with Prof. Neil Beattie."
+
+  - type: service
+    title: "Vice-Chancellor's Fellows seminar chair and coffee mornings"
+    organisation: "Northumbria University"
+    start: 2020-09-01
+    end: 2021-06-30
+
+  - type: fellowship
+    title: "Vice-Chancellor's Senior Fellow"
+    organisation: "Northumbria University"
+    unit: "Department of Mathematics, Physics and Electrical Engineering"
+    start: 2020-01-01
+    end: 2022-10-31
+
+  - type: visiting
+    title: "Visiting Academic"
+    organisation: "Durham University"
+    unit: "Department of Physics"
+    host: Monkman
+    start: 2020-01-01
+
+  - type: position
+    title: "Research Associate"
+    organisation: "Durham University"
+    unit: "Organic Electroactive Materials group"
+    start: 2015-03-01
+    end: 2019-12-31
+    note: "EU projects HyperOLED and PHEBE, with Prof. Andy Monkman."
+
+  - type: visiting
+    title: "Visiting Academic"
+    organisation: "Kuwait University"
+    unit: "Department of Chemistry"
+    host: Makhseed
+    start: 2019-06-01
+    end: 2019-06-30
+    note: "Set up and benchmarked a time-resolved fluorescence system."
+
+  - type: service
+    title: "Hatfield College Advisory Board member"
+    organisation: "Durham University"
+    start: 2018-11-01
+
+  - type: service
+    title: "Chair, Research Staff Consultative Committee"
+    organisation: "Durham University"
+    unit: "Department of Physics"
+    start: 2018-04-01
+    end: 2019-12-31
+    note: "Established the committee and a seed fund scheme for postdoctoral researchers."
+
+  - type: fellowship
+    title: "Junior Research Fellow"
+    organisation: "Hatfield College, Durham University"
+    start: 2017-01-01
+
+  - type: service
+    title: "Research Staff Association faculty representative"
+    organisation: "Durham University"
+    start: 2016-07-01
+    end: 2019-12-31
+
+  - type: service
+    title: "Equality, Diversity and Inclusion Committee (research staff representative)"
+    organisation: "Durham University"
+    unit: "Department of Physics"
+    start: 2015-07-01
+    end: 2019-12-31
+
+education:
+  - degree: "PhD in Physics"
+    institution: "University of Cambridge"
+    start: 2011
+    end: 2015
+    detail: "Optoelectronics group, supervised by Prof. Neil Greenham. Thesis: Magnetic field effects on triplet states in organic semiconductor devices. EPSRC doctoral training grant."
+  - degree: "MPhys in Physics, First Class"
+    institution: "Durham University"
+    start: 2007
+    end: 2011
+    detail: "Supervised by Prof. Andy Monkman. Thesis: Delayed fluorescence as a contributing factor to electroluminescence in anthracene-based materials."
+
+qualifications:
+  - { title: "Fellow of Advance HE (FHEA)", year: 2019 }
+  - { title: "Postgraduate Certificate in Academic Practice", institution: "Durham University", year: 2019 }
+
+recognition:
+  - { title: "Department of Physics Award for Excellence", organisation: "Durham University", year: 2018, note: "For outstanding research in organic light-emitting devices and the coupling mechanism of TADF." }
+
+memberships: ["Royal Society of Chemistry (MRSC)", "Institute of Physics (MInstP)", "Advance HE (FHEA)", "American Chemical Society"]
+
+reviewing:
+  journals: ["Nature Materials", "Nature Communications", "Angewandte Chemie", "Chemical Science", "Chemical Communications", "Advanced Materials", "JACS Au", "Materials Advances", "Journal of Materials Chemistry C", "ACS Applied Materials and Interfaces", "Advanced Optical Materials", "Aggregate", "Journal of Physical Chemistry", "Physical Chemistry Chemical Physics", "Frontiers in Chemistry", "Science Bulletin", "Organic Electronics", "Dyes and Pigments", "Synthetic Metals"]
+  funders: ["French National Research Agency (ANR)", "National Science Centre Poland (NCN)"]
+
+events:
+  - { title: "Maximising the rISC: international TADF workshop series", role: "Co-organiser and chair", years: "2016, 2018 and 2020 (online)", note: "With Newcastle University; up to 200 attendees, with industry sponsorship." }
+
+outreach:
+  - { title: "School outreach talks for Sixth Form students", years: "2023 onwards" }
+  - { title: "The Fever Tree: How Quinine Lit the Way Towards Modern Spectroscopy", where: "Lit & Phil, Newcastle (public lecture)", years: "2023" }
+  - { title: "Nuffield Research Placement provider", years: "2015 to 2020", note: "My 2016 student won a national award at the Big Bang UK Young Scientists and Engineers Competition (2017)." }
+  - { title: "Thinking Outside the Box (college module)", where: "Hatfield College, Durham", years: "2018" }
+  - { title: "Physics post-offer open days", where: "Durham University", years: "2016 to 2018" }
+  - { title: "Celebrate Science festival volunteer", where: "Durham University", years: "2015" }
+
+knowledge_exchange:
+  - { title: "Quinine-based fluorescence standards with Starna Scientific Ltd", grant: iaa-starna }
+  - { title: "Springboard consortium with PRUUVE GmbH and HORIBA UK", grant: british-council-springboard }
+  - { title: "Pesticide and herbicide detection for the Brazilian agricultural industry (APHiD)", grant: aphid }
+
+# Supervision outside the group (shown on the Career page and CV)
+other_supervision:
+  - { name: "Ash Carter", level: "PhD (secondary supervisor)", years: "2021 onwards", note: "Primary supervisor Prof. Paul McGonigal. Polymeric fluorescence standards from medium-independent emitters." }   # CHECK: completion year
+  - { name: "Erasmus Masters student (TU Eindhoven)", level: "Masters thesis", years: "2013 to 2014", note: "Magnetic field effects on pentacene-PbSe nanocrystal photovoltaics; first-class equivalent." }
+  - { name: "Undergraduate and MSc project students", level: "BSc, MPhys and MSc projects", years: "2017 onwards", note: "Typically six or seven per year at Northumbria, plus fourth-year projects at Durham." }
+
+# CV only (not shown on the website)
+cv_only:
+  small_awards:
+    - "RSC Researcher Development and Travel Grants (2022, 2023)"
+    - "Industry sponsorship and RSC Scientific Meetings Grant for Maximising the rISC (2016, 2018)"
+    - "Hatfield Trust Summer Internship funding (2018)"
+    - "Cambridge Philosophical Society and Clare College travel grants (2014, 2015)"
+    - "Grey College Trust travel grant (2010)"
+  early_research:
+    - "Visiting student researcher, University of Gothenburg (2010)"
+    - "Summer research student, Durham University (2010)"
+    - "Student Fellow, Australian Astronomical Observatory, Sydney (2009)"

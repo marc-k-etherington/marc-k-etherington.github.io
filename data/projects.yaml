@@ -1,14 +1,15 @@
 # =============================================================================
-# PROJECTS: newest at the top. People are listed by surname (author_name in
-# data/team.yaml) and link to their Group page card, which links back here.
+# PROJECTS: newest at the top. People are listed by their author_name in
+# data/team.yaml and link to their Group page card, which links back here.
 #
 # - id: short-name
 #   title: "Project title"
-#   people: [Surname]
+#   people: ["First M. Last"]     # author_name from data/team.yaml
 #   start: 2026
 #   end: 2029                      # optional
 #   funding: grant-id              # a grant id from data/grants.yaml, or plain
-#                                  # text such as "PhD project"
+#                                  # text such as "PhD project"; for several
+#                                  # sources: [grant-id, "Other funder"]
 #   themes: [tadf]
 #   description: "One or two sentences."
 #
@@ -20,15 +21,15 @@ projects:
 
   - id: aspire-bioimaging
     title: "TADF systems for bioimaging applications"
-    people: [Aota]                 # CHECK
+    people: ["Nae Aota"]                 # CHECK
     start: 2025
-    funding: aspire
+    funding: aspire-takeda-1
     themes: [bio, ct]
     description: "Investigating dibenzophenazine-based emitters showing both local and charge transfer emission, and the mechanisms behind them, for bioimaging applications."
 
   - id: cage-linkers
     title: "Cage linker systems for charge transfer, room-temperature phosphorescence and TADF"
-    people: [Matthews]
+    people: ["Aidan E. Matthews"]
     start: 2023
     funding: "PhD project"
     themes: [ct, tadf]
@@ -36,7 +37,7 @@ projects:
 
   - id: bas
     title: "Solid-state synthesis of pure and doped BaS for optoelectronic applications"
-    people: [Tetlow]
+    people: ["William D. Tetlow"]
     start: 2022
     funding: "PhD project"
     themes: []
@@ -53,7 +54,7 @@ projects:
 
   - id: through-space-ct
     title: "Through-space charge transfer in N-quinolyl systems"
-    people: [Pollard]
+    people: ["Ruth M. Pollard"]
     start: 2021
     end: 2025
     funding: "PhD project"

@@ -13,11 +13,9 @@
       <p class="facility-line">🤝 Available through <a href="#collab-{{ .id }}">{{ .name | default .institution }}</a> ({{ .institution }})</p>
     {{ end }}{{ end }}
     {{ with $e.capabilities }}<ul class="facility-caps">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
-    {{ with $e.funding }}{{ $g := where site.Data.grants.grants "id" . }}
-      <p class="facility-line">💷 Funded by {{ with $g }}{{ range first 1 . }}<a href="#grant-{{ .id }}">{{ .title }}</a>{{ end }}{{ else }}{{ . }}{{ end }}</p>
-    {{ end }}
+    {{ with partial "func/as-list.html" $e.funding }}<p class="facility-line">💷 Funded by {{ partial "funding-names.html" (dict "f" .) }}</p>{{ end }}
     {{ range $e.upgrades }}{{ $u := . }}
-      <p class="facility-line">⬆️ {{ $u.name }}{{ with $u.year }} ({{ . }}){{ end }}{{ with $u.funding }}{{ $g := where site.Data.grants.grants "id" . }}: funded by {{ with $g }}{{ range first 1 . }}<a href="#grant-{{ .id }}">{{ .funder }}</a>{{ end }}{{ else }}{{ . }}{{ end }}{{ end }}</p>
+      <p class="facility-line">⬆️ {{ $u.name }}{{ with $u.year }} ({{ . }}){{ end }}{{ with partial "func/as-list.html" $u.funding }}: funded by {{ partial "funding-names.html" (dict "f" . "short" true) }}{{ end }}</p>
     {{ end }}
     {{ with $e.posts }}
       <p class="facility-line">📰 {{ range $i, $n := . }}{{ with site.GetPage (printf "/post/%s" $n) }}{{ if $i }} · {{ end }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}</p>

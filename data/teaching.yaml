@@ -2,31 +2,46 @@
 # TEACHING: modules, past student projects and resources.
 # =============================================================================
 
-intro: "I teach across the physics programmes at Northumbria and supervise student research projects in organic photophysics."
+intro: "I teach semiconductor physics, experimental physics and molecular photonics at Northumbria, and supervise undergraduate and masters research projects."
 
 modules:
   - code: KD4015
-    title: "Module title here"
+    title: "Experiments and Discovery"
     level: "Level 4"
-    semester: "Semester 1"
-    role: "Module leader"
-    description: "One or two sentences on what students learn."
-    topics: [Topic one, Topic two]
+    semester: "Semester 2"
+    role: "Module leader, lecturer and demonstrator (since 2020)"
+    description: "First-year laboratory physics: planning experiments, keeping a good lab book and writing up results, supported by preparation videos and a redesigned lab record book."
+    topics: [Experimental methods, Lab books, Scientific writing]
 
   - code: KD5083
-    title: "Module title here"
+    title: "Semiconductor Physics"
     level: "Level 5"
+    semester: "Semester 1"
+    role: "Module leader (since 2021), lecturer since 2020"
+    description: "The theory of semiconductors and their underlying physics, taught in a combined lecture and worked-problem style."
+    topics: [Band theory, Charge carriers, Devices]
+
+  - code: KL6003
+    title: "Quantum and Molecular Photonics"
+    level: "Level 6"
     semester: "Semester 2"
-    role: "Module leader"
-    description: "One or two sentences on what students learn."
-    topics: [Topic one, Topic two]
+    role: "Lecturer (since 2022); co-developed the module"
+    description: "An optional module developed from scratch: I teach molecular photophysics and co-teach integrated quantum photonics."
+    topics: [Molecular photophysics, Quantum photonics, Python]
+
+  - code: KD5080
+    title: "Electronic Product Design (Nanjing Institute of Technology)"
+    level: "Short course"
+    semester: "January"
+    role: "Lecturer (since 2022)"
+    description: "One week of a two-week online course in which students design and present an electronic product in hardware or software."
+    topics: [Product design, Arduino, MATLAB Simulink]
 
 # Open undergraduate and masters projects appear automatically from job adverts
 # with position_type: undergraduate or masters.
-projects_intro: "Final-year and masters students can join the lab for spectroscopy-based research projects."
+projects_intro: "I supervise around six or seven undergraduate and masters projects each year, from OLED device modelling to code for processing large spectroscopic datasets."
 
 past_projects:
-  - { title: "Example project title", level: "MPhys", year: 2025, outcome: "Optional one-line outcome." }
-
-resources:
-  - { icon: "📖", title: "Reading list", description: "Recommended texts for photophysics.", link: "" }
+  - { title: "MSc Engineering Projects (KD7065)", level: "MSc", year: "2021 onwards", outcome: "Topics including the Internet of Things, smart homes and microgrid management." }
+  - { title: "Individual Engineering Projects (KD6024)", level: "BEng", year: "2020 onwards", outcome: "OLED modelling in OghmaNano, Python for large spectroscopic datasets, and MATLAB code for CIE colour coordinates." }
+  - { title: "Individual Physics Projects (KD6040)", level: "BSc", year: "2020 to 2021", outcome: "Crystallographic analysis of TADF emitters in Mercury and Hirshfeld surface analysis in CrystalExplorer." }

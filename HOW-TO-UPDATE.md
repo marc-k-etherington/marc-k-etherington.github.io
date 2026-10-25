@@ -17,7 +17,8 @@ data/                         ← lists: edit these files, add a new entry at th
 ├── team.yaml                 people (current and alumni)
 ├── teaching.yaml             modules, student projects, resources
 ├── gallery.yaml              photos
-├── metrics.yaml              citations and funding (the only typed-in figures)
+├── career.yaml               roles, education, recognition, service, outreach (Career page + CV)
+├── metrics.yaml              citations (funding is now calculated from grants.yaml)
 └── social.yaml               social media links
 
 content/
@@ -224,3 +225,55 @@ Change the figure once; it updates on every page that shows it.
 Commit, then open the **Actions** tab on GitHub. A green tick means the site rebuilt.
 A red cross is nearly always an indent or a missing quote mark in a data file: click
 it, read the line number in the error, and compare that entry with the example block.
+
+## Several funding sources
+
+Any `funding:` line (visits, visitors, team members, projects, equipment and upgrades) can
+list more than one source in square brackets, mixing grant ids and plain text:
+
+```yaml
+    funding: [aspire-takeda-1, "JSPS Invitational Fellowship"]
+```
+Grant ids link to the grant (and the grant lists the visit, person, project or equipment);
+plain text is shown as written.
+
+## Keeping ids consistent
+
+Links between files work by matching text exactly:
+- people: their `author_name` in `team.yaml` (e.g. "Ruth M. Pollard") is used in `people:`,
+  `speaker:`, `holder:` and `person:`
+- grants: their `id` (e.g. `aspire-takeda-1`) is used in `funding:`
+- collaborators: their `id` (e.g. `Takeda`) is used in `host:` and `collaborators:`
+
+If you rename an id, search the `data` folder for the old one and update it everywhere.
+
+## Career changes → `data/career.yaml`
+
+**A promotion or new post:** add an `end:` date to the old role and a new role above it:
+
+```yaml
+  - type: position                 # position | fellowship | visiting | service
+    title: "Associate Professor"
+    organisation: "Northumbria University"
+    unit: "School of Engineering, Physics and Mathematics"
+    start: 2027-09-01
+```
+Roles without a past end date show as current (on your profile and the Career page);
+everything appears in Career History and on the printable CV.
+
+**Also in career.yaml:** education, qualifications, recognition (prizes), memberships,
+reviewing (journals and funders), events organised, outreach, knowledge exchange, and
+supervision outside the group. Each is a simple list; copy an existing line.
+
+## Printable CV
+
+Open `/cv/` on the site and press **Print / Save as PDF** (choose "Save as PDF" as the
+printer). It is rebuilt from your data every time the site updates, in the four sections
+of UKRI's Résumé for Research and Innovation. Teaching scores and contact details beyond
+your work email are deliberately left out.
+
+## Funding totals
+
+Your total as PI and as Co-I are calculated from `amount_gbp` in `grants.yaml` (funding
+held by group members is counted separately). Add `amount_gbp` to the Wolfson and British
+Council grants to include them.

@@ -190,6 +190,14 @@ talks:
     venue: "Northumbria University"
     country: UK
 
+  - title: "Intermolecular interactions in thermally activated delayed fluorescence emitters"
+    year: 2022
+    type: invited
+    event: "Aggregate Science in Organic Electroluminescence and Charge Transport"
+    venue: "Wiley"
+    country: UK
+    online: true
+
   - title: "From phosphorescence to delayed fluorescence in one step"
     year: 2022
     type: contributed

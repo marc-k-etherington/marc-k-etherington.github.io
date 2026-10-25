@@ -1,0 +1,124 @@
+{{ define "main" }}
+{{/* Printable CV in the four sections of UKRI's Résumé for Research and Innovation (R4RI).
+     Built entirely from the data files; press Ctrl + P (or the button) and choose "Save as PDF". */}}
+{{ $c := site.Data.career }}
+{{ $s := partialCached "func/stats.html" "stats" }}
+{{ $marc := site.GetPage "/marc-etherington" }}
+<div class="cv">
+  <p class="cv-actions no-print"><button type="button" class="cta-btn-marc" onclick="window.print()">🖨️ Print / Save as PDF</button> <a class="research-link-btn" href="/career/">← Career page</a> <span class="cv-updated">Updated automatically: {{ now.Format "2 January 2006" }}</span></p>
+
+  <header class="cv-header">
+    <h1>Dr Marc K. Etherington</h1>
+    <p>{{ with $marc }}{{ .Params.job_title }}{{ end }}, School of Engineering, Physics and Mathematics, Northumbria University</p>
+    <p>{{ with $marc }}<a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a> · <a href="{{ .Params.orcid_url }}">ORCID {{ replace .Params.orcid_url "https://orcid.org/" "" }}</a> · {{ end }}<a href="{{ site.BaseURL }}">{{ replace (replace site.BaseURL "https://" "") "/" "" }}</a></p>
+    <p class="cv-summary">{{ $s.publications }} publications · {{ $s.citations }} citations{{ with site.Data.metrics.citations_checked }} ({{ . }}){{ end }} · {{ $s.invited }} invited talks · {{ $s.funding }} as PI, {{ $s.funding_coi }} as Co-I · {{ $s.collaborators }} collaborators in {{ $s.collab_countries }} countries</p>
+  </header>
+
+  <section class="cv-section">
+    <h2>Career</h2>
+    <table class="cv-table">
+      {{ range sort (where $c.roles "type" "in" (slice "position" "fellowship" "visiting")) "start" "desc" }}
+      <tr><td class="cv-when">{{ partial "role-dates.html" . }}</td><td><strong>{{ .title }}</strong>, {{ .organisation }}{{ with .unit }}, {{ . }}{{ end }}</td></tr>
+      {{ end }}
+    </table>
+    <h3>Education and qualifications</h3>
+    <table class="cv-table">
+      {{ range $c.education }}<tr><td class="cv-when">{{ .start }} to {{ .end }}</td><td><strong>{{ .degree }}</strong>, {{ .institution }}. {{ .detail }}</td></tr>{{ end }}
+      {{ range $c.qualifications }}<tr><td class="cv-when">{{ .year }}</td><td>{{ .title }}{{ with .institution }}, {{ . }}{{ end }}</td></tr>{{ end }}
+    </table>
+  </section>
+
+  <section class="cv-section">
+    <h2>1. Contributions to the generation of knowledge</h2>
+    <h3>Key contributions</h3>
+    <ul class="cv-list">
+      {{ range site.Data.publications.papers }}{{ if .significance }}
+      <li><strong>{{ .title | markdownify }}</strong> ({{ index (split .journal ",") 0 }}, {{ .year }}). {{ .significance }}</li>
+      {{ end }}{{ end }}
+    </ul>
+
+    <h3>Research funding</h3>
+    <table class="cv-table">
+      {{ range site.Data.grants.grants }}{{ if not .holder }}
+      <tr><td class="cv-when">{{ .start }}{{ if and .end (ne .end .start) }} to {{ .end }}{{ end }}</td>
+        <td><strong>{{ .title }}</strong>. {{ .funder }}{{ with .role }}; {{ . }}{{ end }}{{ with .amount_gbp }}; £{{ lang.FormatNumber 0 . }}{{ end }}{{ with .collaborators }}; with {{ range $i, $id := . }}{{ if $i }}, {{ end }}{{ range first 1 (where site.Data.collaborators.collaborators "id" $id) }}{{ .name }}{{ end }}{{ end }}{{ end }}.</td></tr>
+      {{ end }}{{ end }}
+    </table>
+
+    <h3>Publications ({{ $s.publications }}; corresponding author on {{ $s.corresponding }})</h3>
+    <ol class="cv-pubs" reversed>
+      {{ range site.Data.publications.papers }}
+      <li>{{ partial "authors.html" .authors }} <em>{{ .title | markdownify }}</em>. {{ .journal }}{{ if not (in .journal (string .year)) }}, {{ .year }}{{ end }}.{{ with .doi }} <a href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end }}</li>
+      {{ end }}
+    </ol>
+
+    <h3>Invited talks ({{ $s.invited }})</h3>
+    <ul class="cv-list">
+      {{ range site.Data.seminars.talks }}{{ if and (eq .type "invited") (not .speaker) }}
+      <li>{{ .year }}: {{ .title | markdownify }}, {{ with .event }}{{ . }}, {{ end }}{{ .venue }} ({{ .country }}){{ if .online }}, online{{ end }}</li>
+      {{ end }}{{ end }}
+    </ul>
+  </section>
+
+  {{ $team := site.Data.team.members }}
+  <section class="cv-section">
+    <h2>2. Contributions to the development of individuals</h2>
+    <h3>Supervision</h3>
+    <ul class="cv-list">
+      {{ range $team }}{{ $st := partial "func/member-status.html" . }}
+      <li><strong>{{ .name }}</strong>, {{ if eq .role "visitor" }}{{ .type | default "Visiting researcher" }} from {{ .home }}{{ else }}{{ .title }}{{ end }}{{ with .period }} ({{ . }}){{ end }}{{ if eq $st "current" }} (current){{ end }}{{ range first 1 (where site.Data.projects.projects "people" "intersect" (slice .author_name)) }}: {{ .title }}{{ end }}{{ with .where_now }}. Now: {{ . }}{{ end }}</li>
+      {{ end }}
+      {{ range $c.other_supervision }}<li><strong>{{ .name }}</strong>, {{ .level }} ({{ .years }}){{ with .note }}: {{ . }}{{ end }}</li>{{ end }}
+    </ul>
+    {{ with partial "func/awards.html" . }}
+    <h3>Students' prizes and awards</h3>
+    <ul class="cv-list">{{ range . }}<li>{{ .name }}: {{ .what }}{{ with .where }}, {{ . }}{{ end }}{{ with .year }} ({{ . }}){{ end }}</li>{{ end }}</ul>
+    {{ end }}
+    {{ with site.Data.visits.visits }}
+    <h3>Research visits by group members</h3>
+    <ul class="cv-list">{{ range . }}{{ $v := . }}<li>{{ partial "person-name.html" $v.person | plainify }} to {{ range first 1 (where site.Data.collaborators.collaborators "id" $v.host) }}{{ .name }}, {{ .institution }}{{ end }} ({{ (time.AsTime $v.start).Year }}){{ with partial "func/as-list.html" $v.funding }}, funded by {{ partial "funding-names.html" (dict "f" . "short" true) | plainify }}{{ end }}</li>{{ end }}</ul>
+    {{ end }}
+    <h3>Teaching</h3>
+    <ul class="cv-list">
+      {{ range site.Data.teaching.modules }}<li><strong>{{ .code }} {{ .title }}</strong> ({{ .level }}): {{ .role }}</li>{{ end }}
+      {{ range site.Data.teaching.past_projects }}<li>{{ .title }} ({{ .year }})</li>{{ end }}
+    </ul>
+  </section>
+
+  <section class="cv-section">
+    <h2>3. Contributions to the wider research community</h2>
+    {{ with $c.reviewing }}
+    <h3>Peer review</h3>
+    <p>Journals: {{ delimit .journals ", " }}.{{ with .funders }} Grant reviewing: {{ delimit . ", " }}.{{ end }}</p>
+    {{ end }}
+    {{ with $c.events }}<h3>Events organised</h3><ul class="cv-list">{{ range . }}<li><strong>{{ .title }}</strong>: {{ .role }}, {{ .years }}.{{ with .note }} {{ . }}{{ end }}</li>{{ end }}</ul>{{ end }}
+    <h3>Collaborations</h3>
+    <ul class="cv-list">{{ range site.Data.collaborators.collaborators }}{{ if .name }}<li>{{ .name }}, {{ .institution }} ({{ .country }}){{ with .description }}: {{ . }}{{ end }}</li>{{ end }}{{ end }}</ul>
+    <h3>Leadership, service and visiting positions</h3>
+    <table class="cv-table">
+      {{ range sort (where $c.roles "type" "in" (slice "service" "visiting")) "start" "desc" }}<tr><td class="cv-when">{{ partial "role-dates.html" . }}</td><td><strong>{{ .title }}</strong>, {{ .organisation }}{{ with .note }}. {{ . }}{{ end }}</td></tr>{{ end }}
+    </table>
+    <h3>Recognition and memberships</h3>
+    <ul class="cv-list">
+      {{ range $c.recognition }}<li>{{ .title }}, {{ .organisation }} ({{ .year }}){{ with .note }}. {{ . }}{{ end }}</li>{{ end }}
+      {{ with $c.memberships }}<li>Memberships: {{ delimit . ", " }}.</li>{{ end }}
+    </ul>
+  </section>
+
+  <section class="cv-section">
+    <h2>4. Contributions to broader society</h2>
+    <ul class="cv-list">
+      {{ range $c.outreach }}<li><strong>{{ .title }}</strong>{{ with .where }}, {{ . }}{{ end }} ({{ .years }}){{ with .note }}. {{ . }}{{ end }}</li>{{ end }}
+      {{ range $c.knowledge_exchange }}<li><strong>{{ .title }}</strong>{{ with .grant }}{{ range first 1 (where site.Data.grants.grants "id" .) }} ({{ .funder }}, {{ .start }}){{ end }}{{ end }}</li>{{ end }}
+    </ul>
+  </section>
+
+  {{ with $c.cv_only }}
+  <section class="cv-section">
+    <h2>Additional information</h2>
+    {{ with .small_awards }}<h3>Other awards</h3><ul class="cv-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+    {{ with .early_research }}<h3>Early research experience</h3><ul class="cv-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+  </section>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,101 @@
+{{ define "main" }}
+{{ $c := site.Data.career }}
+{{ $s := partialCached "func/stats.html" "stats" }}
+{{ partial "page-title.html" . }}
+<p class="research-intro">{{ .Params.intro | default "Positions, qualifications, supervision and service. Everything here also appears on the printable CV." }}</p>
+<p class="career-actions"><a class="cta-btn-marc" href="/cv/">📄 Printable CV</a> <a class="research-link-btn" href="/marc-etherington/">← Profile</a></p>
+
+{{ $labels := dict "position" "Position" "fellowship" "Fellowship" "visiting" "Visiting position" "service" "Service" }}
+{{ $current := slice }}{{ $past := slice }}
+{{ range $c.roles }}{{ if eq (partial "func/role-status.html" .) "current" }}{{ $current = $current | append . }}{{ else }}{{ $past = $past | append . }}{{ end }}{{ end }}
+
+<div class="roles-section-marc">
+  <h2>Current Roles</h2>
+  {{/* Positions, fellowships and visiting roles; leadership and service roles have their own section below */}}
+  <div class="roles-grid-marc">
+    {{ range slice "position" "fellowship" "visiting" }}{{ $t := . }}
+      {{ range where $current "type" $t }}<div class="role-with-label"><span class="role-type-label role-type-{{ $t }}">{{ index $labels $t }}</span>{{ partial "role-card.html" . }}</div>{{ end }}
+    {{ end }}
+  </div>
+</div>
+
+<div class="bio-section-marc">
+  <h2>Career History</h2>
+  <ul class="career-timeline">
+    {{ range sort (where $c.roles "type" "in" (slice "position" "fellowship" "visiting")) "start" "desc" }}
+    <li class="career-{{ .type }}"><span class="career-when">{{ partial "role-dates.html" . }}</span> <strong>{{ .title }}</strong>, {{ .organisation }}{{ with .unit }} ({{ . }}){{ end }}</li>
+    {{ end }}
+  </ul>
+</div>
+
+<div class="roles-section-marc">
+  <h2>Education &amp; Qualifications</h2>
+  <div class="roles-grid-marc">
+    {{ range $c.education }}
+    <div class="role-card-marc"><h3>🎓 {{ .degree }}</h3><p>{{ .institution }}<br><em>{{ .start }} to {{ .end }}</em></p><p class="career-note">{{ .detail }}</p></div>
+    {{ end }}
+    {{ with $c.qualifications }}
+    <div class="role-card-marc"><h3>📜 Teaching qualifications</h3>{{ range . }}<p>{{ .title }}{{ with .institution }}, {{ . }}{{ end }} ({{ .year }})</p>{{ end }}</div>
+    {{ end }}
+  </div>
+</div>
+
+{{/* Supervision: built from data/team.yaml, plus data/career.yaml other_supervision */}}
+{{ $team := site.Data.team.members }}
+{{ $phdNow := slice }}{{ $phdDone := slice }}{{ $staff := slice }}{{ $visitors := slice }}
+{{ range $team }}
+  {{ $st := partial "func/member-status.html" . }}
+  {{ if eq .role "phd" }}{{ if eq $st "current" }}{{ $phdNow = $phdNow | append . }}{{ else }}{{ $phdDone = $phdDone | append . }}{{ end }}
+  {{ else if eq .role "visitor" }}{{ $visitors = $visitors | append . }}
+  {{ else }}{{ $staff = $staff | append . }}{{ end }}
+{{ end }}
+<div class="roles-section-marc">
+  <h2>Supervision &amp; Mentoring</h2>
+  <div class="stats-grid-marc">
+    <div class="stat-card-marc"><div class="stat-number-marc">{{ len $phdNow }}</div><div class="stat-label-marc">Current PhD students</div></div>
+    <div class="stat-card-marc"><div class="stat-number-marc">{{ len $phdDone }}</div><div class="stat-label-marc">Completed PhDs</div></div>
+    <div class="stat-card-marc"><div class="stat-number-marc">{{ len $staff }}</div><div class="stat-label-marc">Research assistants &amp; associates</div></div>
+    <div class="stat-card-marc"><div class="stat-number-marc">{{ len $visitors }}</div><div class="stat-label-marc">Visiting researchers hosted</div></div>
+  </div>
+  <ul class="career-list">
+    {{ range $phdNow }}<li><a href="/group/#{{ .name | urlize }}">{{ .name }}</a>, PhD{{ with .joined }} (in the group since {{ . }}){{ end }}{{ range first 1 (where site.Data.projects.projects "people" "intersect" (slice .author_name)) }}: {{ .title }}{{ end }}</li>{{ end }}
+    {{ range $phdDone }}<li><a href="/group/#{{ .name | urlize }}">{{ .name }}</a>, PhD completed{{ with .period }} ({{ . }}){{ end }}{{ range first 1 (where site.Data.projects.projects "people" "intersect" (slice .author_name)) }}: {{ .title }}{{ end }}{{ with .where_now }}. Now: {{ . }}{{ end }}</li>{{ end }}
+    {{ range $staff }}<li><a href="/group/#{{ .name | urlize }}">{{ .name }}</a>, {{ .title }}{{ with .period }} ({{ . }}){{ end }}</li>{{ end }}
+    {{ range $visitors }}<li><a href="/group/#{{ .name | urlize }}">{{ .name }}</a>, {{ .type | default "Visiting researcher" }} from {{ .home }}{{ with .visit_start }} ({{ (time.AsTime .).Year }}){{ end }}</li>{{ end }}
+    {{ range $c.other_supervision }}<li><strong>{{ .name }}</strong>, {{ .level }} ({{ .years }}){{ with .note }}: {{ . }}{{ end }}</li>{{ end }}
+  </ul>
+  {{ with partial "func/awards.html" . }}<p class="career-note"><strong>Students' prizes and awards:</strong> {{ range $i, $a := . }}{{ if $i }}; {{ end }}{{ $a.name }}, {{ $a.what }}{{ with $a.year }} ({{ . }}){{ end }}{{ end }}.</p>{{ end }}
+</div>
+
+<div class="roles-section-marc">
+  <h2>Recognition &amp; Memberships</h2>
+  <div class="roles-grid-marc">
+    {{ range $c.recognition }}<div class="role-card-marc"><h3>🏆 {{ .title }}</h3><p>{{ .organisation }} ({{ .year }})</p>{{ with .note }}<p class="career-note">{{ . }}</p>{{ end }}</div>{{ end }}
+    {{ with $c.memberships }}<div class="role-card-marc"><h3>🏛️ Memberships</h3><p>{{ delimit . "<br>" | safeHTML }}</p></div>{{ end }}
+  </div>
+</div>
+
+<div class="roles-section-marc">
+  <h2>Service to the Research Community</h2>
+  <div class="roles-grid-marc">
+    {{ with $c.reviewing }}
+    <div class="role-card-marc"><h3>📝 Peer review</h3><p><strong>{{ len .journals }} journals</strong>, including {{ delimit (first 4 .journals) ", " " and " }}.</p>{{ with .funders }}<p><strong>Grant reviewing:</strong> {{ delimit . ", " " and " }}.</p>{{ end }}</div>
+    {{ end }}
+    {{ range $c.events }}<div class="role-card-marc"><h3>🎤 {{ .title }}</h3><p>{{ .role }}, {{ .years }}</p>{{ with .note }}<p class="career-note">{{ . }}</p>{{ end }}</div>{{ end }}
+    <div class="role-card-marc"><h3>🌍 Collaboration</h3><p>{{ $s.collaborators }} collaborators in {{ $s.collab_countries }} countries; {{ $s.invited }} invited talks. <a href="/research/#collaborations">See collaborations →</a></p></div>
+  </div>
+  {{ $service := where $c.roles "type" "service" }}
+  {{ with $service }}
+  <h3 class="career-type-heading">Leadership &amp; service roles</h3>
+  <ul class="career-list">{{ range sort . "start" "desc" }}<li><span class="career-when">{{ partial "role-dates.html" . }}</span> <strong>{{ .title }}</strong>, {{ .organisation }}{{ with .note }}. {{ . }}{{ end }}</li>{{ end }}</ul>
+  {{ end }}
+</div>
+
+<div class="roles-section-marc">
+  <h2>Outreach &amp; Knowledge Exchange</h2>
+  <ul class="career-list">
+    {{ range $c.outreach }}<li><strong>{{ .title }}</strong>{{ with .where }}, {{ . }}{{ end }} ({{ .years }}){{ with .note }}. {{ . }}{{ end }}</li>{{ end }}
+    {{ range $c.knowledge_exchange }}<li>🤝 <strong>{{ .title }}</strong>{{ with .grant }}{{ range first 1 (where site.Data.grants.grants "id" .) }} (<a href="/research/#grant-{{ .id }}">{{ .funder }}, {{ .start }}</a>){{ end }}{{ end }}</li>{{ end }}
+  </ul>
+</div>
+{{ end }}

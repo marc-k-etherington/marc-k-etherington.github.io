@@ -7,7 +7,8 @@
 #   category: Spectroscopy             # groups the cards
 #   capabilities: [What it measures, Another measurement]
 #   year: 2021                         # installed
-#   funding: grant-id                  # a grant id (links to it), or plain text
+#   funding: grant-id                  # a grant id (links to it), or plain text;
+#                                      # several: [grant-id, "University match"]
 #   upgrades:                          # optional: later additions and who paid
 #     - { name: "Module name", year: 2024, funding: grant-id }
 #   themes: [tadf]
@@ -23,11 +24,12 @@ equipment:
   - id: fluorolog
     name: "HORIBA Fluorolog-QM"
     category: Spectroscopy
-    capabilities: [Steady-state emission and excitation, Photoluminescence quantum yield (PLQY), Fluorescence lifetimes (TCSPC)]
+    capabilities: [Steady-state emission and excitation, Photoluminescence quantum yield (PLQY), Fluorescence lifetimes (TCSPC), Near-infrared emission]
     year: 2021
     funding: ""                        # CHECK: grant id or e.g. "Vice-Chancellor's Senior Fellowship start-up"
     upgrades:
       - { name: "Time-correlated single photon counting (TCSPC)", year: 2024, funding: wolfson }
+      - { name: "Near-infrared detector", year: 2025, funding: royal-society }
     themes: [tadf, ct, gap]
     photo: /post/images/Fluorolog_TCSPC.jpg
     posts: [fluorolog-QM, 2024-Fluorolog-TCSPC, 2023-Fluorolog-second-birthday]

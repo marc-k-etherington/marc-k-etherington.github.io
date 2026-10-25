@@ -22,7 +22,7 @@ label = "Citations"
 
 [[stats]]
 number = "auto:funding"
-label = "Funding Secured"
+label = "Funding Secured as PI"
 
 [[stats]]
 number = "auto:collaborations"

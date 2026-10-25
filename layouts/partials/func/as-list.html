@@ -1,0 +1,5 @@
+{{/* Turns a funding value into a list, so `funding: x` and `funding: [x, y]` both work */}}
+{{ $out := slice }}
+{{ if reflect.IsSlice . }}{{ range . }}{{ if . }}{{ $out = $out | append . }}{{ end }}{{ end }}
+{{ else if . }}{{ $out = slice . }}{{ end }}
+{{ return $out }}
