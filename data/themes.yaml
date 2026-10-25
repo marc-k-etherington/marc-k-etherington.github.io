@@ -3,29 +3,34 @@
 # with these ids (e.g. themes: [tadf, ct]) and the Research page shows, per theme:
 # the number of papers, grants and projects, the most recent paper, and links.
 # Rarely changes; to add a theme, copy a block and choose a new short id.
+# `short` is the brief name used on the small theme labels on cards.
 # =============================================================================
 
 themes:
 
   - id: tadf
+    short: "TADF"                 # used on the small theme labels
     icon: "🔬"
     title: "Thermally Activated Delayed Fluorescence (TADF)"
     description: "Investigating the fundamental photophysics of TADF materials for next-generation OLEDs and novel light-emitting applications. Our work focuses on understanding spin-vibronic coupling and optimizing reverse intersystem crossing rates."
     techniques: "Time-resolved spectroscopy, Low-temperature photoluminescence"
 
   - id: ct
+    short: "Charge transfer"                 # used on the small theme labels
     icon: "⚡"
     title: "Charge Transfer States & Molecular Design"
     description: "Exploring the relationship between molecular architecture and charge transfer state properties. We design novel donor-acceptor systems to control energy gaps and emission characteristics for targeted applications."
     techniques: "Organic synthesis, Photophysical characterization"
 
   - id: gap
+    short: "Energy gaps"                 # used on the small theme labels
     icon: "📊"
     title: "Singlet-Triplet Energy Gaps"
     description: "Developing spectroscopic approaches to accurately measure ΔEST in organic emitters. Understanding these energy gaps is crucial for designing efficient TADF materials and predicting device performance."
     techniques: "Steady-state spectroscopy, Time-resolved Emission Spectra (TRES), Low-temperature photoluminescence"
 
   - id: bio
+    short: "Bioimaging"                 # used on the small theme labels
     icon: "🧬"
     title: "Bioimaging Applications"
     description: "Applying our fundamental understanding of organic emitters to develop new materials for biological imaging. Collaborating with the Hudson group and the Takeda group as part of a JST-funded ASPIRE grant to create TADF-based probes with enhanced imaging capabilities."

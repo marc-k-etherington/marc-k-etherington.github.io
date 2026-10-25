@@ -1,6 +1,6 @@
 {{/* Small theme labels (context: a list of theme ids) linking to that theme's papers */}}
 {{ with . }}
 <div class="theme-chips">
-  {{ range . }}{{ $id := . }}{{ range first 1 (where site.Data.themes.themes "id" $id) }}<a class="theme-chip" href="/publications/#theme-{{ .id }}">{{ .icon }} {{ .title }}</a>{{ end }}{{ end }}
+  {{ range . }}{{ $id := . }}{{ range first 1 (where site.Data.themes.themes "id" $id) }}<a class="theme-chip" href="/publications/#theme-{{ .id }}" title="{{ .title }}">{{ .icon }} {{ .short | default .title }}</a>{{ end }}{{ end }}
 </div>
 {{ end }}
