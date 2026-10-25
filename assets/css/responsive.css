@@ -393,3 +393,27 @@ div.alert-secondary.group-talk {
 .role-type-label { align-self: flex-start; font-size: 0.8rem; padding: 0.1rem 0.6rem; border-radius: 1rem 1rem 0 0; color: #fff; background: var(--teal); }
 .role-type-label.role-type-fellowship { background: var(--orange); }
 .role-type-label.role-type-visiting { background: #2b3f63; }
+
+/* ---------- 22. Compact cards with "See more", and small buttons inside tabs ---------- */
+.research-summary-content, .research-project-grid { align-items: start; }  /* opening one card doesn't stretch its row */
+.compact-card h3 { margin-bottom: 0.4rem; }
+.card-more { margin-top: 0.5rem; }
+.card-more > summary.card-more-toggle { font-size: 0.95rem !important; padding: 0.25rem 0 !important; color: var(--teal) !important; }
+.card-more .when-open { display: none; }
+.card-more[open] .when-open { display: inline; }
+.card-more[open] .when-closed { display: none; }
+.card-more[open] > summary { margin-bottom: 0.5rem; }
+.pill-row { margin: 0 0 1.25rem !important; justify-content: flex-start; }
+.pill-panel { display: none; }
+.pill-panel.active { display: block; animation: fadeIn 0.2s ease; }
+
+/* Five research tabs on a phone: three on top, two below */
+@media (max-width: 768px) {
+  .research-tab-nav { grid-template-columns: repeat(6, 1fr) !important; }
+  .research-tab-nav .research-tab-btn:nth-child(-n+3) { grid-column: span 2; }
+  .research-tab-nav .research-tab-btn:nth-child(n+4) { grid-column: span 3; }
+}
+@media (max-width: 768px) {
+  .research-tab-nav .research-tab-btn { display: flex !important; align-items: center; justify-content: center; gap: 0.3rem; min-height: 2.8rem; line-height: 1.15; white-space: nowrap; font-size: 0.82rem !important; padding: 0.4rem 0.3rem !important; }
+}
+@media (max-width: 360px) { .research-tab-nav .research-tab-btn { font-size: 0.75rem !important; white-space: normal; text-align: center; } }

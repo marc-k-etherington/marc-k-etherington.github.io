@@ -10,6 +10,7 @@
 #
 # - id: short-name                 # used to link projects to this grant
 #   title: "Grant title"
+#   short: "Short name"            # optional: used on cards where space is tight
 #   funder: "Funder name"
 #   start: 2026
 #   end: 2028
@@ -28,6 +29,7 @@ grants:
 
   - id: gbsf-matthews
     title: "Visit to the Takeda Lab, University of Osaka"
+    short: "GBSF travel grant"
     funder: "Great Britain Sasakawa Foundation"
     start: 2026
     end: 2026
@@ -38,6 +40,7 @@ grants:
 
   - id: british-council-springboard
     title: "British Council Springboard: Collaboration with TU Dresden"
+    short: "British Council Springboard"
     funder: "British Council"
     start: 2025                        # CHECK
     end: 2026                          # CHECK
@@ -48,6 +51,7 @@ grants:
 
   - id: gbsf-pollard
     title: "Visit to the Takeda Lab, University of Osaka"
+    short: "GBSF travel grant"
     funder: "Great Britain Sasakawa Foundation"
     start: 2025
     end: 2025
@@ -58,6 +62,7 @@ grants:
 
   - id: rsc-rcg-pollard
     title: "RSC Researcher Collaborations Grant: Visit to the Hudson Lab, University of British Columbia"
+    short: "RSC Researcher Collaborations Grant"
     funder: "Royal Society of Chemistry"
     start: 2025
     end: 2025
@@ -68,6 +73,7 @@ grants:
 
   - id: royal-society
     title: "Seeing (Infra)Red: pushing Pt(II) complexes towards bright near-infrared emission"
+    short: "Royal Society Research Grant"
     funder: "The Royal Society (Research Grants)"
     start: 2025
     end: 2026                          # CHECK
@@ -78,6 +84,7 @@ grants:
 
   - id: aphid
     title: "APHiD: aggregation-induced delayed fluorescence in pesticide and herbicide detection"
+    short: "Royal Society ISPF (APHiD)"
     funder: "The Royal Society (International Science Partnership Fund, International Collaboration Awards)"
     start: 2024
     end: 2027                          # CHECK
@@ -89,6 +96,7 @@ grants:
 
   - id: wolfson
     title: "Wolfson Foundation: TCSPC upgrade for the Fluorolog-QM"
+    short: "Wolfson Foundation"
     funder: "Wolfson Foundation"
     start: 2024                        # CHECK
     end: 2024                          # CHECK
@@ -98,6 +106,7 @@ grants:
 
   - id: ghosts
     title: "GHOSTS: green and halogen-free solvents for TADF spectroscopy"
+    short: "RSC Sustainable Laboratories Grant (GHOSTS)"
     funder: "Royal Society of Chemistry (Sustainable Laboratories Grant)"
     start: 2024
     end: 2025                     
@@ -108,6 +117,7 @@ grants:
 
   - id: aspire-takeda-1
     title: "JST ASPIRE International Collaboration"
+    short: "JST ASPIRE"
     funder: "Japan Science and Technology Agency"
     amount_gbp: 467000               # equivalent; you are Co-I, so not in your PI total
     start: 2024
@@ -119,6 +129,7 @@ grants:
 
   - id: caged-excitement
     title: "Caged Excitement (Northumbria University Internal Seed Fund)"
+    short: "Northumbria seed fund (Caged Excitement)"
     funder: "Northumbria University"
     start: 2023
     end: 2023
@@ -129,6 +140,7 @@ grants:
 
   - id: seed-2022
     title: "Northumbria University Internal Seed Fund"
+    short: "Northumbria seed fund"
     funder: "Northumbria University"
     start: 2022
     end: 2022
@@ -139,6 +151,7 @@ grants:
 
   - id: fluorotonix
     title: "Fluorotonix: fluorescent and functional photonic salts inspired by tonic water"
+    short: "RSC Research Fund (Fluorotonix)"
     funder: "Royal Society of Chemistry (Research Fund)"
     start: 2021
     end: 2021
@@ -149,6 +162,7 @@ grants:
 
   - id: iaa-starna
     title: "Quinine-based fluorescence standards (Research Impact Fund and EPSRC IAA)"
+    short: "EPSRC IAA (Starna Scientific)"
     funder: "Durham University and EPSRC Impact Acceleration Account"
     start: 2019
     end: 2019

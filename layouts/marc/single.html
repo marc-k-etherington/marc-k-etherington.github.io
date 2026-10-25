@@ -49,7 +49,7 @@
     {{ with $s.student_grants }}<div><span class="stat-number-marc">{{ . }}</span><span class="stat-label-marc">Won by group members</span></div>{{ end }}
   </div>
   {{ with $current }}<p class="funding-summary-current"><strong>Current funding:</strong> {{ range $i, $g := . }}{{ if $i }}; {{ end }}{{ $g.funder }}{{ end }}</p>{{ end }}
-  <a href="/research/#projects" class="cta-btn-marc">View funding →</a>
+  <a href="/research/#funding" class="cta-btn-marc">View funding →</a>
 </div>
 {{ end }}
 

@@ -1,8 +1,8 @@
-{{/* One grant card (context: the grant) */}}
+{{/* One grant card (context: the grant). Compact by default; details under "See more" */}}
 {{ $g := . }}
 {{ $status := partial "func/grant-status.html" $g }}
 {{ $projects := slice }}{{ range site.Data.projects.projects }}{{ if in (partial "func/as-list.html" .funding) $g.id }}{{ $projects = $projects | append . }}{{ end }}{{ end }}
-<div class="research-project-card {{ if $g.holder }}student-funding{{ else if eq $status "past" }}past{{ else }}funding{{ end }}" id="grant-{{ $g.id }}">
+<div class="research-project-card compact-card {{ if $g.holder }}student-funding{{ else if eq $status "past" }}past{{ else }}funding{{ end }}" id="grant-{{ $g.id }}">
   <h3>{{ $g.title }}</h3>
   <div class="research-project-meta">
     {{- $g.start }}{{ if and $g.end (ne $g.end $g.start) }} to {{ $g.end }}{{ end }} | {{ $g.funder -}}
@@ -10,6 +10,8 @@
     {{- with $g.amount_gbp }} | £{{ lang.FormatNumber 0 . }}{{ end -}}
   </div>
   {{ with $g.holder }}<p class="project-people">🎓 Held by {{ partial "people-links.html" (slice .) }}</p>{{ end }}
+  <details class="card-more">
+    {{ partial "see-more.html" . }}
   {{ with $g.description }}<p class="research-project-description">{{ . }}</p>{{ end }}
   {{ with $g.collaborators }}<p class="grant-projects">With: {{ range $i, $id := . }}{{ if $i }}, {{ end }}{{ range first 1 (where site.Data.collaborators.collaborators "id" $id) }}<a href="#collab-{{ .id }}">{{ .name | default .institution }}</a> ({{ .institution }}){{ end }}{{ end }}</p>{{ end }}
   {{ $sv := slice }}
@@ -30,4 +32,5 @@
   {{ with $kit }}<p class="grant-projects">Equipment: {{ delimit . "; " }}</p>{{ end }}
   {{ with $projects }}<p class="grant-projects">Supports: {{ range $i, $p := . }}{{ if $i }}, {{ end }}<a href="#project-{{ $p.id }}">{{ $p.title }}</a>{{ end }}</p>{{ end }}
   {{ partial "theme-chips.html" $g.themes }}
+  </details>
 </div>

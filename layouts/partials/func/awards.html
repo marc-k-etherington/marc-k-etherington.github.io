@@ -10,7 +10,7 @@
 {{ range $g := site.Data.grants.grants }}
   {{ if $g.holder }}
     {{ $who := $g.holder }}{{ range first 1 (where site.Data.team.members "author_name" $g.holder) }}{{ $who = .name }}{{ end }}
-    {{ $items = $items | append (dict "name" $who "what" (index (split $g.title ":") 0) "where" ($g.funder | default "") "year" $g.start "icon" "🎓") }}
+    {{ $items = $items | append (dict "name" $who "what" ($g.short | default (index (split $g.title ":") 0)) "where" ($g.funder | default "") "year" $g.start "icon" "🎓") }}
   {{ end }}
 {{ end }}
 {{ return sort $items "year" "desc" }}
