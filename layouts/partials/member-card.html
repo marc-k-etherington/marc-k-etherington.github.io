@@ -64,7 +64,7 @@
       {{/* Funding for this person: a grant id (linked) or plain text such as a studentship */}}
       {{ with partial "func/as-list.html" $m.funding }}<p><strong>Funded by:</strong> {{ partial "funding-names.html" (dict "f" .) }}</p>{{ end }}
       {{ with $away }}<p><strong>Research visit{{ if gt (len .) 1 }}s{{ end }}:</strong> {{ range $i, $v := . }}{{ if $i }}; {{ end }}{{ range first 1 (where site.Data.collaborators.collaborators "id" $v.host) }}{{ with .name }}{{ . }}, {{ end }}{{ .institution }}{{ end }} ({{ (time.AsTime $v.start).Year }}{{ with partial "func/as-list.html" $v.funding }}; funded by {{ partial "funding-names.html" (dict "f" . "short" true) }}{{ end }}){{ end }}</p>{{ end }}
-      {{ with $grants }}<p><strong>Grants won:</strong> {{ range $i, $g := . }}{{ if $i }}; {{ end }}{{ index (split $g.title ":") 0 }} ({{ with $g.funder }}{{ . }}, {{ end }}{{ $g.start }}){{ end }}</p>{{ end }}
+      {{ with $grants }}<p><strong>Grants won:</strong> {{ range $i, $g := . }}{{ if $i }}; {{ end }}{{ $g.short | default (index (split $g.title ":") 0) }} ({{ with $g.funder }}{{ . }}, {{ end }}{{ $g.start }}){{ end }}</p>{{ end }}
     </div>
 
     {{ with $m.topics }}

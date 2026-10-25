@@ -83,6 +83,7 @@ Research "Recent Seminars" (latest three invited talks).
 ```yaml
   - id: short-name
     title: "Grant title"
+    short: "Short name"          # optional: used on cards where space is tight
     funder: "Funder"
     start: 2026
     end: 2028

@@ -168,10 +168,24 @@ if (location.hash) {
   if (f) { f.click(); setTimeout(() => f.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100); }
 }
 
+/* Small buttons inside a tab (Active / Past, Current / Past / Won by group members).
+   Markup: <div data-pills> ... <button data-pill="x" onclick="switchPill(this)"> ... <div data-pill-panel="x"> */
+function switchPill(btn) {
+  const root = btn.closest('[data-pills]');
+  if (!root) return;
+  root.querySelectorAll('[data-pill]').forEach(b => b.classList.toggle('active', b === btn));
+  root.querySelectorAll('[data-pill-panel]').forEach(p => p.classList.toggle('active', p.dataset.pillPanel === btn.dataset.pill));
+}
+
 /* Links to anything inside a tab (e.g. /research/#grant-aspire, or #equip-fluorolog from
-   another tab) open that tab first, then scroll to it */
+   another tab) open that tab, and the right small button within it, then scroll to it */
 function revealInTab(id) {
   const el = id && document.getElementById(id);
+  const pillPanel = el && el.closest('[data-pill-panel]');
+  if (pillPanel && !pillPanel.classList.contains('active')) {
+    const b = pillPanel.closest('[data-pills]').querySelector('[data-pill="' + pillPanel.dataset.pillPanel + '"]');
+    if (b) switchPill(b);
+  }
   const panel = el && el.closest('[data-tab-panel]');
   if (!panel) return false;
   const root = panel.closest('[data-tabs]');
@@ -187,3 +201,11 @@ document.addEventListener('click', e => {
   }
 });
 if (location.hash) revealInTab(decodeURIComponent(location.hash.slice(1)));
+
+/* Same-page jumps (e.g. typing #funding or using Back/Forward) behave like fresh links */
+window.addEventListener('hashchange', () => {
+  const id = decodeURIComponent(location.hash.slice(1));
+  const tabBtn = document.querySelector('[data-tab="' + CSS.escape(id) + '"]');
+  if (tabBtn) { switchTab(tabBtn); tabBtn.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  else revealInTab(id);
+});

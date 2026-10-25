@@ -9,7 +9,8 @@
 <div class="research-tab-nav" role="tablist">
   <button class="research-tab-btn active" data-tab="overview" onclick="switchTab(this)">📋 Overview</button>
   <button class="research-tab-btn" data-tab="themes" onclick="switchTab(this)">🔬 Themes</button>
-  <button class="research-tab-btn" data-tab="projects" onclick="switchTab(this)">📊 Projects &amp; Funding</button>
+  <button class="research-tab-btn" data-tab="projects" onclick="switchTab(this)">📊 Projects</button>
+  <button class="research-tab-btn" data-tab="funding" onclick="switchTab(this)">💷 Funding</button>
   <button class="research-tab-btn" data-tab="collaborations" onclick="switchTab(this)">🌍 Collaborations</button>
 </div>
 
@@ -92,48 +93,55 @@
   </div>
 </div>
 
-<!-- Projects & funding -->
+<!-- Projects -->
 <div class="research-tab-content" data-tab-panel="projects">
-  {{/* From data/projects.yaml and data/grants.yaml; active/past and current/past are automatic */}}
+  {{/* From data/projects.yaml; active and past are worked out automatically */}}
   {{ $active := slice }}{{ $pastP := slice }}
   {{ range site.Data.projects.projects }}{{ if eq (partial "func/project-status.html" .) "active" }}{{ $active = $active | append . }}{{ else }}{{ $pastP = $pastP | append . }}{{ end }}{{ end }}
+  <h2>Research Projects</h2>
+  <div data-pills>
+    <div class="seminar-subfilters pill-row" role="group" aria-label="Which projects">
+      <button class="sub-filter-btn active" data-pill="active" onclick="switchPill(this)">Active ({{ len $active }})</button>
+      {{ with $pastP }}<button class="sub-filter-btn" data-pill="past" onclick="switchPill(this)">Past ({{ len . }})</button>{{ end }}
+    </div>
+    <div class="pill-panel active" data-pill-panel="active">
+      <div class="research-project-grid">{{ range $active }}{{ partial "project-card.html" . }}{{ end }}</div>
+    </div>
+    <div class="pill-panel" data-pill-panel="past">
+      <div class="research-project-grid">{{ range $pastP }}{{ partial "project-card.html" . }}{{ end }}</div>
+    </div>
+  </div>
+</div>
+
+<!-- Funding -->
+<div class="research-tab-content" data-tab-panel="funding">
+  {{/* From data/grants.yaml: your grants (current or past by end year) and funding held by group members */}}
   {{ $current := slice }}{{ $pastG := slice }}{{ $held := slice }}
   {{ range site.Data.grants.grants }}
     {{ if .holder }}{{ $held = $held | append . }}
     {{ else if eq (partial "func/grant-status.html" .) "current" }}{{ $current = $current | append . }}
     {{ else }}{{ $pastG = $pastG | append . }}{{ end }}
   {{ end }}
-
-  <h2>Research Projects</h2>
-  {{ with $pastP }}<button class="research-toggle-btn" data-target="research-past-projects" data-show-label="Show Past Projects ({{ len . }})" data-hide-label="Hide Past Projects" aria-expanded="false" onclick="toggleSection(this)">Show Past Projects ({{ len . }})</button>{{ end }}
-
-  <div id="research-active-projects">
-    <h3 class="research-subhead teal">Active Projects ({{ len $active }})</h3>
-    <div class="research-project-grid">{{ range $active }}{{ partial "project-card.html" . }}{{ end }}</div>
+  {{ $s := partialCached "func/stats.html" "stats" }}
+  <h2>Research Funding</h2>
+  <p class="section-intro">{{ with $s.funding }}{{ . }} secured as PI{{ end }}{{ with $s.funding_coi }} and {{ . }} as Co-I{{ end }}. Funding won by students and researchers in the group is listed separately.</p>
+  <div data-pills>
+    <div class="seminar-subfilters pill-row" role="group" aria-label="Which funding">
+      <button class="sub-filter-btn active" data-pill="current" onclick="switchPill(this)">Current ({{ len $current }})</button>
+      {{ with $pastG }}<button class="sub-filter-btn" data-pill="past" onclick="switchPill(this)">Past ({{ len . }})</button>{{ end }}
+      {{ with $held }}<button class="sub-filter-btn" data-pill="group" onclick="switchPill(this)">Won by group members ({{ len . }})</button>{{ end }}
+    </div>
+    <div class="pill-panel active" data-pill-panel="current">
+      <div class="research-project-grid">{{ range $current }}{{ partial "grant-card.html" . }}{{ end }}</div>
+    </div>
+    <div class="pill-panel" data-pill-panel="past">
+      <div class="research-project-grid">{{ range $pastG }}{{ partial "grant-card.html" . }}{{ end }}</div>
+    </div>
+    <div class="pill-panel" data-pill-panel="group">
+      <p class="section-intro">Travel grants, fellowships and awards held by students and researchers in the group.</p>
+      <div class="research-project-grid">{{ range sort $held "start" "desc" }}{{ partial "grant-card.html" . }}{{ end }}</div>
+    </div>
   </div>
-  <div id="research-past-projects" class="research-toggleable-content">
-    <h3 class="research-subhead muted">Past Projects</h3>
-    <div class="research-project-grid">{{ range $pastP }}{{ partial "project-card.html" . }}{{ end }}</div>
-  </div>
-
-  <h2 class="research-spaced">Research Funding</h2>
-  <p class="section-intro">Grants held by Marc as PI or Co-I.</p>
-  {{ with $pastG }}<button class="research-toggle-btn" data-target="research-past-funding" data-show-label="Show Funding History ({{ len . }})" data-hide-label="Hide Funding History" aria-expanded="false" onclick="toggleSection(this)">Show Funding History ({{ len . }})</button>{{ end }}
-
-  <div id="research-current-funding">
-    <h3 class="research-subhead orange">Current Funding ({{ len $current }})</h3>
-    <div class="research-project-grid">{{ range $current }}{{ partial "grant-card.html" . }}{{ end }}</div>
-  </div>
-  <div id="research-past-funding" class="research-toggleable-content">
-    <h3 class="research-subhead muted">Funding History</h3>
-    <div class="research-project-grid">{{ range $pastG }}{{ partial "grant-card.html" . }}{{ end }}</div>
-  </div>
-
-  {{ with $held }}
-  <h3 class="research-subhead orange">Funding Won by Group Members ({{ len . }})</h3>
-  <p class="section-intro">Travel grants, fellowships and awards held by students and researchers in the group.</p>
-  <div class="research-project-grid">{{ range sort . "start" "desc" }}{{ partial "grant-card.html" . }}{{ end }}</div>
-  {{ end }}
 </div>
 
 <!-- Collaborations -->

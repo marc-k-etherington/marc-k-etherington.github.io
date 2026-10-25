@@ -1,14 +1,18 @@
-{{/* One project card (context: the project) */}}
+{{/* One project card (context: the project). Compact by default; details under "See more" */}}
 {{ $p := . }}
 {{ $status := partial "func/project-status.html" $p }}
-
-<div class="research-project-card{{ if eq $status "past" }} past{{ end }}" id="project-{{ $p.id }}">
+<div class="research-project-card compact-card{{ if eq $status "past" }} past{{ end }}" id="project-{{ $p.id }}">
   <h3>{{ $p.title }}</h3>
   <div class="research-project-meta">
     {{- $p.start }}{{ if $p.end }} to {{ $p.end }}{{ else if eq $status "active" }} to present{{ end -}}
-    {{- with partial "func/as-list.html" $p.funding }} | {{ partial "funding-names.html" (dict "f" .) }}{{ end -}}
+    {{- with partial "func/as-list.html" $p.funding }} | {{ partial "funding-names.html" (dict "f" . "short" true) }}{{ end -}}
   </div>
   {{ with $p.people }}<p class="project-people">🎓 {{ partial "people-links.html" . }}</p>{{ end }}
-  <p class="research-project-description">{{ $p.description }}</p>
-  {{ partial "theme-chips.html" $p.themes }}
+  {{ if or $p.description $p.themes }}
+  <details class="card-more">
+    {{ partial "see-more.html" . }}
+    {{ with $p.description }}<p class="research-project-description">{{ . }}</p>{{ end }}
+    {{ partial "theme-chips.html" $p.themes }}
+  </details>
+  {{ end }}
 </div>

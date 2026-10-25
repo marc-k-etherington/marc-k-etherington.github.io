@@ -1,0 +1,8 @@
+{{- /* Short name for a grant where space is tight (context: dict "g" grant "who" bool).
+       Uses `short`, otherwise the funder; with "who", adds the holder and year for group members' funding */ -}}
+{{- $g := .g -}}
+{{- $name := $g.short | default $g.funder | default $g.title -}}
+{{- if and .who $g.holder -}}
+  {{- $n := $g.holder }}{{ range first 1 (where site.Data.team.members "author_name" $g.holder) }}{{ $n = .name }}{{ end -}}
+  {{- printf "%s (%s, %v)" $name $n $g.start -}}
+{{- else -}}{{- $name -}}{{- end -}}
