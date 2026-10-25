@@ -21,10 +21,41 @@
 
 talks:
 
+  - title: "Methylated pyridinium salts as luminophores for bioimaging with glassy organic dots"
+    year: 2026
+    type: invited
+    event: "The 36th Symposium on Physical Organic Chemistry"
+    venue: "Kanazawa"
+    country: Japan
+
+  - title: "From UV to Blue: Making visible the location of nitrogen lone pair interaction via changes in photoluminescence"
+    year: 2026
+    type: contributed
+    event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2026"
+    venue: "Durham University"
+    country: UK
+
+  - title: "Using cage linkers to capture the fundamentals of charge transfer for use in emissive applications"
+    year: 2026
+    type: contributed
+    speaker: Aidan E. Matthews
+    event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2026"
+    venue: "Durham University"
+    country: UK
+
+  - title: ""
+    year: 2026
+    type: poster
+    speaker: William D. Tetlow
+    event: "RSC Photophysics and Photochemistry Group Early Career Meeting 2026"
+    venue: "Durham University"
+    country: UK
+    award: "Poster prize"
+
   - title: "A new approach to donor-acceptor chromophores for TADF"
     year: 2026
     type: poster
-    speaker: Matthews
+    speaker: Aidan E. Matthews
     event: "RSC Organic Chemistry Regional Meeting"
     venue: "Newcastle University"
     country: UK
@@ -33,7 +64,7 @@ talks:
   - title: "New fabrication techniques for BaS powders and thin films (two posters)"
     year: 2026
     type: poster
-    speaker: Tetlow
+    speaker: William D. Tetlow
     event: "PVSAT26"
     venue: "Newcastle University"
     country: UK
