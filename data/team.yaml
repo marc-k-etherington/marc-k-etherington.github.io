@@ -28,8 +28,8 @@ pi:
 members:
 
   - name: Aidan Matthews
-    author_name: Matthews   # as it appears in author lists; papers are found automatically
-    funding: ""                    # CHECK: e.g. "Northumbria University studentship"
+    author_name: Aidan E. Matthews   # as it appears in author lists; papers are found automatically
+    funding: "Energy Futures RDF Studentship"                    # CHECK: e.g. "Northumbria University studentship"
     status: current            # current | alumni
     role: phd                  # phd | postdoc | ra | masters | undergraduate | visitor
     title: PhD student
@@ -47,8 +47,8 @@ members:
       the laboratory, Aidan is an avid musician, with radio play on BBC Radio 1.
 
   - name: Will Tetlow
-    author_name: Tetlow   # as it appears in author lists; papers are found automatically
-    funding: "ReNU CDT studentship"
+    author_name: William D. Tetlow   # as it appears in author lists; papers are found automatically
+    funding: "ReNU CDT Studentship"
     status: current
     role: phd
     title: PhD student
@@ -66,12 +66,12 @@ members:
       Will likes painting and graphic design in his spare time.
 
   - name: Nae Aota
-    author_name: Aota   # as it appears in author lists; papers are found automatically
+    author_name: Nae Aota   # as it appears in author lists; papers are found automatically
     role: visitor                  # visitors move from Current team to Visitors after visit_end
     type: Visiting PhD student
     home: The University of Osaka
     country: Japan
-    host: takeda                   # collaborator id (data/collaborators.yaml)
+    host: Takeda                   # collaborator id (data/collaborators.yaml)
     visit_start: 2026-05-22
     visit_end: 2026-08-31          # CHECK
     funding: aspire                # grant id (data/grants.yaml)
@@ -81,8 +81,8 @@ members:
       of the novel chemistry that we do in the group.
 
   - name: Ruth Pollard
-    author_name: Pollard   # as it appears in author lists; papers are found automatically
-    funding: ""                    # CHECK
+    author_name: Ruth M. Pollard   # as it appears in author lists; papers are found automatically
+    funding: "ReNU CDT Studentship"                    # CHECK
     status: alumni
     role: phd
     title: PhD student
@@ -97,8 +97,8 @@ members:
       with Dr Jon Knowles, studying organic materials for LEDs. Ruth sings in multiple choirs
       and enjoys travelling and spending time with her friends.
 
-  - name: Oliver M. Rigby
-    author_name: Rigby   # as it appears in author lists; papers are found automatically
+  - name: Oliver Rigby
+    author_name: Oliver M. Rigby   # as it appears in author lists; papers are found automatically
     status: alumni
     role: ra
     title: Research Associate
