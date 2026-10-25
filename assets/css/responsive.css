@@ -223,7 +223,7 @@ main > h1 { overflow-wrap: normal; }
 @font-face { font-family: "Indie Flower";    src: url("/fonts/TwemojiCountryFlags.woff2") format("woff2"); unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E007F; font-display: swap; }
 
 /* ---------- 14. Member paper lists ---------- */
-.member-paper-meta { color: var(--muted); font-size: 0.9em; white-space: nowrap; }
+.member-paper-meta { color: var(--muted); font-size: 0.9em; }
 
 /* ---------- 15. Lab logo in the hero ---------- */
 .hero-logo { margin: 0 0 1rem; line-height: 0; }
@@ -252,7 +252,7 @@ div.alert-secondary.group-talk {
 }
 .group-talk-key { border-left: 6px solid #2b3f63; background: #eef1f7; }
 .talk-extra { margin: 0.25rem 0 0; font-size: 0.95em; color: var(--muted); }
-.talk-award { color: #c45a00; font-weight: bold; white-space: nowrap; }
+.talk-award { color: #c45a00; font-weight: bold; }
 
 .theme-filters { margin-top: -1rem; align-items: center; }
 .theme-filters-label { font-style: italic; color: var(--muted); }
@@ -268,7 +268,8 @@ div.alert-secondary.group-talk {
   background: #fff;
   color: #333 !important;
   text-decoration: none !important;
-  white-space: nowrap;
+  max-width: 100%;            /* long labels wrap inside the pill instead of spilling out */
+  overflow-wrap: anywhere;
 }
 .theme-chip:hover { background: #e0f7f7; }
 .project-people, .grant-projects { margin: 0 0 0.5rem; font-size: 0.95rem; }
@@ -315,3 +316,26 @@ div.alert-secondary.group-talk {
 .funding-summary-figures { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; margin-bottom: 0.75rem; }
 .funding-summary-figures > div { display: flex; flex-direction: column; }
 .funding-summary-current { margin: 0.5rem 0 1rem; color: var(--muted); }
+
+/* ---------- 19. Seminars: second row of filters (types of Marc's talks) ---------- */
+.seminar-subfilters { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; align-items: center; margin: -1rem 0 1.5rem; }
+.seminar-subfilters-label { color: var(--muted); font-style: italic; }
+.sub-filter-btn {
+  font-family: inherit; font-size: 0.9rem; padding: 0.3rem 0.9rem; cursor: pointer;
+  background: #fff; color: #333; border: 1.5px solid #333; border-radius: 1rem;
+}
+.sub-filter-btn:hover { background: #e0f7f7; }
+.sub-filter-btn.active { background: var(--teal); border-color: var(--teal); color: #fff; }
+@media (max-width: 768px) {
+  .seminar-subfilters { margin-top: -0.5rem; }
+  .sub-filter-btn { width: auto !important; }
+}
+/* PaperCSS styles every <button>; reset that for the small buttons and the text link */
+.sub-filter-btn, .link-button { margin: 0 !important; box-shadow: none !important; transform: none !important; }
+.link-button { border-radius: 0 !important; background: none !important; display: inline; }
+@media (max-width: 768px) {
+  /* the three main choices sit side by side instead of a tall stack */
+  .seminar-filters { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+  .seminar-filters .filter-btn { margin: 0 !important; width: 100% !important; padding: 0.55rem 0.3rem !important; font-size: 0.85rem !important; }
+  .seminar-subfilters { gap: 0.4rem; margin: 0 0 1rem; }
+}

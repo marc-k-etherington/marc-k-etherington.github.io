@@ -19,18 +19,22 @@
   </div>
 </div>
 
-{{ if $s.group_talks }}
-<p class="group-talks-note">Showing Marc's talks. <button type="button" class="link-button" onclick="filterSeminars('group', document.querySelector('[data-filter-sem=group]'))">Plus {{ $s.group_talks }} talks and posters by group members →</button></p>
-{{ end }}
-
-<div class="seminar-filters">
-  <button class="filter-btn active" data-filter-sem="mine" onclick="filterSeminars('mine', this)">Marc's Talks</button>
-  <button class="filter-btn" onclick="filterSeminars('invited', this)">Invited Talks</button>
-  <button class="filter-btn" onclick="filterSeminars('contributed', this)">Contributed Talks</button>
-  <button class="filter-btn" onclick="filterSeminars('international', this)">International</button>
-  {{ if $s.group_talks }}<button class="filter-btn" data-filter-sem="group" onclick="filterSeminars('group', this)">Group Members</button>{{ end }}
-  <button class="filter-btn" data-filter-sem="all" onclick="filterSeminars('all', this)">Everything</button>
+{{/* Two levels: who gave the talk, then (for Marc's talks) which kind */}}
+<div class="seminar-filters" role="group" aria-label="Whose talks">
+  <button class="filter-btn active" data-sem-scope="mine" onclick="setSeminarScope('mine', this)">Marc's Talks ({{ $s.seminars }})</button>
+  {{ if $s.group_talks }}<button class="filter-btn" data-sem-scope="group" onclick="setSeminarScope('group', this)">Group Members ({{ $s.group_talks }})</button>{{ end }}
+  <button class="filter-btn" data-sem-scope="all" onclick="setSeminarScope('all', this)">Everything</button>
 </div>
+<div class="seminar-subfilters" role="group" aria-label="Type of talk">
+  <span class="seminar-subfilters-label">Show:</span>
+  <button class="sub-filter-btn active" data-sem-sub="any" onclick="setSeminarSub('any', this)">All</button>
+  <button class="sub-filter-btn" data-sem-sub="invited" onclick="setSeminarSub('invited', this)">Invited ({{ $s.invited }})</button>
+  <button class="sub-filter-btn" data-sem-sub="contributed" onclick="setSeminarSub('contributed', this)">Contributed ({{ sub $s.seminars $s.invited }})</button>
+  <button class="sub-filter-btn" data-sem-sub="international" onclick="setSeminarSub('international', this)">International</button>
+</div>
+{{ if $s.group_talks }}
+<p class="group-talks-note">Showing Marc's talks. <button type="button" class="link-button" onclick="setSeminarScope('group', document.querySelector('[data-sem-scope=group]'))">See {{ $s.group_talks }} talks and posters by group members →</button></p>
+{{ end }}
 
 {{ $years := slice }}{{ range $talks }}{{ $years = $years | append .year }}{{ end }}
 <div class="seminar-list" data-default-filter="mine">

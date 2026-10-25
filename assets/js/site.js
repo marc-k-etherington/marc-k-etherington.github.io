@@ -65,27 +65,44 @@ function filterPubs(category, button) {
 }
 
 /* Seminars (unchanged API: filterSeminars('invited', this)) */
-function filterSeminars(category, button) {
-  if (button) setActiveButton(button, '.filter-btn');
-  document.querySelectorAll('.alert-danger, .alert-secondary').forEach(s => {
+/* Seminars: first choose whose talks (scope), then, for Marc's talks, which kind (sub) */
+const seminarState = { scope: 'mine', sub: 'any' };
+function applySeminarFilters() {
+  const { scope, sub } = seminarState;
+  document.querySelectorAll('.seminar-list .alert-danger, .seminar-list .alert-secondary').forEach(s => {
     const group = s.classList.contains('group-talk');
-    const show =
-      category === 'all' ||
-      (category === 'mine' && !group) ||
-      (category === 'invited' && s.classList.contains('alert-danger') && !group) ||
-      (category === 'contributed' && s.classList.contains('alert-secondary') && !group) ||
-      (category === 'international' && s.classList.contains('international') && !group) ||
-      (category === 'group' && group);
+    let show = scope === 'all' || (scope === 'group' && group) || (scope === 'mine' && !group);
+    if (show && scope === 'mine' && sub !== 'any') {
+      show = (sub === 'invited' && s.classList.contains('alert-danger')) ||
+             (sub === 'contributed' && s.classList.contains('alert-secondary')) ||
+             (sub === 'international' && s.classList.contains('international'));
+    }
     s.style.display = show ? '' : 'none';
   });
   tidyYearHeadings(el => el.classList && (el.classList.contains('alert-danger') || el.classList.contains('alert-secondary')));
+  const subRow = document.querySelector('.seminar-subfilters');
+  if (subRow) subRow.style.display = scope === 'mine' ? '' : 'none';
   const note = document.querySelector('.group-talks-note');
-  if (note) note.style.display = (category === 'mine') ? '' : 'none';
+  if (note) note.style.display = scope === 'mine' ? '' : 'none';
+}
+function setSeminarScope(scope, button) {
+  seminarState.scope = scope; seminarState.sub = 'any';
+  if (button) setActiveButton(button, '.seminar-filters .filter-btn');
+  document.querySelectorAll('.sub-filter-btn').forEach(b => b.classList.toggle('active', b.dataset.semSub === 'any'));
+  applySeminarFilters();
+}
+function setSeminarSub(sub, button) {
+  seminarState.sub = sub;
+  if (button) setActiveButton(button, '.sub-filter-btn');
+  applySeminarFilters();
+}
+/* Old name kept so any existing links still work */
+function filterSeminars(category, button) {
+  if (['mine', 'group', 'all'].includes(category)) setSeminarScope(category, document.querySelector('[data-sem-scope="' + category + '"]'));
+  else { setSeminarScope('mine', document.querySelector('[data-sem-scope="mine"]')); setSeminarSub(category, document.querySelector('[data-sem-sub="' + category + '"]')); }
 }
 /* Seminars page opens on Marc's own talks */
-if (document.querySelector('.seminar-list[data-default-filter]')) {
-  filterSeminars('mine', document.querySelector('[data-filter-sem="mine"]'));
-}
+if (document.querySelector('.seminar-list[data-default-filter]')) applySeminarFilters();
 
 /* Gallery (now called as filterGallery('lab', this)) */
 function filterGallery(category, button) {
