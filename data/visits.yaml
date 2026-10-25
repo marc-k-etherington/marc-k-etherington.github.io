@@ -20,21 +20,21 @@ visits:
     funding: aspire-takeda-1                      
     purpose: "Sabbatical research visit."
 
-  - person: Pollard
+  - person: Ruth M. Pollard
     host: Hudson
     start: 2025-01-01                # CHECK: dates
     end: 2025-04-06                  # CHECK
     funding: rsc-rcg-pollard
     purpose: "Exploring her materials as polymer dots for biosensing."
 
-  - person: Pollard
+  - person: Ruth M. Pollard
     host: Takeda
     start: 2025-09-26                # CHECK: dates
     end: 2025-12-18                  # CHECK
     funding: aspire-takeda-1
     purpose: "Synthesis and photophysical characterisation of TADF molecules"
 
-  - person: Matthews
+  - person: Aidan E. Matthews
     host: Takeda
     start: 2026-04-13              # CHECK: dates
     end: 2026-07-01                # CHECK
@@ -48,7 +48,7 @@ visits:
     funding: british-council-springboard
     purpose: "Springboard consortium meeting, with Aidan Matthews."
 
-  - person: Matthews
+  - person: Aidan E. Matthews
     host: Reineke
     start: 2026-03-23                # CHECK
     end: 2026-03-24                  # CHECK
