@@ -36,7 +36,7 @@ grants:
     themes: []                         # CHECK
     description: "A consortium with the teams of Sebastian Reineke, Sebastian Schellhammer and Christina Dornack at TU Dresden, with PRUUVE GmbH and HORIBA UK."
 
-- id: gbsf-matthews
+  - id: gbsf-matthews
     title: "Visit to the Takeda Lab, University of Osaka"
     funder: "Great Britain Sasakawa Foundation"
     start: 2026
@@ -46,7 +46,7 @@ grants:
     themes: [bio]
     description: "A 3-month visit to Dr Youhei Takeda's group to undertake synthesis of caged donor-acceptor molecules"
 
-- id: gbsf-pollard
+  - id: gbsf-pollard
     title: "Visit to the Takeda Lab, University of Osaka"
     funder: "Great Britain Sasakawa Foundation"
     start: 2025
