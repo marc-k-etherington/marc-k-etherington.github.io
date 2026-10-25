@@ -26,13 +26,13 @@
 
 grants:
 
-  - id: british-council
-    title: "British Council Springboard: collaboration with TU Dresden"
+  - id: british-council-springboard
+    title: "British Council Springboard: Collaboration with TU Dresden"
     funder: "British Council"
     start: 2025                        # CHECK
     end: 2026                          # CHECK
     role: PI                           # CHECK
-    collaborators: [reineke]
+    collaborators: [Reineke]
     themes: []                         # CHECK
     description: "A consortium with the teams of Sebastian Reineke, Sebastian Schellhammer and Christina Dornack at TU Dresden, with PRUUVE GmbH and HORIBA UK."
 
@@ -41,7 +41,7 @@ grants:
     funder: "Wolfson Foundation"
     start: 2024                        # CHECK
     end: 2024                          # CHECK
-    role: PI                           # CHECK
+    role: Co-I                           # CHECK
     themes: [tadf, gap]
     description: "Time-correlated single photon counting, adding fluorescence lifetime measurements to the Fluorolog-QM."
 
@@ -49,29 +49,29 @@ grants:
     title: "GHOSTS: green and halogen-free solvents for TADF spectroscopy"
     funder: "Royal Society of Chemistry (Sustainable Laboratories Grant)"
     start: 2024
-    end: 2024                      # CHECK
-    role: PI                       # CHECK
+    end: 2025                     
+    role: PI                       
     amount_gbp: 10000
     themes: [tadf]
     description: "Exploring green, halogen-free solvents for TADF spectroscopy to improve laboratory practice."
 
   - id: rsc-rcg-pollard
-    title: "RSC Researcher Collaborations Grant: visit to the Hudson Lab, University of British Columbia"
+    title: "RSC Researcher Collaborations Grant: Visit to the Hudson Lab, University of British Columbia"
     funder: "Royal Society of Chemistry"
-    start: 2024
-    end: 2024
+    start: 2025
+    end: 2025
     holder: Pollard
-    collaborators: [hudson]
+    collaborators: [Hudson]
     themes: [bio]
     description: "A 3-month visit to Dr Zac Hudson's group to explore Ruth's materials as polymer dots for biosensing."
 
-  - id: aspire
+  - id: aspire-takeda-1
     title: "JST ASPIRE International Collaboration"
     funder: "Japan Science and Technology Agency"
-    start: 2023
-    end: 2026
-    role: PI                       # CHECK
-    collaborators: [takeda]
+    start: 2024
+    end: 2027
+    role: Co-I                       # CHECK
+    collaborators: [Takeda]
     themes: [bio]
     description: "Multi-year international collaboration with the University of Osaka on advanced TADF systems and their applications."
 
