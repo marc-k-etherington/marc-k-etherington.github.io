@@ -417,3 +417,37 @@ div.alert-secondary.group-talk {
   .research-tab-nav .research-tab-btn { display: flex !important; align-items: center; justify-content: center; gap: 0.3rem; min-height: 2.8rem; line-height: 1.15; white-space: nowrap; font-size: 0.82rem !important; padding: 0.4rem 0.3rem !important; }
 }
 @media (max-width: 360px) { .research-tab-nav .research-tab-btn { font-size: 0.75rem !important; white-space: normal; text-align: center; } }
+
+/* ---------- 23. Collaborator maps ---------- */
+.collab-map { margin: 0 0 1.75rem; }
+.collab-map svg { display: block; width: 100%; height: auto; border: 2px solid #333; box-shadow: 3px 3px 0 #333; border-radius: 12px; background: #fff; }
+.collab-map--uk svg { max-width: 420px; margin: 0 auto; }
+.map-sea { fill: #f6fbfb; }
+.map-land { fill: #d6f0f0; stroke: #4a5a5a; stroke-width: 0.6; stroke-linejoin: round; }
+.collab-map--uk .map-land { stroke-width: 0.9; }
+.map-site { cursor: pointer; outline: none; }
+.map-site, .map-site * { text-decoration: none !important; }
+.map-dot { fill: var(--orange); stroke: #333; stroke-width: 1.5; transition: r 0.15s ease; }
+.map-line { stroke: #2b3f63; stroke-width: 2; stroke-dasharray: 6 5; fill: none; opacity: 0; transition: opacity 0.2s ease; pointer-events: none; }
+.map-land, .map-sea, .map-home { pointer-events: none; }
+.map-dot { pointer-events: all; }
+.map-label { opacity: 0; pointer-events: none; transition: opacity 0.15s ease; paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; fill: #333; }
+.map-label-name { font-weight: bold; font-size: 20px; }
+.map-label-inst { font-size: 16px; fill: #555; }
+.collab-map--uk .map-label-name { font-size: 17px; }
+.collab-map--uk .map-label-inst { font-size: 14px; }
+.map-site:hover .map-line, .map-site:focus .map-line, .map-site:focus-visible .map-line,
+.map-site:hover .map-label, .map-site:focus .map-label, .map-site:focus-visible .map-label { opacity: 1; }
+.map-site:hover .map-dot, .map-site:focus .map-dot { fill: #2b3f63; }
+.map-home-ring { fill: none; stroke: var(--teal); stroke-width: 2.5; }
+.map-home-dot { fill: var(--teal); stroke: #333; stroke-width: 1; }
+.map-caption { font-size: 0.85rem; color: var(--muted); text-align: center; margin-top: 0.6rem; }
+.map-key-home, .map-key-dot { display: inline-block; width: 0.75em; height: 0.75em; border-radius: 50%; vertical-align: middle; border: 1.5px solid #333; }
+.map-key-home { background: var(--teal); }
+.map-key-dot { background: var(--orange); }
+.map-site.map-active .map-line, .map-site.map-active .map-label { opacity: 1; }
+.map-site.map-active .map-dot { fill: #2b3f63; }
+
+/* Card highlight after jumping to it (e.g. from the map) */
+@keyframes cardFlash { 0% { box-shadow: 0 0 0 4px var(--orange), 3px 3px 0 #333; } 100% { box-shadow: 3px 3px 0 #333; } }
+.card-highlight { animation: cardFlash 2.2s ease-out; }

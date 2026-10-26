@@ -188,6 +188,11 @@ function revealInTab(id) {
   }
   const panel = el && el.closest('[data-tab-panel]');
   if (!panel) return false;
+  /* Cards: open their "See more" and highlight briefly (e.g. after clicking a map location) */
+  if (el.classList.contains('compact-card')) {
+    const more = el.querySelector('details.card-more'); if (more) more.open = true;
+    el.classList.remove('card-highlight'); void el.offsetWidth; el.classList.add('card-highlight');
+  }
   const root = panel.closest('[data-tabs]');
   const btn = root && root.querySelector('[data-tab="' + panel.dataset.tabPanel + '"]');
   if (btn && !panel.classList.contains('active')) switchTab(btn);
@@ -195,6 +200,7 @@ function revealInTab(id) {
   return true;
 }
 document.addEventListener('click', e => {
+  if (e.defaultPrevented) return;
   const a = e.target.closest('a[href^="#"]');
   if (a && revealInTab(decodeURIComponent(a.getAttribute('href').slice(1)))) {
     e.preventDefault(); history.replaceState(null, '', a.getAttribute('href'));
@@ -208,4 +214,21 @@ window.addEventListener('hashchange', () => {
   const tabBtn = document.querySelector('[data-tab="' + CSS.escape(id) + '"]');
   if (tabBtn) { switchTab(tabBtn); tabBtn.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   else revealInTab(id);
+});
+
+/* Collaborator maps: bring the hovered location to the front so its label is never hidden.
+   On touch screens, the first tap shows the name and line, the second opens the card. */
+document.querySelectorAll('.collab-map').forEach(map => {
+  const svg = map.querySelector('svg');
+  const front = site => { if (site.nextElementSibling) svg.appendChild(site); };
+  map.querySelectorAll('.map-site').forEach(site => {
+    site.addEventListener('mouseenter', () => front(site));
+    site.addEventListener('focus', () => front(site));
+    site.addEventListener('click', e => {
+      if (!window.matchMedia('(hover: none)').matches || site.classList.contains('map-active')) return;
+      e.preventDefault();
+      map.querySelectorAll('.map-site.map-active').forEach(s => s.classList.remove('map-active'));
+      site.classList.add('map-active'); front(site);
+    });
+  });
 });

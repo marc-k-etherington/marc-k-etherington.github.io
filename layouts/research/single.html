@@ -150,14 +150,24 @@
   {{/* From data/collaborators.yaml: one entry per person; links are found automatically */}}
   {{ $all := site.Data.collaborators.collaborators | default slice }}
   {{ $intl := where $all "country" "!=" "UK" }}{{ $uk := where $all "country" "UK" }}
-  {{ with $intl }}
-  <h3 class="research-subhead teal">International</h3>
-  <div class="research-summary-content">{{ range . }}{{ partial "collaborator-card.html" . }}{{ end }}</div>
-  {{ end }}
-  {{ with $uk }}
-  <h3 class="research-subhead teal">UK</h3>
-  <div class="research-summary-content">{{ range . }}{{ partial "collaborator-card.html" . }}{{ end }}</div>
-  {{ end }}
+  <div data-pills>
+    <div class="seminar-subfilters pill-row" role="group" aria-label="Which collaborators">
+      {{ with $intl }}<button class="sub-filter-btn active" data-pill="international" onclick="switchPill(this)">🌍 International ({{ len . }})</button>{{ end }}
+      {{ with $uk }}<button class="sub-filter-btn{{ if not $intl }} active{{ end }}" data-pill="uk" onclick="switchPill(this)">🇬🇧 UK ({{ len . }})</button>{{ end }}
+    </div>
+    {{ with $intl }}
+    <div class="pill-panel active" data-pill-panel="international">
+      {{ partial "collab-map.html" (dict "region" "world" "people" .) }}
+      <div class="research-summary-content">{{ range . }}{{ partial "collaborator-card.html" . }}{{ end }}</div>
+    </div>
+    {{ end }}
+    {{ with $uk }}
+    <div class="pill-panel{{ if not $intl }} active{{ end }}" data-pill-panel="uk">
+      {{ partial "collab-map.html" (dict "region" "uk" "people" .) }}
+      <div class="research-summary-content">{{ range . }}{{ partial "collaborator-card.html" . }}{{ end }}</div>
+    </div>
+    {{ end }}
+  </div>
 </div>
 
 </div>

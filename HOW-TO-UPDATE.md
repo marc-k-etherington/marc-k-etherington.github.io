@@ -121,8 +121,13 @@ its themes. It becomes "Past" after its `end` year, or once its people move to a
     author_name: "First M. Last"     # exactly as in your author lists
     institution: "Their University"
     country: Germany
+    location: [51.0285, 13.7259]     # latitude, longitude (for the map)
     description: "One sentence on the collaboration."
 ```
+To put them on the Collaborations map, add `location: [latitude, longitude]`: in Google
+Maps, right-click their department and click the numbers at the top of the menu to copy
+them. UK collaborators appear on the UK map, everyone else on the world map.
+
 Joint papers are found automatically. Link a grant with `collaborators: [surname]` in
 `grants.yaml`. **When they move:** change `institution` and `country`, and add the old one
 to `previously: ["Old University"]`; everything stays linked to them.
