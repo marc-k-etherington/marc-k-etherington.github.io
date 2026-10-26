@@ -1,0 +1,51 @@
+{{/* Collaborator map. Context: dict "region" ("world" or "uk") and "people" (collaborators).
+     Dots come from `location: [lat, lon]` in data/collaborators.yaml. Hovering (or focusing)
+     a dot shows the name and a dotted line from Newcastle; clicking opens their card below. */}}
+{{ $region := .region }}
+{{ $home := site.Data.collaborators.home }}
+{{ $W := 1000.0 }}{{ $H := 394.4 }}
+{{ if eq $region "uk" }}{{ $W = 481.8 }}{{ $H = 684.0 }}{{ end }}
+
+{{/* Projections: world = equirectangular (84N to 58S); UK = equirectangular scaled by cos(55) */}}
+<figure class="collab-map collab-map--{{ $region }}">
+  <svg viewBox="0 0 {{ $W }} {{ $H }}" role="img" aria-label="Map of collaborators{{ if eq $region "uk" }} in the UK{{ else }} worldwide{{ end }}">
+    <rect class="map-sea" x="0" y="0" width="{{ $W }}" height="{{ $H }}" rx="12"/>
+    {{ if eq $region "uk" }}{{ partial "maps/land-uk.html" . }}{{ else }}{{ partial "maps/land-world.html" . }}{{ end }}
+
+    {{ $hx := 0.0 }}{{ $hy := 0.0 }}
+    {{ with $home.location }}
+      {{ if eq $region "uk" }}{{ $hx = mul (sub (float (index . 1)) -11.0) 34.416 }}{{ $hy = mul (sub 61.0 (float (index . 0))) 60.0 }}
+      {{ else }}{{ $hx = div (mul (add (float (index . 1)) 180.0) $W) 360.0 }}{{ $hy = div (mul (sub 84.0 (float (index . 0))) $H) 142.0 }}{{ end }}
+    {{ end }}
+
+    {{ with $home.location }}
+    <g class="map-home">
+      <circle class="map-home-ring" cx="{{ $hx }}" cy="{{ $hy }}" r="{{ if eq $region "uk" }}11{{ else }}10{{ end }}"/>
+      <circle class="map-home-dot" cx="{{ $hx }}" cy="{{ $hy }}" r="{{ if eq $region "uk" }}5{{ else }}4.5{{ end }}"/>
+      <title>{{ $home.name }}</title>
+    </g>
+    {{ end }}
+
+    {{ range $i, $p := .people }}
+      {{ with $p.location }}
+        {{ $lat := float (index . 0) }}{{ $lon := float (index . 1) }}
+        {{ $x := 0.0 }}{{ $y := 0.0 }}
+        {{ if eq $region "uk" }}{{ $x = mul (sub $lon -11.0) 34.416 }}{{ $y = mul (sub 61.0 $lat) 60.0 }}
+        {{ else }}{{ $x = div (mul (add $lon 180.0) $W) 360.0 }}{{ $y = div (mul (sub 84.0 $lat) $H) 142.0 }}{{ end }}
+        {{ $right := gt $x (mul $W 0.62) }}
+        {{ $lx := cond $right (sub $x 14.0) (add $x 14.0) }}
+        {{ $ly := cond (lt $y 60.0) (add $y 34.0) (sub $y 18.0) }}
+        <a class="map-site" href="#collab-{{ $p.id }}" aria-label="{{ $p.name | default $p.institution }}, {{ $p.institution }}">
+          <line class="map-line" x1="{{ $hx }}" y1="{{ $hy }}" x2="{{ $x }}" y2="{{ $y }}"/>
+          <circle class="map-dot" cx="{{ $x }}" cy="{{ $y }}" r="{{ if eq $region "uk" }}8{{ else }}7{{ end }}"/>
+          <text class="map-label" x="{{ $lx }}" y="{{ $ly }}" text-anchor="{{ if $right }}end{{ else }}start{{ end }}">
+            <tspan class="map-label-name">{{ $p.name | default $p.institution }}</tspan>
+            <tspan class="map-label-inst" x="{{ $lx }}" dy="1.25em">{{ $p.institution }}</tspan>
+          </text>
+        </a>
+      {{ end }}
+    {{ end }}
+
+  </svg>
+  <figcaption class="map-caption"><span class="map-key-home"></span> {{ $home.name }} &nbsp; <span class="map-key-dot"></span> Collaborator. Hover over or tap a location for details.</figcaption>
+</figure>
