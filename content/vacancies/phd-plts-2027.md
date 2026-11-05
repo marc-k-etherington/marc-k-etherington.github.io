@@ -53,12 +53,7 @@ The studentship includes full tuition fees and a stipend at UKRI rates (£21,805
 
 ## How to apply
 
-Apply through the Northumbria University application form using the **Apply now** button above, and quote the project reference **ReNU+27/SE/EPM/ETHERINGTON**. Please note:
-
-- Upload your CV under the "Experience" section (this is mandatory).
-- Upload your degree certificates, transcripts and English qualifications (if applicable).
-- No personal statement or research proposal is needed. Instead, upload the completed **Cohort 8 Competency Assessment**.
-- When asked "Are you applying for a UKRI studentship?", select "Yes" and choose "EPSRC ReNU Plus". Choose "Scholarship" as the source of funding.
+Further details can be found in the ReNU+ website using the **Apply now** button below and searching for the project reference **ReNU+27/SE/EPM/ETHERINGTON**.
 
 ReNU+ studentships are awarded competitively between projects at Northumbria University, and there are fewer studentships than projects advertised.
 
