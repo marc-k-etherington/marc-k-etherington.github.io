@@ -20,6 +20,7 @@ collaborators: [Reineke]
 themes: [ct]                      # CHECK: research themes this project belongs to
 enquiry_subject: "PhD studentship enquiry ReNU+27"
 ---
+<img src="/post/images/Robot_PLT_2.png" width="500" height="auto">
 
 ## The project
 
