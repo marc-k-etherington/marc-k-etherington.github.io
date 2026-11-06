@@ -21,6 +21,7 @@ themes: [ct]                      # CHECK: research themes this project belongs 
 enquiry_subject: "PhD studentship enquiry ReNU+27"
 image: /post/images/Robot_PLT_2.png
 image_alt: "Glowing robot-shaped luminescent tag"
+image_caption: "A programmable luminescent tag glowing after UV exposure"   # CHECK: your wording
 ---
 ## The project
 

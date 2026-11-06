@@ -26,7 +26,9 @@ collaborators: []         # collaborator ids from data/collaborators.yaml
 themes: []                # research theme ids, e.g. [ct, tadf]
 reference: ""
 enquiry_subject: ""       # subject line for the "Email Marc" button
-image: ""                 # optional photo across the top, e.g. /post/images/My_Photo.jpg
+image: ""                 # optional photo (polaroid), e.g. /post/images/My_Photo.jpg
+image_alt: ""             # short description for screen readers
+image_caption: ""         # optional handwritten caption under the photo
 ---
 
 ## The project
