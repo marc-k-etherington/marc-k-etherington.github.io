@@ -19,9 +19,9 @@ partners: ["PRUUVE GmbH", "TU Dresden"]
 collaborators: [Reineke]
 themes: [ct]                      # CHECK: research themes this project belongs to
 enquiry_subject: "PhD studentship enquiry ReNU+27"
+image: /post/images/Robot_PLT_2.png
+image_alt: "Glowing robot-shaped luminescent tag"
 ---
-<img src="/post/images/Robot_PLT_2.png" width="500" height="auto">
-
 ## The project
 
 UV light cures the coatings, inks and adhesives in solar panels, electronics and everyday products, and a wrong dose means either early failure or wasted energy. Yet today's sensors are single-use. What if they could be reusable and compostable after use?
