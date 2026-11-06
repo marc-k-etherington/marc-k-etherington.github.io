@@ -1,0 +1,30 @@
+{{/* Picks the link-preview image for a page and returns a 1200x630 version (or nil to use the logo).
+     Order: thumbnail:, then image:, then the first image in the text. Photos already close to the
+     preview shape are resized; anything else (e.g. portrait) is shown whole on a teal background. */}}
+{{ $out := false }}
+{{ if not .IsHome }}
+  {{ $src := .Params.thumbnail | default .Params.image | default "" }}
+  {{ if not $src }}
+    {{ with findRE `<img[^>]+src="(/[^"]+)"` .Content 1 }}{{ $src = replaceRE `^.*src="(/[^"]+)".*$` "$1" (index . 0) }}{{ end }}
+  {{ end }}
+  {{ with $src }}
+    {{ $img := false }}
+    {{ with $.Resources.Get . }}{{ $img = . }}{{ end }}
+    {{ if not $img }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ $img = . }}{{ end }}{{ end }}
+    {{ if and $img (in (slice "image/jpeg" "image/png" "image/webp") $img.MediaType.Type) }}
+      {{ if eq $img.MediaType.Type "image/jpeg" }}{{ $img = $img.Filter images.AutoOrient }}{{ end }}
+      {{ $ratio := div (float $img.Width) $img.Height }}
+      {{ if and (ge $ratio 1.6) (le $ratio 2.2) }}
+        {{ $out = $img.Fill "1200x630 Center jpg q85" }}
+      {{ else }}
+        {{/* fit inside 1140x570, then pad to exactly 1200x630 on the site's teal */}}
+        {{ $fit := $img.Fit "1140x570" }}
+        {{ $l := div (sub 1200 $fit.Width) 2 }}{{ $r := sub (sub 1200 $fit.Width) $l }}
+        {{ $t := div (sub 630 $fit.Height) 2 }}{{ $b := sub (sub 630 $fit.Height) $t }}
+        {{ $out = $fit.Filter (images.Padding $t $r $b $l "#008B8B") }}
+        {{ $out = $out.Process "jpg q85" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $out }}

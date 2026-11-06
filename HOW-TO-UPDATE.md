@@ -283,3 +283,13 @@ your work email are deliberately left out.
 Your total as PI and as Co-I are calculated from `amount_gbp` in `grants.yaml` (funding
 held by group members is counted separately). Add `amount_gbp` to the Wolfson and British
 Council grants to include them.
+
+## Photos for adverts, news and link previews
+
+- **Advert photo:** `image: /post/images/My_Photo.jpg` (plus `image_alt: "Short description"`)
+  shows the whole photo above the title. It is also used for the News thumbnail.
+- **News posts:** the first photo in the text is used automatically, or set `thumbnail:`.
+- **Link previews** (LinkedIn, Bluesky, Teams): every page uses its own photo in the same
+  order (thumbnail, image, first photo in the text), resized to the 1200 x 630 shape these
+  sites expect. Portrait photos are shown whole on a teal background. Pages without a photo
+  use the lab logo. The preview text is the page's `summary:`.
