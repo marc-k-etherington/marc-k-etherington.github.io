@@ -19,7 +19,7 @@ partners: ["PRUUVE GmbH", "TU Dresden"]
 collaborators: [Reineke]
 themes: [ct]                      # CHECK: research themes this project belongs to
 enquiry_subject: "PhD studentship enquiry ReNU+27"
-image: /post/images/Robot_PLT_2.jpg   # optional photo across the top of the advert
+image: /post/images/Robot_PLT_2.png   # optional photo across the top of the advert
 ---
 
 ## The project
