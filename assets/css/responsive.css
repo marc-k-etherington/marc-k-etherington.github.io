@@ -564,3 +564,10 @@ div.alert-secondary.group-talk {
 @media (max-width: 768px) {
   main article > h1:not(.advert-title) { font-size: clamp(1.6rem, 1.1rem + 3vw, 2.4rem); line-height: 1.15; overflow-wrap: normal; }
 }
+
+/* ---------- 27. Headings: no letter-joining ("fi", "ff", "fl"), which in Patrick Hand SC
+   would show those letters in lower case, e.g. "beneﬁts" ---------- */
+h1, h2, h3, h4, h5, h6, .hero-title-compact, .advert-title, .page-title {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0;
+}
