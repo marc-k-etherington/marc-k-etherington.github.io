@@ -8,6 +8,8 @@
     <div class="container paper">
       {{/* The theme's nav.html was hidden by your CSS anyway, so it is no longer rendered */}}
       <main>
+        {{/* Homepage only: "We're recruiting" strip while a vacancy is open */}}
+        {{ if .IsHome }}{{ partial "vacancy-strip.html" . }}{{ end }}
         {{ partial "hero-banner.html" . }}
         {{ block "main" . }}{{ end }}
       </main>
