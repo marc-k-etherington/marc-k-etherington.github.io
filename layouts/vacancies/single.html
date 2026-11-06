@@ -31,7 +31,7 @@
   {{ with .Params.image }}{{ $photo = partial "img.html" (dict "src" . "alt" ($p.Params.image_alt | default "") "class" "no-border" "sizes" (cond (eq $shape "tall") "(max-width: 600px) 70vw, 400px" "(max-width: 900px) 100vw, 900px") "eager" true "page" $p) }}{{ end }}
   <div class="advert-top advert-top--{{ $shape }}">
     {{/* Landscape photos go above the title */}}
-    {{ if and $photo (eq $shape "wide") }}<div class="advert-image">{{ $photo }}</div>{{ end }}
+    {{ if and $photo (eq $shape "wide") }}<div class="advert-image advert-image--wide"><figure class="advert-polaroid{{ if not $p.Params.image_caption }} advert-polaroid--nocaption{{ end }}">{{ $photo }}{{ with $p.Params.image_caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure></div>{{ end }}
     <header class="advert-header">
       <span class="advert-type">{{ index $labels $type | default "Position" }}</span>
       {{ if not $isOpen }}<span class="advert-type advert-type--closed">Applications closed</span>{{ else if and (ge $days 0) (le $days 14) }}<span class="advert-type advert-type--soon">Closing soon</span>{{ end }}
@@ -43,7 +43,7 @@
   <div class="advert-layout">
     {{/* Portrait or square photos sit beside "At a glance", matched to its height */}}
     <div class="advert-glance advert-glance--{{ if and $photo (eq $shape "tall") }}photo{{ else }}plain{{ end }}">
-    {{ if and $photo (eq $shape "tall") }}<div class="advert-image advert-glance-photo">{{ $photo }}</div>{{ end }}
+    {{ if and $photo (eq $shape "tall") }}<div class="advert-glance-photo advert-cork"><figure class="advert-polaroid{{ if not $p.Params.image_caption }} advert-polaroid--nocaption{{ end }}">{{ $photo }}{{ with $p.Params.image_caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure></div>{{ end }}
     <aside class="advert-facts" aria-labelledby="advert-facts-title">
       <h2 id="advert-facts-title">At a glance</h2>
       <dl>

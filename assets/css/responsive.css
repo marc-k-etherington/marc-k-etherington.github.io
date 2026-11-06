@@ -486,28 +486,37 @@ div.alert-secondary.group-talk {
 .advert { --advert-accent: var(--teal); }
 .advert--postdoc { --advert-accent: #2b3f63; }
 .advert--masters, .advert--undergraduate { --advert-accent: var(--orange); }
-/* Advert photo: the whole image at its own proportions (never cropped), in a frame that fits it */
-.advert-image { display: flex; justify-content: center; margin-bottom: 1.5rem; }
-.advert-image img { display: block; width: auto; height: auto; max-width: 100%; border: 3px solid #333 !important; box-shadow: 4px 4px 0 #333; }
-/* Landscape photos: above the title, kept reasonably short */
-.advert-top--wide .advert-image img { max-height: min(45vh, 380px); }
-/* Portrait or square photos: beside "At a glance", in a frame exactly the panel's height.
-   The whole photo sits centred in the frame on a soft background (never cropped or stretched). */
+/* Advert photo: a polaroid, as in the Gallery (whole photo, never cropped), with an optional caption */
+.advert-polaroid { position: relative; display: inline-block; margin: 0; background: #fff; padding: 12px 12px 0.9rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.12); transform: rotate(-2deg); max-width: 100%; }
+.advert-polaroid--nocaption { padding-bottom: 1.6rem; }
+.advert-polaroid img { display: block; width: auto; height: auto; max-width: 100%; border: 1px solid #ddd !important; box-shadow: none; }
+/* width: 0 + min-width: 100% lets the photo set the polaroid's width while the caption wraps inside it */
+.advert-polaroid figcaption { display: block; width: 0; min-width: 100%; box-sizing: border-box; margin: 0.7rem 0 0; padding: 0 0.25rem; text-align: center;
+  font-family: 'Indie Flower', 'Neucha', cursive; font-size: 1.05rem; line-height: 1.3; color: #333; }
+.advert-polaroid::before { content: ''; position: absolute; top: -10px; left: 50%; transform: translateX(-50%) rotate(-3deg);
+  width: 80px; height: 24px; background: rgba(255, 248, 220, 0.75); border: 1px solid rgba(210, 180, 140, 0.35); box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 1; }
+/* Landscape photos: polaroid centred above the title */
+.advert-image--wide { display: flex; justify-content: center; margin: 0.5rem 0 2rem; }
+.advert-image--wide .advert-polaroid img { max-height: min(45vh, 360px); }
+/* Portrait or square photos: polaroid pinned on a small corkboard beside "At a glance", the panel's exact height */
 .advert-glance--photo { display: grid; grid-template-columns: minmax(0, 62fr) minmax(0, 38fr); gap: 1.5rem; align-items: stretch; }
 .advert-glance--photo .advert-facts { grid-column: 1; grid-row: 1; }
-.advert-glance--photo .advert-glance-photo { grid-column: 2; grid-row: 1; margin: 0; position: relative; min-height: 220px;
-  background: #eef5f5; border: 3px solid #333; box-shadow: 4px 4px 0 #333; }
-.advert-glance--photo .advert-glance-photo img { position: absolute; inset: 0.75rem; width: calc(100% - 1.5rem); height: calc(100% - 1.5rem);
-  max-width: none; max-height: none; object-fit: contain; border: none !important; box-shadow: none; }
+.advert-cork { grid-column: 2; grid-row: 1; display: flex; align-items: center; justify-content: center; padding: 1.75rem 1.25rem; min-height: 260px;
+  background: #A0826D;
+  background-image: radial-gradient(circle at 20% 30%, rgba(139,115,85,0.4) 2px, transparent 2px), radial-gradient(circle at 60% 70%, rgba(139,115,85,0.4) 2px, transparent 2px),
+    radial-gradient(circle at 80% 20%, rgba(139,115,85,0.4) 2px, transparent 2px), radial-gradient(circle at 40% 90%, rgba(139,115,85,0.4) 2px, transparent 2px),
+    repeating-linear-gradient(90deg, rgba(160,130,100,0.1) 0px, transparent 1px, transparent 40px), repeating-linear-gradient(0deg, rgba(160,130,100,0.1) 0px, transparent 1px, transparent 40px);
+  border: 5px solid #8B7355; box-shadow: inset 0 0 20px rgba(0,0,0,0.2); }
+.advert-cork .advert-polaroid img { max-height: 420px; }
 .advert-glance--photo .advert-facts dl { grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); }
 .advert-glance--photo .advert-facts .fact-wide { grid-column: 1 / -1; }
 @media (max-width: 860px) {
-  /* tablets and phones: photo (normal frame) under the summary, then the panel at full width */
-  .advert-glance--photo { grid-template-columns: 1fr; gap: 1.25rem; align-items: start; }
-  .advert-glance--photo .advert-glance-photo { grid-column: 1; grid-row: 1; position: static; min-height: 0; background: none; border: none; box-shadow: none; }
+  /* tablets and phones: the polaroid (no corkboard) under the summary, then the panel */
+  .advert-glance--photo { grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
+  .advert-cork { grid-column: 1; grid-row: 1; background: none; border: none; box-shadow: none; padding: 0.5rem 0 0; min-height: 0; }
   .advert-glance--photo .advert-facts { grid-column: 1; grid-row: 2; }
-  .advert-glance--photo .advert-glance-photo img { position: static; width: auto; height: auto; max-width: 100%; max-height: 40vh;
-    border: 3px solid #333 !important; box-shadow: 4px 4px 0 #333; }
+  .advert-cork .advert-polaroid img { max-height: 38vh; }
 }
 .advert-header { border-left: 8px solid var(--advert-accent); padding: 0.25rem 0 0.25rem 1.25rem; margin-bottom: 1.75rem; }
 .advert-type { display: inline-block; background: var(--advert-accent); color: #fff; font-weight: bold; font-size: 0.9rem; padding: 0.15rem 0.75rem; border-radius: 1rem; margin-right: 0.4rem; }

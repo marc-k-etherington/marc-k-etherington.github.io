@@ -286,8 +286,10 @@ Council grants to include them.
 
 ## Photos for adverts, news and link previews
 
-- **Advert photo:** `image: /post/images/My_Photo.jpg` (plus `image_alt: "Short description"`)
-  shows the whole photo above the title. It is also used for the News thumbnail.
+- **Advert photo:** `image: /post/images/My_Photo.jpg`, plus `image_alt: "Short description"`
+  (read by screen readers) and optionally `image_caption: "Handwritten caption"`. It appears
+  as a Gallery-style polaroid: portrait photos pinned on a corkboard beside "At a glance",
+  landscape photos above the title. It is also used for the News thumbnail.
 - **News posts:** the first photo in the text is used automatically, or set `thumbnail:`.
 - **Link previews** (LinkedIn, Bluesky, Teams): every page uses its own photo in the same
   order (thumbnail, image, first photo in the text), resized to the 1200 x 630 shape these
