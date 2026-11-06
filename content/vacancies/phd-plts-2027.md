@@ -9,13 +9,18 @@ summary: "Design quinine-inspired molecules that glow after a set UV dose, for r
 funding: "Fully funded (UKRI stipend and fees), Home fee only"
 start_date: "1 October 2027"
 apply_url: "https://www.northumbria.ac.uk/research/postgraduate-research-degrees/studentships/renewable-energy-northeast-universities/apply-now/"
+# Shown in the "At a glance" panel (all optional)
+reference: "ReNU+27/SE/EPM/ETHERINGTON"
+programme: "EPSRC Centre for Doctoral Training in Renewable Energy Northeast Universities Plus (ReNU+)"
+duration: "4 years full-time (part-time available)"
+eligibility: "Home fee students only"
+deadline_time: "11:59pm"
+partners: ["PRUUVE GmbH", "TU Dresden"]
+collaborators: [Reineke]
+themes: [ct]                      # CHECK: research themes this project belongs to
+enquiry_subject: "PhD studentship enquiry ReNU+27"
+# image: /post/images/My_Photo.jpg   # optional photo across the top of the advert
 ---
-
-**Project reference:** ReNU+27/SE/EPM/ETHERINGTON
-**Programme:** EPSRC Centre for Doctoral Training in Renewable Energy Northeast Universities Plus (ReNU+), 4 years
-**Deadline:** Monday 1 February 2027, 11:59pm
-**Start date:** Friday 1 October 2027
-**Eligibility:** Home fee students only
 
 ## The project
 

@@ -481,3 +481,56 @@ div.alert-secondary.group-talk {
 .welcome-hero .vacancy-strip-btn { flex: 0 0 auto; }
 @media (max-width: 600px) { .welcome-hero .vacancy-strip { flex-wrap: wrap; } }
 @media (max-width: 600px) { .welcome-hero .vacancy-strip { margin: 0 0 1.25rem; } }
+
+/* ---------- 26. Job advert pages ---------- */
+.advert { --advert-accent: var(--teal); }
+.advert--postdoc { --advert-accent: #2b3f63; }
+.advert--masters, .advert--undergraduate { --advert-accent: var(--orange); }
+.advert-image { border: 3px solid #333; box-shadow: 4px 4px 0 #333; margin-bottom: 1.5rem; overflow: hidden; }
+.advert-image img { width: 100%; max-height: 360px; object-fit: cover; display: block; }
+.advert-header { border-left: 8px solid var(--advert-accent); padding: 0.25rem 0 0.25rem 1.25rem; margin-bottom: 1.75rem; }
+.advert-type { display: inline-block; background: var(--advert-accent); color: #fff; font-weight: bold; font-size: 0.9rem; padding: 0.15rem 0.75rem; border-radius: 1rem; margin-right: 0.4rem; }
+.advert-type--soon { background: #c0392b; }
+.advert-type--closed { background: #777; }
+/* titles scale smoothly from phone to computer */
+.advert-title { font-size: clamp(1.3rem, 0.85rem + 2.8vw, 2.6rem); line-height: 1.15; margin: 0.6rem 0 0.5rem; overflow-wrap: normal; hyphens: manual; }
+.advert-summary { font-size: clamp(1rem, 0.95rem + 0.4vw, 1.2rem); color: var(--muted); margin: 0; }
+.advert-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+.advert-facts { grid-row: 1; background: #fff; border: 3px solid #333; border-top: 8px solid var(--advert-accent); box-shadow: 4px 4px 0 #333; padding: 1.1rem 1.25rem; }
+.advert-facts h2 { margin: 0 0 0.75rem; font-size: 1.3rem; border: none; padding: 0; }
+.advert-facts dl { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 0.4rem 1.25rem; }
+@media (max-width: 600px) { .advert-facts dl { grid-template-columns: 1fr 1fr; gap: 0.3rem 0.9rem; } .advert-facts dd { font-size: 0.92rem; } }
+.advert-facts .fact { min-width: 0; }
+@media (max-width: 600px) { .advert-facts .fact-wide { grid-column: 1 / -1; } }
+.advert-facts dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-top: 0.6rem; }
+.advert-facts dd { margin: 0.1rem 0 0; }
+.advert-facts code { font-family: inherit; font-size: inherit; color: inherit; background: none; padding: 0; overflow-wrap: anywhere; }
+.advert-days { display: inline-block; margin-top: 0.2rem; font-weight: bold; color: #c45a00; }
+.advert-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.1rem; }
+.advert-actions a { text-align: center; }
+.advert-actions .email-btn { font-size: 1.05rem; padding: 0.7rem 1rem; }
+.advert-closed-note { margin: 1rem 0 0; font-weight: bold; }
+.advert-body { grid-row: 2; min-width: 0; }
+.advert-body h2 { border-bottom: 3px solid var(--advert-accent); padding-bottom: 0.3rem; margin-top: 2rem; font-size: clamp(1.3rem, 1.1rem + 1vw, 1.7rem); }
+.advert-body h2:first-child { margin-top: 0; }
+.advert-group { margin-top: 3rem; padding-top: 1.5rem; border-top: 3px dashed #ccc; }
+.advert-group > h2 { font-size: clamp(1.4rem, 1.2rem + 1vw, 1.8rem); }
+.advert-group-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1.25rem; align-items: start; }
+.advert-group-card { background: #f9f9f9; border: 2px solid #333; box-shadow: 3px 3px 0 #333; padding: 1rem 1.2rem; }
+.advert-group-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+.advert-group-card ul { margin: 0; padding-left: 1.1rem; }
+.advert-apply-bar { display: none; }
+@media (max-width: 600px) { .advert-actions a { flex: 1 1 100%; } }
+@media (max-width: 600px) {
+  .advert-header { padding-left: 0.9rem; border-left-width: 6px; }
+  /* slim Apply bar fixed to the bottom of the screen while reading */
+  .advert-apply-bar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 1002; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.6rem 0.9rem; background: #fff5eb; border-top: 3px solid #333; box-shadow: 0 -3px 0 rgba(0,0,0,0.06); }
+  .advert-apply-bar .email-btn { font-size: 1rem; padding: 0.5rem 1rem; }
+  .type-vacancies .social-float-compact, .type-vacancies .back-to-top { display: none !important; }
+  .type-vacancies main { padding-bottom: 4.5rem; }
+}
+
+/* Scale other headings that sit inside a page section (e.g. news post titles) on phones too */
+@media (max-width: 768px) {
+  main article > h1:not(.advert-title) { font-size: clamp(1.6rem, 1.1rem + 3vw, 2.4rem); line-height: 1.15; overflow-wrap: normal; }
+}
