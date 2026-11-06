@@ -15,18 +15,35 @@
 {{ $subject := .Params.enquiry_subject | default (printf "Enquiry: %s" .Title) }}
 
 <article class="advert advert--{{ $type }}{{ if not $isOpen }} advert--closed{{ end }}">
+  {{/* Photo layout follows the photo's shape: portrait or square photos sit beside the title on
+       larger screens; landscape photos sit above it. Nothing is ever cropped. */}}
+  {{ $shape := "wide" }}
   {{ with .Params.image }}
-  <div class="advert-image">{{ partial "img.html" (dict "src" . "alt" ($p.Params.image_alt | default "") "class" "no-border" "sizes" "(max-width: 900px) 100vw, 900px" "eager" true "page" $p) }}</div>
+    {{ $res := false }}
+    {{ with $p.Resources.Get . }}{{ $res = . }}{{ end }}
+    {{ if not $res }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ $res = . }}{{ end }}{{ end }}
+    {{ with $res }}{{ if in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type }}
+      {{ $r := . }}{{ if eq .MediaType.Type "image/jpeg" }}{{ $r = .Filter images.AutoOrient }}{{ end }}
+      {{ if lt (div (float $r.Width) $r.Height) 1.25 }}{{ $shape = "tall" }}{{ end }}
+    {{ end }}{{ end }}
   {{ end }}
-
-  <header class="advert-header">
-    <span class="advert-type">{{ index $labels $type | default "Position" }}</span>
-    {{ if not $isOpen }}<span class="advert-type advert-type--closed">Applications closed</span>{{ else if and (ge $days 0) (le $days 14) }}<span class="advert-type advert-type--soon">Closing soon</span>{{ end }}
-    <h1 class="advert-title">{{ replaceRE `^(PhD|PDRA|Postdoc|MSc|Masters)\s*:\s*` "" .Title }}</h1>
-    {{ with .Params.summary }}<p class="advert-summary">{{ . | markdownify }}</p>{{ end }}
-  </header>
+  {{ $photo := "" }}
+  {{ with .Params.image }}{{ $photo = partial "img.html" (dict "src" . "alt" ($p.Params.image_alt | default "") "class" "no-border" "sizes" (cond (eq $shape "tall") "(max-width: 600px) 70vw, 400px" "(max-width: 900px) 100vw, 900px") "eager" true "page" $p) }}{{ end }}
+  <div class="advert-top advert-top--{{ $shape }}">
+    {{/* Landscape photos go above the title */}}
+    {{ if and $photo (eq $shape "wide") }}<div class="advert-image">{{ $photo }}</div>{{ end }}
+    <header class="advert-header">
+      <span class="advert-type">{{ index $labels $type | default "Position" }}</span>
+      {{ if not $isOpen }}<span class="advert-type advert-type--closed">Applications closed</span>{{ else if and (ge $days 0) (le $days 14) }}<span class="advert-type advert-type--soon">Closing soon</span>{{ end }}
+      <h1 class="advert-title">{{ replaceRE `^(PhD|PDRA|Postdoc|MSc|Masters)\s*:\s*` "" .Title }}</h1>
+      {{ with .Params.summary }}<p class="advert-summary">{{ . | markdownify }}</p>{{ end }}
+    </header>
+  </div>
 
   <div class="advert-layout">
+    {{/* Portrait or square photos sit beside "At a glance", matched to its height */}}
+    <div class="advert-glance advert-glance--{{ if and $photo (eq $shape "tall") }}photo{{ else }}plain{{ end }}">
+    {{ if and $photo (eq $shape "tall") }}<div class="advert-image advert-glance-photo">{{ $photo }}</div>{{ end }}
     <aside class="advert-facts" aria-labelledby="advert-facts-title">
       <h2 id="advert-facts-title">At a glance</h2>
       <dl>
@@ -50,6 +67,7 @@
       <p class="advert-closed-note">This position has closed. See <a href="/join-us/">current opportunities</a>.</p>
       {{ end }}
     </aside>
+    </div>
 
     <div class="advert-body">
       {{ partial "content.html" . }}
