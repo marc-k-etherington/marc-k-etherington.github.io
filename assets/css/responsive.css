@@ -475,3 +475,9 @@ div.alert-secondary.group-talk {
 .vacancy-strip-btn:hover { background: #ff7a28; }
 .vacancy-strip { margin: 0 0 1.25rem; }
 @media (max-width: 600px) { .vacancy-strip-icon { display: none; } .vacancy-strip-btn { width: 100%; text-align: center; } }
+/* Recruiting notice inside the homepage banner: lighter, centred, part of the welcome */
+.welcome-hero .vacancy-strip { text-align: left; max-width: 48rem; margin: -0.5rem auto 1.75rem; box-shadow: 2px 2px 0 #333; padding: 0.6rem 0.9rem; flex-wrap: nowrap; }
+.welcome-hero .vacancy-strip-text { flex: 1 1 0; min-width: 0; font-size: 0.95rem; }
+.welcome-hero .vacancy-strip-btn { flex: 0 0 auto; }
+@media (max-width: 600px) { .welcome-hero .vacancy-strip { flex-wrap: wrap; } }
+@media (max-width: 600px) { .welcome-hero .vacancy-strip { margin: 0 0 1.25rem; } }

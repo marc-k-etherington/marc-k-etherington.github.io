@@ -20,6 +20,8 @@
         {{ partial "img.html" (dict "src" "/images/logo/logo-full.png" "alt" "The Etherington Lab: where molecules come to light" "class" "hero-logo-img no-border" "sizes" "(max-width: 600px) 80vw, 440px" "eager" true "quality" 90) }}
       </h1>
       <p class="hero-subtitle">Advancing organic photonics, TADF materials, and photophysical chemistry at Northumbria University</p>
+      {{/* "We're recruiting" notice while a vacancy is open (disappears after the closing date) */}}
+      {{ partial "vacancy-strip.html" . }}
     {{ else }}
       {{/* Not an h1 on inner pages, so each page has exactly one h1 (its own title) */}}
       <a href="/" class="hero-brand" aria-label="The Etherington Lab, home page">
