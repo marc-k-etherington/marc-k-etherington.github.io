@@ -6,6 +6,9 @@ date = "2025-01-11"
 +++
 <h2>Join Us</h2>
 
+<!-- Open positions: appears automatically while a vacancy is open (content/vacancies/) -->
+{{< vacancy-banner >}}
+
 <!-- Recruiting Banner -->
 <div class="recruiting-banner">
   <h2>🎓 Join The Etherington Lab</h2>

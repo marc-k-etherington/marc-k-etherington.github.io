@@ -451,3 +451,27 @@ div.alert-secondary.group-talk {
 /* Card highlight after jumping to it (e.g. from the map) */
 @keyframes cardFlash { 0% { box-shadow: 0 0 0 4px var(--orange), 3px 3px 0 #333; } 100% { box-shadow: 3px 3px 0 #333; } }
 .card-highlight { animation: cardFlash 2.2s ease-out; }
+
+/* ---------- 24. "We're recruiting" box at the top of Join Us ---------- */
+.vacancy-banner { border: 3px solid #333; border-left: 10px solid var(--orange); background: #fff5eb; box-shadow: 5px 5px 0 #333; padding: 1.25rem 1.5rem; margin: 0 0 2rem; }
+.vacancy-banner h2 { margin: 0 0 0.75rem; font-size: 1.6rem; border: none; padding: 0; }
+.vacancy-banner-item + .vacancy-banner-item { border-top: 2px dashed #e0b48f; margin-top: 1rem; padding-top: 1rem; }
+.vacancy-banner-title { font-size: 1.25rem; font-weight: bold; margin: 0 0 0.25rem; hyphens: manual; }
+.vacancy-banner-title a { color: #333; }
+.vacancy-banner-title a:hover { color: var(--teal); }
+.vacancy-banner-meta { color: var(--muted); margin: 0 0 0.5rem; }
+.vacancy-banner-summary { margin: 0 0 0.75rem; }
+.vacancy-banner-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 0; }
+.vacancy-banner-actions .email-btn { font-size: 1rem; padding: 0.6rem 1.2rem; }
+.vacancy-soon { display: inline-block; background: #c0392b; color: #fff; font-size: 0.75rem; padding: 0.1rem 0.5rem; border-radius: 1rem; vertical-align: middle; margin-left: 0.4rem; }
+@media (max-width: 600px) { .vacancy-banner { padding: 1rem; } .vacancy-banner h2 { font-size: 1.3rem !important; } }
+
+/* ---------- 25. Homepage "We're recruiting" strip ---------- */
+.vacancy-strip { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; background: #fff5eb; border: 2px solid #333; border-left: 8px solid var(--orange); box-shadow: 3px 3px 0 #333; padding: 0.75rem 1rem; margin: 0 0 2rem; }
+.vacancy-strip-icon { font-size: 1.4rem; }
+.vacancy-strip-text { flex: 1 1 18rem; min-width: 0; }
+.vacancy-strip-text a { font-weight: bold; }
+.vacancy-strip-btn { background: var(--orange); color: #fff !important; border: 2px solid #333; box-shadow: 2px 2px 0 #333; padding: 0.4rem 0.9rem; font-weight: bold; text-decoration: none !important; white-space: nowrap; }
+.vacancy-strip-btn:hover { background: #ff7a28; }
+.vacancy-strip { margin: 0 0 1.25rem; }
+@media (max-width: 600px) { .vacancy-strip-icon { display: none; } .vacancy-strip-btn { width: 100%; text-align: center; } }

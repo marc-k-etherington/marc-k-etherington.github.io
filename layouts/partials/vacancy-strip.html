@@ -1,0 +1,19 @@
+{{/* One-line "We're recruiting" strip for the homepage; only shown while a vacancy is open */}}
+{{ $open := partialCached "func/open-vacancies.html" "" "all" }}
+{{ $labels := dict "phd" "PhD studentship" "postdoc" "Postdoctoral position" "masters" "Masters project" "undergraduate" "Undergraduate project" "visiting" "Visiting position" }}
+{{ with $open }}
+<div class="vacancy-strip" role="region" aria-label="Open positions">
+  {{ if eq (len .) 1 }}
+    {{ range . }}
+      {{ $days := -1 }}{{ with .Params.closing_date }}{{ $days = int (math.Floor (div (((time.AsTime .).AddDate 0 0 1).Sub now).Hours 24)) }}{{ end }}
+      <span class="vacancy-strip-icon" aria-hidden="true">📢</span>
+      <span class="vacancy-strip-text"><strong>We're recruiting:</strong> {{ index $labels .Params.position_type | default "New position" }}, <a href="{{ .RelPermalink }}">{{ replaceRE `^PhD:\s*` "" .Title }}</a>{{ with .Params.closing_date }}. Closes {{ (time.AsTime .).Format "2 January 2006" }}{{ end }}{{ if and (ge $days 0) (le $days 14) }} <span class="vacancy-soon">Closing soon</span>{{ end }}</span>
+      <a class="vacancy-strip-btn" href="{{ .RelPermalink }}">View advert →</a>
+    {{ end }}
+  {{ else }}
+    <span class="vacancy-strip-icon" aria-hidden="true">📢</span>
+    <span class="vacancy-strip-text"><strong>We're recruiting:</strong> {{ len . }} open positions, including {{ range first 1 . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}.</span>
+    <a class="vacancy-strip-btn" href="/join-us/">See all →</a>
+  {{ end }}
+</div>
+{{ end }}

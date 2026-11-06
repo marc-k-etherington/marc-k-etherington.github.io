@@ -1,0 +1,27 @@
+{{/* "We're recruiting" box for the top of Join Us. Appears only while a vacancy is open
+     (data from content/vacancies/); disappears automatically after the closing date. */}}
+{{ $open := partialCached "func/open-vacancies.html" "" "all" }}
+{{ $labels := dict "phd" "PhD studentship" "postdoc" "Postdoctoral position" "masters" "Masters project" "undergraduate" "Undergraduate project" "visiting" "Visiting position" }}
+{{ with $open }}
+<div class="vacancy-banner" role="region" aria-label="Open positions">
+  <h2>📢 We're recruiting{{ if gt (len .) 1 }}: {{ len . }} open positions{{ end }}</h2>
+  {{ range . }}
+    {{ $days := -1 }}
+    {{ with .Params.closing_date }}{{ $days = int (math.Floor (div (((time.AsTime .).AddDate 0 0 1).Sub now).Hours 24)) }}{{ end }}
+    <div class="vacancy-banner-item">
+      <p class="vacancy-banner-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- if and (ge $days 0) (le $days 14) }} <span class="vacancy-soon">Closing soon</span>{{ end }}</p>
+      <p class="vacancy-banner-meta">
+        {{- index $labels .Params.position_type | default (.Params.position_type | humanize) -}}
+        {{- with .Params.funding }} · {{ . }}{{ end -}}
+        {{- with .Params.closing_date }} · Closes {{ (time.AsTime .).Format "2 January 2006" }}{{ if and (ge $days 0) (le $days 60) }} ({{ $days }} day{{ if ne $days 1 }}s{{ end }} left){{ end }}{{ end -}}
+      </p>
+      {{ with .Params.summary }}<p class="vacancy-banner-summary">{{ . | markdownify }}</p>{{ end }}
+      <p class="vacancy-banner-actions">
+        <a class="email-btn" href="{{ .RelPermalink }}">View advert →</a>
+        {{ with .Params.apply_url }}<a class="opportunity-btn" href="{{ . }}" target="_blank" rel="noopener">Apply</a>{{ end }}
+      </p>
+    </div>
+  {{ end }}
+</div>
+{{ end }}
