@@ -488,7 +488,27 @@ div.alert-secondary.group-talk {
 .advert--masters, .advert--undergraduate { --advert-accent: var(--orange); }
 /* Advert photo: the whole image at its own proportions (never cropped), in a frame that fits it */
 .advert-image { display: flex; justify-content: center; margin-bottom: 1.5rem; }
-.advert-image img { display: block; width: auto; height: auto; max-width: 100%; max-height: min(70vh, 640px); border: 3px solid #333 !important; box-shadow: 4px 4px 0 #333; }
+.advert-image img { display: block; width: auto; height: auto; max-width: 100%; border: 3px solid #333 !important; box-shadow: 4px 4px 0 #333; }
+/* Landscape photos: above the title, kept reasonably short */
+.advert-top--wide .advert-image img { max-height: min(45vh, 380px); }
+/* Portrait or square photos: beside "At a glance", in a frame exactly the panel's height.
+   The whole photo sits centred in the frame on a soft background (never cropped or stretched). */
+.advert-glance--photo { display: grid; grid-template-columns: minmax(0, 62fr) minmax(0, 38fr); gap: 1.5rem; align-items: stretch; }
+.advert-glance--photo .advert-facts { grid-column: 1; grid-row: 1; }
+.advert-glance--photo .advert-glance-photo { grid-column: 2; grid-row: 1; margin: 0; position: relative; min-height: 220px;
+  background: #eef5f5; border: 3px solid #333; box-shadow: 4px 4px 0 #333; }
+.advert-glance--photo .advert-glance-photo img { position: absolute; inset: 0.75rem; width: calc(100% - 1.5rem); height: calc(100% - 1.5rem);
+  max-width: none; max-height: none; object-fit: contain; border: none !important; box-shadow: none; }
+.advert-glance--photo .advert-facts dl { grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); }
+.advert-glance--photo .advert-facts .fact-wide { grid-column: 1 / -1; }
+@media (max-width: 860px) {
+  /* tablets and phones: photo (normal frame) under the summary, then the panel at full width */
+  .advert-glance--photo { grid-template-columns: 1fr; gap: 1.25rem; align-items: start; }
+  .advert-glance--photo .advert-glance-photo { grid-column: 1; grid-row: 1; position: static; min-height: 0; background: none; border: none; box-shadow: none; }
+  .advert-glance--photo .advert-facts { grid-column: 1; grid-row: 2; }
+  .advert-glance--photo .advert-glance-photo img { position: static; width: auto; height: auto; max-width: 100%; max-height: 40vh;
+    border: 3px solid #333 !important; box-shadow: 4px 4px 0 #333; }
+}
 .advert-header { border-left: 8px solid var(--advert-accent); padding: 0.25rem 0 0.25rem 1.25rem; margin-bottom: 1.75rem; }
 .advert-type { display: inline-block; background: var(--advert-accent); color: #fff; font-weight: bold; font-size: 0.9rem; padding: 0.15rem 0.75rem; border-radius: 1rem; margin-right: 0.4rem; }
 .advert-type--soon { background: #c0392b; }
