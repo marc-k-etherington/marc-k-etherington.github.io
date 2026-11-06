@@ -1,24 +1,110 @@
 {{ define "main" }}
-{{ $isOpen := true }}
-{{ with .Params.closing_date }}{{ $isOpen = ((time.AsTime .).AddDate 0 0 1).After now }}{{ end }}
+{{/* Job advert page. The same template serves PhD, postdoc and student-project adverts;
+     everything below comes from the advert's front matter, the team data and your profile. */}}
+{{ $p := . }}
+{{ $isOpen := true }}{{ $days := -1 }}
+{{ with .Params.closing_date }}
+  {{ $end := (time.AsTime .).AddDate 0 0 1 }}
+  {{ $isOpen = $end.After now }}
+  {{ if $isOpen }}{{ $days = int (math.Floor (div ($end.Sub now).Hours 24)) }}{{ end }}
+{{ end }}
+{{ $labels := dict "phd" "PhD studentship" "postdoc" "Postdoctoral position" "masters" "Masters project" "undergraduate" "Undergraduate project" "visiting" "Visiting position" }}
+{{ $type := .Params.position_type | default "position" }}
+{{ $marc := site.GetPage "/marc-etherington" }}
+{{ $email := "" }}{{ with $marc }}{{ $email = .Params.email }}{{ end }}
+{{ $subject := .Params.enquiry_subject | default (printf "Enquiry: %s" .Title) }}
 
-<article class="vacancy">
-  {{ partial "page-title.html" . }}
+<article class="advert advert--{{ $type }}{{ if not $isOpen }} advert--closed{{ end }}">
+  {{ with .Params.image }}
+  <div class="advert-image">{{ partial "img.html" (dict "src" . "alt" "" "class" "no-border" "sizes" "(max-width: 900px) 100vw, 900px" "eager" true "page" $p) }}</div>
+  {{ end }}
 
-  <div class="research-project-meta">
-    {{- with .Params.closing_date }}Closes {{ (time.AsTime .).Format "2 January 2006" }}{{ end -}}
-    {{- with .Params.start_date }} | Start: {{ . }}{{ end -}}
-    {{- with .Params.funding }} | {{ . }}{{ end -}}
+  <header class="advert-header">
+    <span class="advert-type">{{ index $labels $type | default "Position" }}</span>
+    {{ if not $isOpen }}<span class="advert-type advert-type--closed">Applications closed</span>{{ else if and (ge $days 0) (le $days 14) }}<span class="advert-type advert-type--soon">Closing soon</span>{{ end }}
+    <h1 class="advert-title">{{ replaceRE `^(PhD|PDRA|Postdoc|MSc|Masters)\s*:\s*` "" .Title }}</h1>
+    {{ with .Params.summary }}<p class="advert-summary">{{ . | markdownify }}</p>{{ end }}
+  </header>
+
+  <div class="advert-layout">
+    <aside class="advert-facts" aria-labelledby="advert-facts-title">
+      <h2 id="advert-facts-title">At a glance</h2>
+      <dl>
+        {{ with .Params.closing_date }}<div class="fact"><dt>Closing date</dt><dd><strong>{{ (time.AsTime .).Format "Monday 2 January 2006" }}</strong>{{ with $p.Params.deadline_time }}, {{ . }}{{ end }}{{ if and $isOpen (le $days 60) }}<br><span class="advert-days">{{ $days }} day{{ if ne $days 1 }}s{{ end }} left</span>{{ end }}{{ if not $isOpen }}<br><span class="advert-days">Now closed</span>{{ end }}</dd></div>{{ end }}
+        {{ with .Params.funding }}<div class="fact"><dt>Funding</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.start_date }}<div class="fact"><dt>Start date</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.duration }}<div class="fact"><dt>Duration</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.eligibility }}<div class="fact"><dt>Eligibility</dt><dd>{{ . }}</dd></div>{{ end }}
+        <div class="fact"><dt>Location</dt><dd>{{ .Params.location | default "Northumbria University, Newcastle upon Tyne" }}</dd></div>
+        {{ with .Params.programme }}<div class="fact fact-wide"><dt>Programme</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.supervisors }}<div class="fact"><dt>Supervisor{{ if gt (len .) 1 }}s{{ end }}</dt><dd>Dr Marc Etherington, {{ delimit . ", " " and " }}</dd></div>{{ end }}
+        {{ with .Params.partners }}<div class="fact"><dt>Partners</dt><dd>{{ delimit . ", " " and " }}</dd></div>{{ end }}
+        {{ with .Params.reference }}<div class="fact fact-wide"><dt>Reference</dt><dd><code>{{ . }}</code></dd></div>{{ end }}
+      </dl>
+      {{ if $isOpen }}
+      <div class="advert-actions">
+        {{ with .Params.apply_url }}<a class="email-btn advert-apply" href="{{ . }}" target="_blank" rel="noopener">Apply now →</a>{{ end }}
+        {{ with $email }}<a class="opportunity-btn advert-enquire" href="mailto:{{ . }}?subject={{ $subject | urlquery }}">✉️ Email Marc</a>{{ end }}
+      </div>
+      {{ else }}
+      <p class="advert-closed-note">This position has closed. See <a href="/join-us/">current opportunities</a>.</p>
+      {{ end }}
+    </aside>
+
+    <div class="advert-body">
+      {{ partial "content.html" . }}
+    </div>
   </div>
 
-  {{ if not $isOpen }}
-  <div class="alert alert-warning">This position has now closed. Current opportunities are on the <a href="/join-us/">Join Us</a> page.</div>
-  {{ end }}
-
-  {{ partial "content.html" . }}
+  {{/* About the group: built automatically from the site's data */}}
+  {{ $s := partialCached "func/stats.html" "stats" }}
+  <section class="advert-group" aria-labelledby="advert-group-title">
+    <h2 id="advert-group-title">About the group</h2>
+    <div class="advert-group-grid">
+      <div class="advert-group-card">
+        <h3>🔬 The Etherington Lab</h3>
+        <p>{{ $s.publications }} publications, {{ $s.phd }} current PhD student{{ if ne $s.phd 1 }}s{{ end }} and collaborators in {{ $s.collab_countries }} countries. Group members present their work at international conferences{{ with $s.group_talks }} ({{ . }} talks and posters so far){{ end }}.</p>
+        <p><a href="/group/">Meet the team →</a></p>
+      </div>
+      {{ with first 3 (partial "func/awards.html" .) }}
+      <div class="advert-group-card">
+        <h3>🏆 Recent student achievements</h3>
+        <ul>{{ range . }}<li>{{ .name }}: {{ .what }}{{ with .year }} ({{ . }}){{ end }}</li>{{ end }}</ul>
+      </div>
+      {{ end }}
+      {{ $collabs := slice }}{{ range $p.Params.collaborators }}{{ range first 1 (where site.Data.collaborators.collaborators "id" .) }}{{ $collabs = $collabs | append . }}{{ end }}{{ end }}
+      {{ if or $p.Params.themes $collabs }}
+      <div class="advert-group-card">
+        <h3>🧪 Related research</h3>
+        {{ partial "theme-chips.html" $p.Params.themes }}
+        {{ with $collabs }}<p>Working with {{ range $i, $c := . }}{{ if $i }}, {{ end }}<a href="/research/#collab-{{ $c.id }}">{{ $c.name }}</a> ({{ $c.institution }}){{ end }}.</p>{{ end }}
+        <p><a href="/research/">Our research →</a></p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
 
   {{ if and $isOpen .Params.apply_url }}
-  <p><a class="cta-btn-marc" href="{{ .Params.apply_url }}" target="_blank" rel="noopener">Apply now</a></p>
+  <div class="advert-apply-bar" aria-hidden="true">
+    <span>{{ with .Params.closing_date }}Closes {{ (time.AsTime .).Format "2 Jan 2006" }}{{ end }}</span>
+    <a class="email-btn" href="{{ .Params.apply_url }}" target="_blank" rel="noopener" tabindex="-1">Apply now →</a>
+  </div>
   {{ end }}
 </article>
+
+{{/* Google job-listing information (JobPosting), invisible on the page */}}
+{{ if $isOpen }}
+{{ $ld := dict
+  "@context" "https://schema.org"
+  "@type" "JobPosting"
+  "title" .Title
+  "description" (printf "%s %s" (.Params.summary | default "") (.Plain | truncate 4000))
+  "datePosted" (.Date.Format "2006-01-02")
+  "employmentType" (cond (eq $type "phd") "FULL_TIME" "FULL_TIME")
+  "hiringOrganization" (dict "@type" "Organization" "name" "Northumbria University" "sameAs" "https://www.northumbria.ac.uk")
+  "jobLocation" (dict "@type" "Place" "address" (dict "@type" "PostalAddress" "streetAddress" "Ellison Place" "addressLocality" "Newcastle upon Tyne" "postalCode" "NE1 8ST" "addressCountry" "GB"))
+}}
+{{ with .Params.closing_date }}{{ $ld = merge $ld (dict "validThrough" (printf "%sT23:59:00+00:00" ((time.AsTime .).Format "2006-01-02"))) }}{{ end }}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{ end }}
 {{ end }}
