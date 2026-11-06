@@ -59,7 +59,7 @@ The studentship includes full tuition fees and a stipend at UKRI rates (£21,805
 
 ## How to apply
 
-Further details can be found in the ReNU+ website using the **Apply now** button below and searching for the project reference **ReNU+27/SE/EPM/ETHERINGTON**.
+Further details can be found in the ReNU+ website using the **Apply now** button and searching for the project reference **ReNU+27/SE/EPM/ETHERINGTON**.
 
 ReNU+ studentships are awarded competitively between projects at Northumbria University, and there are fewer studentships than projects advertised.
 
