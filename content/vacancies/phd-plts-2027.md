@@ -37,7 +37,7 @@ Your research will include:
 - **Devices:** incorporate the most promising molecules into working programmable luminescent tags.
 - **Placement:** test your tags in prototype devices at TU Dresden and PRUUVE GmbH.
 
-## REAL-WORLD BENEFITS
+## Real-world benefits
 
 The research could support more reliable manufacturing of next-generation solar modules and cut electronic and plastic waste. It contributes to UN Sustainable Development Goals 7 (Affordable and Clean Energy), 9 (Industry, Innovation and Infrastructure) and 12 (Responsible Consumption and Production).
 
